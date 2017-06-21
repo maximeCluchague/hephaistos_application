@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="1" auto-publish-time="0" hostname="localhost" id="GlassFish 4.0 at localhost" name="GlassFish 4.0 at localhost" runtime-id="GlassFish 4.0" server-type="org.glassfish.jst.server.glassfish4" server-type-id="org.glassfish.jst.server.glassfish4" start-timeout="240" stop-timeout="240" timestamp="1">
+    <map key="generic_server_instance_properties" sunappserver.adminname="admin" sunappserver.adminpassword="" sunappserver.adminserverportnumber="4848" sunappserver.domainpath="/user/mcluchag/home/Desktop/hephaistos_application/glassfish4/glassfish/domains/domain1" sunappserver.keepSessions="true" sunappserver.serveraddress="localhost"/>
+    <list key="modules" value0="hephaistos_project::org.eclipse.jst.jee.server:hephaistos_project::jst.web::3.1"/>
+    <list key="Generic_Server_Modules_List" value0="org.eclipse.jst.jee.server:hephaistos_project"/>
+  </server>
+</servers>
