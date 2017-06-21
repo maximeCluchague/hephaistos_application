@@ -1,0 +1,22 @@
+1) création de la table SQL :
+
+sur ubuntu / Debian
+$ : sudo apt-get install mysql-server mysql-client
+
+sur autre distribution :
+
+$ : sudo yum install mysql mysql-server
+
+
+2) sudo mysqladmin -u root -h localhost password 29497c26bad
+
+3) CREATE DATABASE hephaistos_db DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+4) CREATE USER 'hephaistos'@'localhost' IDENTIFIED BY 'hephaistos' ;
+
+5) GRANT ALL ON hephaistos_db.* TO 'hephaistos'@'localhost' IDENTIFIED BY 'hephaistos' ;
+
+6) mysql -h localhost -u hephaistos -p
+ puis rentrer le mdr : hephaistos
+
+7) use hephaistos_db

@@ -1,0 +1,32 @@
+DANS LE TERMINAL OU EN EXECUTA?T LES COMMANDES SYSTEMES EN JAVA : 
+
+
+1) création de la table SQL :
+
+sur ubuntu / Debian
+$ : sudo apt-get install mysql-server mysql-client
+
+sur autre distribution :
+
+$ : sudo yum install mysql mysql-server
+
+2) Definition du mdp :
+
+$ : sudo mysqladmin -u root -h localhost password mon_mdp
+
+(mdp choisis : hephaistos) 
+
+3) Connexion à la table / Deconnexion
+
+$ : mysql -h localhost -u root -phephaistos
+(mdp : hephaistos)
+
+une fois identifié on peut se déconnecter avec $ : exit ou $ : quit
+
+4 ) On créer un utilisateur avec des droits resteints
+
+$ : GRANT ALL PRIVILEGES ON elevage.* TO 'client'@'localhost' IDENTIFIED BY 'hephaistos';
+
+5) On se déconnecte avec exit ou quit puis on se connecte avec l'utilisateur créé :
+
+$ : mysql -u client -phephaistos

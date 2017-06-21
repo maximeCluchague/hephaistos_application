@@ -1,0 +1,14 @@
+Creation du node JS Server sur OpenShift : 
+
+	Prérequis :
+		- créer un compte esur Openshift 3 (ici : maxime@hephaistos.tech , pernic:17)
+		- créer un repository github qui va contenir le projet 
+
+	1) Téléchargement de oc et l'extraire
+	2) se placer dans le dossier courrant ou est extrait le oc
+	3) créer un nouveaux projet sur Openshift avec pour git le git créer précédemment 
+	4) créer une nouvelle pallication java script / node.js 
+	5) exécuter la ligne de comande donnée par Openshift du type 
+	$: ./oc login https://api.starter-us-west-2.openshift.com
+	(PS : Ne pas oublier ./ devant chaque commande) 
+

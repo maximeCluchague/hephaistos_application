@@ -1,0 +1,40 @@
+Les bases sur les Sockets & communiquer sous stockets en Java: 
+	- https://openclassrooms.com/courses/introduction-aux-sockets-1
+	- http://www.chicoree.fr/w/Communication_par_socket_sous_Java
+
+Créer un serveur en java :
+	- http://gfx.developpez.com/tutoriel/java/network/
+
+Créer un serveur web sur le terminal : 
+	- https://openclassrooms.com/courses/un-serveur-d-hebergement-multiutilisateur-sous-linux
+
+Envoie de fichier sur un serveur :
+	- https://openclassrooms.com/courses/creez-votre-application-web-avec-java-ee/formulaires-l-envoi-de-fichiers
+
+Téléchargement de fichier sur un serveur :
+	- https://openclassrooms.com/courses/creez-votre-application-web-avec-java-ee/le-telechargement-de-fichiers
+
+Créer une Base SQL en ligne modele Client/Serveur :
+	- https://openclassrooms.com/courses/administrez-vos-bases-de-donnees-avec-mysql/installation-de-mysql
+
+Communiquer avec une base SQL :
+	- https://openclassrooms.com/courses/creez-votre-application-web-avec-java-ee/communiquez-avec-votre-bdd
+
+Communication en mode modele client :
+	- http://perso.telecom-paristech.fr/~hudry/coursJava/reseau/clientServeur.html
+
+Stocker dans le cloud SQL:
+	- https://openclassrooms.com/courses/montez-votre-site-dans-le-cloud-avec-google-app-engine/google-cloud-sql
+
+explorez un serveur FTP :
+	- https://openclassrooms.com/courses/java-et-la-programmation-reseau/tp-explorez-un-serveur-ftp
+
+Sockets example : 
+	- http://cs.lmu.edu/~ray/notes/javanetexamples/
+
+Comprendre les reseau adresse réseau local/localhost/adresse internet... etc : 
+	- https://openclassrooms.com/courses/programmez-avec-le-langage-c/communiquer-en-reseau-avec-son-programme
+
+Créer une base SQL sur le cloud :
+	- https://docs.microsoft.com/fr-fr/azure/sql-database/sql-database-get-started-portal
+
