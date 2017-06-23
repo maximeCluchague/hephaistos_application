@@ -1,0 +1,5 @@
+package com.za.websocket;
+
+public class SensorClientEndpoint {
+
+}
