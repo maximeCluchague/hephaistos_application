@@ -28,7 +28,6 @@ public class sendData {
 		client.sendMessage(buildJsonData(args[0]));
 		// On transmet la valeur de l'aquisition 
 		client.sendMessage(buildJsonData(args[1]));
-		client.session.close();
-		
+		client.session.close();	
 	}
 }
