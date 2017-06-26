@@ -43,7 +43,8 @@ Pour faire fonctionner le tout en Localhost suivre les étapes suivantes :
 		$ : start-domain <nom_domaine>
 
 		e) Déployer le fichier 'hephaistos_project.war' : 
-		$ : deploy --port 5000 --host localhost .../hephaitos_application/hephaistos_project.war
+		$ : deploy --port 5000 --host localhost /user/mcluchag/home/Desktop/hephaistos_application/hephaistos_project.war
+
 
 		f) Pour Retirer le fichier :
 		$ : undeploy --port 5000 --host localhost hephaistos_project (Sans le .war)

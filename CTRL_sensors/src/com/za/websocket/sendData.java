@@ -22,12 +22,15 @@ public class sendData {
 	}
 		
 	public static void main(String[] args) throws URISyntaxException, DeploymentException, IOException {
-		
-		SensorClientEndpoint client = new SensorClientEndpoint();
-		// On transmet l'identifiant du capteur
-		client.sendMessage(buildJsonData(args[0]));
-		// On transmet la valeur de l'aquisition 
-		client.sendMessage(buildJsonData(args[1]));
-		client.session.close();	
+		if(args.length==2){
+			SensorClientEndpoint client = new SensorClientEndpoint();
+			// On transmet l'identifiant du capteur
+			client.sendMessage(buildJsonData(args[0]));
+			// On transmet la valeur de l'aquisition 
+			client.sendMessage(buildJsonData(args[1]));
+			client.session.close();
+		}else{
+			System.out.println("[Erreur usage] java -jar sendData.jar <idCapteur> <valAcquisition>");
+		}
 	}
 }

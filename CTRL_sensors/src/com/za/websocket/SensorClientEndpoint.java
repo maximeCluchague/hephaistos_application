@@ -41,14 +41,16 @@ public class SensorClientEndpoint {
 		System.out.println(Json.createReader(new StringReader(message)).readObject().getString("message"));
 	}
 	
-	public void sendMessage(String message) throws IOException{
+	public void sendMessage(String message) throws IOException {
 		session.getBasicRemote().sendText(message);
 		System.out.println("\tEnvoi du message "+message);
+
 	}
 	
 	@OnClose
 	public void processClose(){
-		System.out.println("[->] Fermeture du client "+session.getId()+"\n");
+		System.out.println("[->] Fermeture du client "+session.getId());
+		System.out.println("--------------------------------------------------------------");
 	}
 	
 }
