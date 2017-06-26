@@ -1,0 +1,39 @@
+package com.za.websocket;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.StringWriter;
+import java.net.URISyntaxException;
+
+import javax.json.Json;
+import javax.json.JsonObject;
+import javax.json.JsonWriter;
+import javax.websocket.DeploymentException;
+
+
+
+public class sendData {
+	
+	// Methode qui construit le Json pour le serveur 
+		private static String buildJsonData(String message){
+			JsonObject jsonObject = Json.createObjectBuilder().add("message", message).build();
+			StringWriter stringWriter = new StringWriter();
+			try(JsonWriter jsonWriter = Json.createWriter(stringWriter)){jsonWriter.write(jsonObject);}
+			return stringWriter.toString();
+		}
+		
+		public static void main(String[] args) throws URISyntaxException, DeploymentException, IOException {
+			if(args.length<3){
+				System.out.println("Arguments manquant : sendData <IdSensor> <message> ");
+			}else{
+				
+				SensorClientEndpoint client = new SensorClientEndpoint();
+				String message = null; // Pour l'initialisation de l'username dans le server
+				
+				client.sendMessage(buildJsonData(args[1]));
+				client.sendMessage(buildJsonData(args[2]));
+				System.out.println("Envoi du message ["+buildJsonData(args[1])+"] avec succès vers le WebServer" );
+			}
+		}
+}

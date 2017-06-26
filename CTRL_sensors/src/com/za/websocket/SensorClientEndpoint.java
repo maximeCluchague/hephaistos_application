@@ -2,16 +2,14 @@ package com.za.websocket;
 
 import java.io.IOException;
 import java.io.StringReader;
-import java.io.StringWriter;
 import java.net.URI;
 import java.net.URISyntaxException;
 
 import javax.json.Json;
-import javax.json.JsonObject;
-import javax.json.JsonWriter;
 import javax.websocket.ClientEndpoint;
 import javax.websocket.ContainerProvider;
 import javax.websocket.DeploymentException;
+import javax.websocket.OnClose;
 import javax.websocket.OnMessage;
 import javax.websocket.OnOpen;
 import javax.websocket.Session;
@@ -21,13 +19,21 @@ public class SensorClientEndpoint {
 	
 	Session session = null;
 	
-	public SensorClientEndpoint() throws URISyntaxException, DeploymentException, IOException{
+	public SensorClientEndpoint() throws URISyntaxException {
+		
 		URI uri = new URI("ws://localhost:8080/hephaistos_project/hephaistoswebserver");
-		ContainerProvider.getWebSocketContainer().connectToServer(this, uri);
+		
+		try {
+			ContainerProvider.getWebSocketContainer().connectToServer(this, uri);
+			System.out.println("[<-] [CONNEXION] "+uri.toString());
+		} catch (DeploymentException | IOException e) {
+			System.out.println("[Impossible de ce connecter au serveur] "+uri.toString());
+		}
 	}
 	@OnOpen
 	public void processOpen(Session session){
 		this.session = session;
+		System.out.println("[->] Ouverture du client "+session.getId());
 	}
 	
 	@OnMessage
@@ -37,5 +43,12 @@ public class SensorClientEndpoint {
 	
 	public void sendMessage(String message) throws IOException{
 		session.getBasicRemote().sendText(message);
+		System.out.println("\tEnvoi du message "+message);
 	}
+	
+	@OnClose
+	public void processClose(){
+		System.out.println("[->] Fermeture du client "+session.getId()+"\n");
+	}
+	
 }
