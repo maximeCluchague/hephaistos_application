@@ -34,7 +34,6 @@ INDEX VERSION 1.126+/run/netsop/u/sop-nas2a/vol/home_hephaistos/mcluchag/Desktop
 1527271983.index
 1910220450.index
 1814853191.index
-1344172294.index
 1566865320.index
 2390586883.index
 1476170514.index
