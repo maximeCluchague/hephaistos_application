@@ -94,7 +94,7 @@ int test_interfacekit()
 		printf("Error waiting for attachment: (%d): %s\n",err,errStr);
 		return 0;
 	}
-	fp=fopen("log_activite.txt","a");
+	//fp=fopen("log_activite.txt","a");
     
     t=Get_Time();
 	while(1)
@@ -113,9 +113,11 @@ int test_interfacekit()
               if(flag2!=1)
               {
                 t2=Get_Time();
-                printf("capteur (%d) temps %fs delta temps %fs  deltahaut-bas trigtime \n",status[0],Get_Time(),deltaT);
-                fprintf(fp,"capteur (%d)   temps   %f delta temps %f  deltahaut-bas trigtime \n",status[0],Get_Time(),deltaT);
-              }
+                //printf("capteur (%d) temps %fs delta temps %fs  deltahaut-bas trigtime \n",status[0],Get_Time(),deltaT);
+                //fprintf(fp,"capteur (%d)   temps   %f delta temps %f  deltahaut-bas trigtime \n",status[0],Get_Time(),deltaT);
+              	printf("MESSAGE 1\n");
+		system ("java -jar sendDataWebServer.jar 3 1");
+		}
               flag2=1;
           }
           
@@ -123,9 +125,11 @@ int test_interfacekit()
           {
               deltaT2=Get_Time()-t2;
               
-              printf("capteur (%d) temps %fs delta temps %fs  deltahaut-bas %fs \n",status[0],Get_Time(),deltaT,deltaT2);
-              fprintf(fp,"capteur (%d)   temps   %f delta temps %f  deltahaut-bas %fs\n",status[0],Get_Time(),deltaT,deltaT2);
-              flag2=0;
+              //printf("capteur (%d) temps %fs delta temps %fs  deltahaut-bas %fs \n",status[0],Get_Time(),deltaT,deltaT2);
+              //fprintf(fp,"capteur (%d)   temps   %f delta temps %f  deltahaut-bas %fs\n",status[0],Get_Time(),deltaT,deltaT2);
+              printf("MESSAGE 0\n");
+		system ("java -jar sendDataWebServer.jar 3 0");
+		flag2=0;
           }
           
           else

@@ -1,0 +1,738 @@
+[2017-06-27T13:15:03.678+0000] [] [INFO] [NCLS-GFLAUNCHER-00005] [javax.enterprise.launcher] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498569303678] [levelValue: 800] [[
+  JVM invocation command line:
+/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/bin/java
+-cp
+/home/pi/Desktop/hephaistos_application/glassfish4/glassfish/modules/glassfish.jar
+-XX:+UnlockDiagnosticVMOptions
+-XX:NewRatio=2
+-XX:MaxPermSize=192m
+-Xmx512m
+-client
+-javaagent:/home/pi/Desktop/hephaistos_application/glassfish4/glassfish/lib/monitor/flashlight-agent.jar
+-Djavax.net.ssl.trustStore=/home/pi/Desktop/hephaistos_application/glassfish4/glassfish/domains/hephaistosDomain/config/cacerts.jks
+-Dfelix.fileinstall.dir=/home/pi/Desktop/hephaistos_application/glassfish4/glassfish/modules/autostart/
+-Dorg.glassfish.additionalOSGiBundlesToStart=org.apache.felix.shell,org.apache.felix.gogo.runtime,org.apache.felix.gogo.shell,org.apache.felix.gogo.command,org.apache.felix.shell.remote,org.apache.felix.fileinstall
+-Dcom.sun.aas.installRoot=/home/pi/Desktop/hephaistos_application/glassfish4/glassfish
+-Dfelix.fileinstall.poll=5000
+-Djava.endorsed.dirs=/home/pi/Desktop/hephaistos_application/glassfish4/glassfish/modules/endorsed:/home/pi/Desktop/hephaistos_application/glassfish4/glassfish/lib/endorsed
+-Djava.security.policy=/home/pi/Desktop/hephaistos_application/glassfish4/glassfish/domains/hephaistosDomain/config/server.policy
+-Dosgi.shell.telnet.maxconn=1
+-Dfelix.fileinstall.bundles.startTransient=true
+-Dcom.sun.enterprise.config.config_environment_factory_class=com.sun.enterprise.config.serverbeans.AppserverConfigEnvironmentFactory
+-Dfelix.fileinstall.log.level=2
+-Djavax.net.ssl.keyStore=/home/pi/Desktop/hephaistos_application/glassfish4/glassfish/domains/hephaistosDomain/config/keystore.jks
+-Djava.security.auth.login.config=/home/pi/Desktop/hephaistos_application/glassfish4/glassfish/domains/hephaistosDomain/config/login.conf
+-Dfelix.fileinstall.disableConfigSave=false
+-Dfelix.fileinstall.bundles.new.start=true
+-Dcom.sun.aas.instanceRoot=/home/pi/Desktop/hephaistos_application/glassfish4/glassfish/domains/hephaistosDomain
+-Dosgi.shell.telnet.port=6666
+-Dgosh.args=--nointeractive
+-Dcom.sun.enterprise.security.httpsOutboundKeyAlias=s1as
+-Dosgi.shell.telnet.ip=127.0.0.1
+-DANTLR_USE_DIRECT_CLASS_LOADING=true
+-Djava.awt.headless=true
+-Djava.ext.dirs=/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/lib/ext:/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/jre/lib/ext:/home/pi/Desktop/hephaistos_application/glassfish4/glassfish/domains/hephaistosDomain/lib/ext
+-Djdbc.drivers=org.apache.derby.jdbc.ClientDriver
+-Djava.library.path=/home/pi/Desktop/hephaistos_application/glassfish4/glassfish/lib:/usr/java/packages/lib/arm:/lib:/usr/lib
+com.sun.enterprise.glassfish.bootstrap.ASMain
+-upgrade
+false
+-domaindir
+/home/pi/Desktop/hephaistos_application/glassfish4/glassfish/domains/hephaistosDomain
+-read-stdin
+true
+-asadmin-args
+--host,,,localhost,,,--port,,,4848,,,--secure=false,,,--terse=false,,,--echo=false,,,--interactive=true,,,start-domain,,,--verbose=false,,,--watchdog=false,,,--debug=false,,,--domaindir,,,/home/pi/Desktop/hephaistos_application/glassfish4/glassfish/domains,,,hephaistosDomain
+-domainname
+hephaistosDomain
+-instancename
+server
+-type
+DAS
+-verbose
+false
+-asadmin-classpath
+/home/pi/Desktop/hephaistos_application/glassfish4/glassfish/lib/client/appserver-cli.jar
+-debug
+false
+-asadmin-classname
+com.sun.enterprise.admin.cli.AdminMain]]
+
+[2017-06-27T13:16:22.182+0000] [glassfish 4.0] [INFO] [NCLS-LOGGING-00009] [javax.enterprise.logging] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498569382182] [levelValue: 800] [[
+  Running GlassFish Version: GlassFish Server Open Source Edition  4.0  (build 89)]]
+
+[2017-06-27T13:16:22.237+0000] [glassfish 4.0] [INFO] [NCLS-LOGGING-00010] [javax.enterprise.logging] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498569382237] [levelValue: 800] [[
+  Server log file is using Formatter class: com.sun.enterprise.server.logging.ODLLogFormatter]]
+
+[2017-06-27T13:16:26.176+0000] [glassfish 4.0] [INFO] [realm.loaded.successfully] [javax.enterprise.system.core.security.com.sun.enterprise.security.auth.realm] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498569386176] [levelValue: 800] [[
+  SEC1115: Realm [admin-realm] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2017-06-27T13:16:26.206+0000] [glassfish 4.0] [INFO] [realm.loaded.successfully] [javax.enterprise.system.core.security.com.sun.enterprise.security.auth.realm] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498569386206] [levelValue: 800] [[
+  SEC1115: Realm [file] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2017-06-27T13:16:26.418+0000] [glassfish 4.0] [INFO] [realm.loaded.successfully] [javax.enterprise.system.core.security.com.sun.enterprise.security.auth.realm] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498569386418] [levelValue: 800] [[
+  SEC1115: Realm [certificate] of classtype [com.sun.enterprise.security.auth.realm.certificate.CertificateRealm] successfully created.]]
+
+[2017-06-27T13:16:36.570+0000] [glassfish 4.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498569396570] [levelValue: 800] [[
+  Grizzly Framework 2.3.1 started in: 425ms - bound to [/0.0.0.0:8,080]]]
+
+[2017-06-27T13:16:37.236+0000] [glassfish 4.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498569397236] [levelValue: 800] [[
+  Grizzly Framework 2.3.1 started in: 16ms - bound to [/0.0.0.0:8,181]]]
+
+[2017-06-27T13:16:37.415+0000] [glassfish 4.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498569397415] [levelValue: 800] [[
+  Grizzly Framework 2.3.1 started in: 29ms - bound to [/0.0.0.0:5,000]]]
+
+[2017-06-27T13:16:39.590+0000] [glassfish 4.0] [INFO] [] [javax.enterprise.system.core.security.org.glassfish.security.services.impl.authorization] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498569399590] [levelValue: 800] [[
+  Authorization Service has successfully initialized.]]
+
+[2017-06-27T13:16:40.470+0000] [glassfish 4.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498569400470] [levelValue: 800] [[
+  Grizzly Framework 2.3.1 started in: 23ms - bound to [/0.0.0.0:3,700]]]
+
+[2017-06-27T13:16:42.745+0000] [glassfish 4.0] [INFO] [] [org.hibernate.validator.internal.util.Version] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498569402745] [levelValue: 800] [[
+  HV000001: Hibernate Validator 5.0.0.Final]]
+
+[2017-06-27T13:16:51.310+0000] [glassfish 4.0] [INFO] [] [org.glassfish.ha.store.spi.BackingStoreFactoryRegistry] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498569411310] [levelValue: 800] [[
+  Registered org.glassfish.ha.store.adapter.cache.ShoalBackingStoreProxy for persistence-type = replicated in BackingStoreFactoryRegistry]]
+
+[2017-06-27T13:16:52.438+0000] [glassfish 4.0] [INFO] [NCLS-CORE-00017] [javax.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498569412438] [levelValue: 800] [[
+  GlassFish Server Open Source Edition  4.0  (89) startup time : Felix (72,490ms), startup services(32,203ms), total(104,693ms)]]
+
+[2017-06-27T13:17:03.137+0000] [glassfish 4.0] [INFO] [] [org.glassfish.jersey.server.ApplicationHandler] [tid: _ThreadID=58 _ThreadName=pool-13-thread-1] [timeMillis: 1498569423137] [levelValue: 800] [[
+  Initiating Jersey application, version Jersey: 2.0 2013-05-03 14:50:15...]]
+
+[2017-06-27T13:17:10.738+0000] [glassfish 4.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498569430738] [levelValue: 800] [[
+  Grizzly Framework 2.3.1 started in: 13ms - bound to [/0.0.0.0:7,676]]]
+
+[2017-06-27T13:17:20.465+0000] [glassfish 4.0] [INFO] [NCLS-BOOTSTRAP-00027] [javax.enterprise.bootstrap] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498569440465] [levelValue: 800] [[
+  Registered com.sun.enterprise.glassfish.bootstrap.osgi.EmbeddedOSGiGlassFishImpl@14c5f5e as OSGi service registration: org.apache.felix.framework.ServiceRegistrationImpl@11abd6c.]]
+
+[2017-06-27T13:17:27.775+0000] [glassfish 4.0] [INFO] [NCLS-JMX-00005] [javax.enterprise.system.jmx] [tid: _ThreadID=74 _ThreadName=Thread-11] [timeMillis: 1498569447775] [levelValue: 800] [[
+  JMXStartupService has started JMXConnector on JMXService URL service:jmx:rmi://raspberrypi:8686/jndi/rmi://raspberrypi:8686/jmxrmi]]
+
+[2017-06-27T13:20:48.124+0000] [glassfish 4.0] [INFO] [NCLS-REST-00001] [javax.enterprise.admin.rest] [tid: _ThreadID=32 _ThreadName=admin-listener(1)] [timeMillis: 1498569648124] [levelValue: 800] [[
+  Listening to REST requests at context: /command/domain.]]
+
+[2017-06-27T13:20:52.602+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=32 _ThreadName=admin-listener(1)] [timeMillis: 1498569652602] [levelValue: 800] [[
+  this.makeModuleFor(org.glassfish.main.web.glue, null) returned OSGiModuleImpl:: Bundle = [org.glassfish.main.web.glue [110]], State = [READY]]]
+
+[2017-06-27T13:20:52.635+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=32 _ThreadName=admin-listener(1)] [timeMillis: 1498569652635] [levelValue: 800] [[
+  this.makeModuleFor(org.glassfish.web.javax.servlet.jsp, null) returned OSGiModuleImpl:: Bundle = [org.glassfish.web.javax.servlet.jsp [150]], State = [READY]]]
+
+[2017-06-27T13:20:55.020+0000] [glassfish 4.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=32 _ThreadName=admin-listener(1)] [timeMillis: 1498569655020] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2017-06-27T13:21:01.159+0000] [glassfish 4.0] [SEVERE] [java_security.expired_certificate] [javax.enterprise.system.ssl.security.com.sun.enterprise.security.ssl.impl] [tid: _ThreadID=32 _ThreadName=admin-listener(1)] [timeMillis: 1498569661159] [levelValue: 1000] [[
+  SEC5054: Certificate has expired: [
+[
+  Version: V3
+  Subject: CN=GTE CyberTrust Root 5, OU="GTE CyberTrust Solutions, Inc.", O=GTE Corporation, C=US
+  Signature Algorithm: SHA1withRSA, OID = 1.2.840.113549.1.1.5
+
+  Key:  Sun RSA public key, 2048 bits
+  modulus: 23741889829347261660812437366387754385443431973861114865490414153884050331745811968523116847625570146592736935209718565296053386842135985534863157983128812774162998053673746470782252407673402238146869994438729551246768368782318393878374421033907597162218758024581735139682087126982809511479059100617027892880227587855877479432885604404402435662802390484099065871430585284534529627347717530352189612077130606642676951640071336717026459037542552927905851171460589361570392199748753414855675665635003335769915908187224347232807336022456537328962095005323382940080676931822787496212635993279098588863972868266229522169377
+  public exponent: 65537
+  Validity: [From: Fri Aug 14 14:50:00 UTC 1998,
+               To: Wed Aug 14 23:59:00 UTC 2013]
+  Issuer: CN=GTE CyberTrust Root 5, OU="GTE CyberTrust Solutions, Inc.", O=GTE Corporation, C=US
+  SerialNumber: [    01b6]
+
+Certificate Extensions: 4
+[1]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen:5
+]
+
+[2]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [1.2.840.113763.1.2.1.3]
+[]  ]
+]
+
+[3]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  Key_CertSign
+  Crl_Sign
+]
+
+[4]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 76 0A 49 21 38 4C 9F DE   F8 C4 49 C7 71 71 91 9D  v.I!8L....I.qq..
+]
+]
+
+]
+  Algorithm: [SHA1withRSA]
+  Signature:
+0000: 41 3A D4 18 5B DA B8 DE   21 1C E1 8E 09 E5 F1 68  A:..[...!......h
+0010: 34 FF DE 96 F4 07 F5 A7   3C F3 AC 4A B1 9B FA 92  4.......<..J....
+0020: FA 9B ED E6 32 21 AA 4A   76 C5 DC 4F 38 E5 DF D5  ....2!.Jv..O8...
+0030: 86 E4 D5 C8 76 7D 98 D7   B1 CD 8F 4D B5 91 23 6C  ....v......M..#l
+0040: 8B 8A EB EA 7C EF 14 94   C4 C6 F0 1F 4A 2D 32 71  ............J-2q
+0050: 63 2B 63 91 26 02 09 B6   80 1D ED E2 CC B8 7F DB  c+c.&...........
+0060: 87 63 C8 E1 D0 6C 26 B1   35 1D 40 66 10 1B CD 95  .c...l&.5.@f....
+0070: 54 18 33 61 EC 13 4F DA   13 F7 99 AF 3E D0 CF 8E  T.3a..O.....>...
+0080: A6 72 A2 B3 C3 05 9A C9   27 7D 92 CC 7E 52 8D B3  .r......'....R..
+0090: AB 70 6D 9E 89 9F 4D EB   1A 75 C2 98 AA D5 02 16  .pm...M..u......
+00A0: D7 0C 8A BF 25 E4 EB 2D   BC 98 E9 58 38 19 7C B9  ....%..-...X8...
+00B0: 37 FE DB E2 99 08 73 06   C7 97 83 6A 7D 10 01 2F  7.....s....j.../
+00C0: 32 B9 17 05 4A 65 E6 2F   CE BE 5E 53 A6 82 E9 9A  2...Je./..^S....
+00D0: 53 0A 84 74 2D 83 CA C8   94 16 76 5F 94 61 28 F0  S..t-.....v_.a(.
+00E0: 85 A7 39 BB D7 8B D9 A8   B2 13 1D 54 09 34 24 7D  ..9........T.4$.
+00F0: 20 81 7D 66 7E A2 90 74   5C 10 C6 BD EC AB 1B C2   ..f...t\.......
+
+]]]
+
+[2017-06-27T13:21:01.601+0000] [glassfish 4.0] [INFO] [security.secmgroff] [javax.enterprise.system.core.security.com.sun.enterprise.security] [tid: _ThreadID=32 _ThreadName=admin-listener(1)] [timeMillis: 1498569661601] [levelValue: 800] [[
+  SEC1002: Security Manager is OFF.]]
+
+[2017-06-27T13:21:01.613+0000] [glassfish 4.0] [INFO] [sec.service.startup.enter] [javax.enterprise.system.core.security.com.sun.enterprise.security] [tid: _ThreadID=32 _ThreadName=admin-listener(1)] [timeMillis: 1498569661613] [levelValue: 800] [[
+  SEC1010: Entering Security Startup Service]]
+
+[2017-06-27T13:21:01.704+0000] [glassfish 4.0] [INFO] [policy.loading] [javax.enterprise.system.core.security.com.sun.enterprise.security] [tid: _ThreadID=32 _ThreadName=admin-listener(1)] [timeMillis: 1498569661704] [levelValue: 800] [[
+  SEC1143: Loading policy provider com.sun.enterprise.security.provider.PolicyWrapper.]]
+
+[2017-06-27T13:21:03.074+0000] [glassfish 4.0] [INFO] [sec.service.startup.exit] [javax.enterprise.system.core.security.com.sun.enterprise.security] [tid: _ThreadID=32 _ThreadName=admin-listener(1)] [timeMillis: 1498569663074] [levelValue: 800] [[
+  SEC1011: Security Service(s) Started Successfully]]
+
+[2017-06-27T13:21:10.111+0000] [glassfish 4.0] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=32 _ThreadName=admin-listener(1)] [timeMillis: 1498569670111] [levelValue: 800] [[
+  Created HTTP listener http-listener-1 on host/port 0.0.0.0:8080]]
+
+[2017-06-27T13:21:10.321+0000] [glassfish 4.0] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=32 _ThreadName=admin-listener(1)] [timeMillis: 1498569670321] [levelValue: 800] [[
+  Created HTTP listener http-listener-2 on host/port 0.0.0.0:8181]]
+
+[2017-06-27T13:21:10.434+0000] [glassfish 4.0] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=32 _ThreadName=admin-listener(1)] [timeMillis: 1498569670434] [levelValue: 800] [[
+  Created HTTP listener admin-listener on host/port 0.0.0.0:5000]]
+
+[2017-06-27T13:21:11.068+0000] [glassfish 4.0] [INFO] [AS-WEB-GLUE-00200] [javax.enterprise.web] [tid: _ThreadID=32 _ThreadName=admin-listener(1)] [timeMillis: 1498569671068] [levelValue: 800] [[
+  Created virtual server server]]
+
+[2017-06-27T13:21:11.175+0000] [glassfish 4.0] [INFO] [AS-WEB-GLUE-00200] [javax.enterprise.web] [tid: _ThreadID=32 _ThreadName=admin-listener(1)] [timeMillis: 1498569671175] [levelValue: 800] [[
+  Created virtual server __asadmin]]
+
+[2017-06-27T13:21:15.895+0000] [glassfish 4.0] [INFO] [AS-WEB-CORE-00306] [javax.enterprise.web.core] [tid: _ThreadID=32 _ThreadName=admin-listener(1)] [timeMillis: 1498569675895] [levelValue: 800] [[
+  Setting JAAS app name glassfish-web]]
+
+[2017-06-27T13:21:15.909+0000] [glassfish 4.0] [INFO] [AS-WEB-GLUE-00201] [javax.enterprise.web] [tid: _ThreadID=32 _ThreadName=admin-listener(1)] [timeMillis: 1498569675909] [levelValue: 800] [[
+  Virtual server server loaded default web module ]]
+
+[2017-06-27T13:21:29.175+0000] [glassfish 4.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=32 _ThreadName=admin-listener(1)] [timeMillis: 1498569689175] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2017-06-27T13:21:29.486+0000] [glassfish 4.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=32 _ThreadName=admin-listener(1)] [timeMillis: 1498569689486] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2017-06-27T13:21:40.988+0000] [glassfish 4.0] [INFO] [] [org.glassfish.tyrus.servlet.TyrusServletContainerInitializer] [tid: _ThreadID=32 _ThreadName=admin-listener(1)] [timeMillis: 1498569700988] [levelValue: 800] [[
+  Registering WebSocket filter for url pattern /*]]
+
+[2017-06-27T13:21:49.459+0000] [glassfish 4.0] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=32 _ThreadName=admin-listener(1)] [timeMillis: 1498569709459] [levelValue: 800] [[
+  Loading application [hephaistos_project] at [/hephaistos_project]]]
+
+[2017-06-27T13:21:52.172+0000] [glassfish 4.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=32 _ThreadName=admin-listener(1)] [timeMillis: 1498569712172] [levelValue: 800] [[
+  hephaistos_project was successfully deployed in 61,729 milliseconds.]]
+
+[2017-06-27T13:24:54.319+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498569894319] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:25:04.133+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=18 _ThreadName=Thread-3] [timeMillis: 1498569904133] [levelValue: 800] [[
+  [AUTHENTIFICATION] 1]]
+
+[2017-06-27T13:25:10.395+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498569910395] [levelValue: 800] [[
+  [MESSAGE] okok]]
+
+[2017-06-27T13:25:16.716+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498569916716] [levelValue: 800] [[
+  [MESSAGE] blabla]]
+
+[2017-06-27T13:25:20.826+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498569920826] [levelValue: 800] [[
+  [MESSAGE] df]]
+
+[2017-06-27T13:25:23.388+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498569923388] [levelValue: 800] [[
+  [MESSAGE] e]]
+
+[2017-06-27T13:25:26.060+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=18 _ThreadName=Thread-3] [timeMillis: 1498569926060] [levelValue: 800] [[
+  [MESSAGE] f]]
+
+[2017-06-27T13:25:45.113+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498569945113] [levelValue: 800] [[
+  [DECONNEXION] 1]]
+
+[2017-06-27T13:25:47.668+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498569947668] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:26:13.932+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498569973932] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:26:20.960+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498569980960] [levelValue: 800] [[
+  [AUTHENTIFICATION] 2]]
+
+[2017-06-27T13:26:23.569+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498569983569] [levelValue: 800] [[
+  [MESSAGE] 4]]
+
+[2017-06-27T13:26:33.257+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498569993257] [levelValue: 800] [[
+  [MESSAGE] 3]]
+
+[2017-06-27T13:26:40.449+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=18 _ThreadName=Thread-3] [timeMillis: 1498570000449] [levelValue: 800] [[
+  [MESSAGE] 8]]
+
+[2017-06-27T13:26:48.295+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498570008295] [levelValue: 800] [[
+  [MESSAGE] 2]]
+
+[2017-06-27T13:26:56.766+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498570016766] [levelValue: 800] [[
+  [DECONNEXION] 2]]
+
+[2017-06-27T13:26:59.567+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498570019567] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:27:02.766+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=18 _ThreadName=Thread-3] [timeMillis: 1498570022766] [levelValue: 800] [[
+  [AUTHENTIFICATION] 5]]
+
+[2017-06-27T13:27:06.520+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498570026520] [levelValue: 800] [[
+  [MESSAGE] 4]]
+
+[2017-06-27T13:27:27.124+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498570047124] [levelValue: 800] [[
+  [DECONNEXION] 5]]
+
+[2017-06-27T13:27:28.505+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498570048505] [levelValue: 800] [[
+  [DECONNEXION] null]]
+
+[2017-06-27T13:43:50.300+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498571030300] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:43:51.512+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=18 _ThreadName=Thread-3] [timeMillis: 1498571031512] [levelValue: 800] [[
+  [AUTHENTIFICATION] 1]]
+
+[2017-06-27T13:43:51.819+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498571031819] [levelValue: 800] [[
+  [MESSAGE] 4]]
+
+[2017-06-27T13:43:51.922+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498571031922] [levelValue: 800] [[
+  [DECONNEXION] 1]]
+
+[2017-06-27T13:44:05.774+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498571045774] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:44:08.745+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498571048745] [levelValue: 800] [[
+  [AUTHENTIFICATION] 1]]
+
+[2017-06-27T13:44:08.833+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498571048833] [levelValue: 800] [[
+  [MESSAGE] 4]]
+
+[2017-06-27T13:44:08.861+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498571048861] [levelValue: 800] [[
+  [DECONNEXION] 1]]
+
+[2017-06-27T13:45:49.799+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=18 _ThreadName=Thread-3] [timeMillis: 1498571149799] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:45:51.119+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498571151119] [levelValue: 800] [[
+  [AUTHENTIFICATION] 3]]
+
+[2017-06-27T13:45:51.521+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498571151521] [levelValue: 800] [[
+  [MESSAGE] 1]]
+
+[2017-06-27T13:45:51.612+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498571151612] [levelValue: 800] [[
+  [DECONNEXION] 3]]
+
+[2017-06-27T13:46:03.319+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498571163319] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:46:04.528+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498571164528] [levelValue: 800] [[
+  [AUTHENTIFICATION] 3]]
+
+[2017-06-27T13:46:04.799+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=18 _ThreadName=Thread-3] [timeMillis: 1498571164799] [levelValue: 800] [[
+  [MESSAGE] 0]]
+
+[2017-06-27T13:46:04.895+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=18 _ThreadName=Thread-3] [timeMillis: 1498571164895] [levelValue: 800] [[
+  [DECONNEXION] 3]]
+
+[2017-06-27T13:46:56.037+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498571216037] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:47:26.285+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=18 _ThreadName=Thread-3] [timeMillis: 1498571246285] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:47:27.785+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498571247785] [levelValue: 800] [[
+  [AUTHENTIFICATION] 3]]
+
+[2017-06-27T13:47:28.040+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498571248040] [levelValue: 800] [[
+  [MESSAGE] 1]]
+
+[2017-06-27T13:47:28.204+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498571248204] [levelValue: 800] [[
+  [DECONNEXION] 3]]
+
+[2017-06-27T13:47:55.621+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498571275621] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:47:58.035+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498571278035] [levelValue: 800] [[
+  [AUTHENTIFICATION] 3]]
+
+[2017-06-27T13:47:58.267+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=18 _ThreadName=Thread-3] [timeMillis: 1498571278267] [levelValue: 800] [[
+  [MESSAGE] 0]]
+
+[2017-06-27T13:47:58.395+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=18 _ThreadName=Thread-3] [timeMillis: 1498571278395] [levelValue: 800] [[
+  [DECONNEXION] 3]]
+
+[2017-06-27T13:48:35.615+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498571315615] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:48:38.014+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498571318014] [levelValue: 800] [[
+  [AUTHENTIFICATION] 3]]
+
+[2017-06-27T13:48:38.261+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498571318261] [levelValue: 800] [[
+  [MESSAGE] 1]]
+
+[2017-06-27T13:48:38.476+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498571318476] [levelValue: 800] [[
+  [DECONNEXION] 3]]
+
+[2017-06-27T13:49:04.366+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498571344366] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:49:05.801+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=18 _ThreadName=Thread-3] [timeMillis: 1498571345801] [levelValue: 800] [[
+  [AUTHENTIFICATION] 3]]
+
+[2017-06-27T13:49:06.065+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498571346065] [levelValue: 800] [[
+  [MESSAGE] 0]]
+
+[2017-06-27T13:49:06.216+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498571346216] [levelValue: 800] [[
+  [DECONNEXION] 3]]
+
+[2017-06-27T13:49:21.634+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498571361634] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:49:23.729+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498571363729] [levelValue: 800] [[
+  [AUTHENTIFICATION] 3]]
+
+[2017-06-27T13:49:24.033+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498571364033] [levelValue: 800] [[
+  [MESSAGE] 1]]
+
+[2017-06-27T13:49:24.182+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498571364182] [levelValue: 800] [[
+  [DECONNEXION] 3]]
+
+[2017-06-27T13:49:50.129+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=18 _ThreadName=Thread-3] [timeMillis: 1498571390129] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:49:51.473+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498571391473] [levelValue: 800] [[
+  [AUTHENTIFICATION] 3]]
+
+[2017-06-27T13:49:51.750+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498571391750] [levelValue: 800] [[
+  [MESSAGE] 0]]
+
+[2017-06-27T13:49:51.895+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498571391895] [levelValue: 800] [[
+  [DECONNEXION] 3]]
+
+[2017-06-27T13:50:42.523+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498571442523] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:50:43.948+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498571443948] [levelValue: 800] [[
+  [AUTHENTIFICATION] 3]]
+
+[2017-06-27T13:50:44.189+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=18 _ThreadName=Thread-3] [timeMillis: 1498571444189] [levelValue: 800] [[
+  [MESSAGE] 1]]
+
+[2017-06-27T13:50:44.368+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=18 _ThreadName=Thread-3] [timeMillis: 1498571444368] [levelValue: 800] [[
+  [DECONNEXION] 3]]
+
+[2017-06-27T13:50:57.397+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498571457397] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:50:58.915+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498571458915] [levelValue: 800] [[
+  [AUTHENTIFICATION] 3]]
+
+[2017-06-27T13:50:59.222+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498571459222] [levelValue: 800] [[
+  [MESSAGE] 0]]
+
+[2017-06-27T13:50:59.413+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498571459413] [levelValue: 800] [[
+  [DECONNEXION] 3]]
+
+[2017-06-27T13:51:12.325+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498571472325] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:51:15.137+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=18 _ThreadName=Thread-3] [timeMillis: 1498571475137] [levelValue: 800] [[
+  [AUTHENTIFICATION] 3]]
+
+[2017-06-27T13:51:15.622+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498571475622] [levelValue: 800] [[
+  [MESSAGE] 1]]
+
+[2017-06-27T13:51:15.903+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498571475903] [levelValue: 800] [[
+  [DECONNEXION] 3]]
+
+[2017-06-27T13:51:24.453+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498571484453] [levelValue: 800] [[
+  [DECONNEXION] null]]
+
+[2017-06-27T13:51:28.914+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498571488914] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:51:37.999+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=18 _ThreadName=Thread-3] [timeMillis: 1498571497999] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:51:39.714+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498571499714] [levelValue: 800] [[
+  [AUTHENTIFICATION] 3]]
+
+[2017-06-27T13:51:40.134+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498571500134] [levelValue: 800] [[
+  [MESSAGE] 0]]
+
+[2017-06-27T13:51:40.320+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498571500320] [levelValue: 800] [[
+  [DECONNEXION] 3]]
+
+[2017-06-27T13:52:01.275+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498571521275] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:52:02.545+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498571522545] [levelValue: 800] [[
+  [AUTHENTIFICATION] 3]]
+
+[2017-06-27T13:52:02.831+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=18 _ThreadName=Thread-3] [timeMillis: 1498571522831] [levelValue: 800] [[
+  [MESSAGE] 1]]
+
+[2017-06-27T13:52:03.015+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=18 _ThreadName=Thread-3] [timeMillis: 1498571523015] [levelValue: 800] [[
+  [DECONNEXION] 3]]
+
+[2017-06-27T13:52:15.016+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498571535016] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:52:16.300+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498571536300] [levelValue: 800] [[
+  [AUTHENTIFICATION] 3]]
+
+[2017-06-27T13:52:16.667+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498571536667] [levelValue: 800] [[
+  [MESSAGE] 0]]
+
+[2017-06-27T13:52:16.948+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498571536948] [levelValue: 800] [[
+  [DECONNEXION] 3]]
+
+[2017-06-27T13:52:34.483+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498571554483] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:52:35.890+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=18 _ThreadName=Thread-3] [timeMillis: 1498571555890] [levelValue: 800] [[
+  [AUTHENTIFICATION] 3]]
+
+[2017-06-27T13:52:36.202+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498571556202] [levelValue: 800] [[
+  [MESSAGE] 1]]
+
+[2017-06-27T13:52:36.352+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498571556352] [levelValue: 800] [[
+  [DECONNEXION] 3]]
+
+[2017-06-27T13:52:49.533+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498571569533] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:52:50.778+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498571570778] [levelValue: 800] [[
+  [AUTHENTIFICATION] 3]]
+
+[2017-06-27T13:52:51.075+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498571571075] [levelValue: 800] [[
+  [MESSAGE] 0]]
+
+[2017-06-27T13:52:51.340+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498571571340] [levelValue: 800] [[
+  [DECONNEXION] 3]]
+
+[2017-06-27T13:52:56.820+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498571576820] [levelValue: 800] [[
+  [DECONNEXION] null]]
+
+[2017-06-27T13:53:02.303+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498571582303] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:53:14.893+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498571594893] [levelValue: 800] [[
+  [DECONNEXION] null]]
+
+[2017-06-27T13:53:20.403+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498571600403] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:53:48.481+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498571628481] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:53:49.873+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498571629873] [levelValue: 800] [[
+  [AUTHENTIFICATION] 3]]
+
+[2017-06-27T13:53:50.253+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498571630253] [levelValue: 800] [[
+  [MESSAGE] 1]]
+
+[2017-06-27T13:53:50.397+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498571630397] [levelValue: 800] [[
+  [DECONNEXION] 3]]
+
+[2017-06-27T13:54:04.855+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=18 _ThreadName=Thread-3] [timeMillis: 1498571644855] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:54:06.165+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498571646165] [levelValue: 800] [[
+  [AUTHENTIFICATION] 3]]
+
+[2017-06-27T13:54:06.487+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498571646487] [levelValue: 800] [[
+  [MESSAGE] 0]]
+
+[2017-06-27T13:54:06.637+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498571646637] [levelValue: 800] [[
+  [DECONNEXION] 3]]
+
+[2017-06-27T13:54:30.854+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498571670854] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:54:33.001+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498571673001] [levelValue: 800] [[
+  [AUTHENTIFICATION] 3]]
+
+[2017-06-27T13:54:33.673+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=18 _ThreadName=Thread-3] [timeMillis: 1498571673673] [levelValue: 800] [[
+  [MESSAGE] 1]]
+
+[2017-06-27T13:54:33.927+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=18 _ThreadName=Thread-3] [timeMillis: 1498571673927] [levelValue: 800] [[
+  [DECONNEXION] 3]]
+
+[2017-06-27T13:54:53.710+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498571693710] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:54:55.070+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498571695070] [levelValue: 800] [[
+  [AUTHENTIFICATION] 3]]
+
+[2017-06-27T13:54:55.476+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498571695476] [levelValue: 800] [[
+  [MESSAGE] 1]]
+
+[2017-06-27T13:54:55.557+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498571695557] [levelValue: 800] [[
+  [DECONNEXION] 3]]
+
+[2017-06-27T13:55:08.595+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498571708595] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:55:10.063+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=18 _ThreadName=Thread-3] [timeMillis: 1498571710063] [levelValue: 800] [[
+  [AUTHENTIFICATION] 3]]
+
+[2017-06-27T13:55:10.358+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498571710358] [levelValue: 800] [[
+  [MESSAGE] 0]]
+
+[2017-06-27T13:55:10.511+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498571710511] [levelValue: 800] [[
+  [DECONNEXION] 3]]
+
+[2017-06-27T13:55:35.663+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498571735663] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:55:36.920+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498571736920] [levelValue: 800] [[
+  [AUTHENTIFICATION] 3]]
+
+[2017-06-27T13:55:37.347+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498571737347] [levelValue: 800] [[
+  [MESSAGE] 1]]
+
+[2017-06-27T13:55:37.503+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498571737503] [levelValue: 800] [[
+  [DECONNEXION] 3]]
+
+[2017-06-27T13:55:50.549+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=18 _ThreadName=Thread-3] [timeMillis: 1498571750549] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:55:51.820+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498571751820] [levelValue: 800] [[
+  [AUTHENTIFICATION] 3]]
+
+[2017-06-27T13:55:52.129+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498571752129] [levelValue: 800] [[
+  [MESSAGE] 0]]
+
+[2017-06-27T13:55:52.305+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498571752305] [levelValue: 800] [[
+  [DECONNEXION] 3]]
+
+[2017-06-27T13:57:03.867+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498571823867] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:57:05.194+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498571825194] [levelValue: 800] [[
+  [AUTHENTIFICATION] 3]]
+
+[2017-06-27T13:57:05.572+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=18 _ThreadName=Thread-3] [timeMillis: 1498571825572] [levelValue: 800] [[
+  [MESSAGE] 1]]
+
+[2017-06-27T13:57:05.793+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=18 _ThreadName=Thread-3] [timeMillis: 1498571825793] [levelValue: 800] [[
+  [DECONNEXION] 3]]
+
+[2017-06-27T13:57:18.284+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498571838284] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:57:19.558+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498571839558] [levelValue: 800] [[
+  [AUTHENTIFICATION] 3]]
+
+[2017-06-27T13:57:19.833+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498571839833] [levelValue: 800] [[
+  [MESSAGE] 0]]
+
+[2017-06-27T13:57:19.971+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498571839971] [levelValue: 800] [[
+  [DECONNEXION] 3]]
+
+[2017-06-27T13:57:48.953+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498571868953] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:57:50.415+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=18 _ThreadName=Thread-3] [timeMillis: 1498571870415] [levelValue: 800] [[
+  [AUTHENTIFICATION] 3]]
+
+[2017-06-27T13:57:50.751+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498571870751] [levelValue: 800] [[
+  [MESSAGE] 1]]
+
+[2017-06-27T13:57:50.946+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498571870946] [levelValue: 800] [[
+  [DECONNEXION] 3]]
+
+[2017-06-27T13:58:03.833+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498571883833] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:58:05.074+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498571885074] [levelValue: 800] [[
+  [AUTHENTIFICATION] 3]]
+
+[2017-06-27T13:58:05.548+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498571885548] [levelValue: 800] [[
+  [MESSAGE] 0]]
+
+[2017-06-27T13:58:05.672+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498571885672] [levelValue: 800] [[
+  [DECONNEXION] 3]]
+
+[2017-06-27T13:58:25.110+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=18 _ThreadName=Thread-3] [timeMillis: 1498571905110] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:58:26.408+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498571906408] [levelValue: 800] [[
+  [AUTHENTIFICATION] 3]]
+
+[2017-06-27T13:58:26.651+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498571906651] [levelValue: 800] [[
+  [MESSAGE] 1]]
+
+[2017-06-27T13:58:26.795+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498571906795] [levelValue: 800] [[
+  [DECONNEXION] 3]]
+
+[2017-06-27T13:58:39.850+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498571919850] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:58:41.082+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498571921082] [levelValue: 800] [[
+  [AUTHENTIFICATION] 3]]
+
+[2017-06-27T13:58:41.473+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=18 _ThreadName=Thread-3] [timeMillis: 1498571921473] [levelValue: 800] [[
+  [MESSAGE] 0]]
+
+[2017-06-27T13:58:41.571+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=18 _ThreadName=Thread-3] [timeMillis: 1498571921571] [levelValue: 800] [[
+  [DECONNEXION] 3]]
+
+[2017-06-27T13:59:11.098+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498571951098] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:59:12.374+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498571952374] [levelValue: 800] [[
+  [AUTHENTIFICATION] 3]]
+
+[2017-06-27T13:59:12.700+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498571952700] [levelValue: 800] [[
+  [MESSAGE] 1]]
+
+[2017-06-27T13:59:12.822+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498571952822] [levelValue: 800] [[
+  [DECONNEXION] 3]]
+
+[2017-06-27T13:59:27.333+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498571967333] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:59:28.557+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=18 _ThreadName=Thread-3] [timeMillis: 1498571968557] [levelValue: 800] [[
+  [AUTHENTIFICATION] 3]]
+
+[2017-06-27T13:59:28.969+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498571968969] [levelValue: 800] [[
+  [MESSAGE] 0]]
+
+[2017-06-27T13:59:29.166+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498571969166] [levelValue: 800] [[
+  [DECONNEXION] 3]]
+
+[2017-06-27T13:59:51.621+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498571991621] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T13:59:52.840+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498571992840] [levelValue: 800] [[
+  [AUTHENTIFICATION] 3]]
+
+[2017-06-27T13:59:53.367+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498571993367] [levelValue: 800] [[
+  [MESSAGE] 1]]
+
+[2017-06-27T13:59:53.536+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498571993536] [levelValue: 800] [[
+  [DECONNEXION] 3]]
+
+[2017-06-27T14:00:09.717+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=18 _ThreadName=Thread-3] [timeMillis: 1498572009717] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T14:00:11.135+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498572011135] [levelValue: 800] [[
+  [AUTHENTIFICATION] 3]]
+
+[2017-06-27T14:00:11.556+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498572011556] [levelValue: 800] [[
+  [MESSAGE] 1]]
+
+[2017-06-27T14:00:11.673+0000] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498572011673] [levelValue: 800] [[
+  [DECONNEXION] 3]]
+
