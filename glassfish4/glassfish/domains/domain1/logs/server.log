@@ -23848,3 +23848,470 @@ java.lang.Exception: java.lang.Exception: Virtual server server already has a we
 [2017-06-26T11:54:13.679+0200] [glassfish 4.0] [WARNING] [NCLS-DEPLOYMENT-00036] [javax.enterprise.system.tools.deployment.autodeploy] [tid: _ThreadID=69 _ThreadName=AutoDeployer] [timeMillis: 1498470853679] [levelValue: 900] [[
   [AutoDeploy] Autodeploy failed : /run/netsop/u/sop-nas2a/vol/home_hephaistos/mcluchag/Desktop/hephaistos_application/glassfish4/glassfish/domains/domain1/autodeploy/Server.war.]]
 
+[2017-06-27T09:04:48.090+0200] [glassfish 4.0] [INFO] [NCLS-LOGGING-00009] [javax.enterprise.logging] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547088090] [levelValue: 800] [[
+  Running GlassFish Version: GlassFish Server Open Source Edition  4.0  (build 89)]]
+
+[2017-06-27T09:04:48.091+0200] [glassfish 4.0] [INFO] [NCLS-LOGGING-00010] [javax.enterprise.logging] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547088091] [levelValue: 800] [[
+  Server log file is using Formatter class: com.sun.enterprise.server.logging.ODLLogFormatter]]
+
+[2017-06-27T09:04:48.167+0200] [glassfish 4.0] [INFO] [realm.loaded.successfully] [javax.enterprise.system.core.security.com.sun.enterprise.security.auth.realm] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547088167] [levelValue: 800] [[
+  SEC1115: Realm [admin-realm] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2017-06-27T09:04:48.170+0200] [glassfish 4.0] [INFO] [realm.loaded.successfully] [javax.enterprise.system.core.security.com.sun.enterprise.security.auth.realm] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547088170] [levelValue: 800] [[
+  SEC1115: Realm [file] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2017-06-27T09:04:48.173+0200] [glassfish 4.0] [INFO] [realm.loaded.successfully] [javax.enterprise.system.core.security.com.sun.enterprise.security.auth.realm] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547088173] [levelValue: 800] [[
+  SEC1115: Realm [certificate] of classtype [com.sun.enterprise.security.auth.realm.certificate.CertificateRealm] successfully created.]]
+
+[2017-06-27T09:04:48.463+0200] [glassfish 4.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547088463] [levelValue: 800] [[
+  Grizzly Framework 2.3.1 started in: 7ms - bound to [/0.0.0.0:4,848]]]
+
+[2017-06-27T09:04:48.594+0200] [glassfish 4.0] [INFO] [] [javax.enterprise.system.core.security.org.glassfish.security.services.impl.authorization] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547088594] [levelValue: 800] [[
+  Authorization Service has successfully initialized.]]
+
+[2017-06-27T09:04:48.752+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547088752] [levelValue: 800] [[
+  this.makeModuleFor(org.glassfish.main.web.glue, null) returned OSGiModuleImpl:: Bundle = [org.glassfish.main.web.glue [236]], State = [READY]]]
+
+[2017-06-27T09:04:48.753+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547088753] [levelValue: 800] [[
+  this.makeModuleFor(org.glassfish.web.javax.servlet.jsp, null) returned OSGiModuleImpl:: Bundle = [org.glassfish.web.javax.servlet.jsp [258]], State = [READY]]]
+
+[2017-06-27T09:04:48.836+0200] [glassfish 4.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547088836] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2017-06-27T09:04:49.122+0200] [glassfish 4.0] [SEVERE] [java_security.expired_certificate] [javax.enterprise.system.ssl.security.com.sun.enterprise.security.ssl.impl] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547089122] [levelValue: 1000] [[
+  SEC5054: Certificate has expired: [
+[
+  Version: V3
+  Subject: CN=GTE CyberTrust Root 5, OU="GTE CyberTrust Solutions, Inc.", O=GTE Corporation, C=US
+  Signature Algorithm: SHA1withRSA, OID = 1.2.840.113549.1.1.5
+
+  Key:  Sun RSA public key, 2048 bits
+  modulus: 23741889829347261660812437366387754385443431973861114865490414153884050331745811968523116847625570146592736935209718565296053386842135985534863157983128812774162998053673746470782252407673402238146869994438729551246768368782318393878374421033907597162218758024581735139682087126982809511479059100617027892880227587855877479432885604404402435662802390484099065871430585284534529627347717530352189612077130606642676951640071336717026459037542552927905851171460589361570392199748753414855675665635003335769915908187224347232807336022456537328962095005323382940080676931822787496212635993279098588863972868266229522169377
+  public exponent: 65537
+  Validity: [From: Fri Aug 14 16:50:00 CEST 1998,
+               To: Thu Aug 15 01:59:00 CEST 2013]
+  Issuer: CN=GTE CyberTrust Root 5, OU="GTE CyberTrust Solutions, Inc.", O=GTE Corporation, C=US
+  SerialNumber: [    01b6]
+
+Certificate Extensions: 4
+[1]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen:5
+]
+
+[2]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [1.2.840.113763.1.2.1.3]
+[]  ]
+]
+
+[3]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  Key_CertSign
+  Crl_Sign
+]
+
+[4]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 76 0A 49 21 38 4C 9F DE   F8 C4 49 C7 71 71 91 9D  v.I!8L....I.qq..
+]
+]
+
+]
+  Algorithm: [SHA1withRSA]
+  Signature:
+0000: 41 3A D4 18 5B DA B8 DE   21 1C E1 8E 09 E5 F1 68  A:..[...!......h
+0010: 34 FF DE 96 F4 07 F5 A7   3C F3 AC 4A B1 9B FA 92  4.......<..J....
+0020: FA 9B ED E6 32 21 AA 4A   76 C5 DC 4F 38 E5 DF D5  ....2!.Jv..O8...
+0030: 86 E4 D5 C8 76 7D 98 D7   B1 CD 8F 4D B5 91 23 6C  ....v......M..#l
+0040: 8B 8A EB EA 7C EF 14 94   C4 C6 F0 1F 4A 2D 32 71  ............J-2q
+0050: 63 2B 63 91 26 02 09 B6   80 1D ED E2 CC B8 7F DB  c+c.&...........
+0060: 87 63 C8 E1 D0 6C 26 B1   35 1D 40 66 10 1B CD 95  .c...l&.5.@f....
+0070: 54 18 33 61 EC 13 4F DA   13 F7 99 AF 3E D0 CF 8E  T.3a..O.....>...
+0080: A6 72 A2 B3 C3 05 9A C9   27 7D 92 CC 7E 52 8D B3  .r......'....R..
+0090: AB 70 6D 9E 89 9F 4D EB   1A 75 C2 98 AA D5 02 16  .pm...M..u......
+00A0: D7 0C 8A BF 25 E4 EB 2D   BC 98 E9 58 38 19 7C B9  ....%..-...X8...
+00B0: 37 FE DB E2 99 08 73 06   C7 97 83 6A 7D 10 01 2F  7.....s....j.../
+00C0: 32 B9 17 05 4A 65 E6 2F   CE BE 5E 53 A6 82 E9 9A  2...Je./..^S....
+00D0: 53 0A 84 74 2D 83 CA C8   94 16 76 5F 94 61 28 F0  S..t-.....v_.a(.
+00E0: 85 A7 39 BB D7 8B D9 A8   B2 13 1D 54 09 34 24 7D  ..9........T.4$.
+00F0: 20 81 7D 66 7E A2 90 74   5C 10 C6 BD EC AB 1B C2   ..f...t\.......
+
+]]]
+
+[2017-06-27T09:04:49.132+0200] [glassfish 4.0] [INFO] [security.secmgroff] [javax.enterprise.system.core.security.com.sun.enterprise.security] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547089132] [levelValue: 800] [[
+  SEC1002: Security Manager is OFF.]]
+
+[2017-06-27T09:04:49.133+0200] [glassfish 4.0] [INFO] [sec.service.startup.enter] [javax.enterprise.system.core.security.com.sun.enterprise.security] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547089133] [levelValue: 800] [[
+  SEC1010: Entering Security Startup Service]]
+
+[2017-06-27T09:04:49.135+0200] [glassfish 4.0] [INFO] [policy.loading] [javax.enterprise.system.core.security.com.sun.enterprise.security] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547089135] [levelValue: 800] [[
+  SEC1143: Loading policy provider com.sun.enterprise.security.provider.PolicyWrapper.]]
+
+[2017-06-27T09:04:49.154+0200] [glassfish 4.0] [INFO] [sec.service.startup.exit] [javax.enterprise.system.core.security.com.sun.enterprise.security] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547089154] [levelValue: 800] [[
+  SEC1011: Security Service(s) Started Successfully]]
+
+[2017-06-27T09:04:49.311+0200] [glassfish 4.0] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547089311] [levelValue: 800] [[
+  Created HTTP listener http-listener-1 on host/port 0.0.0.0:8080]]
+
+[2017-06-27T09:04:49.315+0200] [glassfish 4.0] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547089315] [levelValue: 800] [[
+  Created HTTP listener http-listener-2 on host/port 0.0.0.0:8181]]
+
+[2017-06-27T09:04:49.317+0200] [glassfish 4.0] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547089317] [levelValue: 800] [[
+  Created HTTP listener admin-listener on host/port 0.0.0.0:4848]]
+
+[2017-06-27T09:04:49.334+0200] [glassfish 4.0] [SEVERE] [AS-WEB-GLUE-00167] [javax.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547089334] [levelValue: 1000] [[
+  Error adding HttpProbes. NetworkListener http-listener-1s GrizzlyProxy is NULL]]
+
+[2017-06-27T09:04:49.335+0200] [glassfish 4.0] [SEVERE] [AS-WEB-GLUE-00167] [javax.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547089335] [levelValue: 1000] [[
+  Error adding HttpProbes. NetworkListener http-listener-2s GrizzlyProxy is NULL]]
+
+[2017-06-27T09:04:49.339+0200] [glassfish 4.0] [INFO] [AS-WEB-GLUE-00200] [javax.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547089339] [levelValue: 800] [[
+  Created virtual server server]]
+
+[2017-06-27T09:04:49.342+0200] [glassfish 4.0] [INFO] [AS-WEB-GLUE-00200] [javax.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547089342] [levelValue: 800] [[
+  Created virtual server __asadmin]]
+
+[2017-06-27T09:04:49.468+0200] [glassfish 4.0] [INFO] [AS-WEB-CORE-00306] [javax.enterprise.web.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547089468] [levelValue: 800] [[
+  Setting JAAS app name glassfish-web]]
+
+[2017-06-27T09:04:49.469+0200] [glassfish 4.0] [INFO] [AS-WEB-GLUE-00201] [javax.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547089469] [levelValue: 800] [[
+  Virtual server server loaded default web module ]]
+
+[2017-06-27T09:04:49.757+0200] [glassfish 4.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547089757] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2017-06-27T09:04:49.764+0200] [glassfish 4.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547089764] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2017-06-27T09:04:50.027+0200] [glassfish 4.0] [INFO] [] [org.glassfish.tyrus.servlet.TyrusServletContainerInitializer] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547090027] [levelValue: 800] [[
+  Registering WebSocket filter for url pattern /*]]
+
+[2017-06-27T09:04:50.106+0200] [glassfish 4.0] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547090106] [levelValue: 800] [[
+  Loading application [hephaistos_beta_app] at [/hephaistos_beta_app]]]
+
+[2017-06-27T09:04:50.107+0200] [glassfish 4.0] [INFO] [NCLS-CORE-00022] [javax.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547090107] [levelValue: 800] [[
+  Loading application hephaistos_beta_app done in 1,423 ms]]
+
+[2017-06-27T09:04:50.386+0200] [glassfish 4.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547090386] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2017-06-27T09:04:50.505+0200] [glassfish 4.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547090505] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2017-06-27T09:04:50.528+0200] [glassfish 4.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547090528] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2017-06-27T09:04:50.627+0200] [glassfish 4.0] [INFO] [] [org.glassfish.tyrus.servlet.TyrusServletContainerInitializer] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547090627] [levelValue: 800] [[
+  Registering WebSocket filter for url pattern /*]]
+
+[2017-06-27T09:04:50.642+0200] [glassfish 4.0] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547090642] [levelValue: 800] [[
+  Loading application [hephaistos_project] at [/hephaistos_project]]]
+
+[2017-06-27T09:04:50.643+0200] [glassfish 4.0] [INFO] [NCLS-CORE-00022] [javax.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547090643] [levelValue: 800] [[
+  Loading application hephaistos_project done in 535 ms]]
+
+[2017-06-27T09:04:50.661+0200] [glassfish 4.0] [INFO] [] [org.glassfish.ha.store.spi.BackingStoreFactoryRegistry] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547090661] [levelValue: 800] [[
+  Registered org.glassfish.ha.store.adapter.cache.ShoalBackingStoreProxy for persistence-type = replicated in BackingStoreFactoryRegistry]]
+
+[2017-06-27T09:04:50.669+0200] [glassfish 4.0] [INFO] [NCLS-CORE-00017] [javax.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547090669] [levelValue: 800] [[
+  GlassFish Server Open Source Edition  4.0  (89) startup time : Felix (6,851ms), startup services(2,664ms), total(9,515ms)]]
+
+[2017-06-27T09:04:50.671+0200] [glassfish 4.0] [SEVERE] [NCLS-CORE-00019] [javax.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547090671] [levelValue: 1000] [[
+  Shutting down server due to startup exception
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.glassfish.grizzly.nio.transport.TCPNIOBindingHandler.bindToChannelAndAddress(TCPNIOBindingHandler.java:131)
+	at org.glassfish.grizzly.nio.transport.TCPNIOBindingHandler.bind(TCPNIOBindingHandler.java:87)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.bind(TCPNIOTransport.java:450)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.bind(TCPNIOTransport.java:439)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.bind(TCPNIOTransport.java:95)
+	at org.glassfish.grizzly.config.GenericGrizzlyListener.start(GenericGrizzlyListener.java:168)
+	at com.sun.enterprise.v3.services.impl.GlassfishNetworkListener.start(GlassfishNetworkListener.java:94)
+	at com.sun.enterprise.v3.services.impl.GrizzlyProxy.start(GrizzlyProxy.java:230)
+	at com.sun.enterprise.v3.services.impl.GrizzlyService.createNetworkProxy(GrizzlyService.java:470)
+	at com.sun.enterprise.v3.services.impl.GrizzlyService.postConstruct(GrizzlyService.java:393)
+	at org.jvnet.hk2.internal.ClazzCreator.postConstructMe(ClazzCreator.java:281)
+	at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:328)
+	at org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:448)
+	at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.findOrCreate(AsyncRunLevelContext.java:163)
+	at org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2204)
+	at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:93)
+	at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$QueueRunner.oneJob(CurrentTaskFuture.java:673)
+	at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$QueueRunner.run(CurrentTaskFuture.java:660)
+	at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$UpOneJob.run(CurrentTaskFuture.java:490)
+	at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$UpAllTheWay.go(CurrentTaskFuture.java:362)
+	at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$UpAllTheWay.access$100(CurrentTaskFuture.java:279)
+	at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture.go(CurrentTaskFuture.java:113)
+	at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.proceedTo(AsyncRunLevelContext.java:296)
+	at org.glassfish.hk2.runlevel.internal.RunLevelControllerImpl.proceedTo(RunLevelControllerImpl.java:66)
+	at com.sun.enterprise.v3.server.AppServerStartup.proceedTo(AppServerStartup.java:532)
+	at com.sun.enterprise.v3.server.AppServerStartup.run(AppServerStartup.java:329)
+	at com.sun.enterprise.v3.server.AppServerStartup.doStart(AppServerStartup.java:226)
+	at com.sun.enterprise.v3.server.AppServerStartup.start(AppServerStartup.java:217)
+	at com.sun.enterprise.glassfish.bootstrap.GlassFishImpl.start(GlassFishImpl.java:79)
+	at com.sun.enterprise.glassfish.bootstrap.GlassFishDecorator.start(GlassFishDecorator.java:63)
+	at com.sun.enterprise.glassfish.bootstrap.osgi.EmbeddedOSGiGlassFishImpl.start(EmbeddedOSGiGlassFishImpl.java:75)
+	at com.sun.enterprise.glassfish.bootstrap.GlassFishDecorator.start(GlassFishDecorator.java:63)
+	at com.sun.enterprise.glassfish.bootstrap.osgi.OSGiGlassFishImpl.start(OSGiGlassFishImpl.java:71)
+	at com.sun.enterprise.glassfish.bootstrap.GlassFishMain$Launcher.launch(GlassFishMain.java:117)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.enterprise.glassfish.bootstrap.GlassFishMain.main(GlassFishMain.java:97)
+	at com.sun.enterprise.glassfish.bootstrap.ASMain.main(ASMain.java:54)
+]]
+
+[2017-06-27T09:04:50.704+0200] [glassfish 4.0] [INFO] [] [org.hibernate.validator.internal.util.Version] [tid: _ThreadID=57 _ThreadName=pool-6-thread-2] [timeMillis: 1498547090704] [levelValue: 800] [[
+  HV000001: Hibernate Validator 5.0.0.Final]]
+
+[2017-06-27T09:04:50.791+0200] [glassfish 4.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=58 _ThreadName=Thread-9] [timeMillis: 1498547090791] [levelValue: 800] [[
+  Server shutdown initiated]]
+
+[2017-06-27T09:04:50.794+0200] [glassfish 4.0] [INFO] [NCLS-BOOTSTRAP-00027] [javax.enterprise.bootstrap] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498547090794] [levelValue: 800] [[
+  Registered com.sun.enterprise.glassfish.bootstrap.osgi.EmbeddedOSGiGlassFishImpl@1a8e9ed9 as OSGi service registration: org.apache.felix.framework.ServiceRegistrationImpl@45d56062.]]
+
+[2017-06-27T09:04:50.831+0200] [glassfish 4.0] [INFO] [] [org.glassfish.jersey.server.ApplicationHandler] [tid: _ThreadID=56 _ThreadName=pool-6-thread-1] [timeMillis: 1498547090831] [levelValue: 800] [[
+  Initiating Jersey application, version Jersey: 2.0 2013-05-03 14:50:15...]]
+
+[2017-06-27T09:04:50.975+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=13 _ThreadName=Thread-3] [timeMillis: 1498547090975] [levelValue: 800] [[
+  /user/mcluchag/home/Desktop/hephaistos_application/glassfish4/glassfish/domains/domain1/autodeploy/bundles does not exist, please create it.]]
+
+[2017-06-27T09:04:51.797+0200] [glassfish 4.0] [INFO] [NCLS-BOOTSTRAP-00028] [javax.enterprise.bootstrap] [tid: _ThreadID=58 _ThreadName=Thread-9] [timeMillis: 1498547091797] [levelValue: 800] [[
+  Unregistered com.sun.enterprise.glassfish.bootstrap.osgi.EmbeddedOSGiGlassFishImpl@1a8e9ed9 from service registry.]]
+
+[2017-06-27T11:43:33.785+0200] [glassfish 4.0] [INFO] [NCLS-LOGGING-00009] [javax.enterprise.logging] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556613785] [levelValue: 800] [[
+  Running GlassFish Version: GlassFish Server Open Source Edition  4.0  (build 89)]]
+
+[2017-06-27T11:43:33.786+0200] [glassfish 4.0] [INFO] [NCLS-LOGGING-00010] [javax.enterprise.logging] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556613786] [levelValue: 800] [[
+  Server log file is using Formatter class: com.sun.enterprise.server.logging.ODLLogFormatter]]
+
+[2017-06-27T11:43:33.882+0200] [glassfish 4.0] [INFO] [realm.loaded.successfully] [javax.enterprise.system.core.security.com.sun.enterprise.security.auth.realm] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556613882] [levelValue: 800] [[
+  SEC1115: Realm [admin-realm] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2017-06-27T11:43:33.892+0200] [glassfish 4.0] [INFO] [realm.loaded.successfully] [javax.enterprise.system.core.security.com.sun.enterprise.security.auth.realm] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556613892] [levelValue: 800] [[
+  SEC1115: Realm [file] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2017-06-27T11:43:33.896+0200] [glassfish 4.0] [INFO] [realm.loaded.successfully] [javax.enterprise.system.core.security.com.sun.enterprise.security.auth.realm] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556613896] [levelValue: 800] [[
+  SEC1115: Realm [certificate] of classtype [com.sun.enterprise.security.auth.realm.certificate.CertificateRealm] successfully created.]]
+
+[2017-06-27T11:43:34.246+0200] [glassfish 4.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556614246] [levelValue: 800] [[
+  Grizzly Framework 2.3.1 started in: 13ms - bound to [/0.0.0.0:8,080]]]
+
+[2017-06-27T11:43:34.258+0200] [glassfish 4.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556614258] [levelValue: 800] [[
+  Grizzly Framework 2.3.1 started in: 0ms - bound to [/0.0.0.0:8,181]]]
+
+[2017-06-27T11:43:34.262+0200] [glassfish 4.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556614262] [levelValue: 800] [[
+  Grizzly Framework 2.3.1 started in: 0ms - bound to [/0.0.0.0:4,848]]]
+
+[2017-06-27T11:43:34.399+0200] [glassfish 4.0] [INFO] [] [javax.enterprise.system.core.security.org.glassfish.security.services.impl.authorization] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556614399] [levelValue: 800] [[
+  Authorization Service has successfully initialized.]]
+
+[2017-06-27T11:43:34.425+0200] [glassfish 4.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556614425] [levelValue: 800] [[
+  Grizzly Framework 2.3.1 started in: 1ms - bound to [/0.0.0.0:3,700]]]
+
+[2017-06-27T11:43:34.581+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556614581] [levelValue: 800] [[
+  this.makeModuleFor(org.glassfish.main.web.glue, null) returned OSGiModuleImpl:: Bundle = [org.glassfish.main.web.glue [236]], State = [READY]]]
+
+[2017-06-27T11:43:34.581+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556614581] [levelValue: 800] [[
+  this.makeModuleFor(org.glassfish.web.javax.servlet.jsp, null) returned OSGiModuleImpl:: Bundle = [org.glassfish.web.javax.servlet.jsp [258]], State = [READY]]]
+
+[2017-06-27T11:43:34.681+0200] [glassfish 4.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556614681] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2017-06-27T11:43:35.498+0200] [glassfish 4.0] [SEVERE] [java_security.expired_certificate] [javax.enterprise.system.ssl.security.com.sun.enterprise.security.ssl.impl] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556615498] [levelValue: 1000] [[
+  SEC5054: Certificate has expired: [
+[
+  Version: V3
+  Subject: CN=GTE CyberTrust Root 5, OU="GTE CyberTrust Solutions, Inc.", O=GTE Corporation, C=US
+  Signature Algorithm: SHA1withRSA, OID = 1.2.840.113549.1.1.5
+
+  Key:  Sun RSA public key, 2048 bits
+  modulus: 23741889829347261660812437366387754385443431973861114865490414153884050331745811968523116847625570146592736935209718565296053386842135985534863157983128812774162998053673746470782252407673402238146869994438729551246768368782318393878374421033907597162218758024581735139682087126982809511479059100617027892880227587855877479432885604404402435662802390484099065871430585284534529627347717530352189612077130606642676951640071336717026459037542552927905851171460589361570392199748753414855675665635003335769915908187224347232807336022456537328962095005323382940080676931822787496212635993279098588863972868266229522169377
+  public exponent: 65537
+  Validity: [From: Fri Aug 14 16:50:00 CEST 1998,
+               To: Thu Aug 15 01:59:00 CEST 2013]
+  Issuer: CN=GTE CyberTrust Root 5, OU="GTE CyberTrust Solutions, Inc.", O=GTE Corporation, C=US
+  SerialNumber: [    01b6]
+
+Certificate Extensions: 4
+[1]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen:5
+]
+
+[2]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [1.2.840.113763.1.2.1.3]
+[]  ]
+]
+
+[3]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  Key_CertSign
+  Crl_Sign
+]
+
+[4]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 76 0A 49 21 38 4C 9F DE   F8 C4 49 C7 71 71 91 9D  v.I!8L....I.qq..
+]
+]
+
+]
+  Algorithm: [SHA1withRSA]
+  Signature:
+0000: 41 3A D4 18 5B DA B8 DE   21 1C E1 8E 09 E5 F1 68  A:..[...!......h
+0010: 34 FF DE 96 F4 07 F5 A7   3C F3 AC 4A B1 9B FA 92  4.......<..J....
+0020: FA 9B ED E6 32 21 AA 4A   76 C5 DC 4F 38 E5 DF D5  ....2!.Jv..O8...
+0030: 86 E4 D5 C8 76 7D 98 D7   B1 CD 8F 4D B5 91 23 6C  ....v......M..#l
+0040: 8B 8A EB EA 7C EF 14 94   C4 C6 F0 1F 4A 2D 32 71  ............J-2q
+0050: 63 2B 63 91 26 02 09 B6   80 1D ED E2 CC B8 7F DB  c+c.&...........
+0060: 87 63 C8 E1 D0 6C 26 B1   35 1D 40 66 10 1B CD 95  .c...l&.5.@f....
+0070: 54 18 33 61 EC 13 4F DA   13 F7 99 AF 3E D0 CF 8E  T.3a..O.....>...
+0080: A6 72 A2 B3 C3 05 9A C9   27 7D 92 CC 7E 52 8D B3  .r......'....R..
+0090: AB 70 6D 9E 89 9F 4D EB   1A 75 C2 98 AA D5 02 16  .pm...M..u......
+00A0: D7 0C 8A BF 25 E4 EB 2D   BC 98 E9 58 38 19 7C B9  ....%..-...X8...
+00B0: 37 FE DB E2 99 08 73 06   C7 97 83 6A 7D 10 01 2F  7.....s....j.../
+00C0: 32 B9 17 05 4A 65 E6 2F   CE BE 5E 53 A6 82 E9 9A  2...Je./..^S....
+00D0: 53 0A 84 74 2D 83 CA C8   94 16 76 5F 94 61 28 F0  S..t-.....v_.a(.
+00E0: 85 A7 39 BB D7 8B D9 A8   B2 13 1D 54 09 34 24 7D  ..9........T.4$.
+00F0: 20 81 7D 66 7E A2 90 74   5C 10 C6 BD EC AB 1B C2   ..f...t\.......
+
+]]]
+
+[2017-06-27T11:43:35.511+0200] [glassfish 4.0] [INFO] [security.secmgroff] [javax.enterprise.system.core.security.com.sun.enterprise.security] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556615511] [levelValue: 800] [[
+  SEC1002: Security Manager is OFF.]]
+
+[2017-06-27T11:43:35.511+0200] [glassfish 4.0] [INFO] [sec.service.startup.enter] [javax.enterprise.system.core.security.com.sun.enterprise.security] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556615511] [levelValue: 800] [[
+  SEC1010: Entering Security Startup Service]]
+
+[2017-06-27T11:43:35.513+0200] [glassfish 4.0] [INFO] [policy.loading] [javax.enterprise.system.core.security.com.sun.enterprise.security] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556615513] [levelValue: 800] [[
+  SEC1143: Loading policy provider com.sun.enterprise.security.provider.PolicyWrapper.]]
+
+[2017-06-27T11:43:35.614+0200] [glassfish 4.0] [INFO] [sec.service.startup.exit] [javax.enterprise.system.core.security.com.sun.enterprise.security] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556615614] [levelValue: 800] [[
+  SEC1011: Security Service(s) Started Successfully]]
+
+[2017-06-27T11:43:35.979+0200] [glassfish 4.0] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556615979] [levelValue: 800] [[
+  Created HTTP listener http-listener-1 on host/port 0.0.0.0:8080]]
+
+[2017-06-27T11:43:35.992+0200] [glassfish 4.0] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556615992] [levelValue: 800] [[
+  Created HTTP listener http-listener-2 on host/port 0.0.0.0:8181]]
+
+[2017-06-27T11:43:35.994+0200] [glassfish 4.0] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556615994] [levelValue: 800] [[
+  Created HTTP listener admin-listener on host/port 0.0.0.0:4848]]
+
+[2017-06-27T11:43:36.031+0200] [glassfish 4.0] [INFO] [AS-WEB-GLUE-00200] [javax.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556616031] [levelValue: 800] [[
+  Created virtual server server]]
+
+[2017-06-27T11:43:36.033+0200] [glassfish 4.0] [INFO] [AS-WEB-GLUE-00200] [javax.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556616033] [levelValue: 800] [[
+  Created virtual server __asadmin]]
+
+[2017-06-27T11:43:36.289+0200] [glassfish 4.0] [INFO] [AS-WEB-CORE-00306] [javax.enterprise.web.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556616289] [levelValue: 800] [[
+  Setting JAAS app name glassfish-web]]
+
+[2017-06-27T11:43:36.289+0200] [glassfish 4.0] [INFO] [AS-WEB-GLUE-00201] [javax.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556616289] [levelValue: 800] [[
+  Virtual server server loaded default web module ]]
+
+[2017-06-27T11:43:36.824+0200] [glassfish 4.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556616824] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2017-06-27T11:43:36.833+0200] [glassfish 4.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556616833] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2017-06-27T11:43:37.404+0200] [glassfish 4.0] [INFO] [] [org.glassfish.tyrus.servlet.TyrusServletContainerInitializer] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556617404] [levelValue: 800] [[
+  Registering WebSocket filter for url pattern /*]]
+
+[2017-06-27T11:43:37.505+0200] [glassfish 4.0] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556617505] [levelValue: 800] [[
+  Loading application [hephaistos_beta_app] at [/hephaistos_beta_app]]]
+
+[2017-06-27T11:43:37.507+0200] [glassfish 4.0] [INFO] [NCLS-CORE-00022] [javax.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556617507] [levelValue: 800] [[
+  Loading application hephaistos_beta_app done in 3,018 ms]]
+
+[2017-06-27T11:43:37.569+0200] [glassfish 4.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556617569] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2017-06-27T11:43:37.678+0200] [glassfish 4.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556617678] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2017-06-27T11:43:37.690+0200] [glassfish 4.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556617690] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2017-06-27T11:43:37.902+0200] [glassfish 4.0] [INFO] [] [org.glassfish.tyrus.servlet.TyrusServletContainerInitializer] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556617902] [levelValue: 800] [[
+  Registering WebSocket filter for url pattern /*]]
+
+[2017-06-27T11:43:37.945+0200] [glassfish 4.0] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556617945] [levelValue: 800] [[
+  Loading application [hephaistos_project] at [/hephaistos_project]]]
+
+[2017-06-27T11:43:37.951+0200] [glassfish 4.0] [INFO] [NCLS-CORE-00022] [javax.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556617951] [levelValue: 800] [[
+  Loading application hephaistos_project done in 444 ms]]
+
+[2017-06-27T11:43:37.967+0200] [glassfish 4.0] [INFO] [] [org.glassfish.ha.store.spi.BackingStoreFactoryRegistry] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556617967] [levelValue: 800] [[
+  Registered org.glassfish.ha.store.adapter.cache.ShoalBackingStoreProxy for persistence-type = replicated in BackingStoreFactoryRegistry]]
+
+[2017-06-27T11:43:37.984+0200] [glassfish 4.0] [INFO] [NCLS-CORE-00017] [javax.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556617984] [levelValue: 800] [[
+  GlassFish Server Open Source Edition  4.0  (89) startup time : Felix (17,684ms), startup services(5,077ms), total(22,761ms)]]
+
+[2017-06-27T11:43:38.065+0200] [glassfish 4.0] [INFO] [] [org.hibernate.validator.internal.util.Version] [tid: _ThreadID=59 _ThreadName=pool-5-thread-2] [timeMillis: 1498556618065] [levelValue: 800] [[
+  HV000001: Hibernate Validator 5.0.0.Final]]
+
+[2017-06-27T11:43:38.075+0200] [glassfish 4.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556618075] [levelValue: 800] [[
+  Grizzly Framework 2.3.1 started in: 3ms - bound to [/0.0.0.0:7,676]]]
+
+[2017-06-27T11:43:38.781+0200] [glassfish 4.0] [INFO] [] [org.glassfish.jersey.server.ApplicationHandler] [tid: _ThreadID=58 _ThreadName=pool-5-thread-1] [timeMillis: 1498556618781] [levelValue: 800] [[
+  Initiating Jersey application, version Jersey: 2.0 2013-05-03 14:50:15...]]
+
+[2017-06-27T11:43:39.056+0200] [glassfish 4.0] [INFO] [NCLS-BOOTSTRAP-00027] [javax.enterprise.bootstrap] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1498556619056] [levelValue: 800] [[
+  Registered com.sun.enterprise.glassfish.bootstrap.osgi.EmbeddedOSGiGlassFishImpl@50598a1a as OSGi service registration: org.apache.felix.framework.ServiceRegistrationImpl@38ac8968.]]
+
+[2017-06-27T11:43:39.255+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=13 _ThreadName=Thread-3] [timeMillis: 1498556619255] [levelValue: 800] [[
+  /user/mcluchag/home/Desktop/hephaistos_application/glassfish4/glassfish/domains/domain1/autodeploy/bundles does not exist, please create it.]]
+
+[2017-06-27T11:43:39.338+0200] [glassfish 4.0] [INFO] [NCLS-JMX-00005] [javax.enterprise.system.jmx] [tid: _ThreadID=70 _ThreadName=Thread-12] [timeMillis: 1498556619338] [levelValue: 800] [[
+  JMXStartupService has started JMXConnector on JMXService URL service:jmx:rmi://taillat.inria.fr:8686/jndi/rmi://taillat.inria.fr:8686/jmxrmi]]
+
+[2017-06-27T11:43:39.794+0200] [glassfish 4.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=36 _ThreadName=admin-listener(4)] [timeMillis: 1498556619794] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2017-06-27T11:43:39.824+0200] [glassfish 4.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=36 _ThreadName=admin-listener(4)] [timeMillis: 1498556619824] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2017-06-27T11:43:39.831+0200] [glassfish 4.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=36 _ThreadName=admin-listener(4)] [timeMillis: 1498556619831] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2017-06-27T11:43:39.984+0200] [glassfish 4.0] [INFO] [] [org.glassfish.tyrus.servlet.TyrusServletContainerInitializer] [tid: _ThreadID=36 _ThreadName=admin-listener(4)] [timeMillis: 1498556619984] [levelValue: 800] [[
+  Registering WebSocket filter for url pattern /*]]
+
+[2017-06-27T11:43:40.018+0200] [glassfish 4.0] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=36 _ThreadName=admin-listener(4)] [timeMillis: 1498556620018] [levelValue: 800] [[
+  Loading application [hephaistos_project] at [/hephaistos_project]]]
+
+[2017-06-27T11:43:40.068+0200] [glassfish 4.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=36 _ThreadName=admin-listener(4)] [timeMillis: 1498556620068] [levelValue: 800] [[
+  hephaistos_project was successfully deployed in 1,102 milliseconds.]]
+
+[2017-06-27T12:19:41.593+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498558781593] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T12:19:41.635+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1498558781635] [levelValue: 800] [[
+  [AUTHENTIFICATION] 4]]
+
+[2017-06-27T12:19:41.641+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498558781641] [levelValue: 800] [[
+  [MESSAGE] 5]]
+
+[2017-06-27T12:19:41.643+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498558781643] [levelValue: 800] [[
+  [DECONNEXION] 4]]
+
+[2017-06-27T12:22:18.431+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498558938431] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T12:37:07.803+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498559827803] [levelValue: 800] [[
+  [DECONNEXION] null]]
+

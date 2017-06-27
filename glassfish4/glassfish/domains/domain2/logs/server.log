@@ -964,3 +964,57 @@ KeyIdentifier [
 [2017-06-26T16:09:25.180+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498486165180] [levelValue: 800] [[
   [DECONNEXION] 5]]
 
+[2017-06-27T09:01:50.735+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498546910735] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T09:01:50.823+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498546910823] [levelValue: 800] [[
+  [AUTHENTIFICATION] 3]]
+
+[2017-06-27T09:01:50.825+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1498546910825] [levelValue: 800] [[
+  [MESSAGE] 2]]
+
+[2017-06-27T09:01:50.825+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1498546910825] [levelValue: 800] [[
+  [DECONNEXION] 3]]
+
+[2017-06-27T09:02:00.956+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498546920956] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T09:02:02.726+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498546922726] [levelValue: 800] [[
+  [DECONNEXION] null]]
+
+[2017-06-27T09:02:13.115+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1498546933115] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T09:02:47.835+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498546967835] [levelValue: 800] [[
+  [DECONNEXION] null]]
+
+[2017-06-27T09:02:47.890+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498546967890] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T09:02:51.702+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498546971702] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T09:02:51.730+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498546971730] [levelValue: 800] [[
+  [AUTHENTIFICATION] 3]]
+
+[2017-06-27T09:02:51.732+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498546971732] [levelValue: 800] [[
+  [MESSAGE] 2]]
+
+[2017-06-27T09:02:51.732+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498546971732] [levelValue: 800] [[
+  [DECONNEXION] 3]]
+
+[2017-06-27T09:03:07.107+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1498546987107] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-27T09:03:07.128+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498546987128] [levelValue: 800] [[
+  [AUTHENTIFICATION] 4]]
+
+[2017-06-27T09:03:07.129+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498546987129] [levelValue: 800] [[
+  [MESSAGE] 5]]
+
+[2017-06-27T09:03:07.130+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498546987130] [levelValue: 800] [[
+  [DECONNEXION] 4]]
+
+[2017-06-27T09:05:56.074+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498547156074] [levelValue: 800] [[
+  [DECONNEXION] null]]
+
