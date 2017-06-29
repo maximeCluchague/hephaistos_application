@@ -2017,3 +2017,36 @@
 [2017-06-29T17:48:59.042+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1498751339042] [levelValue: 800] [[
   Capteurs connecté : [2, 3, 4, capteur_IR, capteur_UV, capteur_GAMMA, test, capteur_test, c, IR, UV, GAMMA, distance, 32, maximeBG, t, , 3232A, ez, re, coucou toi, capteur1, capteur2, capteur3, capteur4, capteur5, capteur6, capteur_distance, capteur_giroscope, capteur_gps, capteur_wifi, okok, rer, te, de, r, 320_A23]]]
 
+[2017-06-29T18:37:58.932+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498754278932] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-29T18:38:09.557+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498754289557] [levelValue: 800] [[
+  [DECONNEXION] null]]
+
+[2017-06-29T18:38:09.601+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1498754289601] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-29T18:38:11.380+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498754291380] [levelValue: 800] [[
+  [DECONNEXION] null]]
+
+[2017-06-29T18:38:11.442+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498754291442] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-29T18:38:13.463+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498754293463] [levelValue: 800] [[
+  message : { id : capteur_IR, Val : 67, date : Thu Jun 29 18:38:13 CEST 2017 }]]
+
+[2017-06-29T18:38:13.463+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498754293463] [levelValue: 800] [[
+  Capteurs connecté : [2, 3, 4, capteur_IR, capteur_UV, capteur_GAMMA, test, capteur_test, c, IR, UV, GAMMA, distance, 32, maximeBG, t, , 3232A, ez, re, coucou toi, capteur1, capteur2, capteur3, capteur4, capteur5, capteur6, capteur_distance, capteur_giroscope, capteur_gps, capteur_wifi, okok, rer, te, de, r, 320_A23]]]
+
+[2017-06-29T18:38:42.574+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498754322574] [levelValue: 800] [[
+  message : { id : capteur_UV, Val : 45, date : Thu Jun 29 18:38:42 CEST 2017 }]]
+
+[2017-06-29T18:38:42.574+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498754322574] [levelValue: 800] [[
+  Capteurs connecté : [2, 3, 4, capteur_IR, capteur_UV, capteur_GAMMA, test, capteur_test, c, IR, UV, GAMMA, distance, 32, maximeBG, t, , 3232A, ez, re, coucou toi, capteur1, capteur2, capteur3, capteur4, capteur5, capteur6, capteur_distance, capteur_giroscope, capteur_gps, capteur_wifi, okok, rer, te, de, r, 320_A23]]]
+
+[2017-06-29T18:40:11.972+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1498754411972] [levelValue: 800] [[
+  message : { id : giroscope, Val : 98, date : Thu Jun 29 18:40:11 CEST 2017 }]]
+
+[2017-06-29T18:40:11.972+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1498754411972] [levelValue: 800] [[
+  Capteurs connecté : [2, 3, 4, capteur_IR, capteur_UV, capteur_GAMMA, test, capteur_test, c, IR, UV, GAMMA, distance, 32, maximeBG, t, , 3232A, ez, re, coucou toi, capteur1, capteur2, capteur3, capteur4, capteur5, capteur6, capteur_distance, capteur_giroscope, capteur_gps, capteur_wifi, okok, rer, te, de, r, 320_A23, giroscope]]]
+
