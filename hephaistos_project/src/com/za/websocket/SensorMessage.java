@@ -1,22 +1,33 @@
 package com.za.websocket;
 
 public class SensorMessage {
-	private String name;
-	private String message;
 	
-	public String getName() {
-		return name;
+	private String idCapteur;
+	private String acquisition;
+	private String date;
+	
+	public SensorMessage(String idCapteur, String acquisition, String date) {
+		this.idCapteur = idCapteur;
+		this.acquisition = acquisition;
+		this.date = date;
 	}
 	
-	public void setName(String name) {
-		this.name = name;
+	public String getIdCapteur() {
+		return idCapteur;
 	}
-	
-	public String getMessage() {
-		return message;
+	public void setIdCapteur(String idCapteur) {
+		this.idCapteur = idCapteur;
 	}
-	
-	public void setMessage(String message) {
-		this.message = message;
+	public String getAcquisition() {
+		return acquisition;
+	}
+	public void setAcquisition(String acquisition) {
+		this.acquisition = acquisition;
+	}
+	public String getDate() {
+		return date;
+	}
+	public void setDate(String date) {
+		this.date = date;
 	}
 }

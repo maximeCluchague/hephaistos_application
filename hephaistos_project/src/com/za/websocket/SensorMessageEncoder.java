@@ -21,10 +21,10 @@ public class SensorMessageEncoder implements Encoder.Text<SensorMessage>{
 
 	@Override
 	public String encode(SensorMessage message) throws EncodeException {
-		return Json.createObjectBuilder().add("name",message.getName())
-										 .add("message",message.getMessage())
+		return Json.createObjectBuilder().add("idCapteur",message.getIdCapteur())
+										 .add("acquisition",message.getAcquisition())
+										 .add("date", message.getDate())
 										 .build().toString();
-		
 	}
 
 }

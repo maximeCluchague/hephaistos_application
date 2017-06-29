@@ -1,11 +1,9 @@
 package com.za.websocket;
 
 import java.io.IOException;
-import java.io.StringReader;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-import javax.json.Json;
 import javax.websocket.ClientEndpoint;
 import javax.websocket.ContainerProvider;
 import javax.websocket.DeploymentException;
@@ -38,12 +36,12 @@ public class SensorClientEndpoint {
 	
 	@OnMessage
 	public void processMessage(String message){
-		System.out.println(Json.createReader(new StringReader(message)).readObject().getString("message"));
+		//System.out.println(message);
 	}
 	
 	public void sendMessage(String message) throws IOException {
 		session.getBasicRemote().sendText(message);
-		System.out.println("\tEnvoi du message "+message);
+		System.out.println("\t<MESSAGE> "+message);
 
 	}
 	

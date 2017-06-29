@@ -1,0 +1,23 @@
+package com.za.websocket;
+
+public class SensorMessage {
+	private String idCapteur;
+	private String acquisition;
+	private String date;
+	
+	public String getNomClient() {
+		return nomClient;
+	}
+	
+	public void setNomClient(String nomClient) {
+		this.nomClient = nomClient;
+	}
+	
+	public String getMessage() {
+		return message;
+	}
+	
+	public void setMessage(String message) {
+		this.message = message;
+	}
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<script type="text/javascript">
+		
+	window.onload = function () {
+
+		var webSocket = new WebSocket("ws://138.96.192.120:8080/hephaistos_project/hephaistoswebserver");
+		
+		var dps = []; // dataPoints
+
+		var chart = new CanvasJS.Chart("chartContainer",{
+			title :{
+				text: "Sensors data"
+			},			
+			data: [{
+				type: "line",
+				dataPoints: dps 
+			}]
+		});
+
+		var xVal = 0;
+		var yVal = 100;	
+		var updateInterval = 50;
+		var dataLength = 200; // number of dataPoints visible at any point
+
+		webSocket.onmessage = function processMessage(sensorMessage) {		
+			updateChart(sensorMessage);
+		}
+		
+		var updateChart = function (sensorMessage) {
+			count = count || 1;
+			// count is number of times loop runs to generate random dataPoints.
+			var json = JSON.parse(sensorMessage.data);
+			for (var j = 0; j < count; j++) {	
+				yVal = json.acquisition;
+				dps.push({
+					x: xVal,
+					y: yVal
+				});
+				xVal++;
+			};
+			if (dps.length > dataLength)
+			{
+				dps.shift();				
+			}
+			
+			chart.render();		
+
+		};
+
+		// generates first set of dataPoints
+		//updateChart(dataLength); 
+
+		// update chart after specified time. 
+		setInterval(function(){updateChart()}, updateInterval); 
+
+	}
+	</script>
+	<script type="text/javascript" src="canvasjs.min.js"></script>
+</head>
+<body>
+	<div id="chartContainer" style="height: 300px; width:100%;">
+	</div>
+</body>
+</html>

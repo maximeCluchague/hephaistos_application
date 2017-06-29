@@ -22,8 +22,10 @@ public class SensorMessageDecoder implements Decoder.Text<SensorMessage>{
 
 	@Override
 	public SensorMessage decode(String message) throws DecodeException {
-		SensorMessage sensorMessage = new SensorMessage();
-		sensorMessage.setMessage((Json.createReader(new StringReader(message)).readObject().getString("message")));
+		String idCapteur = (Json.createReader(new StringReader(message)).readObject().getString("idCapteur"));
+		String acquisition = (Json.createReader(new StringReader(message)).readObject().getString("acquisition"));
+		String date = (Json.createReader(new StringReader(message)).readObject().getString("date"));
+		SensorMessage sensorMessage = new SensorMessage(idCapteur,acquisition,date);
 		return sensorMessage;
 	}
 

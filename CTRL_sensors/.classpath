@@ -4,5 +4,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
 	<classpathentry kind="lib" path="javax.json.jar"/>
 	<classpathentry kind="lib" path="tyrus-standalone-client-1.13.1.jar"/>
+	<classpathentry kind="lib" path="/run/netsop/u/sop-nas2a/vol/home_hephaistos/mcluchag/Downloads/org.json.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -1,0 +1,25 @@
+package com.za.websocket;
+
+import java.io.IOException;
+import java.net.URISyntaxException;
+
+public class testClientJava {
+	public static void main(String[] args) throws URISyntaxException, IOException{
+		ClientJava clientJava = new ClientJava();
+		
+		clientJava.accrocherCapteur("capteur_IR");
+		clientJava.accrocherCapteur("capteur_UV");
+		clientJava.accrocherCapteur("capteur_distance");
+		clientJava.accrocherCapteur("capteur_giroscope");
+		clientJava.accrocherCapteur("capteur_gps");
+		clientJava.accrocherCapteur("capteur_wifi");
+		
+		clientJava.envoieMessage("capteur_IR", "12");
+		clientJava.envoieMessage("capteur_UV", "2");
+		clientJava.envoieMessage("capteur_distance", "17");
+		clientJava.envoieMessage("capteur_giroscope", "6");
+		clientJava.envoieMessage("capteur_gps", "20");
+		clientJava.envoieMessage("capteur_wifi", "9");
+		clientJava.fermerClient();
+	}
+}

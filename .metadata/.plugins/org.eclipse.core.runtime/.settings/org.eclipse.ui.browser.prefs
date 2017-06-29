@@ -1,2 +1,3 @@
+browsers=<?xml version\="1.0" encoding\="UTF-8"?>\n<web-browsers current\="0">\n<system/>\n<external location\="/usr/bin/firefox" name\="Firefox"/>\n</web-browsers>
 eclipse.preferences.version=1
-internalWebBrowserHistory=http\://localhost\:8080/hephaistos_project/dynamic_chart_2.html|*|http\://localhost\:8080/hephaistos_project/WEB-INF/classes/com/za/websocket/HephaistosWebServer.java|*|http\://localhost\:8080/hephaistos_project/Client.html|*|
+internalWebBrowserHistory=http\://localhost\:8080/hephaistos_project/Client.html|*|http\://localhost\:8080/hephaistos_project/WEB-INF/classes/com/za/websocket/HephaistosWebServer.java|*|http\://localhost\:8080/hephaistos_project/dynamic_chart_2.html|*|

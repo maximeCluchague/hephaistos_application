@@ -1,0 +1,14 @@
+package com.za.websocket;
+
+import java.net.URISyntaxException;
+
+public class testClientJava {
+	public static void main(String[] args) throws URISyntaxException{
+		ClientJava clientJava = new ClientJava();
+		clientJava.afficheCapteurs();
+		clientJava.accrocherCapteur("capteur1");
+		clientJava.afficheCapteurs();
+		clientJava.deccrocherCapteur("capteur1");
+		clientJava.afficheCapteurs();
+	}
+}

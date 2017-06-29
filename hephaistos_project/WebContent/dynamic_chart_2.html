@@ -10,13 +10,10 @@
 		
 		//initial value of dataPoints 
 		var dps = [
-		{label: "capteur1", y: 0},
-		{label: "capteur2", y: 0},
-		{label: "capteur3", y: 0},
-		{label: "capteur4", y: 0},
-		{label: "capteur5", y: 0},
-		{label: "capteur6", y: 0}
+			
 		];	
+		
+		var nbCapteurConnecte = 0;
 		
 		var chart = new CanvasJS.Chart("chartContainer",{			
 			title: {
@@ -38,24 +35,38 @@
 			}
 			]
 		});
-
 		
-		var updateInterval = 30;	
-
-		
-		webSocket.onmessage = function processMessage(sensorMessage) {
-			var json = JSON.parse(sensorMessage.data);
-			var capteur = parseInt(json.name);
-			var value = parseInt(json.message);
-
-			updateChart(capteur,value);
+		webSocket.onmessage = function processMessage(sensorMessage) {		
+			updateChart(sensorMessage);
 		}
 
-		var updateChart = function (indice,value) {
-			dps[indice-1] = {label: "capteur"+indice, y: value};
+		var updateChart = function (sensorMessage) {
+			var json = JSON.parse(sensorMessage.data);
+			var nomCapteur = json.idCapteur;
+			var indice = -1;
+			// On ajoute le capteur dans dps si celui ci n'existe pas 
+			var estDansList = false;
+			for(i=0;i<dps.length;i++){
+				if(nomCapteur==dps[i].label){
+					estDansList = true;
+					indice = i;
+				}
+			}
+			if(!estDansList){
+				dps.push({label: "null", y: 0});
+				indice = nbCapteurConnecte;
+				dps[nbCapteurConnecte].label = nomCapteur;
+				nbCapteurConnecte++;
+			}
+			
+			// On recupere le nom et l'aquisition du capteur donnes par le message
+			var capteur = parseInt(json.idCapteur);
+			var value = parseInt(json.acquisition);
+			
+			// On met a jour le diagramme
+			dps[indice] = {label: nomCapteur, y: value};
 			chart.render();
 		};
-		
 		/*
 		var updateChart = function () {
 
