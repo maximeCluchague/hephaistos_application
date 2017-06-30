@@ -5,9 +5,9 @@
 		<title>Hephaistos Application</title>
 	</head>
 	<body>
-		<textarea id="messages" readonly="readonly" rows="25" cols="73"></textarea></br>
-		 Identifiant capteur  <input id="idCapteur" type="text" size="42" /></br>
-		 Acquisition          <input id="acquisition" type="text" size="50" /></br>
+		<textarea id="messages" readonly="readonly" rows="25" cols="100"></textarea></br>
+		 Identifiant capteur  <input id="idCapteur" type="text" size="69" /></br>
+		 Acquisition          <input id="acquisition" type="text" size="77" /></br>
 		
 		<input type="button" value="Send" onclick="send()" />
 		<script type="text/javascript">
@@ -17,13 +17,13 @@
 			
 			webSocket.onmessage = function processMessage(sensorMessage) {
 				var json = JSON.parse(sensorMessage.data);
-				document.getElementById("messages").value += "[ "+json.idCapteur + " | "+json.date+ " ] => "+json.acquisition+ "\n\n";
+				document.getElementById("messages").value += "[ capteur : "+json.idCapteur + " | date : "+json.date+ " | commande : "+json.commande+" | acquisition : "+json.acquisition+ " ]\n\n";
 			}
 			function send(){
 				//var idCapteur = document.getElementById("idCapteur");
 				// On créer le Json qui va etre envoyé
 				var date=new Date();
-				var messageJson = {"idCapteur": idCapteur.value,"acquisition": acquisition.value,"date": date};
+				var messageJson = {"idCapteur": idCapteur.value,"acquisition": acquisition.value,"date": date,"commande":"NULL"};
 				webSocket.send(JSON.stringify(messageJson));
 				// On remet les textField de la page html vide
 				idCapteur.value = "";

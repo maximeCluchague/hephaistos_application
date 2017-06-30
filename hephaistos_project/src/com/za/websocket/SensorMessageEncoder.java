@@ -24,6 +24,7 @@ public class SensorMessageEncoder implements Encoder.Text<SensorMessage>{
 		return Json.createObjectBuilder().add("idCapteur",message.getIdCapteur())
 										 .add("acquisition",message.getAcquisition())
 										 .add("date", message.getDate())
+										 .add("commande", message.getCommande())
 										 .build().toString();
 	}
 

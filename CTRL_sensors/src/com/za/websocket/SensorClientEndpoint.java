@@ -39,9 +39,16 @@ public class SensorClientEndpoint {
 		//System.out.println(message);
 	}
 	
-	public void sendMessage(String message) throws IOException {
-		session.getBasicRemote().sendText(message);
-		System.out.println("\t<MESSAGE> "+message);
+	public boolean sendMessage(String message)  {
+		try {
+			session.getBasicRemote().sendText(message);
+			System.out.println("\t<MESSAGE> "+message);
+			return true;
+		} catch (IOException e) {
+			System.out.println("\t<ERREUR MESSAGE> "+message);
+			return false;
+		}
+		
 
 	}
 	

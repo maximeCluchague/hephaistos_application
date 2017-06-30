@@ -1,0 +1,102 @@
+package com.za.websocket;
+
+import java.io.IOException;
+import java.io.StringWriter;
+import java.net.URISyntaxException;
+import java.net.UnknownHostException;
+import java.util.ArrayList;
+import java.util.Date;
+
+import javax.json.Json;
+import javax.json.JsonObject;
+import javax.json.JsonWriter;
+
+
+
+public class ClientJava{
+	SensorClientEndpoint client;
+	ArrayList<String> capteurs;
+	
+	public ClientJava() throws URISyntaxException, IOException{
+		this.client = new SensorClientEndpoint();
+		this.capteurs = new ArrayList<String>();
+	}
+	
+	public boolean accrocherCapteur(String idCapteur){
+		return capteurs.add(idCapteur);
+	}
+	
+	public boolean deccrocherCapteur(String idCapteur){
+		return capteurs.remove(idCapteur);
+	}
+	
+	public boolean containsCapteur(String idCapteur){
+		return capteurs.contains(idCapteur);
+	}
+	
+	public String buildJson(String idCapteur,String acquisition) throws UnknownHostException{
+		JsonObject jsonObject = Json.createObjectBuilder()
+				.add("idCapteur", idCapteur)
+				.add("acquisition", acquisition)
+				.add("date", (new Date()).toString())
+				.build();
+		StringWriter stringWriter = new StringWriter();
+		try(JsonWriter jsonWriter = Json.createWriter(stringWriter)){jsonWriter.write(jsonObject);}
+		return stringWriter.toString();
+	}
+	
+	public boolean envoieCommande(String commande,String idCapteur) throws UnknownHostException{
+		JsonObject jsonObject = Json.createObjectBuilder()
+				.add("commande", commande)
+				.add("idCapteur", idCapteur)
+				.build();
+		StringWriter stringWriter = new StringWriter();
+		try(JsonWriter jsonWriter = Json.createWriter(stringWriter)){jsonWriter.write(jsonObject);}
+		return client.sendMessage(stringWriter.toString());
+	}
+	
+	public boolean envoieMessage(String idCapteur,String message) throws UnknownHostException{
+		
+			if(!capteurs.contains(idCapteur)){
+				this.accrocherCapteur(idCapteur);
+			}
+			return client.sendMessage(buildJson(idCapteur,message));
+	}
+	
+	public boolean execCommande(String commande,String idCapteur) throws UnknownHostException{
+		if(commande.equals("deccrocherCapteur")){
+			System.out.println("\t<COMMANDE> "+commande+"("+idCapteur+")");
+			this.deccrocherCapteur(idCapteur);
+			return true;
+		}
+		if(commande.equals("afficherCapteurs")){
+			System.out.println("\t<COMMANDE> "+commande+"("+idCapteur+")");
+			this.afficherCapteurs();
+			return true;
+		}
+		/*
+		 * Des commandes peuvent être rajoutés ici
+		 */
+		
+		System.out.println("\t<COMMANDE INCONNUE> usage : ./client <@IP> <port> <Json_Message>\n"
+				+ "\tPS : le Json doit contenir une clé commande et une clé idCapteur\n"
+				+ "\tCommandes : "
+				+ "\n"
+				+ "\t\t- afficherCapteurs\n"
+				+ "\t\t- deccrocherCapteur");
+		return false;
+	}
+	
+	public boolean fermerClient(){
+		try {
+			this.client.session.close();
+			return true;
+		} catch (IOException e) {
+			return false;
+		}
+	}
+	
+	public void afficherCapteurs(){
+		System.out.println(capteurs);
+	}
+}

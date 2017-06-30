@@ -41,12 +41,22 @@ public class ServerSocketJava extends Thread
             	
             	// On construit le Json a partir du message entrant
             	JSONObject message  = new JSONObject(incomingMessage);
-            	String idCapteur = message.getString("idCapteur");
-            	String acquisition = message.getString("acquisition");
+            	// Si le message est une commande ex : deccrocher un capteur
+            	if(message.has("commande")){
+            		
+            		String commande = message.getString("commande");
+            		String idCapteur = message.getString("idCapteur");
+            		clientJava.execCommande(commande, idCapteur);
+            		
+            	}else{
+	            	String idCapteur = message.getString("idCapteur");
+	            	String acquisition = message.getString("acquisition");
+	            	clientJava.envoieMessage(idCapteur, acquisition);
+            	}
             	
             	//On extrait les donnee a transmettre au WebServer Glassfish
-            	clientJava.accrocherCapteur(idCapteur);
-            	clientJava.envoieMessage(idCapteur, acquisition);
+            	
+            	
             	
             	
             	PrintWriter out = new PrintWriter(server.getOutputStream());

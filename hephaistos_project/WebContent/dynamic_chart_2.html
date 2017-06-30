@@ -36,10 +36,30 @@
 			]
 		});
 		
-		webSocket.onmessage = function processMessage(sensorMessage) {		
-			updateChart(sensorMessage);
+		webSocket.onmessage = function processMessage(sensorMessage) {
+			var json = JSON.parse(sensorMessage.data);
+			var commande = json.commande;
+			if(commande == "NULL"){
+				updateChart(sensorMessage);
+			}else{
+				if(commande == "deccrocherCapteur"){
+					var capteur = json.idCapteur;
+					deccrocherCapteur(capteur);
+				}
+			}
 		}
 
+		var deccrocherCapteur = function(capteur){
+			for(i=0;i<dps.length;i++){
+				if(capteur==dps[i].label){
+					dps.splice(i,1);
+					nbCapteurConnecte=nbCapteurConnecte-1;
+				}
+			}
+			chart.render();
+		}
+		
+		
 		var updateChart = function (sensorMessage) {
 			var json = JSON.parse(sensorMessage.data);
 			var nomCapteur = json.idCapteur;
@@ -67,48 +87,6 @@
 			dps[indice] = {label: nomCapteur, y: value};
 			chart.render();
 		};
-		/*
-		var updateChart = function () {
-
-			for (var i = 0; i < dps.length; i++) {
-				
-				// generating random variation deltaY
-
-				var deltaY = Math.round((-0.5 + Math.random())*2);				
-				var yVal = deltaY + dps[i].y > 0 ? dps[i].y + deltaY : 0;
-				var yVal = yVal < 100 ? yVal : 100;
-
-				var boilerColor;
-
-
-				// color of dataPoint dependent upon y value. 
-
-				boilerColor =
-				yVal > 70 ? "#66FF23":
-				yVal > 60 ? "#A8FF23":
-				yVal > 50 ? "#D2FF23":
-				yVal > 40 ? "#FFDE23":
-				yVal > 30 ? "#FFA823":
-				yVal > 20 ? "#FF8A23":	
-				yVal > 10 ? "#FF4E23":	
-				yVal <= 10 ? "#FF0023":
-				//yVal < 5 ? "#6B8E23 ":							
-				null;
-
-
-				// updating the dataPoint
-				dps[i] = {label: "capteur"+(i+1) , y: yVal, color: boilerColor};
-
-			};
-
-			chart.render();
-		};
-		*/
-		
-		//updateChart();		
-
-		// update chart after specified interval 
-		//setInterval(function(){updateChart()}, updateInterval);
 	}
 	</script>
 	<script type="text/javascript" src="canvasjs.min.js"></script>

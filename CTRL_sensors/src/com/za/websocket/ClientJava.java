@@ -34,30 +34,65 @@ public class ClientJava{
 		return capteurs.contains(idCapteur);
 	}
 	
-	public static String buildJson(String idCapteur,String acquisition) throws UnknownHostException{
+	public String buildJson(String idCapteur,String acquisition) throws UnknownHostException{
 		JsonObject jsonObject = Json.createObjectBuilder()
 				.add("idCapteur", idCapteur)
 				.add("acquisition", acquisition)
 				.add("date", (new Date()).toString())
+				.add("commande", "NULL")
 				.build();
 		StringWriter stringWriter = new StringWriter();
 		try(JsonWriter jsonWriter = Json.createWriter(stringWriter)){jsonWriter.write(jsonObject);}
 		return stringWriter.toString();
 	}
 	
-	public boolean envoieMessage(String idCapteur,String message){
-		try {
-			if(capteurs.contains(idCapteur)){
-				client.sendMessage(buildJson(idCapteur,message));
-				return true;
+	public boolean envoieCommande(String commande,String idCapteur) throws UnknownHostException{
+		JsonObject jsonObject = Json.createObjectBuilder()
+				.add("commande", commande)
+				.add("date", (new Date()).toString())
+				.add("acquisition", "NULL")
+				.add("idCapteur", idCapteur)
+				.build();
+		StringWriter stringWriter = new StringWriter();
+		try(JsonWriter jsonWriter = Json.createWriter(stringWriter)){jsonWriter.write(jsonObject);}
+		return client.sendMessage(stringWriter.toString());
+	}
+	
+	public boolean envoieMessage(String idCapteur,String message) throws UnknownHostException{
+		
+			if(!capteurs.contains(idCapteur)){
+				this.accrocherCapteur(idCapteur);
 			}
-			System.out.println("\t[Capteur "+idCapteur + " inconnu]");
-			return false;
-		} catch (IOException e) {
-			System.out.println("Impossible d'envoyer le message");
-			return false;
+			return client.sendMessage(buildJson(idCapteur,message));
+	}
+	
+	public boolean execCommande(String commande,String idCapteur) throws UnknownHostException{
+		// Commande pour déccrocher un capteur
+		if(commande.equals("deccrocherCapteur")){
+			System.out.println("\t<COMMANDE> "+commande+"("+idCapteur+")");
+			this.deccrocherCapteur(idCapteur);
+			this.envoieCommande(commande, idCapteur);
+			return true;
 		}
-	}	
+		// Commande pour afficher la liste des capteurs accrocher
+		if(commande.equals("afficherCapteurs")){
+			System.out.println("\t<COMMANDE> "+commande+"("+idCapteur+")");
+			this.afficherCapteurs();
+			this.envoieCommande(commande, idCapteur);
+			return true;
+		}
+		/*
+		 * Des commandes peuvent être rajoutés ici
+		 */
+		
+		System.out.println("\t<COMMANDE INCONNUE> usage : ./client <@IP> <port> <Json_Message>\n"
+				+ "\tPS : le Json doit contenir une clé commande et une clé idCapteur\n"
+				+ "\tCommandes : "
+				+ "\n"
+				+ "\t\t- afficherCapteurs\n"
+				+ "\t\t- deccrocherCapteur");
+		return false;
+	}
 	
 	public boolean fermerClient(){
 		try {
@@ -68,7 +103,7 @@ public class ClientJava{
 		}
 	}
 	
-	public void afficheCapteurs(){
+	public void afficherCapteurs(){
 		System.out.println(capteurs);
 	}
 }

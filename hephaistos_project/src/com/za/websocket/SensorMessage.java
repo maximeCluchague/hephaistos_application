@@ -5,11 +5,26 @@ public class SensorMessage {
 	private String idCapteur;
 	private String acquisition;
 	private String date;
+	private String commande;
 	
-	public SensorMessage(String idCapteur, String acquisition, String date) {
+	public String getCommande() {
+		return commande;
+	}
+
+	public void setCommande(String commande) {
+		this.commande = commande;
+	}
+
+	public SensorMessage(String idCapteur, String acquisition, String date,String commande) {
 		this.idCapteur = idCapteur;
 		this.acquisition = acquisition;
 		this.date = date;
+		this.commande = commande;
+	}
+	
+	public SensorMessage(String commande, String idCapteur) {
+		this.idCapteur = idCapteur;
+		this.commande = commande;
 	}
 	
 	public String getIdCapteur() {
