@@ -75,7 +75,7 @@ public class ServerSocketJava extends Thread
     }
     public static void main(String [] args) throws URISyntaxException
     {
-        int port = 5000;
+        int port = 5005;
         try
         {
             Thread t = new ServerSocketJava(port);

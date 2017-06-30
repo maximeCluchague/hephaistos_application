@@ -9046,3 +9046,117 @@ KeyIdentifier [
 [2017-06-30T11:54:38.724+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498816478724] [levelValue: 800] [[
   [CONNEXION]]]
 
+[2017-06-30T13:33:38.993+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498822418993] [levelValue: 800] [[
+  message : { id : capteur_UV, Val : 12, date : 2017-06-30T11:33:38.986Z, commande : NULL }]]
+
+[2017-06-30T13:33:38.993+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498822418993] [levelValue: 800] [[
+  Capteurs connecté : [capteur_IR, giroscope, giroscope2, UV, IR, GAMMA, capteur_UV]]]
+
+[2017-06-30T13:33:57.287+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498822437287] [levelValue: 800] [[
+  message : { id : UV, Val : NULL, date : Fri Jun 30 13:33:57 CEST 2017, commande : deccrocherCapteur }]]
+
+[2017-06-30T13:33:57.288+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498822437288] [levelValue: 800] [[
+  Capteurs connecté : [capteur_IR, giroscope, giroscope2, UV, IR, GAMMA, capteur_UV]]]
+
+[2017-06-30T13:34:10.631+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1498822450631] [levelValue: 800] [[
+  message : { id : UV, Val : NULL, date : Fri Jun 30 13:34:10 CEST 2017, commande : deccrocherCapteur }]]
+
+[2017-06-30T13:34:10.631+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1498822450631] [levelValue: 800] [[
+  Capteurs connecté : [capteur_IR, giroscope, giroscope2, UV, IR, GAMMA, capteur_UV]]]
+
+[2017-06-30T13:34:13.428+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498822453428] [levelValue: 800] [[
+  [DECONNEXION] null]]
+
+[2017-06-30T13:34:13.478+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498822453478] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-30T13:34:16.270+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498822456270] [levelValue: 800] [[
+  [DECONNEXION] null]]
+
+[2017-06-30T13:34:16.311+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498822456311] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-30T13:34:20.366+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1498822460366] [levelValue: 800] [[
+  message : { id : UV, Val : NULL, date : Fri Jun 30 13:34:20 CEST 2017, commande : deccrocherCapteur }]]
+
+[2017-06-30T13:34:20.366+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1498822460366] [levelValue: 800] [[
+  Capteurs connecté : [capteur_IR, giroscope, giroscope2, UV, IR, GAMMA, capteur_UV]]]
+
+[2017-06-30T13:34:22.868+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498822462868] [levelValue: 800] [[
+  [DECONNEXION] null]]
+
+[2017-06-30T13:34:22.896+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498822462896] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-30T13:34:24.058+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498822464058] [levelValue: 800] [[
+  [DECONNEXION] null]]
+
+[2017-06-30T13:34:24.103+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498822464103] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-30T13:34:30.172+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1498822470172] [levelValue: 800] [[
+  message : { id : UV, Val : 121, date : 2017-06-30T11:34:30.170Z, commande : NULL }]]
+
+[2017-06-30T13:34:30.172+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1498822470172] [levelValue: 800] [[
+  Capteurs connecté : [capteur_IR, giroscope, giroscope2, UV, IR, GAMMA, capteur_UV]]]
+
+[2017-06-30T13:34:32.636+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498822472636] [levelValue: 800] [[
+  message : { id : UV, Val : NULL, date : Fri Jun 30 13:34:32 CEST 2017, commande : deccrocherCapteur }]]
+
+[2017-06-30T13:34:32.636+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498822472636] [levelValue: 800] [[
+  Capteurs connecté : [capteur_IR, giroscope, giroscope2, UV, IR, GAMMA, capteur_UV]]]
+
+[2017-06-30T13:34:37.828+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498822477828] [levelValue: 800] [[
+  message : { id : IR, Val : 21, date : 2017-06-30T11:34:37.826Z, commande : NULL }]]
+
+[2017-06-30T13:34:37.828+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498822477828] [levelValue: 800] [[
+  Capteurs connecté : [capteur_IR, giroscope, giroscope2, UV, IR, GAMMA, capteur_UV]]]
+
+[2017-06-30T13:34:41.384+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498822481384] [levelValue: 800] [[
+  message : { id : UV, Val : 21, date : 2017-06-30T11:34:41.378Z, commande : NULL }]]
+
+[2017-06-30T13:34:41.384+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498822481384] [levelValue: 800] [[
+  Capteurs connecté : [capteur_IR, giroscope, giroscope2, UV, IR, GAMMA, capteur_UV]]]
+
+[2017-06-30T13:35:09.709+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498822509709] [levelValue: 800] [[
+  message : { id : giroscope, Val : 12, date : 2017-06-30T11:35:09.707Z, commande : NULL }]]
+
+[2017-06-30T13:35:09.709+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498822509709] [levelValue: 800] [[
+  Capteurs connecté : [capteur_IR, giroscope, giroscope2, UV, IR, GAMMA, capteur_UV]]]
+
+[2017-06-30T13:38:14.949+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1498822694949] [levelValue: 800] [[
+  message : { id : UV, Val : NULL, date : Fri Jun 30 13:38:14 CEST 2017, commande : deccrocherCapteur }]]
+
+[2017-06-30T13:38:14.949+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1498822694949] [levelValue: 800] [[
+  Capteurs connecté : [capteur_IR, giroscope, giroscope2, UV, IR, GAMMA, capteur_UV]]]
+
+[2017-06-30T13:38:26.881+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498822706881] [levelValue: 800] [[
+  message : { id : IR, Val : NULL, date : Fri Jun 30 13:38:26 CEST 2017, commande : deccrocherCapteur }]]
+
+[2017-06-30T13:38:26.881+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1498822706881] [levelValue: 800] [[
+  Capteurs connecté : [capteur_IR, giroscope, giroscope2, UV, IR, GAMMA, capteur_UV]]]
+
+[2017-06-30T13:38:37.391+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498822717391] [levelValue: 800] [[
+  message : { id : giroscope, Val : NULL, date : Fri Jun 30 13:38:37 CEST 2017, commande : deccrocherCapteur }]]
+
+[2017-06-30T13:38:37.391+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498822717391] [levelValue: 800] [[
+  Capteurs connecté : [capteur_IR, giroscope, giroscope2, UV, IR, GAMMA, capteur_UV]]]
+
+[2017-06-30T13:40:07.753+0200] [glassfish 4.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=124 _ThreadName=Thread-22] [timeMillis: 1498822807753] [levelValue: 800] [[
+  Server shutdown initiated]]
+
+[2017-06-30T13:40:07.755+0200] [glassfish 4.0] [INFO] [NCLS-BOOTSTRAP-00028] [javax.enterprise.bootstrap] [tid: _ThreadID=124 _ThreadName=Thread-22] [timeMillis: 1498822807755] [levelValue: 800] [[
+  Unregistered com.sun.enterprise.glassfish.bootstrap.osgi.EmbeddedOSGiGlassFishImpl@34136bd1 from service registry.]]
+
+[2017-06-30T13:40:07.756+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=124 _ThreadName=Thread-3] [timeMillis: 1498822807756] [levelValue: 800] [[
+  FileMonitoring shutdown]]
+
+[2017-06-30T13:40:07.759+0200] [glassfish 4.0] [INFO] [NCLS-JMX-00002] [javax.enterprise.system.jmx] [tid: _ThreadID=124 _ThreadName=Thread-22] [timeMillis: 1498822807759] [levelValue: 800] [[
+  JMXStartupService: Stopped JMXConnectorServer: null]]
+
+[2017-06-30T13:40:07.759+0200] [glassfish 4.0] [INFO] [NCLS-JMX-00001] [javax.enterprise.system.jmx] [tid: _ThreadID=124 _ThreadName=Thread-22] [timeMillis: 1498822807759] [levelValue: 800] [[
+  JMXStartupService and JMXConnectors have been shut down.]]
+
+[2017-06-30T13:40:07.853+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=124 _ThreadName=Thread-3] [timeMillis: 1498822807853] [levelValue: 800] [[
+  JdbcRuntimeExtension,  getAllSystemRAResourcesAndPools = [GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool]]]
+
