@@ -298,3 +298,69 @@ KeyIdentifier [
 [2017-06-30T13:50:32.119+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498823432119] [levelValue: 800] [[
   Capteurs connecté : [giroscope, giroscope2]]]
 
+[2017-06-30T14:07:35.300+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498824455300] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-30T14:08:00.467+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498824480467] [levelValue: 800] [[
+  message : { id : giroscope, Val : 25, date : Fri Jun 30 14:08:00 CEST 2017, commande : NULL }]]
+
+[2017-06-30T14:08:00.467+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498824480467] [levelValue: 800] [[
+  Capteurs connecté : [giroscope, giroscope2]]]
+
+[2017-06-30T14:08:13.165+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=24 _ThreadName=Thread-3] [timeMillis: 1498824493165] [levelValue: 800] [[
+  [DECONNEXION] null]]
+
+[2017-06-30T14:08:13.215+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498824493215] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-30T14:08:25.702+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498824505702] [levelValue: 800] [[
+  message : { id : giroscope, Val : 25, date : Fri Jun 30 14:08:25 CEST 2017, commande : NULL }]]
+
+[2017-06-30T14:08:25.702+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498824505702] [levelValue: 800] [[
+  Capteurs connecté : [giroscope, giroscope2]]]
+
+[2017-06-30T14:10:17.553+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=24 _ThreadName=Thread-3] [timeMillis: 1498824617553] [levelValue: 800] [[
+  message : { id : UV, Val : 25, date : Fri Jun 30 14:10:17 CEST 2017, commande : NULL }]]
+
+[2017-06-30T14:10:17.553+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=24 _ThreadName=Thread-3] [timeMillis: 1498824617553] [levelValue: 800] [[
+  Capteurs connecté : [giroscope, giroscope2, UV]]]
+
+[2017-06-30T14:10:38.087+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1498824638087] [levelValue: 800] [[
+  message : { id : UV, Val : 89, date : Fri Jun 30 14:10:38 CEST 2017, commande : NULL }]]
+
+[2017-06-30T14:10:38.087+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1498824638087] [levelValue: 800] [[
+  Capteurs connecté : [giroscope, giroscope2, UV]]]
+
+[2017-06-30T14:10:53.432+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498824653432] [levelValue: 800] [[
+  message : { id : UV, Val : 89, date : Fri Jun 30 14:10:53 CEST 2017, commande : NULL }]]
+
+[2017-06-30T14:10:53.432+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498824653432] [levelValue: 800] [[
+  Capteurs connecté : [giroscope, giroscope2, UV]]]
+
+[2017-06-30T14:11:01.608+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498824661608] [levelValue: 800] [[
+  message : { id : UV, Val : 89, date : Fri Jun 30 14:11:01 CEST 2017, commande : NULL }]]
+
+[2017-06-30T14:11:01.608+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498824661608] [levelValue: 800] [[
+  Capteurs connecté : [giroscope, giroscope2, UV]]]
+
+[2017-06-30T14:11:02.847+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498824662847] [levelValue: 800] [[
+  message : { id : UV, Val : 89, date : Fri Jun 30 14:11:02 CEST 2017, commande : NULL }]]
+
+[2017-06-30T14:11:02.847+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1498824662847] [levelValue: 800] [[
+  Capteurs connecté : [giroscope, giroscope2, UV]]]
+
+[2017-06-30T14:11:05.427+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=24 _ThreadName=Thread-3] [timeMillis: 1498824665427] [levelValue: 800] [[
+  message : { id : UV, Val : 89, date : Fri Jun 30 14:11:05 CEST 2017, commande : NULL }]]
+
+[2017-06-30T14:11:05.427+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=24 _ThreadName=Thread-3] [timeMillis: 1498824665427] [levelValue: 800] [[
+  Capteurs connecté : [giroscope, giroscope2, UV]]]
+
+[2017-06-30T14:39:26.827+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1498826366827] [levelValue: 800] [[
+  [CONNEXION]]]
+
+[2017-06-30T14:39:30.747+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498826370747] [levelValue: 800] [[
+  message : { id : test, Val : 2", date : 2017-06-30T12:39:30.721Z, commande : NULL }]]
+
+[2017-06-30T14:39:30.747+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498826370747] [levelValue: 800] [[
+  Capteurs connecté : [giroscope, giroscope2, UV, test]]]
+
