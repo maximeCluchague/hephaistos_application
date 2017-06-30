@@ -364,3 +364,6 @@ KeyIdentifier [
 [2017-06-30T14:39:30.747+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1498826370747] [levelValue: 800] [[
   Capteurs connecté : [giroscope, giroscope2, UV, test]]]
 
+[2017-06-30T15:29:25.382+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=73 _ThreadName=PingService] [timeMillis: 1498829365382] [levelValue: 800] [[
+  Domain Pinged: release.glassfish.org]]
+
