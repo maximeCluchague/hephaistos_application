@@ -18,6 +18,7 @@
 		<script type="text/javascript">
 			adresse.value = "localhost";
 			port.value = "8080";
+			commande.value = "NULL";
 			document.getElementById("messages").value += "[WEBSERVEUR GLASSFISH EN ATTENTE DE CONNEXION ... ]\n\n";
 			
 			var url = "ws://"+adresse.value.toString()+":"+port.value.toString()+"/hephaistos_project/hephaistoswebserver";
@@ -29,7 +30,6 @@
 				try{
 					url = "ws://"+adresse.value.toString()+":"+port.value.toString()+"/hephaistos_project/hephaistoswebserver";
 					webSocket = new WebSocket(url);
-					commande.value = "NULL";
 					document.getElementById("messages").value += "[WEBSERVEUR GLASSFISH EN ECOUTE] "+url+"\n\n";
 				}catch(exception){
 					document.getElementById("messages").value += "[ERREUR SAISIE]\n\n";
