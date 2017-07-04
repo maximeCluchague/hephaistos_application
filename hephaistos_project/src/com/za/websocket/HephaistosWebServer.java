@@ -8,6 +8,7 @@ import java.util.Iterator;
 import java.util.Set;
 
 import javax.websocket.EncodeException;
+import javax.websocket.MessageHandler;
 import javax.websocket.OnClose;
 import javax.websocket.OnMessage;
 import javax.websocket.OnOpen;
@@ -54,7 +55,6 @@ public class HephaistosWebServer {
 		while(iterator.hasNext()) {
 			iterator.next().getBasicRemote().sendObject(incomingSensorMessage);
 		}
-		
 	}
 	
 	/*@OnMessage

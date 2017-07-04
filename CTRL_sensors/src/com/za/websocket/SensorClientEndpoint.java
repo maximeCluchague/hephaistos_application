@@ -26,6 +26,7 @@ public class SensorClientEndpoint {
 			System.out.println("[<-] [CONNEXION] "+uri.toString());
 		} catch (DeploymentException | IOException e) {
 			System.out.println("[Impossible de ce connecter au serveur] "+uri.toString());
+			this.processClose();
 		}
 	}
 	@OnOpen
