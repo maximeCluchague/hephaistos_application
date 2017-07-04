@@ -6,7 +6,7 @@
 		
 	window.onload = function () {
 
-		var webSocket = new WebSocket("ws://localhost:8080/hephaistos_project/hephaistoswebserver");
+		var webSocket = new WebSocket("ws://localhost:80/hephaistos_project/hephaistoswebserver");
 		
 		var dps = []; // dataPoints
 

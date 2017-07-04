@@ -4,7 +4,7 @@
 <head>
 	<script type="text/javascript">
 	
-	var webSocket = new WebSocket("ws://localhost:8080/hephaistos_project/hephaistoswebserver");
+	var webSocket = new WebSocket("ws://localhost:80/hephaistos_project/hephaistoswebserver");
 	
 	window.onload = function () {
 		

@@ -17,7 +17,7 @@
 		<input type="button" value="Envoyer" onclick="send()" />
 		<script type="text/javascript">
 			adresse.value = "localhost";
-			port.value = "8080";
+			port.value = "80";
 			commande.value = "NULL";
 			document.getElementById("messages").value += "[WEBSERVEUR GLASSFISH EN ATTENTE DE CONNEXION ... ]\n\n";
 			
