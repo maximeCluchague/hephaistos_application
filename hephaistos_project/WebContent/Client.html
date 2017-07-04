@@ -5,13 +5,15 @@
 		<title>Hephaistos Application</title>
 	</head>
 	<body>
-		<textarea id="messages" readonly="readonly" rows="25" cols="100"></textarea></br>
-		 Identifiant capteur  <input id="idCapteur" type="text" size="69" /></br>
-		 Acquisition          <input id="acquisition" type="text" size="77" /></br>
+		<textarea id="messages" readonly="readonly" rows="22" cols="130"></textarea></br>
+		 Identifiant capteur  <input id="idCapteur" type="text" size="111" /></br>
+		 Acquisition <input id="acquisition" type="text" size="111" /></br>
+		 Commande <input id="commande" type="text" size="111" /></br>
 		
-		<input type="button" value="Send" onclick="send()" />
+		<input type="button" value="Envoyer" onclick="send()" />
 		<script type="text/javascript">
 			var webSocket = new WebSocket("ws://localhost:8080/hephaistos_project/hephaistoswebserver");
+			commande.value = "NULL";
 			
 			document.getElementById("messages").value += "[WEBSERVEUR GLASSFISH EN ECOUTE]\n\n"
 			
@@ -23,12 +25,13 @@
 				//var idCapteur = document.getElementById("idCapteur");
 				// On créer le Json qui va etre envoyé
 				var date=new Date();
-				var messageJson = {"idCapteur": idCapteur.value,"acquisition": acquisition.value,"date": date,"commande":"NULL"};
+				var messageJson = {"idCapteur": idCapteur.value,"acquisition": acquisition.value,"date": date,"commande":commande.value};
+				
 				webSocket.send(JSON.stringify(messageJson));
 				// On remet les textField de la page html vide
 				idCapteur.value = "";
 				acquisition.value = "";
-				//date.value = "";
+				commande.value = "NULL";
 			}
 			
 			window.onbeforeunload = function(){

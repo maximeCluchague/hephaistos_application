@@ -1,3 +1,0 @@
-#GlassFish 3
-#Fri Jun 30 11:34:30 CEST 2017
-org.eclipse.jst.jee.server\:hephaistos_project=/user/mcluchag/home/Desktop/hephaistos_application/glassfish4/glassfish/domains/domain1/eclipseApps/hephaistos_project

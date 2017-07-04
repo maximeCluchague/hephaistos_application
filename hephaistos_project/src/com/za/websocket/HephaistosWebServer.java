@@ -38,9 +38,12 @@ public class HephaistosWebServer {
 		
 		// Si le capteur n'est pas stocké dans la liste on l'ajoute
 		String capteur = incomingSensorMessage.getIdCapteur();
-		if(!capteursConnectee.contains(capteur)){
-			capteursConnectee.add(capteur);
-			
+		if(incomingSensorMessage.getCommande().equals("deccrocherCapteur")){
+			capteursConnectee.remove(capteur);
+		}else{
+			if(!capteursConnectee.contains(capteur)){
+				capteursConnectee.add(capteur);	
+			}
 		}
 		System.out.println("Capteurs connecté : " +capteursConnectee);
 		//On retourne le message a l'expéditeur

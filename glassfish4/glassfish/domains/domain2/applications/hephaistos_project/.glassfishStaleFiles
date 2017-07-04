@@ -1,0 +1,16 @@
+Client.html
+WEB-INF/
+WEB-INF/glassfish-web.xml
+WEB-INF/classes/
+WEB-INF/classes/com/
+WEB-INF/classes/com/za/
+WEB-INF/classes/com/za/websocket/
+WEB-INF/classes/com/za/websocket/SensorMessageEncoder.class
+WEB-INF/classes/com/za/websocket/SensorMessageDecoder.class
+WEB-INF/classes/com/za/websocket/SensorMessage.class
+WEB-INF/classes/com/za/websocket/HephaistosWebServer.class
+canvasjs.min.js
+dynamic_chart.html
+dynamic_chart_2.html
+META-INF/
+META-INF/MANIFEST.MF

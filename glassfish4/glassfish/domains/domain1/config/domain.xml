@@ -78,11 +78,11 @@
       </http-service>
       <iiop-service>
         <orb use-thread-pool-ids="thread-pool-1"></orb>
-        <iiop-listener address="0.0.0.0" port="3700" lazy-init="true" id="orb-listener-1"></iiop-listener>
-        <iiop-listener address="0.0.0.0" port="3820" id="SSL" security-enabled="true">
+        <iiop-listener address="0.0.0.0" port="8080" lazy-init="true" id="orb-listener-1"></iiop-listener>
+        <iiop-listener address="0.0.0.0" port="8181" id="SSL" security-enabled="true">
           <ssl classname="com.sun.enterprise.security.ssl.GlassfishSSLImpl" cert-nickname="s1as"></ssl>
         </iiop-listener>
-        <iiop-listener address="0.0.0.0" port="3920" id="SSL_MUTUALAUTH" security-enabled="true">
+        <iiop-listener address="0.0.0.0" port="4848" id="SSL_MUTUALAUTH" security-enabled="true">
           <ssl classname="com.sun.enterprise.security.ssl.GlassfishSSLImpl" cert-nickname="s1as" client-auth-enabled="true"></ssl>
         </iiop-listener>
       </iiop-service>
@@ -225,7 +225,7 @@
           </protocol>
         </protocols>
         <network-listeners>
-          <network-listener protocol="http-listener-1" port="8080" name="http-listener-1" thread-pool="http-thread-pool" transport="tcp"></network-listener>
+          <network-listener protocol="http-listener-1" port="80" name="http-listener-1" thread-pool="http-thread-pool" transport="tcp"></network-listener>
           <network-listener protocol="http-listener-2" port="8181" name="http-listener-2" thread-pool="http-thread-pool" transport="tcp"></network-listener>
           <network-listener protocol="admin-listener" port="4848" name="admin-listener" thread-pool="admin-thread-pool" transport="tcp"></network-listener>
         </network-listeners>
@@ -458,7 +458,7 @@
         <engine sniffer="web"></engine>
       </module>
     </application>
-    <application context-root="/hephaistos_project" object-type="user" name="hephaistos_project" directory-deployed="true" location="${com.sun.aas.instanceRootURI}/eclipseApps/hephaistos_project/">
+    <application context-root="/hephaistos_project" object-type="user" directory-deployed="true" name="hephaistos_project" location="${com.sun.aas.instanceRootURI}/eclipseApps/hephaistos_project/">
       <property name="appLocation" value="${com.sun.aas.instanceRootURI}/eclipseApps/hephaistos_project/"></property>
       <property name="archiveType" value="war"></property>
       <property name="defaultAppName" value="hephaistos_project"></property>
