@@ -5,17 +5,35 @@
 		<title>Hephaistos Application</title>
 	</head>
 	<body>
-		<textarea id="messages" readonly="readonly" rows="22" cols="130"></textarea></br>
+		 Etablir le lien WebSocket webSocket </br></br>
+	 	 Adresse  <input id="adresse" type="text" size="111" /></br>
+		 Port <input id="port" type="text" size="111" /></br></br>
+		 <input type="button" value="Connexion" onclick="connexion()" /></br></br>
+		<textarea id="messages" readonly="readonly" rows="22" cols="130"></textarea></br></br>
 		 Identifiant capteur  <input id="idCapteur" type="text" size="111" /></br>
 		 Acquisition <input id="acquisition" type="text" size="111" /></br>
-		 Commande <input id="commande" type="text" size="111" /></br>
+		 Commande <input id="commande" type="text" size="111" /></br></br>
 		
 		<input type="button" value="Envoyer" onclick="send()" />
 		<script type="text/javascript">
-			var webSocket = new WebSocket("ws://localhost:8080/hephaistos_project/hephaistoswebserver");
-			commande.value = "NULL";
+			adresse.value = "localhost";
+			port.value = "8080";
+			document.getElementById("messages").value += "[WEBSERVEUR GLASSFISH EN ATTENTE DE CONNEXION ... ]\n\n";
 			
-			document.getElementById("messages").value += "[WEBSERVEUR GLASSFISH EN ECOUTE]\n\n"
+			var webSocket = new WebSocket("ws://"+adresse.value.toString()+":"+port.value.toString()+"/hephaistos_project/hephaistoswebserver");
+			
+			function connexion(){
+				try{
+					webSocket = new WebSocket("ws://"+adresse.value.toString()+":"+port.value.toString()+"/hephaistos_project/hephaistoswebserver");
+					commande.value = "NULL";
+					document.getElementById("messages").value += "[WEBSERVEUR GLASSFISH EN ECOUTE]\n\n";
+				}catch(exception){
+					document.getElementById("messages").value += "[ERREUR SAISIE]\n\n";
+				}
+				
+			}
+			
+			
 			
 			webSocket.onmessage = function processMessage(sensorMessage) {
 				var json = JSON.parse(sensorMessage.data);

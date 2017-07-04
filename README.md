@@ -37,17 +37,17 @@ Pour faire fonctionner le tout en Localhost suivre les étapes suivantes :
 		$ : bin/asadmin
 
 		c) créer le domaine : 
-		$ : create-domain --adminport 5000 --profile developer --user admin <nom_domaine>
+		$ : create-domain --adminport 4848 --profile developer --user admin <nom_domaine>
 
 		d) Démarrer le domaine <nom_domaine> :
 		$ : start-domain <nom_domaine>
 
 		e) Déployer le fichier 'hephaistos_project.war' : 
-		$ : deploy --port 5000 --host localhost /user/mcluchag/home/Desktop/hephaistos_application/hephaistos_project.war
+		$ : deploy --port 4848 --host localhost /user/mcluchag/home/Desktop/hephaistos_application/hephaistos_project.war
 
 
 		f) Pour Retirer le fichier :
-		$ : undeploy --port 5000 --host localhost hephaistos_project (Sans le .war)
+		$ : undeploy --port 4848 --host localhost hephaistos_project (Sans le .war)
 
 		g) Pour stoper le domain : 
 		$ : stop-domain <nom_domaine>

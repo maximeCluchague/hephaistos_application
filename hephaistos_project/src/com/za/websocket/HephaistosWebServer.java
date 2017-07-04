@@ -21,7 +21,7 @@ public class HephaistosWebServer {
 	
 	@OnOpen
 	public void handleOpen(Session client){
-		System.out.println("[CONNEXION]");
+		System.out.println("<CONNEXION>");
 		sessionClient.add(client);
 	}
 	
@@ -29,7 +29,7 @@ public class HephaistosWebServer {
 	@OnMessage
 	public void handleMessage(SensorMessage incomingSensorMessage, Session client) throws IOException, EncodeException{
 		// Le serveur affiche sur sa console le message recu
-		System.out.println("message : "
+		System.out.println("<MESSAGE> "
 				+ "{ id : " + incomingSensorMessage.getIdCapteur()
 				+ ", Val : " + incomingSensorMessage.getAcquisition()
 				+ ", date : " + incomingSensorMessage.getDate()
@@ -45,7 +45,7 @@ public class HephaistosWebServer {
 				capteursConnectee.add(capteur);	
 			}
 		}
-		System.out.println("Capteurs connecté : " +capteursConnectee);
+		System.out.println("<Capteurs connectés> : " +capteursConnectee);
 		//On retourne le message a l'expéditeur
 		//client.getBasicRemote().sendObject(incomingSensorMessage);
 		Iterator<Session> iterator = sessionClient.iterator();
@@ -87,7 +87,7 @@ public class HephaistosWebServer {
 
 	@OnClose
 	public void handleClose(Session client) throws IOException, EncodeException{
-		System.out.println("[DECONNEXION]");
+		System.out.println("<DECONNEXION>");
 		sessionClient.remove(client);
 	}
 }

@@ -8,12 +8,6 @@ public class testClientJava {
 	public static void main(String[] args) throws URISyntaxException, IOException{
 		ClientJava clientJava = new ClientJava();
 		
-		clientJava.accrocherCapteur("capteur_IR");
-		clientJava.accrocherCapteur("capteur_UV");
-		clientJava.accrocherCapteur("capteur_distance");
-		clientJava.accrocherCapteur("capteur_giroscope");
-		clientJava.accrocherCapteur("capteur_gps");
-		clientJava.accrocherCapteur("capteur_wifi");
 		int x1 = 12;
 		int x2 = 2;
 		int x3 = 17;
