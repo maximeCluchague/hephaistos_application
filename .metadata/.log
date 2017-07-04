@@ -10583,3 +10583,30 @@ java.util.concurrent.TimeoutException
 	at org.eclipse.wst.server.core.internal.Server.startImpl(Server.java:3474)
 	at org.eclipse.wst.server.core.internal.Server$StartJob.run(Server.java:367)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 150 2017-07-04 08:55:15.644
+!MESSAGE Unable to start server due following issues:
+!STACK 0
+oracle.eclipse.tools.glassfish.exceptions.GlassfishLaunchException: Wrong user name or password. Killing startup process.
+	at oracle.eclipse.tools.glassfish.GlassfishGenericServerBehaviour$StartJob.call(GlassfishGenericServerBehaviour.java:712)
+	at oracle.eclipse.tools.glassfish.GlassfishGenericServerBehaviour$StartJob.call(GlassfishGenericServerBehaviour.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 150 2017-07-04 09:06:14.716
+!MESSAGE Unable to start server on time.
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at oracle.eclipse.tools.glassfish.GlassfishGenericServerBehaviour.launchServer(GlassfishGenericServerBehaviour.java:202)
+	at oracle.eclipse.tools.glassfish.GlassfishServerLaunchDelegate.startDASAndTarget(GlassfishServerLaunchDelegate.java:206)
+	at oracle.eclipse.tools.glassfish.GlassfishServerLaunchDelegate.launch(GlassfishServerLaunchDelegate.java:110)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:700)
+	at org.eclipse.wst.server.core.internal.Server.startImpl2(Server.java:3538)
+	at org.eclipse.wst.server.core.internal.Server.startImpl(Server.java:3474)
+	at org.eclipse.wst.server.core.internal.Server$StartJob.run(Server.java:367)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)

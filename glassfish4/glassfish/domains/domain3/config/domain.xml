@@ -21,7 +21,14 @@
     </authorization-service>
   </security-configurations>
   <managed-job-config></managed-job-config>
-  <system-applications></system-applications>
+  <system-applications>
+    <application context-root="" object-type="system-admin" directory-deployed="true" name="__admingui" location="${com.sun.aas.installRootURI}/lib/install/applications/__admingui">
+      <module name="__admingui">
+        <engine sniffer="web"></engine>
+        <engine sniffer="security"></engine>
+      </module>
+    </application>
+  </system-applications>
   <resources>
     <jdbc-resource pool-name="__TimerPool" object-type="system-admin" jndi-name="jdbc/__TimerPool"></jdbc-resource>
     <jdbc-resource pool-name="DerbyPool" object-type="system-all" jndi-name="jdbc/__default"></jdbc-resource>
@@ -39,13 +46,21 @@
     </jdbc-connection-pool>
     <connector-connection-pool max-pool-size="250" resource-adapter-name="jmsra" steady-pool-size="1" name="jms/__defaultConnectionFactory-Connection-Pool" connection-definition-name="javax.jms.ConnectionFactory"></connector-connection-pool>
     <connector-resource pool-name="jms/__defaultConnectionFactory-Connection-Pool" object-type="system-all-req" jndi-name="jms/__defaultConnectionFactory"></connector-resource>
+    <managed-scheduled-executor-service object-type="system-all" jndi-name="concurrent/__defaultManagedScheduledExecutorService"></managed-scheduled-executor-service>
+    <managed-executor-service object-type="system-all" jndi-name="concurrent/__defaultManagedExecutorService"></managed-executor-service>
+    <context-service object-type="system-all" jndi-name="concurrent/__defaultContextService"></context-service>
+    <managed-thread-factory object-type="system-all" jndi-name="concurrent/__defaultManagedThreadFactory"></managed-thread-factory>
   </resources>
   <servers>
     <server config-ref="server-config" name="server">
-      <application-ref ref="hephaistos_project" virtual-servers="server"></application-ref>
+      <application-ref ref="__admingui" virtual-servers="__asadmin"></application-ref>
       <resource-ref ref="jdbc/__TimerPool"></resource-ref>
       <resource-ref ref="jdbc/__default"></resource-ref>
       <resource-ref ref="jms/__defaultConnectionFactory"></resource-ref>
+      <resource-ref ref="concurrent/__defaultManagedScheduledExecutorService"></resource-ref>
+      <resource-ref ref="concurrent/__defaultManagedExecutorService"></resource-ref>
+      <resource-ref ref="concurrent/__defaultContextService"></resource-ref>
+      <resource-ref ref="concurrent/__defaultManagedThreadFactory"></resource-ref>
     </server>
   </servers>
   <nodes>
@@ -92,6 +107,10 @@
           <session-properties></session-properties>
         </session-config>
       </web-container>
+      <ejb-container>
+        <ejb-timer-service></ejb-timer-service>
+      </ejb-container>
+      <rest-config></rest-config>
       <diagnostic-service></diagnostic-service>
       <security-service>
         <auth-realm classname="com.sun.enterprise.security.auth.realm.file.FileRealm" name="admin-realm">
@@ -401,6 +420,7 @@
       <thread-pools>
         <thread-pool name="http-thread-pool"></thread-pool>
         <thread-pool name="thread-pool-1" max-thread-pool-size="200"></thread-pool>
+        <thread-pool name="admin-thread-pool" max-queue-size="256" max-thread-pool-size="50"></thread-pool>
       </thread-pools>
       <group-management-service>
         <failure-detection></failure-detection>
@@ -426,15 +446,5 @@
     <secure-admin-principal dn="CN=taillat.inria.fr-instance,OU=GlassFish,O=Oracle Corporation,L=Santa Clara,ST=California,C=US"></secure-admin-principal>
   </secure-admin>
   <clusters></clusters>
-  <applications>
-    <application context-root="/hephaistos_project" object-type="user" name="hephaistos_project" directory-deployed="true" location="${com.sun.aas.instanceRootURI}/eclipseApps/hephaistos_project/">
-      <property name="appLocation" value="${com.sun.aas.instanceRootURI}/eclipseApps/hephaistos_project/"></property>
-      <property name="archiveType" value="war"></property>
-      <property name="defaultAppName" value="hephaistos_project"></property>
-      <module name="hephaistos_project">
-        <engine sniffer="security"></engine>
-        <engine sniffer="web"></engine>
-      </module>
-    </application>
-  </applications>
+  <applications></applications>
 </domain>

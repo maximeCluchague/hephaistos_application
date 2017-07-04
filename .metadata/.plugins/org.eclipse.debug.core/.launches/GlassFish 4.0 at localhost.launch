@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.glassfish.jst.server.GlassfishServerLaunchConfigurationType">
+<listAttribute key="org.eclipse.jdt.launching.CLASSPATH">
+<listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;runtimeClasspathEntry externalArchive=&quot;/user/mcluchag/home/Desktop/hephaistos_application/glassfish4/glassfish/modules/glassfish.jar&quot; path=&quot;3&quot; type=&quot;2&quot;/&gt;&#10;"/>
+<listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;runtimeClasspathEntry containerPath=&quot;org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/java-1.8.0-openjdk-1.8.0.121-1.b14.fc25.x86_64&quot; path=&quot;1&quot; type=&quot;4&quot;/&gt;&#10;"/>
+</listAttribute>
+<booleanAttribute key="org.eclipse.jdt.launching.DEFAULT_CLASSPATH" value="false"/>
+<stringAttribute key="org.eclipse.jdt.launching.JRE_CONTAINER" value="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/java-1.8.0-openjdk-1.8.0.121-1.b14.fc25.x86_64"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.sun.enterprise.glassfish.bootstrap.Main"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value=" "/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=9009 "/>
+<stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="/user/mcluchag/home/Desktop/hephaistos_application/glassfish4/glassfish"/>
+<stringAttribute key="server-id" value="GlassFish 4.0 at localhost"/>
+</launchConfiguration>

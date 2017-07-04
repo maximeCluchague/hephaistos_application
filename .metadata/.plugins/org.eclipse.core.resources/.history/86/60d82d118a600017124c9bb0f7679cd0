@@ -87,7 +87,7 @@ public class HephaistosWebServer {
 
 	@OnClose
 	public void handleClose(Session client) throws IOException, EncodeException{
-		System.out.println("[DECONNEXION]");
+		System.out.println("[DECONNEXION] "+ (String) client.getUserProperties().get("nomClient"));
 		sessionClient.remove(client);
 	}
 }
