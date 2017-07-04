@@ -49,7 +49,7 @@
 					
 					webSocket.onmessage = function processMessage(sensorMessage) {
 						var json = JSON.parse(sensorMessage.data);
-						document.getElementById("messages").value += "<MESSAGE> {\"idCapteur\":\""+ json.idCapteur+"\",\"acquisition\":\""+ json.acquisition+"\",\"date\":\"" +json.date+"\",\"commande\":\""+json.commande+"\"}\n";
+						document.getElementById("messages").value += "[ capteur : "+json.idCapteur + " | date : "+json.date+ " | commande : "+json.commande+" | acquisition : "+json.acquisition+ " ]\n\n";
 					}
 					
 					document.getElementById("messages").value = "\n[CONNEXION] \'"+url+"\'\n\n";
