@@ -1,0 +1,78 @@
+package com.za.websocket;
+
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.util.Date;
+import java.util.Timer;
+import java.util.TimerTask;
+
+public class testClientJava {
+	public static class SimulationCapteur {
+		  Timer t;
+		  ClientJava clientJava;
+		  public SimulationCapteur(ClientJava client) {
+			  this.clientJava = client;
+		    t = new Timer();
+		    t.schedule(new MonAction(), 0, 1*100);
+		    }
+
+		  class MonAction extends TimerTask {
+		    int nbrRepetitions = 100;
+
+		    public void run() {
+		      if (nbrRepetitions > 0) {
+		    	  clientJava.envoieMessage("capteur_IR_1", Integer.toString(doubleToInt(Math.random())));
+		    	  clientJava.envoieMessage("capteur_IR_2",  Integer.toString(doubleToInt(Math.random())));
+		    	  clientJava.envoieMessage("capteur_IR_3",  Integer.toString(doubleToInt(Math.random())));
+		    	  clientJava.envoieMessage("capteur_IR_4", Integer.toString(doubleToInt(Math.random())));
+		    	  clientJava.envoieMessage("capteur_IR_5", Integer.toString(doubleToInt(Math.random())));
+		    	  clientJava.envoieMessage("capteur_IR_6", Integer.toString(doubleToInt(Math.random())));
+		        nbrRepetitions--;
+		      } else {
+		        System.out.println("Terminé!");
+		        t.cancel();
+		        }
+		      }
+		    }
+		  } 
+	public static int doubleToInt(double d){
+		if(d>0.80){
+			return 1;
+		}
+		return 0;
+	}
+	
+	public static void main(String[] args) throws URISyntaxException, IOException{
+		ClientJava clientJava = new ClientJava();
+		SimulationCapteur simulation = new SimulationCapteur(clientJava);
+		/*int x1 = 12;
+		int x2 = 2;
+		int x3 = 17;
+		int x4 = 6;
+		int x5 = 20;
+		int x6 = 9;
+		Date dateDeb;
+		Date dateCourante;
+		boolean fini;
+		
+		
+		while(true){
+			dateDeb = new Date();
+			clientJava.envoieMessage("capteur_IR_1", Integer.toString(doubleToInt(Math.random())));
+			clientJava.envoieMessage("capteur_IR_2",  Integer.toString(doubleToInt(Math.random())));
+			clientJava.envoieMessage("capteur_IR_3",  Integer.toString(doubleToInt(Math.random())));
+			clientJava.envoieMessage("capteur_IR_4", Integer.toString(doubleToInt(Math.random())));
+			clientJava.envoieMessage("capteur_IR_5", Integer.toString(doubleToInt(Math.random())));
+			clientJava.envoieMessage("capteur_IR_6", Integer.toString(doubleToInt(Math.random())));
+			fini = false;
+			
+			while(!fini){
+				dateCourante = new Date();
+				if(dateCourante.getSeconds()-dateDeb.getSeconds()>1){
+					fini = true;
+				}
+			}
+			//clientJava.fermerClient();
+		}*/
+	}
+}

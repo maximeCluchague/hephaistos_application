@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+
+
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 		<title>Hephaistos Application</title>
@@ -12,10 +14,11 @@
 		  <center><input type="button" value="Connexion" onclick="connexion()" /> 
 		  <input type="button" value="Deconnexion" onclick="deconnexion()" /></center></br>
 		
-		<textarea id="messages" readonly="readonly" rows="17" cols="130"></textarea></br></br>
+		Console client</br>
+		<textarea id="console" readonly="readonly" rows="17" cols="130"></textarea></br></br>
 		 Identifiant capteur </br> <input id="idCapteur" type="text" size="20" /></br>
 		 Acquisition </br><input id="acquisition" type="text" size="20" /></br>
-		 Commande </br><input id="commande" type="text" size="20" /></br>
+		 Commande </br><input id="commande" type="text" size="20" value='NULL' onFocus="if (this.value=='NULL') {this.value=''}"/></br>
 		
 		<center><input type="button" value="Envoyer" onclick="send()" /></center></br>
 		
@@ -24,19 +27,14 @@
 		<script type="text/javascript">
 			adresse.value = "138.96.192.120";
 			port.value = "8080";
-			commande.value = "NULL";
-			document.getElementById("messages").value += "\nEN ATTENTE D'UNE CONNEXION ...";
+			//commande.value = "NULL";
+			document.getElementById("console").value += "\nEN ATTENTE D'UNE CONNEXION ...";
 			
-			
-			//var url = "ws://"+adresse.value.toString()+":"+port.value.toString()+"/hephaistos_project/hephaistoswebserver";
-			//var webSocket = new WebSocket(url);
-			var webSocket;
-			//document.getElementById("messages").value += "[WEBSERVEUR GLASSFISH EN ECOUTE] "+url+"\n\n";
+			var webSocket = null;
 			var isConnect = false;
 			
 			function connexion(){
 				try{
-					isConnect = true;
 					webSocket.close();
 					
 				}catch(exception){
@@ -47,31 +45,42 @@
 					
 					webSocket = new WebSocket(url);
 					
-					webSocket.onmessage = function processMessage(sensorMessage) {
-						var json = JSON.parse(sensorMessage.data);
-						document.getElementById("messages").value += "<MESSAGE> {\"idCapteur\":\""+ json.idCapteur+"\",\"acquisition\":\""+ json.acquisition+"\",\"date\":\"" +json.date+"\",\"commande\":\""+json.commande+"\"}\n";
+					webSocket.onopen = function(event){
+						isConnect = true;
+						document.getElementById("console").value = "\n[---> CONNEXION ETABLIE AVEC \'"+url+"\']\n\n";
 					}
 					
-					document.getElementById("messages").value = "\n[CONNEXION] \'"+url+"\'\n\n";
+					webSocket.onclose = function(event){
+						document.getElementById("console").value = "\n[-x-> CONNEXION INTERROMPU AVEC \'"+url+"\']";
+						document.getElementById("console").value += "\n\nEN ATTENTE D'UNE CONNEXION ...";
+					}
+					
+					webSocket.onerror = function(event){
+						document.getElementById("console").value = "\n[IMPOSSIBLE DE SE CONNECTER \'"+url+"\']";
+					}
+					
+					webSocket.onmessage = function processMessage(sensorMessage) {
+						var json = JSON.parse(sensorMessage.data);
+						document.getElementById("console").value += "<MESSAGE> {\"idCapteur\":\""+ json.idCapteur+"\",\"acquisition\":\""+ json.acquisition+"\",\"date\":\"" +json.date+"\",\"commande\":\""+json.commande+"\"}\n";
+					}
+					
 				}catch(exception){
-					document.getElementById("messages").value += "[ERREUR SAISIE]\n\n";
+					document.getElementById("console").value += "\n\n[IMPOSSIBLE DE SE CONNECTER]";
 				}
 			}
 				
 			function deconnexion(){
-				isConnect = false;
-				try{
+				
+				if(isConnect){
 					webSocket.close();
-					document.getElementById("messages").value = "\n[DECONNEXION]\n\nEN ATTENTE D'UNE CONNEXION ...";
-				}catch(exception){
-					document.getElementById("messages").value += "\n\nVous n'êtes pas connecté";
+					isConnect = false;
+				}else{
+					document.getElementById("console").value += "\n\nVous n'êtes pas connecté";
 				}
 				
 			}
 			
-			
 			function send(){
-				//var idCapteur = document.getElementById("idCapteur");
 				// On créer le Json qui va etre envoyé
 				if(isConnect){
 					var date=new Date();
@@ -84,7 +93,7 @@
 					commande.value = "NULL";
 
 				}else{
-					document.getElementById("messages").value += "\n\nVous devez être connecté pour envoyer un message vers le serveur ... ";
+					document.getElementById("console").value += "\n\nVous devez être connecté pour envoyer un message vers le serveur ... ";
 				}
 			}
 			

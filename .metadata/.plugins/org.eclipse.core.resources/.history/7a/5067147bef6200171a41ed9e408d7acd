@@ -1,0 +1,55 @@
+package com.za.websocket;
+
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.net.UnknownHostException;
+import java.util.Date;
+import java.util.Timer;
+import java.util.TimerTask;
+
+public class testClientJava {
+	public static class SimulationCapteur {
+		  Timer t;
+		  ClientJava clientJava;
+		  public SimulationCapteur(ClientJava client) {
+			  this.clientJava = client;
+		    t = new Timer();
+		    t.schedule(new MonAction(), 0, 1*100);
+		    }
+
+		  class MonAction extends TimerTask {
+		    int nbrRepetitions = 100;
+
+		    public void run() {
+		      if (nbrRepetitions > 0) {
+		    	  try {
+					clientJava.envoieMessage("capteur_IR_1", Integer.toString(doubleToInt(Math.random())));
+					clientJava.envoieMessage("capteur_IR_2",  Integer.toString(doubleToInt(Math.random())));
+					clientJava.envoieMessage("capteur_IR_3",  Integer.toString(doubleToInt(Math.random())));
+					//clientJava.envoieMessage("capteur_IR_4", Integer.toString(doubleToInt(Math.random())));
+					//clientJava.envoieMessage("capteur_IR_5", Integer.toString(doubleToInt(Math.random())));
+					//clientJava.envoieMessage("capteur_IR_6", Integer.toString(doubleToInt(Math.random())));
+		    	  } catch (UnknownHostException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+		        nbrRepetitions--;
+		      } else {
+		        System.out.println("Terminé!");
+		        t.cancel();
+		        }
+		      }
+		    }
+		  } 
+	public static int doubleToInt(double d){
+		if(d>0.50){
+			return 1;
+		}
+		return 0;
+	}
+	
+	public static void main(String[] args) throws URISyntaxException, IOException{
+		ClientJava clientJava = new ClientJava();
+		SimulationCapteur simulation = new SimulationCapteur(clientJava);
+	}
+}

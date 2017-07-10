@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+
+<body>
+	
+		
+	<center><canvas id="myCanvas" width="900" height="300" style="border:1px solid black;">
+    votre navigateur ne supporte pas canvas.
+	</canvas></center>
+	
+	
+	
+	<script type="text/javascript">
+window.onload = function()
+{
+    var canvas = document.getElementById("myCanvas");
+    if(!canvas)
+    {
+        alert("Impossible de récupérer le canvas");
+        return;
+    }
+    
+    var ctx = canvas.getContext("2d");
+    //var img = document.getElementById("planBatiment");
+    //ctx.drawImage(img, 10, 10);
+        
+    if(!ctx)
+    {
+        alert("Impossible de récupérer le context");
+        return;
+    }
+    
+    
+    //var myInterval = setInterval(animate, 1000/30);
+    
+    var capteurConnectes = [];
+    
+    
+    var url = "ws://"+adresse.value.toString()+":"+port.value.toString()+"/hephaistos_project/hephaistoswebserver";
+	
+	var webSocket = new WebSocket(url);
+	
+	webSocket.onmessage = function processMessage(sensorMessage) {
+		updateLine(200,200,200,100,sensorMessage);
+		updateLine(400,200,400,100,sensorMessage);
+	}
+	
+    function updateLine(x1,y1,x2,y2,sensorMessage){
+        
+    	ctx.clearRect(x1, y1, x2, y2);
+        
+        var json = JSON.parse(sensorMessage.data);
+        
+        // Changement de couleur
+        var acq = parseInt(json.acquisition);
+        if(acq>0){
+        	ctx.strokeStyle='red';
+        }else{
+        	ctx.strokeStyle='black';
+        }
+        
+        //Tracé de la barriere capteur
+        ctx.beginPath();
+        ctx.moveTo(x1,y1);
+        ctx.lineTo(x2,y2);
+        ctx.lineWidth = 5;
+        ctx.stroke();
+    }
+    
+}
+
+</script>
+</body>
+</html>

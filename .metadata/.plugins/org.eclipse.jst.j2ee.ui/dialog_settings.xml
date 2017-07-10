@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item value="true" key="J2EE_EXPORT_OVERWRITE"/>
+	<item value="false" key="J2EE_EXPORT_SOURCE"/>
 	<list key="MRU_RUNTIME_STORE">
 		<item value="GlassFish 4.0"/>
+	</list>
+	<list key="J2EE_EXPORT_JST_WEB">
+		<item value="/run/netsop/u/sop-nas2a/vol/home_hephaistos/mcluchag/Desktop/hephaistos_application/Exec_App/hephaistos_project.war"/>
 	</list>
 </section>
