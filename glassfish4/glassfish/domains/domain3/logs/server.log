@@ -15742,3 +15742,1344 @@ KeyIdentifier [
 [2017-07-10T14:14:33.824+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499688873824] [levelValue: 800] [[
   <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
 
+[2017-07-10T14:39:47.713+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690387713] [levelValue: 800] [[
+  <CONNEXION>]]
+
+[2017-07-10T14:39:47.757+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690387757] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 0, date : Mon Jul 10 14:39:47 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:47.757+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690387757] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:47.758+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690387758] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 1, date : Mon Jul 10 14:39:47 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:47.758+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690387758] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:47.759+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690387759] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_3, Val : 0, date : Mon Jul 10 14:39:47 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:47.759+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690387759] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:47.760+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690387760] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 0, date : Mon Jul 10 14:39:47 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:47.760+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690387760] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:47.762+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690387762] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 0, date : Mon Jul 10 14:39:47 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:47.762+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690387762] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:47.763+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690387763] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_6, Val : 1, date : Mon Jul 10 14:39:47 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:47.763+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690387763] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:48.234+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690388234] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 0, date : Mon Jul 10 14:39:48 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:48.234+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690388234] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:48.237+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690388237] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 1, date : Mon Jul 10 14:39:48 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:48.237+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690388237] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:48.240+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690388240] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_6, Val : 0, date : Mon Jul 10 14:39:48 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:48.240+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690388240] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:48.737+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690388737] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 1, date : Mon Jul 10 14:39:48 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:48.738+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690388738] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:48.741+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690388741] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 0, date : Mon Jul 10 14:39:48 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:48.741+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690388741] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:49.235+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690389235] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 1, date : Mon Jul 10 14:39:49 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:49.235+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690389235] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:49.735+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690389735] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 1, date : Mon Jul 10 14:39:49 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:49.735+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690389735] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:49.739+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690389739] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 0, date : Mon Jul 10 14:39:49 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:49.739+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690389739] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:50.235+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690390235] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 0, date : Mon Jul 10 14:39:50 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:50.235+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690390235] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:50.239+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690390239] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 0, date : Mon Jul 10 14:39:50 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:50.239+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690390239] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:51.237+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690391237] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 1, date : Mon Jul 10 14:39:51 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:51.237+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690391237] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:51.240+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690391240] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_6, Val : 1, date : Mon Jul 10 14:39:51 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:51.240+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690391240] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:51.737+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690391737] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 0, date : Mon Jul 10 14:39:51 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:51.737+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690391737] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:51.741+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690391741] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 1, date : Mon Jul 10 14:39:51 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:51.741+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690391741] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:52.237+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690392237] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 0, date : Mon Jul 10 14:39:52 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:52.237+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690392237] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:52.241+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690392241] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_3, Val : 1, date : Mon Jul 10 14:39:52 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:52.241+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690392241] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:52.243+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690392243] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_6, Val : 0, date : Mon Jul 10 14:39:52 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:52.243+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690392243] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:52.747+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690392747] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 1, date : Mon Jul 10 14:39:52 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:52.747+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690392747] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:52.750+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690392750] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_3, Val : 0, date : Mon Jul 10 14:39:52 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:52.750+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690392750] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:52.751+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690392751] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_6, Val : 1, date : Mon Jul 10 14:39:52 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:52.751+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690392751] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:53.238+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690393238] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_3, Val : 1, date : Mon Jul 10 14:39:53 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:53.239+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690393239] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:53.244+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690393244] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_6, Val : 0, date : Mon Jul 10 14:39:53 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:53.244+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690393244] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:53.737+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690393737] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 0, date : Mon Jul 10 14:39:53 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:53.737+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690393737] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:53.740+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690393740] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_3, Val : 0, date : Mon Jul 10 14:39:53 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:53.740+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690393740] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:53.742+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690393742] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 1, date : Mon Jul 10 14:39:53 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:53.742+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690393742] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:54.739+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690394739] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 1, date : Mon Jul 10 14:39:54 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:54.740+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690394740] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:54.744+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690394744] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 1, date : Mon Jul 10 14:39:54 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:54.744+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690394744] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:54.745+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690394745] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 0, date : Mon Jul 10 14:39:54 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:54.745+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690394745] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:55.239+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690395239] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 0, date : Mon Jul 10 14:39:55 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:55.239+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690395239] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:55.241+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690395241] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 0, date : Mon Jul 10 14:39:55 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:55.241+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690395241] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:55.243+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690395243] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_3, Val : 1, date : Mon Jul 10 14:39:55 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:55.243+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690395243] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:55.739+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690395739] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 1, date : Mon Jul 10 14:39:55 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:55.739+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690395739] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:55.743+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690395743] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_3, Val : 0, date : Mon Jul 10 14:39:55 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:55.743+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690395743] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:55.744+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690395744] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 1, date : Mon Jul 10 14:39:55 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:55.744+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690395744] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:56.239+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690396239] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 0, date : Mon Jul 10 14:39:56 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:56.240+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690396240] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:56.242+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690396242] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 1, date : Mon Jul 10 14:39:56 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:56.242+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690396242] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:56.244+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690396244] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 1, date : Mon Jul 10 14:39:56 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:56.245+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690396245] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:56.247+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690396247] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 0, date : Mon Jul 10 14:39:56 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:56.247+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690396247] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:39:56.735+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690396735] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 0, date : Mon Jul 10 14:39:56 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:39:56.735+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690396735] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:01.202+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690401202] [levelValue: 800] [[
+  <CONNEXION>]]
+
+[2017-07-10T14:40:01.233+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690401233] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 1, date : Mon Jul 10 14:40:01 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:01.233+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690401233] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:01.235+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690401235] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 1, date : Mon Jul 10 14:40:01 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:01.235+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690401235] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:01.236+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690401236] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_3, Val : 1, date : Mon Jul 10 14:40:01 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:01.236+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690401236] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:01.237+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690401237] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 1, date : Mon Jul 10 14:40:01 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:01.237+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690401237] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:01.239+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690401239] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 0, date : Mon Jul 10 14:40:01 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:01.239+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690401239] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:01.240+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690401240] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_6, Val : 1, date : Mon Jul 10 14:40:01 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:01.240+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690401240] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:01.720+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690401720] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_3, Val : 0, date : Mon Jul 10 14:40:01 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:01.720+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690401720] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:01.726+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690401726] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 0, date : Mon Jul 10 14:40:01 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:01.726+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690401726] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:02.221+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690402221] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 0, date : Mon Jul 10 14:40:02 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:02.221+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690402221] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:02.228+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690402228] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 0, date : Mon Jul 10 14:40:02 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:02.228+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690402228] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:02.230+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690402230] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 1, date : Mon Jul 10 14:40:02 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:02.231+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690402231] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:02.233+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690402233] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_6, Val : 0, date : Mon Jul 10 14:40:02 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:02.233+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690402233] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:02.721+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690402721] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 0, date : Mon Jul 10 14:40:02 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:02.722+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690402722] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:03.723+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690403723] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 1, date : Mon Jul 10 14:40:03 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:03.723+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690403723] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:04.222+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690404222] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 0, date : Mon Jul 10 14:40:04 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:04.222+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690404222] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:04.228+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690404228] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_3, Val : 1, date : Mon Jul 10 14:40:04 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:04.228+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690404228] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:04.230+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690404230] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 1, date : Mon Jul 10 14:40:04 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:04.230+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690404230] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:04.236+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690404236] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 1, date : Mon Jul 10 14:40:04 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:04.236+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690404236] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:04.720+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690404720] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_3, Val : 0, date : Mon Jul 10 14:40:04 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:04.720+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690404720] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:04.722+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690404722] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 0, date : Mon Jul 10 14:40:04 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:04.722+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690404722] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:04.723+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690404723] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 0, date : Mon Jul 10 14:40:04 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:04.723+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690404723] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:05.223+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690405223] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_6, Val : 1, date : Mon Jul 10 14:40:05 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:05.223+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690405223] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:05.724+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690405724] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 1, date : Mon Jul 10 14:40:05 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:05.724+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690405724] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:05.727+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690405727] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 1, date : Mon Jul 10 14:40:05 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:05.727+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690405727] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:05.728+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690405728] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_6, Val : 0, date : Mon Jul 10 14:40:05 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:05.728+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690405728] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:05.847+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690405847] [levelValue: 800] [[
+  <DECONNEXION>]]
+
+[2017-07-10T14:40:06.224+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690406224] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 0, date : Mon Jul 10 14:40:06 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:06.224+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690406224] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:06.227+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690406227] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_3, Val : 1, date : Mon Jul 10 14:40:06 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:06.227+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690406227] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:06.229+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690406229] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 1, date : Mon Jul 10 14:40:06 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:06.229+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690406229] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:06.724+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690406724] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_3, Val : 0, date : Mon Jul 10 14:40:06 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:06.725+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690406725] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:06.731+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690406731] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 0, date : Mon Jul 10 14:40:06 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:06.731+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690406731] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:06.736+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690406736] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 0, date : Mon Jul 10 14:40:06 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:06.736+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690406736] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:07.094+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690407094] [levelValue: 800] [[
+  <CONNEXION>]]
+
+[2017-07-10T14:40:07.224+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690407224] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 1, date : Mon Jul 10 14:40:07 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:07.224+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690407224] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:07.228+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690407228] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_6, Val : 1, date : Mon Jul 10 14:40:07 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:07.228+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690407228] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:07.724+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690407724] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 1, date : Mon Jul 10 14:40:07 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:07.724+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690407724] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:07.727+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690407727] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 0, date : Mon Jul 10 14:40:07 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:07.727+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690407727] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:08.227+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690408227] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 0, date : Mon Jul 10 14:40:08 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:08.227+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690408227] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:08.231+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690408231] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 1, date : Mon Jul 10 14:40:08 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:08.231+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690408231] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:08.233+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690408233] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_6, Val : 0, date : Mon Jul 10 14:40:08 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:08.233+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690408233] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:08.724+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690408724] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_3, Val : 1, date : Mon Jul 10 14:40:08 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:08.724+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690408724] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:08.725+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690408725] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 0, date : Mon Jul 10 14:40:08 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:08.725+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690408725] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:09.226+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690409226] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 1, date : Mon Jul 10 14:40:09 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:09.226+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690409226] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:09.228+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690409228] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_3, Val : 0, date : Mon Jul 10 14:40:09 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:09.229+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690409229] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:09.232+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690409232] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 1, date : Mon Jul 10 14:40:09 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:09.232+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690409232] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:09.728+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690409728] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 0, date : Mon Jul 10 14:40:09 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:09.728+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690409728] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:09.731+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690409731] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 0, date : Mon Jul 10 14:40:09 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:09.731+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690409731] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:10.225+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690410225] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 1, date : Mon Jul 10 14:40:10 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:10.225+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690410225] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:10.728+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690410728] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 1, date : Mon Jul 10 14:40:10 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:10.728+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690410728] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:10.733+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690410733] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 0, date : Mon Jul 10 14:40:10 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:10.734+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690410734] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:11.227+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690411227] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 0, date : Mon Jul 10 14:40:11 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:11.227+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690411227] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:11.231+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690411231] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 1, date : Mon Jul 10 14:40:11 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:11.231+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690411231] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:11.727+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690411727] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 0, date : Mon Jul 10 14:40:11 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:11.727+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690411727] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:11.734+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690411734] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_6, Val : 1, date : Mon Jul 10 14:40:11 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:11.734+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690411734] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:12.225+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690412225] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 1, date : Mon Jul 10 14:40:12 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:12.225+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690412225] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:12.226+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690412226] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_6, Val : 0, date : Mon Jul 10 14:40:12 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:12.226+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690412226] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:12.726+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690412726] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 0, date : Mon Jul 10 14:40:12 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:12.726+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690412726] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:13.227+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690413227] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 1, date : Mon Jul 10 14:40:13 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:13.227+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690413227] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:13.726+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690413726] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 1, date : Mon Jul 10 14:40:13 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:13.726+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690413726] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:13.730+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690413730] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 0, date : Mon Jul 10 14:40:13 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:13.730+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690413730] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:14.226+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690414226] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 0, date : Mon Jul 10 14:40:14 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:14.226+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690414226] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:14.728+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690414728] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_6, Val : 1, date : Mon Jul 10 14:40:14 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:14.728+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690414728] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:15.229+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690415229] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_6, Val : 0, date : Mon Jul 10 14:40:15 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:15.229+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690415229] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:15.728+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690415728] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_6, Val : 1, date : Mon Jul 10 14:40:15 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:15.728+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690415728] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:16.234+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690416234] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 1, date : Mon Jul 10 14:40:16 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:16.235+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690416235] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:16.239+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690416239] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_6, Val : 0, date : Mon Jul 10 14:40:16 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:16.239+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690416239] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:16.729+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690416729] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 0, date : Mon Jul 10 14:40:16 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:16.729+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690416729] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:16.735+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690416735] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_6, Val : 1, date : Mon Jul 10 14:40:16 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:16.735+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690416735] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:17.226+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690417226] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 1, date : Mon Jul 10 14:40:17 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:17.226+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690417226] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:17.228+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690417228] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_6, Val : 0, date : Mon Jul 10 14:40:17 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:17.228+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690417228] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:17.727+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690417727] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 0, date : Mon Jul 10 14:40:17 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:17.727+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690417727] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:18.229+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690418229] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 1, date : Mon Jul 10 14:40:18 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:18.229+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690418229] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:18.726+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690418726] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 1, date : Mon Jul 10 14:40:18 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:18.726+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690418726] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:18.728+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690418728] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 0, date : Mon Jul 10 14:40:18 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:18.728+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690418728] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:19.230+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690419230] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 0, date : Mon Jul 10 14:40:19 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:19.230+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690419230] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:19.234+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690419234] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 1, date : Mon Jul 10 14:40:19 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:19.234+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690419234] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:19.728+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690419728] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 1, date : Mon Jul 10 14:40:19 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:19.728+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690419728] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:19.730+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690419730] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 0, date : Mon Jul 10 14:40:19 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:19.730+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690419730] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:20.228+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690420228] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 0, date : Mon Jul 10 14:40:20 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:20.228+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690420228] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:20.729+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690420729] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_3, Val : 1, date : Mon Jul 10 14:40:20 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:20.729+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690420729] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:20.734+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690420734] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 1, date : Mon Jul 10 14:40:20 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:20.734+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690420734] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:21.230+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690421230] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 1, date : Mon Jul 10 14:40:21 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:21.230+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690421230] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:21.234+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690421234] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_3, Val : 0, date : Mon Jul 10 14:40:21 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:21.234+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690421234] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:21.235+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690421235] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 0, date : Mon Jul 10 14:40:21 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:21.235+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690421235] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:21.731+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690421731] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 1, date : Mon Jul 10 14:40:21 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:21.731+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690421731] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:22.232+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690422232] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 0, date : Mon Jul 10 14:40:22 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:22.232+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690422232] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:22.732+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690422732] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 0, date : Mon Jul 10 14:40:22 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:22.732+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690422732] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:22.736+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690422736] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 1, date : Mon Jul 10 14:40:22 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:22.736+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690422736] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:23.232+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690423232] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 1, date : Mon Jul 10 14:40:23 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:23.233+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690423233] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:23.241+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690423241] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 0, date : Mon Jul 10 14:40:23 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:23.241+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690423241] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:24.732+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690424732] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 0, date : Mon Jul 10 14:40:24 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:24.732+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690424732] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:25.734+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690425734] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_6, Val : 1, date : Mon Jul 10 14:40:25 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:25.734+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690425734] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:51.683+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690451683] [levelValue: 800] [[
+  <CONNEXION>]]
+
+[2017-07-10T14:40:51.720+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690451720] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 0, date : Mon Jul 10 14:40:51 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:51.720+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690451720] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:51.722+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690451722] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 1, date : Mon Jul 10 14:40:51 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:51.722+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690451722] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:51.723+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690451723] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_3, Val : 0, date : Mon Jul 10 14:40:51 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:51.723+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690451723] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:51.725+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690451725] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 1, date : Mon Jul 10 14:40:51 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:51.725+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690451725] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:51.726+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690451726] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 0, date : Mon Jul 10 14:40:51 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:51.726+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690451726] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:51.728+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690451728] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_6, Val : 0, date : Mon Jul 10 14:40:51 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:51.728+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690451728] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:52.201+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690452201] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 0, date : Mon Jul 10 14:40:52 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:52.201+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690452201] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:52.205+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690452205] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 0, date : Mon Jul 10 14:40:52 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:52.205+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690452205] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:52.207+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690452207] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_6, Val : 1, date : Mon Jul 10 14:40:52 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:52.207+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690452207] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:52.702+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690452702] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_6, Val : 0, date : Mon Jul 10 14:40:52 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:52.702+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690452702] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:53.202+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690453202] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 1, date : Mon Jul 10 14:40:53 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:53.202+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690453202] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:53.703+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690453703] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 0, date : Mon Jul 10 14:40:53 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:53.703+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690453703] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:55.202+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690455202] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 1, date : Mon Jul 10 14:40:55 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:55.202+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690455202] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:55.209+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690455209] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_6, Val : 1, date : Mon Jul 10 14:40:55 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:55.209+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690455209] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:55.702+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690455702] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 1, date : Mon Jul 10 14:40:55 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:55.702+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690455702] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:55.707+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690455707] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_6, Val : 0, date : Mon Jul 10 14:40:55 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:55.707+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690455707] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:56.202+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690456202] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 0, date : Mon Jul 10 14:40:56 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:56.202+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690456202] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:56.206+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690456206] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 1, date : Mon Jul 10 14:40:56 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:56.206+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690456206] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:56.208+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690456208] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_6, Val : 1, date : Mon Jul 10 14:40:56 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:56.208+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690456208] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:56.703+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690456703] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 0, date : Mon Jul 10 14:40:56 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:56.703+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690456703] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:56.709+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690456709] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 0, date : Mon Jul 10 14:40:56 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:56.709+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690456709] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:56.712+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690456712] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 1, date : Mon Jul 10 14:40:56 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:56.713+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690456713] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:57.203+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690457203] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 1, date : Mon Jul 10 14:40:57 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:57.203+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690457203] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:57.704+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690457704] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 0, date : Mon Jul 10 14:40:57 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:57.704+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690457704] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:58.205+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690458205] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 1, date : Mon Jul 10 14:40:58 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:58.205+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690458205] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:58.209+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690458209] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 0, date : Mon Jul 10 14:40:58 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:58.209+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690458209] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:58.211+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690458211] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_6, Val : 0, date : Mon Jul 10 14:40:58 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:58.211+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690458211] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:58.705+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690458705] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 0, date : Mon Jul 10 14:40:58 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:58.705+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690458705] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:59.205+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690459205] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 1, date : Mon Jul 10 14:40:59 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:59.205+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690459205] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:59.211+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690459211] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_6, Val : 1, date : Mon Jul 10 14:40:59 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:59.211+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690459211] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:59.705+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690459705] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 0, date : Mon Jul 10 14:40:59 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:59.705+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690459705] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:59.709+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690459709] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_3, Val : 1, date : Mon Jul 10 14:40:59 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:59.709+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690459709] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:40:59.711+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690459711] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_6, Val : 0, date : Mon Jul 10 14:40:59 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:40:59.711+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690459711] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:00.706+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690460706] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 1, date : Mon Jul 10 14:41:00 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:00.706+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690460706] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:00.713+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690460713] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_3, Val : 0, date : Mon Jul 10 14:41:00 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:00.713+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690460713] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:00.714+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690460714] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 1, date : Mon Jul 10 14:41:00 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:00.714+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690460714] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:01.207+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690461207] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 0, date : Mon Jul 10 14:41:01 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:01.207+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690461207] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:01.211+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690461211] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 0, date : Mon Jul 10 14:41:01 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:01.211+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690461211] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:02.206+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690462206] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 1, date : Mon Jul 10 14:41:02 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:02.206+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690462206] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:02.208+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690462208] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 1, date : Mon Jul 10 14:41:02 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:02.208+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690462208] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:02.710+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690462710] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 0, date : Mon Jul 10 14:41:02 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:02.710+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690462710] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:02.711+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690462711] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 1, date : Mon Jul 10 14:41:02 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:02.711+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690462711] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:03.209+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690463209] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 0, date : Mon Jul 10 14:41:03 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:03.209+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690463209] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:03.212+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690463212] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_3, Val : 1, date : Mon Jul 10 14:41:03 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:03.212+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690463212] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:03.221+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690463221] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 0, date : Mon Jul 10 14:41:03 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:03.221+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690463221] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:03.710+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690463710] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 1, date : Mon Jul 10 14:41:03 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:03.710+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690463710] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:03.714+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690463714] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 1, date : Mon Jul 10 14:41:03 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:03.714+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690463714] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:03.716+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690463716] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_3, Val : 0, date : Mon Jul 10 14:41:03 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:03.716+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690463716] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:04.209+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690464209] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 0, date : Mon Jul 10 14:41:04 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:04.209+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690464209] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:04.213+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690464213] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 0, date : Mon Jul 10 14:41:04 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:04.213+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690464213] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:04.709+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690464709] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 1, date : Mon Jul 10 14:41:04 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:04.709+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690464709] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:05.209+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690465209] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 0, date : Mon Jul 10 14:41:05 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:05.209+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690465209] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:05.213+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690465213] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 1, date : Mon Jul 10 14:41:05 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:05.213+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690465213] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:05.709+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690465709] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 1, date : Mon Jul 10 14:41:05 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:05.709+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690465709] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:05.712+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690465712] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 0, date : Mon Jul 10 14:41:05 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:05.712+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690465712] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:05.714+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690465714] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 1, date : Mon Jul 10 14:41:05 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:05.714+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690465714] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:06.210+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690466210] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 0, date : Mon Jul 10 14:41:06 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:06.210+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690466210] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:06.213+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690466213] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_3, Val : 1, date : Mon Jul 10 14:41:06 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:06.213+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690466213] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:06.215+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690466215] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 0, date : Mon Jul 10 14:41:06 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:06.215+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690466215] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:06.711+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690466711] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 1, date : Mon Jul 10 14:41:06 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:06.711+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690466711] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:06.714+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690466714] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 1, date : Mon Jul 10 14:41:06 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:06.714+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690466714] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:07.213+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690467213] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 1, date : Mon Jul 10 14:41:07 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:07.213+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690467213] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:07.215+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690467215] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_3, Val : 0, date : Mon Jul 10 14:41:07 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:07.215+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690467215] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:07.217+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690467217] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 0, date : Mon Jul 10 14:41:07 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:07.217+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690467217] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:07.711+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690467711] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 0, date : Mon Jul 10 14:41:07 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:07.711+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690467711] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:07.719+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690467719] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 0, date : Mon Jul 10 14:41:07 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:07.720+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690467720] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:09.712+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690469712] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 1, date : Mon Jul 10 14:41:09 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:09.713+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690469713] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:10.212+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690470212] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 0, date : Mon Jul 10 14:41:10 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:10.212+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690470212] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:11.213+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690471213] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 1, date : Mon Jul 10 14:41:11 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:11.214+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690471214] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:11.216+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690471216] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 1, date : Mon Jul 10 14:41:11 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:11.216+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690471216] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:11.714+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690471714] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 0, date : Mon Jul 10 14:41:11 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:11.714+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690471714] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:11.720+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690471720] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 0, date : Mon Jul 10 14:41:11 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:11.720+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690471720] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:11.722+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690471722] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_6, Val : 1, date : Mon Jul 10 14:41:11 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:11.722+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690471722] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:12.214+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690472214] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 1, date : Mon Jul 10 14:41:12 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:12.214+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690472214] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:12.220+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690472220] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 1, date : Mon Jul 10 14:41:12 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:12.220+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690472220] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:12.222+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690472222] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_6, Val : 0, date : Mon Jul 10 14:41:12 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:12.222+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690472222] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:12.711+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690472711] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_2, Val : 0, date : Mon Jul 10 14:41:12 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:12.711+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690472711] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:12.715+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690472715] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_5, Val : 0, date : Mon Jul 10 14:41:12 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:12.715+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690472715] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:13.213+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690473213] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 1, date : Mon Jul 10 14:41:13 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:13.213+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690473213] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:13.715+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690473715] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 1, date : Mon Jul 10 14:41:13 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:13.715+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690473715] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:14.215+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690474215] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 0, date : Mon Jul 10 14:41:14 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:14.215+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499690474215] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:14.219+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690474219] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_4, Val : 0, date : Mon Jul 10 14:41:14 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:14.219+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690474219] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:15.716+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690475716] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 1, date : Mon Jul 10 14:41:15 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:15.716+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499690475716] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:15.721+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690475721] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_3, Val : 1, date : Mon Jul 10 14:41:15 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:15.721+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499690475721] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:16.216+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690476216] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_1, Val : 0, date : Mon Jul 10 14:41:16 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:16.216+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499690476216] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
+[2017-07-10T14:41:16.220+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690476220] [levelValue: 800] [[
+  <MESSAGE> { id : capteur_IR_3, Val : 0, date : Mon Jul 10 14:41:16 CEST 2017, commande : NULL }]]
+
+[2017-07-10T14:41:16.220+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499690476220] [levelValue: 800] [[
+  <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
+
