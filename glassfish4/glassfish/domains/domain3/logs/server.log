@@ -9730,3 +9730,21 @@ KeyIdentifier [
 [2017-07-12T11:39:25.110+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499852365110] [levelValue: 800] [[
   <CONNEXION>]]
 
+[2017-07-12T11:50:17.179+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499853017179] [levelValue: 800] [[
+  <DECONNEXION>]]
+
+[2017-07-12T11:50:17.200+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499853017200] [levelValue: 800] [[
+  <CONNEXION>]]
+
+[2017-07-12T11:50:20.389+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499853020389] [levelValue: 800] [[
+  <DECONNEXION>]]
+
+[2017-07-12T11:50:21.224+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499853021224] [levelValue: 800] [[
+  <CONNEXION>]]
+
+[2017-07-12T11:50:26.461+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499853026461] [levelValue: 800] [[
+  <DECONNEXION>]]
+
+[2017-07-12T11:51:28.360+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499853088360] [levelValue: 800] [[
+  <CONNEXION>]]
+

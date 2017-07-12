@@ -2,7 +2,7 @@
 
 I. Description/Contenu du projet
 
-	Le projet à pour but de visualiser des données capteur en temps réel sur une application Web / application android. 
+Le projet à pour but de visualiser des données capteur en temps réel sur une application Web / application android. 
 
 	le dossier hephaistos_application du git est composé de : 
 
@@ -21,9 +21,9 @@ I. Description/Contenu du projet
 	la documentation associée au projet
 
 II. Récupérer le projet
-Récupérer le contenu du projet via le terminal à l'aide de la commande 	
+Récupérer le contenu du projet via le terminal à l'aide de la commande
+	
 	$ : git clone https://github.com/maximeCluchague/hephaistos_application.git
-
 	ou télécharger le zip associé à l'adresse : https://github.com/maximeCluchague/hephaistos_application.git
 
 III. Lancement du Serveur
@@ -32,6 +32,7 @@ III. Lancement du Serveur
 
 A. Lancement de "asadmin tool"
 Ouvrir un terminal dans le dossier hephaistos_application cloné/téléchargé et executer les commandes suivantes : 
+
 	$ : cd glassfish4/glassfish/
 	$ : bin/asadmin
 
@@ -40,29 +41,35 @@ le "asadmin tool" va alors se lancer dans le terminal.
 B. Création du domaine 
 
 Dans le "asadmin tool" vous pouvez maintenant créer un nouveau domaine à l'aide de la commande suivante : 
+
 	$ : create-domain --adminport <admin_port> --profile developer --user admin <nom_domaine>
 	
 		- <admin_port> est le port d'accès à l'administrateur du serveur (ex : 4848) ce port permettra de modifier les paramètres du serveur
 		- <nom_domaine> est le nom de domaine que vous aller définir pour votre futur serveur (ex : domainTest) 
 
 C. Démarrage du domaine 
+
 utiliser la ligne de commande suivante pour démarrer le domain <nom_domaine> créer précédemment : 
+
 	$ : start-domain <nom_domaine>
 
 pour arrêter un domaine il vous suffit d'executer la commande : 
+
 	$ : stop-domain <nom_domaine>
+
 D. Déploiement du serveur
 
 Une fois le domaine créer et lancé il faut déployé le serveur. Le serveur est un fichier .WAR (un exécutable java). Le war du projet est disponible dans le dossier : .../hephaistos_application/ExecApp/
 
 utiliser la commande suivante pour déployer le serveur : 
-	$ : deploy --port <admin_port> --host <adresse> [PWD]/hephaistos_application/ExecApp/hephaistos_project.war
 
+	$ : deploy --port <admin_port> --host <adresse> [PWD]/hephaistos_application/ExecApp/hephaistos_project.war
 	- <admin_port> est le port d'accès à l'administrateur du serveur (ex : 4848) ce port permettra de modifier les paramètres du serveur.
 	- <adresse> est l'adresse IP de la machine (ex: localhost, 138.96.192.120 ... )
 	- ([PWD] est le chemin où se trouve le dossier hephaistos_application)
 
 /!\ ATTENTION /!\ Il est impossible de déployer le serveur si celui-ci est déja déployé sur un autre domaine en cas d'érreur il faut undeploy le serveur à l'aide de la commande suivante : 
+
 	$ : undeploy --port 4848 --host localhost hephaistos_project (Sans le .war)
 
 PS : par défaut le serveur est sur le port 8080
