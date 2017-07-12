@@ -34,9 +34,11 @@ Un domaine est créer par défaut il s'agit de hephaistosDomain dont le port adm
 Celui-ci se situe dans le dossier glassfish4/glassfish/domains, et il contient un .WAR du projet.
 
 1. Lancer le Serveur :
+
 	$ : ./StartServer
 
 2. Stopper le Serveur :
+
 	$ : ./StopServer
 
 PS : un makefile est disponible pour compiler les fichier StartServer.c et StopServer.c
