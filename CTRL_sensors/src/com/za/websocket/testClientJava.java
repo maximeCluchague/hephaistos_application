@@ -46,7 +46,7 @@ public class testClientJava {
 		    }
 		  } 
 	public static int doubleToInt(double d){
-		if(d>0.80){
+		if(d>0.90){
 			return 1;
 		}
 		return 0;
