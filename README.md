@@ -6,15 +6,11 @@ Le projet à pour but de visualiser des données capteur en temps réel sur une 
 
 le dossier hephaistos_application du git est composé de : 
 
-- Deux projects différents 
-* Dynamic WebProject 'hephaitos_project' : Serveur Java 
-* Java Project 'CTRL_sensor' : Client java (@ClientEndpoint)
+- Deux projects différents : Dynamic WebProject 'hephaitos_project' (Serveur Java) et Java Project 'CTRL_sensor' (@ClientEndpoint)
 
-- Un serveur glassfish 
-* 'glassfish4'
+- Un serveur glassfish : 'glassfish4'
 
-- un dossier comportant les fichiers nécéssaires au lancement de l'application :
-* Exec_App
+- un dossier comportant les fichiers nécéssaires au lancement de l'application : Exec_App
 	
 - la librairie jdk nécéssaire aux dynamic Web App de java EE 
 
