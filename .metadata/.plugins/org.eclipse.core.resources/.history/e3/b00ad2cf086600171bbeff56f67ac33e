@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Creative Button Styles </title>
+		<meta name="description" content="Creative Button Styles  - Modern and subtle styles &amp; effects for buttons" />
+		<meta name="keywords" content="button styles, css3, modern, flat button, subtle, effects, hover, web design" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+	</head>
+	<body>
+		<div class="container">
+			<!-- Top Navigation -->
+			<div class="codrops-top clearfix">
+				
+			</div>
+			<section class="color-6">
+				<p>
+					<button class="btn btn-6 btn-6a">Connexion</button>
+					<button class="btn btn-6 btn-6b">Deconnexion</button>
+					<button class="btn btn-6 btn-6c">Button</button>
+				</p>
+				<p>
+					<button class="btn btn-6 btn-6d">Button</button>
+					<button class="btn btn-6 btn-6e">Button</button>
+					<button class="btn btn-6 btn-6f">Button</button>
+				</p>
+				<p>
+					<button class="btn btn-6 btn-6g">Button</button>
+					<button class="btn btn-6 btn-6h">Button</button>
+					<button class="btn btn-6 btn-6i">Button</button>
+				</p>
+				<p>
+					<button class="btn btn-6 btn-6j">Button</button>
+					<button class="btn btn-6 btn-6k">Button</button>
+					<button class="btn btn-6 btn-6l">Button</button>
+				</p>
+			</section>
+			<section class="color-8">
+				<p class="perspective">
+					<button class="btn btn-8 btn-8a">3D Button</button>
+				</p>
+				<p class="perspective">
+					<button class="btn btn-8 btn-8b">3D Button</button>
+				</p>
+				<br />
+				<p class="perspective">
+					<button class="btn btn-8 btn-8c">3D Button</button>
+				</p>
+				<p class="perspective">
+					<button class="btn btn-8 btn-8d">3D Button</button>
+				</p>
+				<p class="text">Click the following buttons to see the effect:</p>
+				<p class="perspective">
+					<button class="btn btn-8 btn-8e">3D Button</button>
+				</p>
+				<p class="perspective">
+					<button class="btn btn-8 btn-8f">3D Button</button>
+				</p>
+				<br />
+				<p class="perspective">
+					<button class="btn btn-8 btn-8g">3D Button</button>
+				</p>
+				<p class="perspective">
+					<button class="btn btn-8 btn-8g">3D Button</button>
+				</p>
+			</section>
+		</div><!-- /container -->
+		
+	</body>
+</html>

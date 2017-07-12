@@ -2,26 +2,138 @@
 <html>
 <head>
 <meta charset="UTF-8">
+
 <title>Hephaistos Viewer</title>
+<style type="text/css">
+
+section
+{
+	background-color: #DDDDDD;
+	position: fixed;
+    right: 0px;
+    bottom: 0px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+	padding: 30px;
+	width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 322px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+select {
+    padding:3px;
+    margin: 0;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    background: #f8f8f8;
+    color:#000000;
+    border:none;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+}
+
+canvas{
+	width: 100%;
+
+}
+
+
+
+</style>
 </head>
 
-<body><center>Hephaistos Viewer Application</center></br>
-Adresse </br> <input id="adresse" type="text" size="20" /></br>
-		 Port </br> <input id="port" type="text" size="20" /></br>
-		 
-		  <center><input type="button" value="Connexion" onclick="connexion()" /> 
-		  <input type="button" value="Deconnexion" onclick="deconnexion()" /></center></br>
-		
-		Console client</br>
-		<textarea id="console" readonly="readonly" rows="10" cols="130"></textarea></br></br>
+<body>
 
+	<center><class="text">Hephaistos Application</class></center></br>
+	
+	<class="text"> Adresse</class> </br> 
+	<input id="adresse" type="text" size="20" /></br>
+	<class="text"> Port</class> </br> 
+	<input id="port" type="text" size="20" /></br>
+		 
+	<center><input type="button" class="button" value="Connexion" onclick="connexion()" /> 
+	<input type="button" class="button" value="Deconnexion" onclick="deconnexion()" /></center></br>
+		
+	<class="text">Console Client</class></br>
+	
+	
+	<textarea id="console" readonly="readonly" rows="10" cols="130"></textarea></br>
+	<input type="button"  class="button" value="clear" onclick="clearConsole()" /></br></br>
+	
+
+
+	<form>
+		<class="text"> Charger une image</class><br>
+		<input type="text" id="urlImage">
+		<input type="button" class="button" value="Charger Plan" onclick="chargerImage()"/></br></br>
+		
+		<section>
+			<class="text"> Ajouter capteur</class></br>
+			<class="text"> IdCapteur</class> <select id="capteurs"></select>
+		    <class="text"> x1</class><input type="text" id="x1" size="1">
+			<class="text"> y1</class><input type="text" id="y1" size="1">
+			<class="text"> x2</class><input type="text" id="x2" size="1">
+			<class="text"> y2</class><input type="text" id="y2" size="1">
+			<input type="button" class="button" value="Ajouter" onclick="ajouter()"/>
+			<input type="button" class="button" value="Annuler" onclick="annuler()"/>
+		
+		</br></br>
+	
+			<class="text"> Ajouter une zone (touche CTRL)</class></br>
+			<class="text"> nom</class><input type="text" id="nomZone" size="10">
+		    <class="text"> x</class><input type="text" id="x" size="1">
+			<class="text"> y</class><input type="text" id="y" size="1">
+			<class="text"> rayon</class><input type="text" id="r" size="1" value="50">
+			<class="text"> nbPersonne</class><input type="text" id="nbPersonne" size="1" value="0">
+		
+		</br></br>
+		
+			<class="text"> Créer liaison</class></br>
+			<class="text"> zoneA</class> <select id="zone1"></select>
+			<class="text"> IdCapteur</class> <select id="capteursAjoutés"></select>
+			<class="text"> zoneB</class> <select id="zone2"></select>
+			<class="text"> =></class> <input type="button" class="button" value="Lier" onclick="lier()"/>
+		</section>
+		
+	</form> </br>
+
+	<center>
+	<canvas id="myCanvas" width="300" height="100" style="border:1px solid #CCC" >
+	 Votre navigateur ne supporte pas canvas.
+	</canvas>
+	</center>
+	</br></br></br></br></br></br></br></br></br></br></br></br></br>
+		
 <script type="text/javascript">
+			
 			adresse.value = "138.96.192.120";
 			port.value = "8080";
 			document.getElementById("console").value += "\nEN ATTENTE D'UNE CONNEXION ...";
 			
 			var webSocket = null;
 			var isConnect = false;
+			
+			function autoScroll(){
+				var textarea = document.getElementById("console");
+				textarea.scrollTop = textarea.scrollHeight;
+			}
 			
 			function connexion(){
 				try{
@@ -52,6 +164,7 @@ Adresse </br> <input id="adresse" type="text" size="20" /></br>
 					webSocket.onmessage = function processMessage(sensorMessage) {
 						var json = JSON.parse(sensorMessage.data);
 						document.getElementById("console").value += "<MESSAGE> {\"idCapteur\":\""+ json.idCapteur+"\",\"acquisition\":\""+ json.acquisition+"\",\"date\":\"" +json.date+"\",\"commande\":\""+json.commande+"\"}\n";
+						autoScroll();
 						if(json.commande == "deccrocherCapteur"){
 							deccrocherCapteur(json.idCapteur);
 						}else{
@@ -71,7 +184,6 @@ Adresse </br> <input id="adresse" type="text" size="20" /></br>
 							}
 						}
 					}
-					
 				}catch(exception){
 					document.getElementById("console").value += "\n\n[IMPOSSIBLE DE SE CONNECTER]";
 				}
@@ -84,48 +196,15 @@ Adresse </br> <input id="adresse" type="text" size="20" /></br>
 					isConnect = false;
 				}else{
 					document.getElementById("console").value += "\n\nVous n'êtes pas connecté";
+					autoScroll();
 				}
 				
 			}
+			
+			function clearConsole(){
+				document.getElementById("console").value = "";
+			}
 </script>
-
-<form>
-	Charger une image :<br>
-	<input type="text" id="urlImage">
-	<input type="button" value="Charger Plan" onclick="chargerImage()"/></br></br>
-	
-	Ajouter un capteur :</br>
-	capteur <select id="capteurs"></select>
- 
-    x1=<input type="text" id="x1" size="1">
-	y1=<input type="text" id="y1" size="1">
-	x2=<input type="text" id="x2" size="1">
-	y2=<input type="text" id="y2" size="1">
-	<input type="button" value="Ajouter" onclick="ajouter()"/>
-	<input type="button" value="Annuler" onclick="annuler()"/>
-	</br>
-	</br>Ajouter une zone (touche CTRL) :</br>
-	nom=<input type="text" id="nomZone" size="10">
- 
-    x=<input type="text" id="x" size="1">
-	y=<input type="text" id="y" size="1">
-	rayon=<input type="text" id="r" size="1" value="50">
-	nbPersonne=<input type="text" id="nbPersonne" size="1" value="0"></br></br>
-	
-	Créer une liaison :</br>
-	zone1 <select id="zone1"></select>
-	capteur <select id="capteursAjoutés"></select>
-	zone2 <select id="zone2"></select>
-	=> <input type="button" value="Lier" onclick="lier()"/>
-	
-</form> </br>
-
-<center>
-<canvas id="myCanvas" width="300" height="100" style="border:1px solid #CCC" >
- Votre navigateur ne supporte pas canvas.
-</canvas>
-</center>
-		
 
 <script type="text/javascript">
 	
@@ -371,7 +450,8 @@ Adresse </br> <input id="adresse" type="text" size="20" /></br>
 	}
 
 	
-	
+	var imgWidth;
+	var imgHeight;
 
 	function chargerImage(){
 		var img = new Image();
@@ -381,7 +461,9 @@ Adresse </br> <input id="adresse" type="text" size="20" /></br>
 		
 		img.src = urlImage.value;
 		myCanvas.width = img.width;
+		imgWidth = img.width;
 		myCanvas.height = img.height;
+		imgHeight = img.height;
 		imageChargee = true;
 	}
 	
@@ -410,7 +492,39 @@ Adresse </br> <input id="adresse" type="text" size="20" /></br>
 			}
 		}
 	}
-      
+	
+	function getWindowHeight() {
+	    var windowHeight=0;
+	    if (typeof(window.innerHeight)=='number') {
+	        windowHeight=window.innerHeight;
+	    } else {
+	        if (document.documentElement&& document.documentElement.clientHeight) {
+	            windowHeight = document.documentElement.clientHeight;
+	        } else {
+	            if (document.body&&document.body.clientHeight) {
+	                windowHeight=document.body.clientHeight;
+	            }
+	        }
+	    }
+	    return windowHeight;
+	}
+	
+	function getWindowWidth() {
+	 var windowWidth=0;
+	 if (typeof(window.innerWidth)=='number') {
+	  windowWidth=window.innerWidth;
+	    } else {
+	  if (document.documentElement&& document.documentElement.clientWidth) {
+	   windowWidth = document.documentElement.clientWidth;
+	        } else {
+	   if (document.body&&document.body.clientWidth) {
+	    windowWidth=document.body.clientWidth;
+	            }
+	        }
+	    }
+	 return windowWidth;
+	}
+	
       function getMousePos(canvas, evt) {
         var rect = canvas.getBoundingClientRect();
         return {
@@ -423,16 +537,18 @@ Adresse </br> <input id="adresse" type="text" size="20" /></br>
 
       canvas.addEventListener('mousemove', function(evt) {
         var mousePos = getMousePos(canvas, evt);
-        x.value = mousePos.x;
-        y.value = mousePos.y;
+        ny=getWindowHeight();
+        nx=getWindowWidth();
+        x.value = parseInt(mousePos.x/((nx-20)/imgWidth));
+        y.value = parseInt(mousePos.y/((nx-20)/imgWidth));
         zonePointSelected = true;
         if(!firstPointSelected){
-	        x1.value = mousePos.x;
-	        y1.value = mousePos.y;
+	        x1.value = parseInt(mousePos.x/((nx-20)/imgWidth));
+	        y1.value = parseInt(mousePos.y/((nx-20)/imgWidth));
         }else{
         	if(!secondPointSelected){
-    	        x2.value = mousePos.x;
-    	        y2.value = mousePos.y;
+    	        x2.value = parseInt(mousePos.x/((nx-20)/imgWidth));
+    	        y2.value = parseInt(mousePos.y/((nx-20)/imgWidth));
             }
         }
       }, false);

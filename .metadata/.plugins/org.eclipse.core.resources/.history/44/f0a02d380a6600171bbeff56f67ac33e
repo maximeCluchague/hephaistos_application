@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Creative Button Styles </title>
+		<meta name="description" content="Creative Button Styles  - Modern and subtle styles &amp; effects for buttons" />
+		<meta name="keywords" content="button styles, css3, modern, flat button, subtle, effects, hover, web design" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<style>
+		section
+{
+	background-color: #DDDDDD;
+	position: fixed;
+    right: 0px;
+    bottom: 0px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+	padding: 30px;
+	width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+select {
+    padding:3px;
+    margin: 0;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    background: #f8f8f8;
+    color:#000000;
+    border:none;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<!-- Top Navigation -->
+			<div class="codrops-top clearfix">
+				
+			</div>
+
+			<section class="color-8">
+				
+				<p class="text">Welcome Hephaistos's Application</p>
+				<center>Hephaistos Viewer Application</center></br>
+Adresse </br> <input id="adresse" type="text" size="20" /></br>
+		 Port </br> <input id="port" type="text" size="20" /></br>
+		 
+		  <center><input type="button" value="Connexion" onclick="connexion()" /> 
+		  <input type="button" value="Deconnexion" onclick="deconnexion()" /></center></br>
+		
+		Console client</br>
+		<textarea id="console" readonly="readonly" rows="10" cols="130"></textarea></br></br>
+
+
+
+<form>
+	Charger une image :<br>
+	<input type="text" id="urlImage">
+	<input type="button" value="Charger Plan" onclick="chargerImage()"/></br></br>
+	
+	<section>
+		Ajouter un capteur :</br>
+		capteur <select id="capteurs"></select>
+	    x1=<input type="text" id="x1" size="1">
+		y1=<input type="text" id="y1" size="1">
+		x2=<input type="text" id="x2" size="1">
+		y2=<input type="text" id="y2" size="1">
+		<input type="button" value="Ajouter" onclick="ajouter()"/>
+		<input type="button" value="Annuler" onclick="annuler()"/>
+	
+	</br></br>
+
+		Ajouter une zone (touche CTRL) :</br>
+		nom=<input type="text" id="nomZone" size="10">
+	    x=<input type="text" id="x" size="1">
+		y=<input type="text" id="y" size="1">
+		rayon=<input type="text" id="r" size="1" value="50">
+		nbPersonne=<input type="text" id="nbPersonne" size="1" value="0">
+	
+	</br></br>
+	
+		Créer une liaison :</br>
+		zone1 <select id="zone1"></select>
+		capteur <select id="capteursAjoutés"></select>
+		zone2 <select id="zone2"></select>
+		=> <input type="button" value="Lier" onclick="lier()"/>
+	</section>
+	
+</form> </br>
+
+<center>
+<canvas id="myCanvas" width="300" height="100" style="border:1px solid #CCC" >
+ Votre navigateur ne supporte pas canvas.
+</canvas>
+</center>
+				
+			</section>
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script>
+			var buttons7Click = Array.prototype.slice.call( document.querySelectorAll( '#btn-click button' ) ),
+				buttons9Click = Array.prototype.slice.call( document.querySelectorAll( 'button.btn-8g' ) ),
+				totalButtons7Click = buttons7Click.length,
+				totalButtons9Click = buttons9Click.length;
+
+			buttons7Click.forEach( function( el, i ) { el.addEventListener( 'click', activate, false ); } );
+			buttons9Click.forEach( function( el, i ) { el.addEventListener( 'click', activate, false ); } );
+
+			function activate() {
+				var self = this, activatedClass = 'btn-activated';
+
+				if( classie.has( this, 'btn-8g' ) ) {
+					// if it is the first of the two btn-8g then activatedClass = 'btn-success3d';
+					// if it is the second then activatedClass = 'btn-error3d'
+					activatedClass = buttons9Click.indexOf( this ) === totalButtons9Click-2 ? 'btn-success3d' : 'btn-error3d';
+				}
+
+				if( !classie.has( this, activatedClass ) ) {
+					classie.add( this, activatedClass );
+					setTimeout( function() { classie.remove( self, activatedClass ) }, 1000 );
+				}
+			}
+
+			document.querySelector( '.btn-7i' ).addEventListener( 'click', function() {
+				classie.add( document.querySelector( '#trash-effect' ), 'trash-effect-active' );
+			}, false );
+		</script>
+		
+	</body>
+</html>

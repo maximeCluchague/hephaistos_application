@@ -21,7 +21,7 @@ public class testClientJava {
 		    }
 
 		  class MonAction extends TimerTask {
-		    int nbrRepetitions = 50;
+		    int nbrRepetitions = 100;
 
 		    public void run() {
 		      if (nbrRepetitions > 0) {
