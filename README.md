@@ -14,7 +14,7 @@ Le projet à pour but de visualiser des données capteur en temps réel sur une 
 		- 'glassfish4'
 
 	un dossier comportant les fichiers nécéssaires au lancement de l'application :
-		- ExecApp
+		- Exec_App
 	
 	la librairie jdk nécéssaire aux dynamic Web App de java EE 
 
@@ -61,11 +61,11 @@ Pour arrêter un domaine il vous suffit d'executer la commande :
 
 <h2>D. Déploiement du serveur</h2>
 
-Une fois le domaine créer et lancé il faut déployer le serveur. Le serveur est un fichier .WAR (un exécutable java). Le .WAR du projet est disponible dans le dossier : .../hephaistos_application/ExecApp/
+Une fois le domaine créer et lancé il faut déployer le serveur. Le serveur est un fichier .WAR (un exécutable java). Le .WAR du projet est disponible dans le dossier : .../hephaistos_application/Exec_App/
 
 utiliser la commande suivante pour déployer le serveur : 
 
-	$ : deploy --port <admin_port> --host <adresse> [PWD]/hephaistos_application/ExecApp/hephaistos_project.war
+	$ : deploy --port <admin_port> --host <adresse> [PWD]/hephaistos_application/Exec_App/hephaistos_project.war
 	- <admin_port> est le port d'accès à l'administrateur du serveur (ex : 4848) ce port permettra de modifier les paramètres du serveur.
 	- <adresse> est l'adresse IP de la machine (ex: localhost, 138.96.192.120 ... )
 	- ([PWD] est le chemin où se trouve le dossier hephaistos_application)
@@ -133,7 +133,7 @@ Une fois toutes ces modifications éffectuées il vous faut générer le nouveau
 
 	Ouvrir hephaistos_project dans eclipse > fichier > export > web > WAR file
 
-**ATTENTION :** Enregistrer le WAR dans le dossier ExecApp et mettant le nom 'hephaistos_project.war'
+**ATTENTION :** Enregistrer le WAR dans le dossier Exec_App et mettant le nom 'hephaistos_project.war'
 
 une fois le .WAR générer il est possible de deployer le serveur à l'aide de la méthode définie dans la partie III.
 
@@ -156,7 +156,7 @@ Il faut tout d'abord exécuter le client java, il s'agit d'un programme qui tour
 
 ouvrir un terminal dans le dossier hephaistos_application et exécuter :
 
-	$ : cd ExecApp	
+	$ : cd Exec_App	
 	$ : java -jar clientJava.jar <adresseIPServer> <port>
 
 <adresseIPServer> l'adresse ip de la machine où est hébergé le serveur (ex: localhost, 138.96.192.120 ... )

@@ -12916,3 +12916,15 @@ KeyIdentifier [
 [2017-07-12T12:17:40.779+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499854660779] [levelValue: 800] [[
   <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6]]]
 
+[2017-07-12T12:35:56.136+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=21 _ThreadName=Thread-3] [timeMillis: 1499855756136] [levelValue: 800] [[
+  <DECONNEXION>]]
+
+[2017-07-12T12:36:09.038+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=22 _ThreadName=Thread-3] [timeMillis: 1499855769038] [levelValue: 800] [[
+  <CONNEXION>]]
+
+[2017-07-12T12:36:30.769+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=23 _ThreadName=Thread-3] [timeMillis: 1499855790769] [levelValue: 800] [[
+  <DECONNEXION>]]
+
+[2017-07-12T12:36:32.616+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-3] [timeMillis: 1499855792616] [levelValue: 800] [[
+  <CONNEXION>]]
+
