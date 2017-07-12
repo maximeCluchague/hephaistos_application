@@ -127,8 +127,10 @@ Les classes SensorMessage.java, SensorMessageDecoder.java et SensorMessageEncode
 Pour modifier les clients aller dans le projet hephaistos_project dans le dossier /WebContent, celui-ci contient toute les page html du serveur
 
 Une fois toutes ces modifications éffectué il vous faut générer le nouveaux .WAR du serveur. Pour ce faire :
+
 	Ouvrir hephaistos_project dans eclipse > fichier > export > web > WAR file
-	ATTENTION  : Enregistrer le WAR dans le dossier ExecApp et mettant le nom 'hephaistos_project.war'
+
+ATTENTION  : Enregistrer le WAR dans le dossier ExecApp et mettant le nom 'hephaistos_project.war'
 
 une fois le .WAR générer il est possible deployer le serveur à l'aide de la méthode défini dans la partie III.
 
@@ -139,6 +141,7 @@ une fois les modifications éffectuées générer le .jar du projet prêt à l'e
 VI. Lancement du client écoutant les capteurs sur le Phidget
 
 A. Prérequis 
+
 	Vérifier que la librairie Phidget en C est bien installé sur la machine qui servira de transmettre les données vers le serveur. 
 
 	Connecter le Phidget possédant les capteurs sur cette même machine 
@@ -148,6 +151,7 @@ B. Executer le Client Java
 Il faut tout d'abord exécuter le client java, il s'agit d'un programme qui tourne en boucle et qui va transmettre des message vers le serveur en ouvrant un webSocket.
 
 ouvrir un terminal dans le dossier hephaistos_application et exécuter :
+
 	$ : cd ExecApp	
 	$ : java -jar clientJava.jar <adresseIPServer> <port>
 
@@ -155,6 +159,7 @@ ouvrir un terminal dans le dossier hephaistos_application et exécuter :
 <port> Port de communcation du serveur (ex : 8080)
 
 Si vous voyez apparaître 
+
 	[->] Ouverture du client 3aa6c8e7-d854-47c1-903f-8ab2d1a49296
 	[<-] [CONNEXION] ws://localhost:8080/hephaistos_project/hephaistoswebserver
 
@@ -163,7 +168,8 @@ sur le terminal alors votre Client java est prêt à communiquer avec le Serveur
 C. Execution du Listener 
 
 Il reste plus qu'à lancer le programme C qui va récupérer les données des capteur en utilisant les librairies Phidget. A chaque fois qu'un événement capteur se produit une procédure est déclenchée dans ce programme C. Cette procédure va alors ouvrir un Socket vers le client java pour lui transmettre ces événements qui pourront, par la suite, être envoyés vers le Serveur ! 
-Pour se faire : Ouvrir un nouveaux terminal et exécuter les lignes des commandes suivantes :  
+Pour se faire : Ouvrir un nouveaux terminal et exécuter les lignes des commandes suivantes :
+
 	$ : gcc -Wall client.c -o client	
 	$ : make activite_bis
 	$ : ./activite_bis
