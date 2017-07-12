@@ -28,9 +28,10 @@ Récupérer le contenu du projet via le terminal à l'aide de la commande
 
 (ou télécharger le zip associé à l'adresse : https://github.com/maximeCluchague/hephaistos_application.git)
 
-<h1>II. Lancement automatique du Serveur</h1>
+<h1>III. Lancement automatique du Serveur</h1>
 
-Un domaine est créer par défaut il s'agit de hephaistosDomain dont le port administrateur est 5000.
+Un domaine est créer par défaut il s'agit de hephaistosDomain dont le port administrateur est 5000. 
+Celui-ci se situe dans le dossier glassfish4/glassfish/domains, et il contient un .WAR du projet.
 
 1. Lancer le Serveur :
 	$ : ./StartServer
