@@ -12276,3 +12276,76 @@ java.lang.NullPointerException
 	at org.eclipse.wst.jsdt.web.ui.internal.taginfo.JSDTHoverProcessor.getHoverInfo(JSDTHoverProcessor.java:122)
 	at org.eclipse.wst.sse.ui.internal.taginfo.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
 	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 150 2017-07-12 14:21:48.115
+!MESSAGE The Eclipse plugin cannot communicate with the GlassFish server....
+!STACK 0
+java.lang.RuntimeException: The Eclipse plugin cannot communicate with the GlassFish server.Wrong user name or password.
+	at oracle.eclipse.tools.glassfish.GlassfishServerLaunchDelegate.isRunning(GlassfishServerLaunchDelegate.java:300)
+	at oracle.eclipse.tools.glassfish.GlassfishServerLaunchDelegate.launch(GlassfishServerLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:700)
+	at org.eclipse.wst.server.core.internal.Server.startImpl2(Server.java:3538)
+	at org.eclipse.wst.server.core.internal.Server.startImpl(Server.java:3474)
+	at org.eclipse.wst.server.core.internal.Server$StartJob.run(Server.java:367)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 150 2017-07-12 14:24:29.680
+!MESSAGE The Eclipse plugin cannot communicate with the GlassFish server....
+!STACK 0
+java.lang.RuntimeException: The Eclipse plugin cannot communicate with the GlassFish server.Wrong user name or password.
+	at oracle.eclipse.tools.glassfish.GlassfishServerLaunchDelegate.isRunning(GlassfishServerLaunchDelegate.java:300)
+	at oracle.eclipse.tools.glassfish.GlassfishServerLaunchDelegate.launch(GlassfishServerLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:700)
+	at org.eclipse.wst.server.core.internal.Server.startImpl2(Server.java:3538)
+	at org.eclipse.wst.server.core.internal.Server.startImpl(Server.java:3474)
+	at org.eclipse.wst.server.core.internal.Server$StartJob.run(Server.java:367)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.ui.browser 2 0 2017-07-12 14:24:29.866
+!MESSAGE Internal browser is not available: No more handles [Unknown Mozilla path (MOZILLA_FIVE_HOME not set)]
+
+!ENTRY oracle.eclipse.tools.glassfish 4 150 2017-07-12 14:24:37.029
+!MESSAGE The Eclipse plugin cannot communicate with the GlassFish server....
+!STACK 0
+java.lang.RuntimeException: The Eclipse plugin cannot communicate with the GlassFish server.Wrong user name or password.
+	at oracle.eclipse.tools.glassfish.GlassfishServerLaunchDelegate.isRunning(GlassfishServerLaunchDelegate.java:300)
+	at oracle.eclipse.tools.glassfish.GlassfishServerLaunchDelegate.launch(GlassfishServerLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:700)
+	at org.eclipse.wst.server.core.internal.Server.startImpl2(Server.java:3538)
+	at org.eclipse.wst.server.core.internal.Server.startImpl(Server.java:3474)
+	at org.eclipse.wst.server.core.internal.Server$StartJob.run(Server.java:367)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2017-07-12 14:36:46.561 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-07-12 14:39:04.727
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 4 4 2017-07-12 14:39:14.701
+!MESSAGE Unable to find Action Set: org.jboss.ide.eclipse.archives.ui.actions.Archives
+
+!ENTRY org.eclipse.ui 4 4 2017-07-12 14:39:14.707
+!MESSAGE Unable to find Action Set: org.jboss.tools.jst.web.ui.server.actionSet
+
+!ENTRY org.eclipse.ui 4 4 2017-07-12 14:39:14.710
+!MESSAGE Unable to find Action Set: org.jboss.tools.central
+
+!ENTRY org.eclipse.ui 4 4 2017-07-12 14:39:14.716
+!MESSAGE Unable to find Action Set: org.jboss.tools.common.model.ui.actionSet
+
+!ENTRY org.eclipse.ui 4 4 2017-07-12 14:39:14.718
+!MESSAGE Unable to find Action Set: org.jboss.tools.cdi.ui.actionSet
+
+!ENTRY org.eclipse.ui.browser 2 0 2017-07-12 14:49:04.456
+!MESSAGE Internal browser is not available: No more handles [Unknown Mozilla path (MOZILLA_FIVE_HOME not set)]

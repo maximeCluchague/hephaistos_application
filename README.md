@@ -28,7 +28,19 @@ Récupérer le contenu du projet via le terminal à l'aide de la commande
 
 (ou télécharger le zip associé à l'adresse : https://github.com/maximeCluchague/hephaistos_application.git)
 
-<h1>III. Lancement du Serveur</h1>
+<h1>II. Lancement automatique du Serveur</h1>
+
+Un domaine est créer par défaut il s'agit de hephaistosDomain dont le port administrateur est 5000.
+
+1. Lancer le Serveur :
+	$ : ./StartServer
+
+2. Stopper le Serveur :
+	$ : ./StopServer
+
+PS : un makefile est disponible pour compiler les fichier StartServer.c et StopServer.c
+
+<h1>IV. Lancement manuelle du Serveur</h1>
 
 (Tutoriel détaillé sur : https://dzone.com/articles/how-deploy-war-file-usin)
 
@@ -104,7 +116,7 @@ Il ne reste plus qu'à vérifier si la liaison WebSocket est fonctionnelle ! Pou
 Alors la communication avec votre serveur est fonctionnelle ! 
 
 
-<h1>IV. Communication du Serveur</h1>
+<h1>V. Communication du Serveur</h1>
 
 Le serveur échange des données à l'aide de WebSocket qui permettent une communication bilatéralle contrairement au protocol HTTP. Que ce soit en java ou en java script les clients/serveur utilisent les même méthodes pour communiquer entre eux :
 
@@ -121,7 +133,7 @@ Les messages envoyés par le serveur dans le cadre de cette application utilisen
 - date : la date de l'acquisition
 - commande : une commande (qui est associé ou pas à un capteur) qui peut être envoyer puis exécuter par le serveur (ex : suprimmerCapteur, consulterCapteur, afficherCapteur ... etc)
 
-<h1>V. Modification du code source du Serveur/Clients</h1>
+<h1>VI. Modification du code source du Serveur/Clients</h1>
 
 Pour modifier le Serveur, ouvrir le projet java 'hephaistos_project' dans Eclipse java EE. Le code source du seveur se situe dans 'java Ressource/src/com.za.websocket/' il s'agit de la classe HephaistosWebServer.java. 
 
@@ -142,7 +154,7 @@ une fois les modifications éffectuées, générer le .jar du projet prêt à l'
 
 	Ouvrir sensor_CTRL dans eclipse > fichier > export > java > TAR file
 
-<h1>VI. Lancement du client écoutant les capteurs sur le Phidget</h1>
+<h1>VII. Lancement du client écoutant les capteurs sur le Phidget</h1>
 
 <h2>A. Prérequis </h2>
 
