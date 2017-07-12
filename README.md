@@ -97,7 +97,7 @@ Une fois sur cette interface chargée vous pouvez, par exemple, modifier le port
 
 Configurations > Server-config > Network Config > http-listener-1
 
-<h2>F. Vérification du bon fonctionnement du server</h2>
+<h2>F. Test/Vérification du server</h2>
 
 Si tout s'est bien passé vous pouvez alors ouvrir une page Web et y entrer l'URL suivant : 
 
