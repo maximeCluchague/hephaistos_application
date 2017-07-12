@@ -89,6 +89,7 @@ F. Vérification du bon fonctionnement du server
 Si tout s'est bien passé vous pouvez alors ouvrir une page Web et y entrer l'URL suivant : 
 
 	http://<adresseIP_du_Serveur>/<port>/hephaistos_application/index.html
+	
 	<adresseIP_du_Serveur> : si le serveur tourne sur votre machine vous pouvez taper localhost sinon vous entrer l'IP de la machine qui fait tourner le serveur
 	<port> : le port de communication que vous avez défini pour le serveur (par défaut 8080)
 
@@ -101,7 +102,7 @@ Il reste à vérifier si la liaison WebSocket est fonctionnel, pour se faire ent
 Alors la communication avec votre serveur est fonctionnelle !! 
 
 
-IV. Communication du Serveur
+<h1>IV. Communication du Serveur</h1>
 
 Le serveur échange des données à l'aide de WebSocket qui permettent une communication bilatéral contrairement au protocol HTTP. Que ce soit en java ou en java script les clients/serveur utilisent les même méthodes pour communiquer entre eux :
 
@@ -142,9 +143,9 @@ VI. Lancement du client écoutant les capteurs sur le Phidget
 
 A. Prérequis 
 
-	Vérifier que la librairie Phidget en C est bien installé sur la machine qui servira de transmettre les données vers le serveur. 
+- Vérifier que la librairie Phidget en C est bien installé sur la machine qui servira de transmettre les données vers le serveur. 
 
-	Connecter le Phidget possédant les capteurs sur cette même machine 
+- Connecter le Phidget possédant les capteurs sur cette même machine 
 
 B. Executer le Client Java
 
