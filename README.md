@@ -35,11 +35,11 @@ Celui-ci se situe dans le dossier glassfish4/glassfish/domains, et il contient u
 
 1. Lancer le Serveur :
 
-	$ : ./StartServer
+		$ : ./StartServer
 
 2. Stopper le Serveur :
 
-	$ : ./StopServer
+		$ : ./StopServer
 
 PS : un makefile est disponible pour compiler les fichier StartServer.c et StopServer.c
 
