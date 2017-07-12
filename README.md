@@ -70,7 +70,7 @@ utiliser la commande suivante pour déployer le serveur :
 	- <adresse> est l'adresse IP de la machine (ex: localhost, 138.96.192.120 ... )
 	- ([PWD] est le chemin où se trouve le dossier hephaistos_application)
 
-**/!\ ATTENTION /!\** Il est impossible de déployer le serveur si celui-ci est déja déployé sur un autre domaine en cas d'erreur il faut undeploy le serveur à l'aide de la commande suivante : 
+**ATTENTION** Il est impossible de déployer le serveur si celui-ci est déja déployé sur un autre domaine en cas d'erreur il faut undeploy le serveur à l'aide de la commande suivante : 
 
 	$ : undeploy --port 4848 --host localhost hephaistos_project (Sans le .war)
 
@@ -133,7 +133,7 @@ Une fois toutes ces modifications éffectuées il vous faut générer le nouveau
 
 	Ouvrir hephaistos_project dans eclipse > fichier > export > web > WAR file
 
-ATTENTION  : Enregistrer le WAR dans le dossier ExecApp et mettant le nom 'hephaistos_project.war'
+ATTENTION : Enregistrer le WAR dans le dossier ExecApp et mettant le nom 'hephaistos_project.war'
 
 une fois le .WAR générer il est possible de deployer le serveur à l'aide de la méthode définie dans la partie III.
 
