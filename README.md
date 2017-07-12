@@ -1,6 +1,6 @@
 # hephaistos_application
 
-I. Description/Contenu du projet
+<h1>I. Description/Contenu du projet</h1>
 
 Le projet à pour but de visualiser des données capteur en temps réel sur une application Web / application android. 
 
@@ -20,17 +20,17 @@ Le projet à pour but de visualiser des données capteur en temps réel sur une 
 
 	la documentation associée au projet
 
-II. Récupérer le projet
+<h1>II. Récupérer le projet</h1>
 Récupérer le contenu du projet via le terminal à l'aide de la commande
 	
 	$ : git clone https://github.com/maximeCluchague/hephaistos_application.git
 	ou télécharger le zip associé à l'adresse : https://github.com/maximeCluchague/hephaistos_application.git
 
-III. Lancement du Serveur
+<h1>III. Lancement du Serveur</h1>
 
 (Tutoriel détaillé sur : https://dzone.com/articles/how-deploy-war-file-usin)
 
-A. Lancement de "asadmin tool"
+<h2>A. Lancement de "asadmin tool"</h2>
 Ouvrir un terminal dans le dossier hephaistos_application cloné/téléchargé et executer les commandes suivantes : 
 
 	$ : cd glassfish4/glassfish/
@@ -38,7 +38,7 @@ Ouvrir un terminal dans le dossier hephaistos_application cloné/téléchargé e
 
 le "asadmin tool" va alors se lancer dans le terminal.
 
-B. Création du domaine 
+<h2>B. Création du domaine </h2>
 
 Dans le "asadmin tool" vous pouvez maintenant créer un nouveau domaine à l'aide de la commande suivante : 
 
@@ -47,7 +47,7 @@ Dans le "asadmin tool" vous pouvez maintenant créer un nouveau domaine à l'aid
 		- <admin_port> est le port d'accès à l'administrateur du serveur (ex : 4848) ce port permettra de modifier les paramètres du serveur
 		- <nom_domaine> est le nom de domaine que vous aller définir pour votre futur serveur (ex : domainTest) 
 
-C. Démarrage du domaine 
+<h2>C. Démarrage du domaine </h2>
 
 utiliser la ligne de commande suivante pour démarrer le domain <nom_domaine> créer précédemment : 
 
@@ -57,7 +57,7 @@ pour arrêter un domaine il vous suffit d'executer la commande :
 
 	$ : stop-domain <nom_domaine>
 
-D. Déploiement du serveur
+<h2>D. Déploiement du serveur</h2>
 
 Une fois le domaine créer et lancé il faut déployé le serveur. Le serveur est un fichier .WAR (un exécutable java). Le war du projet est disponible dans le dossier : .../hephaistos_application/ExecApp/
 
@@ -74,7 +74,7 @@ utiliser la commande suivante pour déployer le serveur :
 
 PS : par défaut le serveur est sur le port 8080
 
-E. Interface administrateur et modification des paramètres du serveur
+<h2>E. Interface administrateur et modification des paramètres du serveur</h2>
 
 Pour accèder à l'interface administrateur il vous suffit d'ouvrir un navigateur web et d'entrer l'URL : 
 
@@ -84,7 +84,7 @@ Une fois sur cette interface vous pouvez, par exemple, modifier le port 8080 qui
 
 Configurations > Server-config > Network Config > http-listener-1
 
-F. Vérification du bon fonctionnement du server
+<h2>F. Vérification du bon fonctionnement du server</h2>
 
 Si tout s'est bien passé vous pouvez alors ouvrir une page Web et y entrer l'URL suivant : 
 
@@ -119,7 +119,7 @@ Les message envoyé par le serveur dans le cadre de cette application suivent le
 - date : la date de l'acquisition
 - commande : une commande (qui est associé ou pas à un capteur) qui peut être envoyer puis exécuter par le serveur (ex : suprimmerCapteur, consulterCapteur, afficherCapteur ... etc)
 
-V. Modification du code source du Serveur/Clients
+<h1>V. Modification du code source du Serveur/Clients</h1>
 
 Pour modifier le Serveur, ouvrir le projet java 'hephaistos_project' dans Eclipse java EE. Le code source du seveur se situe dans 'java Ressource/src/com.za.websocket/' il s'agit de la classe HephaistosWebServer.java. 
 
@@ -139,15 +139,15 @@ Il est également possbile de modifier le code source du client java en ouvrant 
 une fois les modifications éffectuées générer le .jar du projet prêt à l'execution  :
 	Ouvrir sensor_CTRL dans eclipse > fichier > export > java > TAR file
 
-VI. Lancement du client écoutant les capteurs sur le Phidget
+<h1>VI. Lancement du client écoutant les capteurs sur le Phidget</h1>
 
-A. Prérequis 
+<h2>A. Prérequis </h2>
 
 - Vérifier que la librairie Phidget en C est bien installé sur la machine qui servira de transmettre les données vers le serveur. 
 
 - Connecter le Phidget possédant les capteurs sur cette même machine 
 
-B. Executer le Client Java
+<h2>B. Executer le Client Java</h2>
 
 Il faut tout d'abord exécuter le client java, il s'agit d'un programme qui tourne en boucle et qui va transmettre des message vers le serveur en ouvrant un webSocket.
 
@@ -166,7 +166,7 @@ Si vous voyez apparaître
 
 sur le terminal alors votre Client java est prêt à communiquer avec le Serveur ne l'arrêtez pas !
 
-C. Execution du Listener 
+<h2>C. Execution du Listener</h2>
 
 Il reste plus qu'à lancer le programme C qui va récupérer les données des capteur en utilisant les librairies Phidget. A chaque fois qu'un événement capteur se produit une procédure est déclenchée dans ce programme C. Cette procédure va alors ouvrir un Socket vers le client java pour lui transmettre ces événements qui pourront, par la suite, être envoyés vers le Serveur ! 
 Pour se faire : Ouvrir un nouveaux terminal et exécuter les lignes des commandes suivantes :
