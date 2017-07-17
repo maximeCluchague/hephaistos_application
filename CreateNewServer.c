@@ -3,51 +3,81 @@
 #include <unistd.h>
 
 int main(int argc,char *argv[]){
+	char input[1];
 
 	char port[8];
 	char nomDomain[32];
-	char adresse[32];
-
-	printf("\n-----------------------------------------\n");
-	printf("-----CREATION DE SERVEUR HEPHAISTOS------\n");
-	printf("-----------------------------------------\n");
-	printf("\n");
-	printf("Définir un port Administrateur :\n> ");
-	scanf("%s", port);
-	printf("Choisir un nom de domaine où sera déployé le serveur :\n> ");
-	scanf("%s", nomDomain);
-
-	printf("Lancement de la procédure de création, suivre les instructions demandées\n");
+	char URLwar[128];
 	char commande[100];
 
-	// CREATE-DOMAIN
-	sprintf(commande,"glassfish4/glassfish/bin/asadmin create-domain --adminport %s --profile developer --user admin %s",port,nomDomain);
-	system(commande);
+	printf("\n-----------------------------------------\n");
+	printf("     CREATION DU SERVEUR HEPHAISTOS    \n");
+	printf("-----------------------------------------\n");
 
-	// START-DOMAIN 
-	sprintf(commande,"glassfish4/glassfish/bin/asadmin start-domain %s",nomDomain);
 	
-	// UNDEPLOY WAR
-	sprintf(commande,"glassfish4/glassfish/bin/asadmin undeploy --port %s --host localhost hephaistos_project",port);
-	system(commande);
+	printf("\nVoulez-vous créer un nouveau serveur ? (y/n)\n");
+	scanf("%s", input);
+	
+	// On veut creer un nouveau serveur
+	if(input[0]=='y' || input[0]=='Y'){
 
-	// PWD
-	long size;
-	char *buf;
-	char *URLwar;
- 
-	size = pathconf(".", _PC_PATH_MAX);
-	if ((buf = (char *)malloc((size_t)size)) != NULL)
-	{
-    	URLwar = getcwd(buf, (size_t)size);
+		printf("\nVoulez-vous créer un nouveau domaine ? (y/n)\n");
+		scanf("%s", input);
+
+		// On veut creer un nouveau domaine
+		if(input[0]=='y' || input[0]=='Y'){
+
+			printf("\nChoisir un nom de domaine où sera déployé le serveur :\n> ");
+			scanf("%s", nomDomain);
+			
+			printf("Définir le port Administrateur :\n> ");
+			scanf("%s", port);
+
+			// On creer un nouveau domaine
+			sprintf(commande,"glassfish4/glassfish/bin/asadmin create-domain --adminport %s --profile developer --user admin %s",port,nomDomain);
+			system(commande);
+		}
+
+		else{
+			printf("\nVoulez-vous utiliser un domaine existant ? (y/n)\n");
+			scanf("%s", input);
+
+			// On veut démarrer un domain existant
+			if(input[0]=='y' || input[0]=='Y'){
+				printf("\nSelectionnez un domain existant parmis ceux disponible : \n");
+				system("ls glassfish4/glassfish/domains");
+				printf("> ");
+				scanf("%s", nomDomain);
+			}else{
+				return 1;
+			}
+		}
+
+		printf("\nVoulez-vous démarrer le Domaine ? (y/n)\n");
+		scanf("%s", input);
+		// On veut démarrer le domaine
+		if(input[0]=='y' || input[0]=='Y'){
+			sprintf(commande,"glassfish4/glassfish/bin/asadmin start-domain %s",nomDomain);
+			system(commande);
+
+			printf("\nVoulez-vous déployer un .war file ? (y/n)\n");
+			scanf("%s", input);
+			// On veut déployer un war file
+			if(input[0]=='y' || input[0]=='Y'){
+				printf("Entrer le chemin absolu du .war à déployer sur le serveur\n> ");
+	scanf("%s", URLwar);
+				sprintf(commande,"xterm -e glassfish4/glassfish/bin/asadmin deploy --port %s --host localhost %s",port,URLwar);
+				system(commande);
+			}else{
+				return 1;
+			}
+		}
+		else{
+			return 1;
+		}
 	}
-	printf("\nURL : %s\n",URLwar);
-
-	// DEPLOY WAR 
-	sprintf(commande,"glassfish4/glassfish/bin/asadmin deploy --port %s --host localhost %s/Exec_App/hephaistos_project.war",port,URLwar);
-	system(commande);
-
-    return EXIT_SUCCESS;
+    	return 1;
 }
+
 
 

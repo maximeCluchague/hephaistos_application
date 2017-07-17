@@ -46,8 +46,7 @@ PS : un makefile est disponible pour compiler les fichier StartServer.c et StopS
 <h2>A. Lancement de "asadmin tool"</h2>
 Ouvrir un terminal dans le dossier hephaistos_application cloné/téléchargé et executer les commandes suivantes : 
 
-	$ : cd glassfish4/glassfish/
-	$ : bin/asadmin
+	$ : ./glassfish4/glassfish/bin/asadmin
 
 le "asadmin tool" va alors être lancé dans le terminal.
 
@@ -103,8 +102,9 @@ Si tout s'est bien passé vous pouvez alors ouvrir une page Web et y entrer l'UR
 
 	http://<adresseIP_du_Serveur>/<port>/hephaistos_application/index.html
 	
-	<adresseIP_du_Serveur> : si le serveur tourne sur votre machine vous pouvez taper localhost sinon vous entrez l'IP de la machine heberge le serveur
-	<port> : le port de communication que vous avez défini pour le serveur (par défaut 8080)
+- <adresseIP_du_Serveur> : si le serveur tourne sur votre machine vous pouvez taper localhost sinon vous entrez l'IP de la machine heberge le serveur
+
+- <port> : le port de communication que vous avez défini pour le serveur (par défaut 8080)
 
 Si vous pouvez ouvrir cette page Web depuis la machine qui fait tourner le serveur alors celui-ci fonctionne correctement. Vous pouvez vérifier si celui-ci est accéssible depuis une machine distante en tapant cette même URL avec l'IP de la machine qui héberge le serveur en cas de problème vérifiez si votre Fire Wall/Pare Feu ne bloc pas le port de communication de votre Serveur 
 
