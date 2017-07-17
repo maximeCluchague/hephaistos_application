@@ -193,7 +193,7 @@
 		
 		<!-- For the side ad -->
 		<script type="text/javascript">
-			adresse.value = "localhost";
+			adresse.value = "138.96.192.120";
 			port.value = "8080";
 			//commande.value = "NULL";
 			document.getElementById("console").value += "\nEN ATTENTE D'UNE CONNEXION ...";

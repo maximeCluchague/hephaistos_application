@@ -63,7 +63,7 @@
 			}
 			
 			.panel{
-				background-color: #4593e3;
+				background-color: #2c5f7a;
 			    box-sizing: border-box;
 			    border: 3px solid #FFFFFF;
 			    border-radius: 4px;
@@ -71,7 +71,7 @@
 				width: 100%;
 			}
 			.sousPanel{
-				background-color: #4593e3;
+				background-color: #2c5f7a;
 			    box-sizing: border-box;
 			    border: 1px solid #FFFFFF;
 			    padding: 4px;
@@ -79,7 +79,7 @@
 				width: 100%;
 			}
 			input[type=text] {
-				background-color: #4593e3;
+				background-color: #2c5f7a;
 				width: 50%;
 			    padding: 5px 20px;
 			    margin: 8px 0;
@@ -117,7 +117,7 @@
 			}
 			
 			.clear{
-				background-color:#4593e3;
+				background-color:#2c5f7a;
 			    border: 3px solid #FFFFFF;
 			    border-radius: 40px;
 			}
@@ -128,13 +128,13 @@
 			}
 			.send{
 			
-				background-color:#4593e3;
+				background-color:#2c5f7a;
 				box-sizing: border-box;
 			    border: 3px solid #FFFFFF;
 			    border-radius: 40px;
 			}
 			.send:hover{
-				background-color:#4593e3;
+				background-color:#2c5f7a;
 				box-sizing: border-box;
 			    border: 3px solid #FFFFFF;
 			    border-radius: 40px;
@@ -193,7 +193,7 @@
 		
 		<!-- For the side ad -->
 		<script type="text/javascript">
-			adresse.value = "localhost";
+			adresse.value = "138.96.192.120";
 			port.value = "8080";
 			//commande.value = "NULL";
 			document.getElementById("console").value += "\nEN ATTENTE D'UNE CONNEXION ...";
