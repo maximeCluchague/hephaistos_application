@@ -15015,3 +15015,6 @@ KeyIdentifier [
 [2017-07-13T16:47:48.147+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=19 _ThreadName=Thread-3] [timeMillis: 1499957268147] [levelValue: 800] [[
   <Capteurs connectés> : [capteur_IR_1, capteur_IR_2, capteur_IR_3, capteur_IR_4, capteur_IR_5, capteur_IR_6, test, , capteur 1, capteur 2, capteur1, test 1]]]
 
+[2017-07-14T15:29:27.870+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=65 _ThreadName=PingService] [timeMillis: 1500038967870] [levelValue: 800] [[
+  Domain Pinged: release.glassfish.org]]
+

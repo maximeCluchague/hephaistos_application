@@ -39,7 +39,7 @@ Celui-ci se situe dans le dossier glassfish4/glassfish/domains, et il contient u
 
 PS : un makefile est disponible pour compiler les fichier StartServer.c et StopServer.c
 
-<h1>IV. Lancement manuelle du Serveur</h1>
+<h1>IV. Lancement manuel du Serveur</h1>
 
 (Tutoriel détaillé sur : https://dzone.com/articles/how-deploy-war-file-usin)
 
