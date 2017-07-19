@@ -11,10 +11,14 @@
 		<link rel="shortcut icon" href="../favicon.ico"> 
 		<link rel="stylesheet" type="text/css" href="css/default.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" href="css/logoMachineUtilise.css" />
+		
 		<style>
 			canvas{
 				width: 100%;
 			}
+
+
 			select {
 			    padding:3px;
 			    margin: 0;
@@ -35,19 +39,29 @@
 			.littleButton{
 				padding: 8px 24px;
 			}
-			textarea {
+			.console {
 				color: white;
 			    width: 100%;
-			    height: 322px;
+			    height: 15em;
+ 			 	transition: all .3s
+ 			 	ease-out;
 			    padding: 12px 20px;
 			    box-sizing: border-box;
 			    border: 3px solid #FFFFFF;
 			    border-radius: 4px;
-			    background-color: #226fbe;
+			    background-color: #FFFFFF;
+				color: #666666;
 			    resize: none;
 			    font-family: Verdana, Geneva, sans-serif;
            		font-size:15px
 			}
+			
+
+			.console:focus{
+				 height: 30em;
+				
+			}
+			
 			.panel{
 				background-color: #4593e3;
 			    box-sizing: border-box;
@@ -71,6 +85,7 @@
 			    border: none;
 			    background-color: #226fbe;
 			    color: white;
+			    transition: all 0.5s;
 			}
 			input[type=text]:focus {
 			    background-color: #1a5795;
@@ -102,18 +117,26 @@
 				background-color: #1a5795;
 				box-shadow: none;
 			}
+			.clear:active{
+				background-color: #ff5457;
+			}
+			
+			.background {
+				max-width : 1000px;
+				min-width : 720px;
+			}
 
 		</style>
+
 	</head>
 	<body>
 		<div class="container">
 			<!-- Top Navigation -->
-			
-			<header>
+			<div id="device"><span></span></div></br>
+			<header class="header">
 				<h1>Hephaistos Application<span>Viewer Editor</span></h1>	
 			</header>
-			
-			<section class="color-6">
+			<section class="color-6 background">
 	
 		<class="text"> Adresse</class> </br> 
 		<input id="adresse" type="text" class="champsSaisie" size="20" onclick="javascript:this.value = '';" /></br>
@@ -127,16 +150,14 @@
 	</br>
 	<class="text">Console Client</class></br>
 	
-	<textarea id="console" readonly="readonly" rows="10" cols="130"></textarea></br>
+	<textarea id="console" class="console" readonly="readonly" rows="10" cols="130"></textarea></br>
 	<button class="btn btn-7 btn-7d btn-icon-only icon-remove clear" value="Clear" onclick="clearConsole()"><span>Clear</span></button>
 
-	
+	 
 	</br></br>
 	
 	<center>
-	<canvas id="myCanvas" width="300" height="100" style="border:1px solid #FFFFFF" >
-	 Votre navigateur ne supporte pas canvas.
-	</canvas>
+		<canvas id="myCanvas" width="300" height="100" style="border:1px solid #FFFFFF" ></canvas>
 	</center>
 
 	<form>
@@ -189,7 +210,7 @@
 		<!-- For the side ad -->
 		<script type="text/javascript">
 			
-			adresse.value = "138.96.192.120";
+			adresse.value = "localhost";
 			port.value = "8080";
 			document.getElementById("console").value += "\nEN ATTENTE D'UNE CONNEXION ...";
 			
@@ -606,7 +627,7 @@
       canvas.addEventListener('mousemove', function(evt) {
         var mousePos = getMousePos(canvas, evt);
         ny=getWindowHeight();
-        nx=getWindowWidth();
+        nx=Math.min(1014,Math.max(getWindowWidth(),720)+14);
         x.value = parseInt(mousePos.x/((nx-110)/imgWidth));
         y.value = parseInt(mousePos.y/((nx-110)/imgWidth));
         zonePointSelected = true;

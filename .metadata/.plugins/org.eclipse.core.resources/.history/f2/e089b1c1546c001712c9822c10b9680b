@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Hephaistos Application</title>
+		<meta name="description" content="Creative Button Styles  - Modern and subtle styles &amp; effects for buttons" />
+		<meta name="keywords" content="button styles, css3, modern, flat button, subtle, effects, hover, web design" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" href="css/logoMachineUtilise.css" />
+		<script type="text/javascript" src="js/dynamic_chart.js"></script>
+		<script type="text/javascript" src="canvasjs.min.js"></script>
+		<style>
+			canvas{
+				width: 100%;
+			}
+
+
+			select {
+			    padding:3px;
+			    margin: 0;
+			    -webkit-border-radius:4px;
+			    -moz-border-radius:4px;
+			    border-radius:4px;
+			    background: #226fbe;
+			    color:#FFFFFF;
+			    border:none;
+			    outline:none;
+			    display: inline-block;
+			    -webkit-appearance:none;
+			    -moz-appearance:none;
+			    appearance:none;
+			    cursor:pointer;
+			}
+			
+			.littleButton{
+				padding: 8px 24px;
+			}
+			.console {
+				color: white;
+			    width: 100%;
+			    height: 15em;
+ 			 	transition: all .3s
+ 			 	ease-out;
+			    padding: 12px 20px;
+			    box-sizing: border-box;
+			    border: 3px solid #FFFFFF;
+			    border-radius: 4px;
+			    background-color: #FFFFFF;
+				color: #666666;
+			    resize: none;
+			    font-family: Verdana, Geneva, sans-serif;
+           		font-size:15px
+			}
+			
+
+			.console:focus{
+				 height: 30em;
+				
+			}
+			
+			.panel{
+				background-color: #4593e3;
+			    box-sizing: border-box;
+			    border: 3px solid #FFFFFF;
+			    border-radius: 4px;
+				padding: 10px;
+				width: 100%;
+			}
+			.sousPanel{
+				background-color: #4593e3;
+			    box-sizing: border-box;
+			    border: 1px solid #FFFFFF;
+			    padding: 4px;
+			    border-radius: 4px;
+				width: 100%;
+			}
+			input[type=text] {
+				background-color: #4593e3;
+				width: 50%;
+			    padding: 5px 20px;
+			    margin: 8px 0;
+			    border: none;
+    			border-bottom: 2px solid White;
+			    transition: all 0.2s;
+			}
+
+			.connexion:hover{
+				background-color: RGBa(100,255,100,0.40);
+			}
+			
+			.connexion:active{
+				background-color: RGBa(100,255,100,0.60);
+			}
+
+			.deconnexion:hover{
+				background-color: RGBa(255,100,100,0.60);
+			}
+			
+			.deconnexion:active{
+				background-color: RGBa(255,100,100,0.80);
+				border: 3px solid #AA1111;
+				color: #AA1111;
+			}
+			.champsSaisie{
+				text-align:center;
+			    width: 50%;
+			    box-sizing: border-box;
+			    border: none;
+			    background-color: #226fbe;
+			    color: white;
+			    font-family: Verdana, Geneva, sans-serif;
+           		font-size:15px
+			}
+			.champsSaisie:focus{
+				width: 55%;
+				background-color: #589ee6;
+			}
+			
+			.champsSaisie:hover{
+				width: 55%;
+			}
+			
+			.clear{
+				background-color:#4593e3;
+			    border: 3px solid #FFFFFF;
+			    border-radius: 40px;
+			}
+			
+			.background {
+				max-width : 1000px;
+				min-width : 720px;
+			}
+			.send{
+			
+				background-color:#4593e3;
+				box-sizing: border-box;
+			    border: 3px solid #FFFFFF;
+			    border-radius: 40px;
+			}
+			.send:hover{
+				background-color:#4593e3;
+				box-sizing: border-box;
+			    border: 3px solid #FFFFFF;
+			    border-radius: 40px;
+			}
+			.police{
+				 font-family: Verdana, Geneva, sans-serif;
+           		 font-size:20px
+			}
+			
+			nav{
+				position: fixed;
+				z-index:1000;
+			}
+			nav > ul{
+				margin :0px;
+				padding:0px;
+			}
+			nav li{
+				list-style-type:none;
+				
+			}
+			
+			nav > ul > li{
+				float:left;
+			}
+			.submenu{
+				display:none;
+			}
+			
+			nav input[type=checkbox]{
+				display: none;
+			}
+			.menu-mobile{
+				display:none;
+			}
+			nav{
+				width:100%;
+				background-color:#383d4c;
+				
+			}
+			
+			nav > ul > li{
+				float:left;
+				position: relative;
+			}
+			nav > ul::after{
+				content:"";
+				display:table;
+				clear:both;
+			}
+			nav a{
+				display:inline-block;
+				text-decoration:none;
+			}
+			nav > ul > li > a{
+				padding:20px 30px;
+				color: #FFFFFF;
+			}
+			nav > ul > li > a:hover{
+				color: #FFFFFF;
+			}
+			
+			
+			nav li:hover .submenu{
+				display: inline-block;
+				position: absolute;
+				top: 100%;
+				left:0px;
+				padding: 0px;
+				z-index:100000;
+			}
+			.submenu li{
+				border-bottom:1px solid #CCC;
+			}
+			.submenu li a{
+				padding:15px 30px;
+				font-size:13px;
+				color:#22538;
+				width:270px;
+			}
+			.menu:hover{
+				border-top: 5px solid #0070BB;
+				background-color: RGBa(000,112,192,0.15);
+			}
+			nav > ul > li:hover a{
+				padding: 15px 30px 20px 30px;
+			}
+			.menu .submenu{
+				background-color : #4593e3;
+			}
+			.submenu li a{
+				background-color:#F1F1F1;
+				font-weight:bold;
+			}
+			.submenu li:hover a{
+				background-color:#F1F1F1;
+				font-weight:bold;
+			}
+			
+		</style>
+
+	</head>
+	<body>
+		<nav>
+			<label for="menu-mobile" class="menu-mobile">Menu</label>
+			<input type="checkbox" id="menu-mobile" role="button">
+			<ul>
+			    <li class="menu"><a href="#">Home</a>
+			   	</li>
+			   	<li class="menu"><a href="#">Server Interface</a>
+			   	</li>
+			   	<li class="menu"><a href="#">Viewers</a>
+			      	<ul class="submenu">
+			      		<li><a href="#">Map Sensor Editor</a>
+				       		
+			       	</ul>
+			   	</li>
+			   	<li class="menu"><a href="#">Help</a>
+			   	</li>
+			</ul>
+		</nav><!--end primary_nav-->
+		<div class="container">
+			</br>
+			<!-- Top Navigation -->
+			<div id="device"><span></span></div></br>
+			<header class="header">
+				<h1>Hephaistos Application</h1>	
+				<h2><span>© Equipe hephaistos - INRIA Sophia-Antipolis</span></h2>	
+			</header>
+		</div><!-- /container -->
+
+	</body>
+</html></html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Hephaistos Application</title>
+		<meta name="description" content="Creative Button Styles  - Modern and subtle styles &amp; effects for buttons" />
+		<meta name="keywords" content="button styles, css3, modern, flat button, subtle, effects, hover, web design" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" href="css/logoMachineUtilise.css" />
+		
+		<style>
+			canvas{
+				width: 100%;
+			}
+
+
+			select {
+			    padding:3px;
+			    margin: 0;
+			    -webkit-border-radius:4px;
+			    -moz-border-radius:4px;
+			    border-radius:4px;
+			    background: #226fbe;
+			    color:#FFFFFF;
+			    border:none;
+			    outline:none;
+			    display: inline-block;
+			    -webkit-appearance:none;
+			    -moz-appearance:none;
+			    appearance:none;
+			    cursor:pointer;
+			}
+			
+			.littleButton{
+				padding: 8px 24px;
+			}
+			.console {
+				color: white;
+			    width: 100%;
+			    height: 15em;
+ 			 	transition: all .3s
+ 			 	ease-out;
+			    padding: 12px 20px;
+			    box-sizing: border-box;
+			    border: 3px solid #FFFFFF;
+			    border-radius: 4px;
+			    background-color: #FFFFFF;
+				color: #666666;
+			    resize: none;
+			    font-family: Verdana, Geneva, sans-serif;
+           		font-size:15px
+			}
+			
+
+			.console:focus{
+				 height: 30em;
+				
+			}
+			
+			.panel{
+				background-color: #4593e3;
+			    box-sizing: border-box;
+			    border: 3px solid #FFFFFF;
+			    border-radius: 4px;
+				padding: 10px;
+				width: 100%;
+			}
+			.sousPanel{
+				background-color: #4593e3;
+			    box-sizing: border-box;
+			    border: 1px solid #FFFFFF;
+			    padding: 4px;
+			    border-radius: 4px;
+				width: 100%;
+			}
+			input[type=text] {
+				background-color: #4593e3;
+				width: 50%;
+			    padding: 5px 20px;
+			    margin: 8px 0;
+			    border: none;
+    			border-bottom: 2px solid White;
+			    transition: all 0.2s;
+			}
+
+			.connexion:hover{
+				background-color: RGBa(100,255,100,0.40);
+			}
+			
+			.connexion:active{
+				background-color: RGBa(100,255,100,0.60);
+			}
+
+			.deconnexion:hover{
+				background-color: RGBa(255,100,100,0.60);
+			}
+			
+			.deconnexion:active{
+				background-color: RGBa(255,100,100,0.80);
+				border: 3px solid #AA1111;
+				color: #AA1111;
+			}
+			.champsSaisie{
+				text-align:center;
+			    width: 50%;
+			    box-sizing: border-box;
+			    border: none;
+			    background-color: #226fbe;
+			    color: white;
+			    font-family: Verdana, Geneva, sans-serif;
+           		font-size:15px
+			}
+			.champsSaisie:focus{
+				width: 55%;
+				background-color: #589ee6;
+			}
+			
+			.champsSaisie:hover{
+				width: 55%;
+			}
+			
+			.clear{
+				background-color:#4593e3;
+			    border: 3px solid #FFFFFF;
+			    border-radius: 40px;
+			}
+			
+			.background {
+				max-width : 1000px;
+				min-width : 720px;
+			}
+			.send{
+			
+				background-color:#4593e3;
+				box-sizing: border-box;
+			    border: 3px solid #FFFFFF;
+			    border-radius: 40px;
+			}
+			.send:hover{
+				background-color:#4593e3;
+				box-sizing: border-box;
+			    border: 3px solid #FFFFFF;
+			    border-radius: 40px;
+			}
+			.police{
+				 font-family: Verdana, Geneva, sans-serif;
+           		 font-size:20px
+			}
+			
+			nav{
+				position: fixed;
+				z-index:1000;
+
+			}
+			nav > ul{
+				margin :0px;
+				padding:0px;
+			}
+			nav li{
+				list-style-type:none;
+			}
+			
+			nav > ul > li{
+				float:left;
+			}
+			.submenu{
+				display:none;
+			}
+			
+			nav input[type=checkbox]{
+				display: none;
+			}
+			.menu-mobile{
+				display:none;
+			}
+			nav{
+				width:100%;
+				background-color:#383d4c;
+				
+			}
+			nav > ul > li{
+				float:left;
+				position: relative;
+			}
+			nav > ul::after{
+				content:"";
+				display:table;
+				clear:both;
+			}
+			nav a{
+				display:inline-block;
+				text-decoration:none;
+			}
+			nav > ul > li > a{
+				padding:20px 30px;
+				color: #FFFFFF;
+			}
+			nav li:hover .submenu{
+				display: inline-block;
+				position: absolute;
+				top: 100%;
+				left:0px;
+				padding: 0px;
+				z-index:100000;
+			}
+			.submenu li{
+				border-bottom:1px solid #CCC;
+			}
+			.submenu li a{
+				padding:15px 30px;
+				font-size:13px;
+				color:#22538;
+				width:270px;
+			}
+			.menu:hover{
+				border-top: 5px solid #108149;
+				background-color: RGBa(100,160,255,0.35);
+			}
+			nav > ul > li:hover a{
+				padding: 15px 30px 20px 30px;
+			}
+			.menu .submenu{
+				background-color : #4593e3;
+			}
+			.submenu li a{
+				background-color:#F1F1F1;
+				font-weight:bold;
+			}
+			.submenu li:hover a{
+				background-color:#F1F1F1;
+				font-weight:bold;
+			}
+
+			
+		</style>
+
+	</head>
+	<body>
+		<div class="container">
+			<nav>
+				<label for="menu-mobile" class="menu-mobile">Menu</label>
+				<input type="checkbox" id="menu-mobile" role="button">
+			    <ul>
+			        <li class="menu"><a href="#">Home</a>
+			       	</li>
+			       	<li class="menu"><a href="#">Server Interface</a>
+			       	</li>
+			       	<li class="menu"><a href="#">Viewers</a>
+				       	<ul class="submenu">
+				       		<li><a href="#">Cours CSS 1</a>
+				       		<li><a href="#">Cours CSS 2</a>
+				       		<li><a href="#">Cours CSS 3</a>
+				       	</ul>
+			       	</li>
+			    </ul>
+			</nav><!--end primary_nav-->
+			</br>
+			<!-- Top Navigation -->
+			<div id="device"><span></span></div></br>
+			<header class="header">
+				<h1>Hephaistos Application<span>Server Interface</span></h1>	
+			</header>
+			
+			<section class="color-6 background">
+	
+		<span class="police">Adresse</span> </br> 
+		<input id="adresse" type="text" class="champsSaisie" size="20" onclick="javascript:this.value = '';" /></br>
+		<span class="police">Port</span> </br> 
+		<input id="port" type="text" class="champsSaisie" size="20" onclick="javascript:this.value = '';"/></br>
+		<center>
+		</br>
+		<button class="btn btn-4 btn-4a icon-arrow-right connexion" onclick="connexion()">Connexion</button> 
+		<button class="btn btn-4 btn-4d icon-arrow-left deconnexion" onclick="deconnexion()">Deconnexion</button>
+		</center>
+	 	
+	</br>
+	<span class="police">Console Client/Server</span> </br> 
+	
+	<textarea id="console" class="console" readonly="readonly" rows="10" cols="130"></textarea></br>
+	<button class="btn btn-5 btn-5a icon-remove clear" onclick="clearConsole()"><span>Clear</span></button>
+	</br>
+	</section>
+			<header class="header">
+				<h1><span>Send Data to Server</span></h1>
+			</header>
+	<section class="color-6 background">	
+	<span class="police">Identifiant Capteur</span> </br> 
+	<input id="idCapteur" type="text" class="champsSaisie" size="20" /></br>
+	<span class="police">Acquisition</span> </br> 
+	<input id="acquisition" type="text" class="champsSaisie" size="20" /></br>
+	<span class="police">Commande</span> </br> 
+	<input id="commande" type="text" class="champsSaisie" size="20" value='NULL' onFocus="if (this.value=='NULL') {this.value=''}"/></br>
+	</br>
+		<center><button class="btn btn-3 btn-3e icon-arrow-right send" onclick="send()">Send Message</button></center>
+		
+	</section>
+	<header>
+				<h1><span>© Equipe hephaistos - INRIA Sophia-Antipolis</span></h1>	
+			</header>
+		</div><!-- /container -->
+		
+		<!-- For the side ad -->
+		<script type="text/javascript">
+			adresse.value = "localhost";
+			port.value = "8080";
+			//commande.value = "NULL";
+			document.getElementById("console").value += "\nEN ATTENTE D'UNE CONNEXION ...";
+			
+			var webSocket = null;
+			var isConnect = false;
+			
+			function connexion(){
+				try{
+					webSocket.close();
+					
+				}catch(exception){
+					
+				}
+				try{
+					url = "ws://"+adresse.value.toString()+":"+port.value.toString()+"/hephaistos_project/hephaistoswebserver";
+					
+					webSocket = new WebSocket(url);
+					
+					webSocket.onopen = function(event){
+						isConnect = true;
+						document.getElementById("console").value = "\n[---> CONNEXION ETABLIE AVEC \'"+url+"\']\n\n";
+					}
+					
+					webSocket.onclose = function(event){
+						document.getElementById("console").value = "\n[-x-> DECONNEXION DE \'"+url+"\']";
+						document.getElementById("console").value += "\n\nEN ATTENTE D'UNE CONNEXION ...";
+					}
+					
+					webSocket.onerror = function(event){
+						document.getElementById("console").value = "\n[IMPOSSIBLE DE SE CONNECTER \'"+url+"\']";
+					}
+					
+					webSocket.onmessage = function processMessage(sensorMessage) {
+						var json = JSON.parse(sensorMessage.data);
+						document.getElementById("console").value += "<MESSAGE> {\"idCapteur\":\""+ json.idCapteur+"\",\"acquisition\":\""+ json.acquisition+"\",\"date\":\"" +json.date+"\",\"commande\":\""+json.commande+"\"}\n";
+					}
+					
+				}catch(exception){
+					document.getElementById("console").value += "\n\n[IMPOSSIBLE DE SE CONNECTER]";
+				}
+			}
+				
+			function deconnexion(){
+				
+				if(isConnect){
+					webSocket.close();
+					isConnect = false;
+				}else{
+					document.getElementById("console").value += "\n\nVous n'êtes pas connecté";
+				}
+				
+			}
+			
+			function send(){
+				// On créer le Json qui va etre envoyé
+				if(isConnect){
+					var date=new Date();
+					var messageJson = {"idCapteur": idCapteur.value,"acquisition": acquisition.value,"date": date,"commande":commande.value};
+					
+					webSocket.send(JSON.stringify(messageJson));
+					// On remet les textField de la page html vide
+					idCapteur.value = "";
+					acquisition.value = "";
+					commande.value = "NULL";
+
+				}else{
+					document.getElementById("console").value += "\n\nVous devez être connecté pour envoyer un message vers le serveur ... ";
+				}
+			}
+			
+			window.onbeforeunload = function(){
+				websocket.onclose = function(){};
+				websocket.close();
+				
+			};
+		
+			function clearConsole(){
+				document.getElementById("console").value = "";
+			}
+		</script>
+	</body>
+</html>

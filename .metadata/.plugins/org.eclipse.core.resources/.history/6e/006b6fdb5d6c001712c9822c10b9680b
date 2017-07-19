@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Hephaistos Application</title>
+		<meta name="description" content="Creative Button Styles  - Modern and subtle styles &amp; effects for buttons" />
+		<meta name="keywords" content="button styles, css3, modern, flat button, subtle, effects, hover, web design" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" href="css/logoMachineUtilise.css" />
+		
+		<style>
+			canvas{
+				width: 100%;
+			}
+
+
+			select {
+			    padding:3px;
+			    margin: 0;
+			    -webkit-border-radius:4px;
+			    -moz-border-radius:4px;
+			    border-radius:4px;
+			    background: #226fbe;
+			    color:#FFFFFF;
+			    border:none;
+			    outline:none;
+			    display: inline-block;
+			    -webkit-appearance:none;
+			    -moz-appearance:none;
+			    appearance:none;
+			    cursor:pointer;
+			}
+			
+			.littleButton{
+				padding: 8px 24px;
+			}
+			.console {
+				color: white;
+			    width: 100%;
+			    height: 15em;
+ 			 	transition: all .3s
+ 			 	ease-out;
+			    padding: 12px 20px;
+			    box-sizing: border-box;
+			    border: 3px solid #FFFFFF;
+			    border-radius: 4px;
+			    background-color: #FFFFFF;
+				color: #666666;
+			    resize: none;
+			    font-family: Verdana, Geneva, sans-serif;
+           		font-size:15px
+			}
+			
+
+			.console:focus{
+				 height: 30em;
+				
+			}
+			
+			.panel{
+				background-color: #4593e3;
+			    box-sizing: border-box;
+			    border: 3px solid #FFFFFF;
+			    border-radius: 4px;
+				padding: 10px;
+				width: 100%;
+			}
+			.sousPanel{
+				background-color: #4593e3;
+			    box-sizing: border-box;
+			    border: 1px solid #FFFFFF;
+			    padding: 4px;
+			    border-radius: 4px;
+				width: 100%;
+			}
+			input[type=text] {
+			    padding: 12px 20px;
+			    margin: 8px 0;
+			    box-sizing: border-box;
+			    border: none;
+			    background-color: #226fbe;
+			    color: white;
+			    transition: all 0.5s;
+			}
+			input[type=text]:focus {
+			    background-color: #1a5795;
+			    color: #FFFFFF;
+			}
+			input[type=text]:hover {
+			    background-color: #1a5795;
+			    color: #FFFFFF;
+			}
+			.deconnexion:hover{
+				background-color: #ff5457;
+			}
+			.champsSaisie{
+				text-align:center;
+			    width: 50%;
+			    box-sizing: border-box;
+			    border: none;
+			    background-color: #226fbe;
+			    color: white;
+			    font-family: Verdana, Geneva, sans-serif;
+           		font-size:15px
+			}
+			
+			.clear{
+				background-color: #226fbe;
+				box-shadow: none;
+			}
+			.clear:hover{
+				background-color: #1a5795;
+				box-shadow: none;
+			}
+			.clear:active{
+				background-color: #ff5457;
+			}
+			
+			.background {
+				max-width : 1000px;
+				min-width : 720px;
+			}
+
+		</style>
+
+	</head>
+	<body>
+	<script type="text/javascript" src="js/map_sensor_editor.js"></script>
+		<div class="container">
+			<!-- Top Navigation -->
+			<div id="device"><span></span></div></br>
+			<header class="header">
+				<h1>Hephaistos Application<span>Viewer Editor</span></h1>	
+			</header>
+			<section class="color-6 background">
+	
+		<class="text"> Adresse</class> </br> 
+		<input id="adresse" type="text" class="champsSaisie" size="20" onclick="javascript:this.value = '';" /></br>
+		<class="text"> Port</class> </br> 
+		<input id="port" type="text" class="champsSaisie" size="20" onclick="javascript:this.value = '';"/></br>
+		<center>
+		<button class="btn btn-4 btn-4a icon-arrow-right" onclick="connexion()">Connexion</button> 
+		<button class="btn btn-4 btn-4d icon-arrow-left deconnexion" onclick="deconnexion()">Deconnexion</button>
+		</center>
+	 	
+	</br>
+	<class="text">Console Client</class></br>
+	
+	<textarea id="console" class="console" readonly="readonly" rows="10" cols="130"></textarea></br>
+	<button class="btn btn-7 btn-7d btn-icon-only icon-remove clear" value="Clear" onclick="clearConsole()"><span>Clear</span></button>
+
+	 
+	</br></br>
+	
+	<center>
+		<canvas id="myCanvas" width="300" height="100" style="border:1px solid #FFFFFF" ></canvas>
+	</center>
+
+	<form>
+		<class="text"> Charger une image</class><br>
+		<input type="text" id="urlImage">
+		<input type="button" class="btn btn-6 btn-6i littleButton" value="Charger" onclick="chargerImage()"/>
+		</br></br>
+		
+		<section class="panel">
+			<fieldset type="ChampsAjout">
+       			<legend>Ajouter un capteur</legend> <!-- Titre du fieldset -->
+
+				<class="text"> IdCapteur</class> <select id="capteurs"></select>
+			    </br>
+			    <class="text"> x1 = </class><input type="text" id="x1" size="2">
+				<class="text"> y1 = </class><input type="text" id="y1" size="2">
+				<class="text"> x2 = </class><input type="text" id="x2" size="2">
+				<class="text"> y2 = </class><input type="text" id="y2" size="2">
+				</br>
+				<input type="button" class="btn btn-6 btn-6i littleButton" value="Ajouter" onclick="ajouter()"/>
+				<input type="button" class="btn btn-6 btn-6i littleButton" value="Annuler" onclick="annuler()"/>
+			</fieldset>
+			<fieldset type="ChampsAjout">
+       			<legend>Ajouter une zone</legend> <!-- Titre du fieldset -->
+				<class="text"> Nom = </class><input type="text" id="nomZone" size="10">
+			    <class="text"> Rayon = </class><input type="text" id="r" size="1" value="50">
+				<class="text"> Nombre de Personne = </class><input type="text" id="nbPersonne" size="1" value="0">
+				</br>
+				<class="text"> x = </class><input type="text" id="x" size="2">
+				<class="text"> y = </class><input type="text" id="y" size="2">
+				
+			</fieldset>
+			<fieldset>
+       			<legend type="ChampsAjout">Créer une liaison</legend> <!-- Titre du fieldset -->
+				<class="text"> zoneA</class> <select id="zone1"></select>
+				<class="text"> IdCapteur</class> <select id="capteursAjoutés"></select>
+				<class="text"> zoneB</class> <select id="zone2"></select>
+				<input type="button" class="btn btn-6 btn-6i littleButton" value="Lier" onclick="lier()"/>
+			</fieldset>
+		</section>
+		
+	</form> </br>
+				
+	</section>
+	<header>
+				<h1><span>© Equipe hephaistos - INRIA Sophia-Antipolis</span></h1>	
+			</header>
+		</div><!-- /container -->
+		
+
+	</body>
+	
+</html>

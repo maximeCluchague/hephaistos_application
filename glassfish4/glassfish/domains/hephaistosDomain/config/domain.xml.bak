@@ -81,6 +81,16 @@
       <jms-service default-jms-host="default_JMS_host" type="EMBEDDED">
         <jms-host port="${JMS_PROVIDER_PORT}" name="default_JMS_host" host="localhost"></jms-host>
       </jms-service>
+      <cdi-service></cdi-service>
+      <web-container>
+        <session-config>
+          <session-manager>
+            <store-properties></store-properties>
+            <manager-properties></manager-properties>
+          </session-manager>
+          <session-properties></session-properties>
+        </session-config>
+      </web-container>
       <diagnostic-service></diagnostic-service>
       <security-service>
         <auth-realm classname="com.sun.enterprise.security.auth.realm.file.FileRealm" name="admin-realm">
