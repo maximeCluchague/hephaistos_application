@@ -11,7 +11,7 @@ var webSocket = new WebSocket("ws://localhost:8080/hephaistos_project/hephaistos
 		
 		var chart = new CanvasJS.Chart("chartContainer",{	
 			title: {
-				text: "Sensor data"		
+				text: ""		
 			},
 			axisY: {				
 				suffix: " unite"

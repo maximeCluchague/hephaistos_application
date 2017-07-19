@@ -1,0 +1,11 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<script type="text/javascript" src="js/dynamic_chart.js"></script>
+	<script type="text/javascript" src="canvasjs.min.js"></script>
+</head>
+<body>
+	<div id="chartContainer" style="height: 20%; width: 100%;">
+	</div>
+</body>

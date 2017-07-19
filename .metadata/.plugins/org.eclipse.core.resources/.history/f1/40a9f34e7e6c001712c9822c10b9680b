@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Hephaistos Application</title>
+		<meta name="description" content="Creative Button Styles  - Modern and subtle styles &amp; effects for buttons" />
+		<meta name="keywords" content="button styles, css3, modern, flat button, subtle, effects, hover, web design" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" href="css/logoMachineUtilise.css" />
+		<link rel="stylesheet" href="css/interface.css" />
+
+	</head>
+	<body>
+		<nav>
+			<label for="menu-mobile" class="menu-mobile">Menu</label>
+			<input type="checkbox" id="menu-mobile" role="button">
+			<ul>
+			    <li class="menu"><a href="http://localhost:8080/hephaistos_project/home.html">Home</a>
+			   	</li>
+			   	<li class="menu"><a href="http://localhost:8080/hephaistos_project/server_interface.html">Server Interface</a>
+			   	</li>
+			   	<li class="menu"><a href="http://localhost:8080/hephaistos_project/map_sensor_editor.html">Viewers</a>
+			      	<ul class="submenu">
+			      		<li><a href="http://localhost:8080/hephaistos_project/map_sensor_editor.html">Map Sensor Editor</a>
+				       		
+			       	</ul>
+			   	</li>
+			   	<li class="menu"><a href="http://localhost:8080/hephaistos_project/help.html">Help</a>
+			   	</li>
+			</ul>
+		</nav>
+		
+		<script type="text/javascript" src="js/dynamic_chart.js"></script>
+	<script type="text/javascript" src="canvasjs.min.js"></script>
+</head>
+<body>
+	<div id="chartContainer" style="height: 100%; width: 100%;">
+	</div>
+</body>
+		
+		<script type="text/javascript" src="js/server_interface.js"></script>
+	</body>
+</html>

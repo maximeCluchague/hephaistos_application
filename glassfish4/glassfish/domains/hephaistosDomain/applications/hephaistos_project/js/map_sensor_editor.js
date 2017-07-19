@@ -91,7 +91,7 @@ function clearConsole(){
 	
 	var context = document.getElementById('myCanvas').getContext("2d");
 	
-	urlImage.value = "planBatiment.jpg";
+	urlImage.value = "images/planBatiment.jpg";
 	
 	var capteurDispo = [];
 	nbCapteurDispo =0;
@@ -332,13 +332,16 @@ function clearConsole(){
 		var img = new Image();
 		img.onload = function () {
 		    context.drawImage(img,0,0, img.width, img.height);
-		}
+		};
 		
 		img.src = urlImage.value;
-		myCanvas.width = img.width;
+		
 		imgWidth = img.width;
-		myCanvas.height = img.height;
+		myCanvas.width = img.width;
+		
 		imgHeight = img.height;
+		myCanvas.height = img.height;
+		
 		imageChargee = true;
 	}
 	

@@ -30,7 +30,7 @@ public class testClientJava {
 		    			int alea = doubleToInt(Math.random());
 		    			if(messagePrec[i]!=alea){
 		    				messagePrec[i]=alea;
-		    				clientJava.envoieMessage("capteur_IR_"+(i+1), Integer.toString(alea));
+		    				clientJava.envoieMessage("Sensor_"+(i+1), Integer.toString(alea));
 		    			}
 		    		}
 		    	  } catch (UnknownHostException e) {
