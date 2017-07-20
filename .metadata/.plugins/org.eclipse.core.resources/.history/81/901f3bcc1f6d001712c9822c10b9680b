@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Hephaistos Application</title>
+		<meta name="description" content="Creative Button Styles  - Modern and subtle styles &amp; effects for buttons" />
+		<meta name="keywords" content="button styles, css3, modern, flat button, subtle, effects, hover, web design" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" href="css/logoMachineUtilise.css" />
+		<link rel="stylesheet" href="css/interface.css" />
+		
+
+	</head>
+	<body>
+		<nav>
+			<label for="menu-mobile" class="menu-mobile">Menu</label>
+			<input type="checkbox" id="menu-mobile" role="button">
+			<ul>
+			    <li class="menu"><a href="http://localhost:8080/hephaistos_project/home.html">Home</a>
+			   	</li>
+			   	<li class="menu"><a href="http://localhost:8080/hephaistos_project/server_interface.html">Server Interface</a>
+			   	</li>
+			   	<li class="menu"><a>Viewers</a>
+			      	<ul class="submenu">
+			      		<li><a href="http://localhost:8080/hephaistos_project/map_sensor_editor.html">Map Sensor Editor</a>
+				       	<li><a href="http://localhost:8080/hephaistos_project/real_time_chart.html">Real Time Chart</a>
+			       	</ul>
+			   	</li>
+			   	<li class="menu"><a href="http://localhost:8080/hephaistos_project/help.html">Help</a>
+			   	</li>
+			</ul>
+		</nav>
+		
+		<div class="container">
+			</br></br></br>
+			
+			
+			<header class="header" style="display:none;">
+				<h1>Hephaistos Application<span>Server Interface</span></h1>	
+			</header>
+			
+			<section class="color-6 background" style="display:none;">
+	
+				<span class="police">Adresse</span> </br> 
+				<input id="adresse" type="text" class="champsSaisie" size="20" onclick="javascript:this.value = '';" /></br>
+				<span class="police">Port</span> </br> 
+				<input id="port" type="text" class="champsSaisie" size="20" onclick="javascript:this.value = '';"/></br>
+				<center>
+				</br>
+				<button class="btn btn-4 btn-4a icon-arrow-right connexion" onclick="connexion()">Connection</button> 
+				<button class="btn btn-4 btn-4d icon-arrow-left deconnexion" onclick="deconnexion()">Deconnection</button>
+				</center>
+			 	
+				</br>
+				<span class="police">Console Client/Server</span> </br> 
+				
+				<textarea id="console" class="console" readonly="readonly" rows="10" cols="130"></textarea></br>
+				<button class="btn btn-5 btn-5a icon-remove clear" onclick="clearConsole()"><span>Clear</span></button>
+				</br>
+			</section>
+			
+			<header class="header">
+				<h1>Map Sensor Editor</h1>
+			</header>
+				<center>
+					<canvas id="myCanvas" style="border:1px solid #FFFFFF"></canvas>
+				</center>
+				</br>
+			<section class="color-6 background">
+				<input id="urlImage" value="planBatiment.jpg" type="text" class="champsSaisie" size="20" onclick="javascript:this.value = '';" />
+				<input type="button" class="btn btn-6 btn-6i littleButton" value="Load Image" onclick="chargerImage();chargerImage();"/>
+				
+				
+	</section>
+	
+	<header>
+				<h2><span>© Hephaistos Team - INRIA Sophia-Antipolis</span></h2>	
+			</header>
+		</div><!-- /container -->
+
+
+<script type="text/javascript" src="js/map_sensor_editor.js"></script>
+	
+	</body>
+</html>

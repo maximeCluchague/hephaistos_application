@@ -37,14 +37,14 @@
 		</nav>
 		
 		<div class="container">
-			</br>
-			<div id="device"><span></span></div></br>
+			</br></br></br>
 			
-			<header class="header">
+			
+			<header class="header" style="display:none;">
 				<h1>Hephaistos Application<span>Server Interface</span></h1>	
 			</header>
 			
-			<section class="color-6 background">
+			<section class="color-6 background" style="display:none;">
 	
 				<span class="police">Adresse</span> </br> 
 				<input id="adresse" type="text" class="champsSaisie" size="20" onclick="javascript:this.value = '';" /></br>
@@ -65,20 +65,16 @@
 			</section>
 			
 			<header class="header">
-				<h1><span>Map Sensor Editor</span></h1>
+				<h1>Map Sensor Editor</h1>
 			</header>
-			
-			<section class="color-6 background">
-				<input id="urlImage" value="planBatiment.jpg" type="text" class="champsSaisie" size="20" onclick="javascript:this.value = '';" />
-				<input type="button" class="btn btn-6 btn-6i littleButton" value="Load Image" onclick="chargerImage()"/>
-				</br></br>
 				<center>
-					<canvas id="myCanvas" style="border:1px solid #FFFFFF" ></canvas>
+					<canvas id="myCanvas" style="display:none; border:1px solid #FFFFFF"></canvas>
 				</center>
+				</br>
 			
-				<form>
+	<center><form>
 		
-		<section class="panel">
+		<section id="panelBoutton" style="display:none;"class="panel">
 			<fieldset type="ChampsAjout">
        			<legend>Add Sensor</legend> <!-- Titre du fieldset -->
 
@@ -108,11 +104,13 @@
 				<class="text"> AreaB</class> <select id="zone2"></select>
 				<input type="button" class="btn btn-6 btn-6i littleButton" value="Lier" onclick="lier()"/>
 			</fieldset>
+			
 		</section>
-		
-	</form> </br>
-				
-	</section>
+	</form></center>
+	<section id="sectionLoadImg" class="color-6 background">
+				<input id="urlImage" value="planBatiment.jpg" type="text" class="champsSaisie" size="20" onclick="javascript:this.value = '';" />
+				<input id="load" type="button" class="btn btn-6 btn-6i littleButton" value="Load Image"/>
+			</section>
 	<header>
 				<h2><span>© Hephaistos Team - INRIA Sophia-Antipolis</span></h2>	
 			</header>
@@ -120,5 +118,6 @@
 
 
 <script type="text/javascript" src="js/map_sensor_editor.js"></script>
+	
 	</body>
 </html>

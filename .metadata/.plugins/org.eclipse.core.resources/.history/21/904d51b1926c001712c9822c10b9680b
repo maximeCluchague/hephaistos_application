@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Zoom avec canvas</title>
+    </head>
+    <body>
+        <p>
+            <a href="#" onclick="posX -= 8;">Aller à droite</a>
+            -
+            <a href="#" onclick="posX += 8;">Aller à gauche</a>
+            -
+            <a href="#" onclick="scale = 1;">Image taille réelle</a>
+            -
+            <a href="#" onclick="scale = 1.5">Image agrandie</a>
+        </p>
+        <canvas style="display: block;" id="canvas">Mettez vous à jour pour jouer.</canvas>
+        <script>
+var image = new Image(), posX = 0, scale = 1.5;
+image.src = 'http://media.koreus.com/200609/12image-insolite02.jpg';
+ 
+window.onload = function() {
+    var canvas = document.getElementById('canvas'),
+    ctx = canvas.getContext('2d');
+         
+    canvas.width = image.width; canvas.height = image.height;
+                 
+    setInterval(function() {
+        canvas.width = image.width;
+        ctx.scale(scale, scale);
+        ctx.drawImage(image, 0, 0, image.width, canvas.height, posX, 0, image.width, canvas.height );
+    }, 40);
+}
+        </script>
+    </body>
+</html>

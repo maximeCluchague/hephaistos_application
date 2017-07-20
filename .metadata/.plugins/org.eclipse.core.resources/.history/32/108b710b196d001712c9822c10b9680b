@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script>
+
+// addEvent function by John Resig:
+// http://ejohn.org/projects/flexible-javascript-events/
+
+function addEvent( obj, type, fn ) {
+
+    if ( obj.attachEvent ) {
+
+        obj['e'+type+fn] = fn;
+        obj[type+fn] = function(){obj['e'+type+fn]( window.event );};
+        obj.attachEvent( 'on'+type, obj[type+fn] );
+    } else {
+        obj.addEventListener( type, fn, false );
+    }
+}
+function getScrollY() {
+    var  scrOfY = 0;
+    if( typeof( window.pageYOffset ) == 'number' ) {
+        //Netscape compliant
+        scrOfY = window.pageYOffset;
+
+    } else if( document.body && document.body.scrollTop )  {
+        //DOM compliant
+        scrOfY = document.body.scrollTop;
+    } 
+    return scrOfY;
+}
+</script>
+<style>
+#mydiv {
+    height:100px;
+    width:100%;
+}
+#fdiv {
+    height:100px;
+    width:100%;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HTML for example event goes here -->
+
+<div id="fdiv" style="background-color:red;position:fix">
+</div>
+<div id="mydiv" style="background-color:yellow">
+</div>
+<div id="fdiv" style="background-color:green">
+</div>
+
+<script>
+
+// Script for example event goes here
+
+addEvent(window, 'scroll', function(event) {
+
+    var x = document.getElementById("mydiv");
+
+    var y = getScrollY();      
+    if (y >= 100) {
+        x.style.position = "fixed"; 
+        x.style.top= "0";
+    } 
+});
+
+</script>
+</body>
+</html>

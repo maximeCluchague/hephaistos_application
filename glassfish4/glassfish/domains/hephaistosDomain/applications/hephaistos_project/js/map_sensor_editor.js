@@ -9,7 +9,7 @@ function autoScroll(){
 	textarea.scrollTop = textarea.scrollHeight;
 }
 
-function connexion(){
+/*function connexion(){
 	document.getElementById("console").value += "---> Connection request\n\n";
 	autoScroll();
 	try{
@@ -18,7 +18,7 @@ function connexion(){
 	}catch(exception){
 		
 	}
-	try{
+	try{*/
 		url = "ws://"+adresse.value.toString()+":"+port.value.toString()+"/hephaistos_project/hephaistoswebserver";
 		
 		webSocket = new WebSocket(url);
@@ -63,10 +63,10 @@ function connexion(){
 				}
 			}
 		}
-	}catch(exception){
+	/*}catch(exception){
 		document.getElementById("console").value += "[Unable to connect with Server]\n\n";
 	}
-}
+}*/
 	
 function deconnexion(){
 	if(isConnect){
@@ -84,14 +84,15 @@ function clearConsole(){
 	document.getElementById("console").value = "";
 }
 	var imageChargee = false;
-
+	/////////////////////////////////
 	//var url = "ws://localhost:8080/hephaistos_project/hephaistoswebserver";
 	
 	//var webSocket = new WebSocket(url);
+	////////////////////////////////////////////
 	
 	var context = document.getElementById('myCanvas').getContext("2d");
 	
-	urlImage.value = "images/planBatiment.jpg";
+	urlImage.value = "images/plan_pompidou.png";
 	
 	var capteurDispo = [];
 	nbCapteurDispo =0;
@@ -328,22 +329,38 @@ function clearConsole(){
 	var imgWidth;
 	var imgHeight;
 
+
+	
+	
 	function chargerImage(){
 		var img = new Image();
-		img.onload = function () {
-		    context.drawImage(img,0,0, img.width, img.height);
-		};
-		
 		img.src = urlImage.value;
-		
+
 		imgWidth = img.width;
 		myCanvas.width = img.width;
 		
 		imgHeight = img.height;
 		myCanvas.height = img.height;
+		context.drawImage(img,0,0, img.width, img.height);
+
+		
+		
+		
 		
 		imageChargee = true;
 	}
+	
+	document.querySelector("#load").onclick = function() {
+		document.querySelector("#myCanvas").style.display="block";
+		chargerImage();
+		document.querySelector("#panelBoutton").style.display="block";
+		if (window.getComputedStyle(document.querySelector('#sectionLoadImg')).display=='none'){
+			//document.querySelector("#sectionLoadImg").style.display="block";
+		} else {
+			//document.querySelector("#sectionLoadImg").style.display="none";
+		}
+	}
+	
 	
 	window.addEventListener('keydown',this.check,false);
 	
@@ -416,17 +433,17 @@ function clearConsole(){
       canvas.addEventListener('mousemove', function(evt) {
         var mousePos = getMousePos(canvas, evt);
         ny=getWindowHeight();
-        nx=Math.min(1014,Math.max(getWindowWidth(),720)+14);
-        x.value = parseInt(mousePos.x/((nx-110)/imgWidth));
-        y.value = parseInt(mousePos.y/((nx-110)/imgWidth));
+        nx=Math.min(1000,Math.max(getWindowWidth(),720));
+        x.value = parseInt(mousePos.x/((nx-0)/imgWidth));
+        y.value = parseInt(mousePos.y/((nx-0)/imgWidth));
         zonePointSelected = true;
         if(!firstPointSelected){
-	        x1.value = parseInt(mousePos.x/((nx-110)/imgWidth));
-	        y1.value = parseInt(mousePos.y/((nx-110)/imgWidth));
+	        x1.value = parseInt(mousePos.x/((nx-0)/imgWidth));
+	        y1.value = parseInt(mousePos.y/((nx-0)/imgWidth));
         }else{
         	if(!secondPointSelected){
-    	        x2.value = parseInt(mousePos.x/((nx-110)/imgWidth));
-    	        y2.value = parseInt(mousePos.y/((nx-110)/imgWidth));
+    	        x2.value = parseInt(mousePos.x/((nx-0)/imgWidth));
+    	        y2.value = parseInt(mousePos.y/((nx-0)/imgWidth));
             }
         }
       }, false);

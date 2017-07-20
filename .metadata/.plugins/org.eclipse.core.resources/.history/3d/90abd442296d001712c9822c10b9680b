@@ -1,0 +1,66 @@
+package com.za.websocket;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+import javax.websocket.EncodeException;
+import javax.websocket.MessageHandler;
+import javax.websocket.OnClose;
+import javax.websocket.OnMessage;
+import javax.websocket.OnOpen;
+import javax.websocket.Session;
+import javax.websocket.server.ServerEndpoint;
+
+@ServerEndpoint(value = "/hephaistoswebserver", encoders = { SensorMessageEncoder.class}, decoders = {SensorMessageDecoder.class})
+public class HephaistosWebServer {
+	static Set<Session> sessionClient = Collections.synchronizedSet(new HashSet<Session>());
+	static ArrayList<String> capteursConnectes = new ArrayList<String>();
+	
+	@OnOpen
+	public void handleOpen(Session client){
+		System.out.println("<CONNEXION>");
+		sessionClient.add(client);
+	}
+	
+	
+	@OnMessage
+	public void handleMessage(SensorMessage incomingSensorMessage, Session client) throws IOException, EncodeException{
+		// Le serveur affiche sur sa console le message recu
+		System.out.println("<MESSAGE> "
+				+ "{ id : " + incomingSensorMessage.getIdCapteur()
+				+ ", Val : " + incomingSensorMessage.getAcquisition()
+				+ ", date : " + incomingSensorMessage.getDate()
+				+ ", commande : " + incomingSensorMessage.getCommande()
+				+" }");
+		
+		// Si le capteur n'est pas stocké dans la liste on l'ajoute
+		String capteur = incomingSensorMessage.getIdCapteur();
+		if(incomingSensorMessage.getCommande().equals("deccrocherCapteur")){
+			capteursConnectes.remove(capteur);
+			SensorMessage ResultCommande = new SensorMessage("","","","\\n\\t---> ResultCommande : Capteurs Connectés="+capteursConnectes.toString());
+			client.getBasicRemote().sendObject(ResultCommande);
+		}else{
+			if(!capteursConnectes.contains(capteur)){
+				capteursConnectes.add(capteur);	
+			}
+		}
+		System.out.println("<Capteurs connectés> : " +capteursConnectes);
+		//On retourne le message a l'expéditeur
+		
+		Iterator<Session> iterator = sessionClient.iterator();
+		
+		// On renvoie le message recu à tous les autres clients
+		while(iterator.hasNext()) {
+			iterator.next().getBasicRemote().sendObject(incomingSensorMessage);
+		}
+	}
+	@OnClose
+	public void handleClose(Session client) throws IOException, EncodeException{
+		System.out.println("<DECONNEXION>");
+		sessionClient.remove(client);
+	}
+}

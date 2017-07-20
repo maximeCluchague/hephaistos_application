@@ -1,5 +1,7 @@
-canvas{
+			canvas{
 				width: 100%;
+				min-width:720px;
+				max-width:1000px;
 			}
 
 
@@ -53,7 +55,9 @@ canvas{
 			    border-radius: 4px;
 				padding: 10px;
 				width: 100%;
+				max-width:1000px;
 			}
+			
 			.sousPanel{
 				background-color: #4593e3;
 			    box-sizing: border-box;
@@ -62,6 +66,7 @@ canvas{
 			    border-radius: 4px;
 				width: 100%;
 			}
+			
 			input[type=text] {
 				background-color: #4593e3;
 				width: 50%;

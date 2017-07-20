@@ -44,7 +44,12 @@
 					
 					webSocket.onmessage = function processMessage(sensorMessage) {
 						var json = JSON.parse(sensorMessage.data);
-						document.getElementById("console").value += "<Message> {\"idCapteur\":\""+ json.idCapteur+"\",\"acquisition\":\""+ json.acquisition+"\",\"date\":\"" +json.date+"\",\"commande\":\""+json.commande+"\"}\n";
+						
+						if(new String(json.commande).valueOf()!=new String("NULL").valueOf()){
+							document.getElementById("console").value += "<Result Commande> "+ json.commande+"\n";
+						}else{
+							document.getElementById("console").value += "<Message> {\"idCapteur\":\""+ json.idCapteur+"\",\"acquisition\":\""+ json.acquisition+"\",\"date\":\"" +json.date+"\",\"commande\":\""+json.commande+"\"}\n";
+						}
 						autoScroll();
 					}
 					
