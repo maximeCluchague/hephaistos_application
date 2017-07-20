@@ -57,11 +57,13 @@ function autoScroll(){
 						var idCapteur = capteurOnImage[i].idCapteur;
 						updateLine(x1,y1,x2,y2,idCapteur,json.acquisition);
 						
-						updateZone(idCapteur,json.acquisition);
+						
 						
 					}
 				}
 			}
+			// On met a jour le nombre de personne présent dans chaque Zone
+			updateZoneVoisineCapteur(json.idCapteur,json.acquisition);
 		}
 	/*}catch(exception){
 		document.getElementById("console").value += "[Unable to connect with Server]\n\n";
@@ -173,7 +175,7 @@ function clearConsole(){
 				if(zonePointSelected){
 					if(!zoneExiste(nomZone.value)){
 						// On stocke la nouvelle zone dans une liste
-						zone.push({nomZone:nomZone.value,x:x.value,y:y.value,r:r.value,nbPersonne:0,capteurVoison:[]});
+						zone.push({nomZone:nomZone.value,x:x.value,y:y.value,r:r.value,nbPersonne:nbPersonne.value});
 						
 						var zone1 = document.getElementById ("zone1");
 						var newOption = new Option (nomZone.value, "value");
@@ -221,25 +223,71 @@ function clearConsole(){
 		}
 	}
 	
-
 	
-	var updateZone = function(idCapteur,acquisition){
-		if(acquisition>0){
-			if(zone.length>0){
-				document.getElementById("console").value +="zone.length="+zone.length+"\n";
-				for(i=0;i<zone.length;i++){
-					var capteurVoisin = zone[i].capteurVoison;
-					document.getElementById("console").value +=capteurVoisin.toString();
-					//if(capteurVoisin.length>0){
-					//	for(j=0;j<capteurVoisin.length;j++){
-					//		document.getElementById("console").value +="\tj:"+i+" eme itération\n";
-					//	}
-					//}
+	function updateZoneVoisineCapteur(nomCapteur,acquisition){
+		if(parseInt(acquisition)>0){
+			for(i=0;i<listeArrete.length;i++){
+				if(listeArrete[i].capteur==nomCapteur){
+					var Z1 = listeArrete[i].voisinZ1;
+					var Z2 = listeArrete[i].voisinZ2;
+					
+					// On fait varié le nombre de personne de la zone 1 voisine du capteur 
+					var nbPersonnez1;
+					for(i=0;i<zone.length;i++){
+						if(zone[i].nomZone==Z1){
+							nbPersonnez1 = parseInt(zone[i].nbPersonne+1);
+						}
+					}
+					
+					// On fait varié le nombre de personne de la zone 1 voisine du capteur 
+					var nbPersonnez2;
+					for(i=0;i<zone.length;i++){
+						if(zone[i].nomZone==Z2){
+							nbPersonnez2 = parseInt(zone[i].nbPersonne-1);
+						}
+					}
+					
+					updateZone(Z1,nbPersonnez1);
+					updateZone(Z2,nbPersonnez2);
 				}
 			}
 		}
-
 	}
+	
+	// FONCTIONNEL 
+	function updateZone(nomZone,nbPersonne){
+		for(i=0;i<zone.length;i++){
+			if(zone[i].nomZone==nomZone){
+				// On met a jour la zone dans la liste
+				zone[i]={nomZone:zone[i].nomZone,x:zone[i].x,y:zone[i].y,r:zone[i].r,nbPersonne:nbPersonne};
+				drawZone(nomZone,zone[i].x,zone[i].y,zone[i].r,zone[i].nbPersonne);
+			}
+		}
+	}
+	// FONCTIONNEL 
+	function drawZone(nomZone,x,y,r,nbPersonne){
+		// On dessine le cercle
+		context.beginPath();
+		context.fillStyle="#9EC8ED"
+		context.arc(x,y, r, 0, 2 * Math.PI);
+		context.fill();
+		context.strokeStyle="#3D5D87";
+		context.beginPath();
+		context.lineWidth="2";
+		context.arc(x, y, r, 0, 2 * Math.PI);
+		context.stroke();
+		
+		// On écrit le nom de la zone
+		context.fillStyle = "#263A61";
+	    context.font = "15px Arial";
+	    context.textAlign="center"; 
+	    context.fillText(nomZone,x,parseInt(y)-parseInt(r/3));
+	 	// On écrit le nombre de personnes présent dans la zone
+	    context.font = "42px Arial";
+	    context.fillText(nbPersonne,x,parseInt(y)+parseInt(r/2));
+	}
+	
+	var listeArrete=[];
 	
 	var lier = function(){
 		try{
@@ -255,19 +303,13 @@ function clearConsole(){
 				//
 				// Debut CREATION ARRETE
 				//
-				for(i=0;i<zone.length;i++){
-					if(zone[i].nomZone==z1){
-						zone[i].capteurVoison.push(c);
-						var voisinZ1 = zone[i].capteurVoison;
-						document.getElementById("console").value += "<CONSTRUCTION GRAPHE> Capteur "+zone[i].capteurVoison[0]+" ajoutée à "+ zone[i].nomZone+"\n";
-						
-					}
-					if(zone[i].nomZone==z2){
-						zone[i].capteurVoison.push(c);
-						var voisinZ2 = zone[i].capteurVoison;
-						document.getElementById("console").value += "<CONSTRUCTION GRAPHE> Capteur "+zone[i].capteurVoison[0]+" ajoutée à "+ zone[i].nomZone+"\n";
-					}
-				}
+		
+				listeArrete.push({capteur:c,voisinZ1:z1,voisinZ2:z2});
+				
+				var x = document.getElementById("capteursAjoutés");
+			    x.remove(x.selectedIndex);
+			    // A REMPLACER PAR UNE COURBE BEZIER
+				alert("La liaison entre la zone : "+listeArrete[0].voisinZ1+" et la zone : "+listeArrete[0].voisinZ2+" est maintenant créer via le capteur : "+c);
 				//
 				// Fin CREATION ARRETE
 				//

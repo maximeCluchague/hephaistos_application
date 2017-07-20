@@ -31,6 +31,7 @@ var webSocket = new WebSocket("ws://localhost:8080/hephaistos_project/hephaistos
 		});
 		
 		webSocket.onmessage = function processMessage(sensorMessage) {
+			document.querySelector("#message").style.display="none";
 			var json = JSON.parse(sensorMessage.data);
 			var commande = json.commande;
 			if(commande == "NULL"){
