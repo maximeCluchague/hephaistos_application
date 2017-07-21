@@ -128,9 +128,10 @@ function clearConsole(){
 					// On trace une premiere ligne
 					context.strokeStyle='#FF0000';
 			        context.beginPath();
+			        context.lineCap = 'round';
 			        context.moveTo(parseInt(x1.value),parseInt(y1.value));
 			        context.lineTo(parseInt(x2.value),parseInt(y2.value));
-			        context.lineWidth = 5;
+			        context.lineWidth = 7;
 			        context.stroke();
 			        
 			        // On dessine le nom du capteur
@@ -231,24 +232,43 @@ function clearConsole(){
 					var Z1 = listeArrete[i].voisinZ1;
 					var Z2 = listeArrete[i].voisinZ2;
 					
-					// On fait varié le nombre de personne de la zone 1 voisine du capteur 
+					// ON PEUT UTILISER UN ALGORITHME PLUS EFFICACE ICI C'EST UN ALGO HEURISTIQUE POUR TESTER LE FONCTIONNEMENT
+						
+					// On récupère le nombre de personne dans la zone 1 avant l'activation du capteur
 					var nbPersonnez1;
 					for(i=0;i<zone.length;i++){
 						if(zone[i].nomZone==Z1){
-							nbPersonnez1 = parseInt(zone[i].nbPersonne+1);
+							nbPersonnez1 = parseInt(zone[i].nbPersonne);
 						}
 					}
 					
-					// On fait varié le nombre de personne de la zone 1 voisine du capteur 
+					// On récupère le nombre de personne dans la zone 1 avant l'activation du capteur
 					var nbPersonnez2;
 					for(i=0;i<zone.length;i++){
 						if(zone[i].nomZone==Z2){
-							nbPersonnez2 = parseInt(zone[i].nbPersonne-1);
+							nbPersonnez2 = parseInt(zone[i].nbPersonne);
 						}
 					}
-					
-					updateZone(Z1,nbPersonnez1);
-					updateZone(Z2,nbPersonnez2);
+					if(!(nbPersonnez1==0 && nbPersonnez2==0)){
+						if(nbPersonnez1==0){
+							updateZone(Z1,nbPersonnez1+1);
+							updateZone(Z2,nbPersonnez2-1);
+						}else{
+							if(nbPersonnez2==0){
+								updateZone(Z1,nbPersonnez1-1);
+								updateZone(Z2,nbPersonnez2+1);
+							}
+							else{
+								if(Math.random()>0.5){
+									updateZone(Z1,nbPersonnez1-1);
+									updateZone(Z2,nbPersonnez2+1);
+								}else{
+									updateZone(Z1,nbPersonnez1+1);
+									updateZone(Z2,nbPersonnez2-1);
+								}
+							}
+						}
+					}
 				}
 			}
 		}
@@ -289,7 +309,93 @@ function clearConsole(){
 	
 	var listeArrete=[];
 	
+	function drawArrete(c,z1,z2){
+		var x1;
+	    var y1;
+	    // Coordonnées de la zone 2
+	    var x2;
+	    var y2;
+	    // Coordonnées du capteur 
+	    var x3;
+	    var y3;
+	    
+	    for(i=0;i<zone.length;i++){
+	    	if(zone[i].nomZone==z1){
+	    		x1=parseInt(zone[i].x);
+	    		y1=parseInt(zone[i].y);
+	    	}
+	    	if(zone[i].nomZone==z2){
+	    		x2=parseInt(zone[i].x);
+	    		y2=parseInt(zone[i].y);
+	    	}
+	    }
+	    var ax3;
+	    var ay3;
+	    var bx3;
+	    var by3;
+	    
+	    for(i=0;i<capteurOnImage.length;i++){
+	    	if(capteurOnImage[i].idCapteur==c){
+	    		ax3=parseInt(capteurOnImage[i].x1);
+	    		ay3=parseInt(capteurOnImage[i].y1);
+	    		bx3=parseInt(capteurOnImage[i].x2);
+	    		by3=parseInt(capteurOnImage[i].y2);
+	    		
+	    		x3=(parseInt(capteurOnImage[i].x1)+parseInt(capteurOnImage[i].x2))/2;
+	    		y3=(parseInt(capteurOnImage[i].y1)+parseInt(capteurOnImage[i].y2))/2;
+	    	}
+	    }
+	    
+	    var d1 = 0.7*Math.sqrt((x3-x1)*(x3-x1)+(y3-y1)*(y3-y1))/Math.sqrt((bx3-ax3)*(bx3-ax3)+(by3-ay3)*(by3-ay3));
+	    var d2 = 0.7*Math.sqrt((x3-x2)*(x3-x2)+(y3-y2)*(y3-y2))/Math.sqrt((bx3-ax3)*(bx3-ax3)+(by3-ay3)*(by3-ay3));;
+	    
+	    var SigneSinTeta = (x2-x1)*(by3-ay3)-(y2-y1)*(bx3-ax3);
+	    
+	    if(SigneSinTeta>0){
+		    context.beginPath();            
+		    context.lineWidth="2";
+		    context.strokeStyle="#0000FF"; 
+		    context.moveTo(x1,y1);
+		    context.quadraticCurveTo(x3-d1*y3+d1*ay3,y3-d1*x3+d1*x3,x3,y3);
+		    context.stroke();
+		    
+		    context.beginPath();            
+		    context.lineWidth="2";
+		    context.strokeStyle="#0000FF"; 
+		    context.moveTo(x3,y3);
+		    context.quadraticCurveTo(x3+d2*y3-d2*ay3,y3+d2*ax3-d2*x3,x2,y2);
+		    context.stroke();
+	    }else{
+	    	context.beginPath();            
+		    context.lineWidth="2";
+		    context.strokeStyle="#0000FF"; 
+		    context.moveTo(x3,y3);
+		    context.quadraticCurveTo(x3-d2*y3+d2*ay3,y3-d2*ax3+d2*x3,x2,y2);
+		    context.stroke();
+		    
+		    context.beginPath();            
+		    context.lineWidth="2";
+		    context.strokeStyle="#0000FF"; 
+		    context.moveTo(x1,y1);
+		    context.quadraticCurveTo(x3+d1*y3-d1*ay3,y3+d1*ax3-d1*x3,x3,y3);
+		    context.stroke();
+	    }
+	    
+	    // On dessine la zone par dessus l'arrete
+	    for(i=0;i<zone.length;i++){
+			if(zone[i].nomZone==z1){
+				updateZone(z1,parseInt(zone[i].nbPersonne));
+			}
+		}
+	    for(i=0;i<zone.length;i++){
+			if(zone[i].nomZone==z2){
+				updateZone(z2,parseInt(zone[i].nbPersonne));
+			}
+		}
+	}
+	
 	var lier = function(){
+		
 		try{
 			var zone1 = document.getElementById("zone1");
 			var z1 = zone1.options[zone1.selectedIndex].text;
@@ -301,17 +407,20 @@ function clearConsole(){
 			var c = capteur.options[capteur.selectedIndex].text;
 			if(z1 != z2){
 				//
-				// Debut CREATION ARRETE
+				// Debut DRAW ARRETE
 				//
 		
 				listeArrete.push({capteur:c,voisinZ1:z1,voisinZ2:z2});
 				
 				var x = document.getElementById("capteursAjoutés");
 			    x.remove(x.selectedIndex);
-			    // A REMPLACER PAR UNE COURBE BEZIER
-				alert("La liaison entre la zone : "+listeArrete[0].voisinZ1+" et la zone : "+listeArrete[0].voisinZ2+" est maintenant créer via le capteur : "+c);
+			    // On dessine le lien entre les 2 zone par une courbe bezier qui coupe le capteur
+			    // Coordonnées de la zone 1
+			    
+			    drawArrete(c,z1,z2);
+			    
 				//
-				// Fin CREATION ARRETE
+				// Fin DRAW ARRETE
 				//
 			}else{
 				alert("Erreur : Vous devez séléctionner 2 zones différentes ! ");
@@ -503,8 +612,9 @@ function clearConsole(){
         //Tracé de la barriere capteur
         
         context.beginPath();
+        context.lineCap = 'round';
         context.moveTo(x1,y1);
         context.lineTo(x2,y2);
-        context.lineWidth = 5;
+        context.lineWidth = 7;
         context.stroke(); 
     }
