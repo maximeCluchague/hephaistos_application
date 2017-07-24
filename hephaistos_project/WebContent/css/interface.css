@@ -1,7 +1,5 @@
 			canvas{
-				width: 100%;
-				min-width:720px;
-				max-width:1000px;
+				width:1000px;
 			}
 
 
@@ -48,14 +46,18 @@
 				
 			}
 			
-			.panel{
+			
+			#panelBoutton{
+				position:fixed;
+				top: 55px;
+				right:0px;
 				background-color: #4593e3;
 			    box-sizing: border-box;
-			    border: 2px solid #FFFFFF;
-			    border-radius: 4px;
 				padding: 10px;
-				width: 100%;
-				max-width:1000px;
+				width:calc(50% - 500px);
+				min-width:250px;
+				height: 100%;
+			
 			}
 			
 			.sousPanel{
@@ -158,6 +160,18 @@
 				max-width : 1000px;
 				min-width : 720px;
 			}
+			
+			#help{
+				border-color:#383d4c;
+				background-color:#383d4c;
+				color:white;
+			}
+			
+			#help:hover{
+				background-color:#FFF;
+				color:#383d4c;
+			}
+			
 			.send{
 			
 				background-color:#4593e3;
