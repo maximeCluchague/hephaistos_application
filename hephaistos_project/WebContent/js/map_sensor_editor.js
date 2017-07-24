@@ -3,6 +3,7 @@ port.value = "8080";
 document.getElementById("console").value += "Waiting for connection ...\n\n";
 var webSocket = null;
 var isConnect = false;
+var URLimageChargee;
 
 function autoScroll(){
 	var textarea = document.getElementById("console");
@@ -152,13 +153,13 @@ function clearConsole(){
 					x2.value = "";
 					y2.value = "";
 				}else{
-					alert("Veuillez sélectionner des coordonnées sur l'image en placant votre curseur sur le l'image puis en appuyant sur la touche ENTRER");
+					alert("Please select coordinates on the image by placing your cursor on the image and then pressing ENTER");
 				}
 			}else{
-				alert("Aucun capteur disponible ... ");
+				alert("No sensor available ... ");
 			}
 		}else{
-			alert("Veuillez charger une image");
+			alert("Please load an image");
 		}
 	}
 	
@@ -206,21 +207,21 @@ function clearConsole(){
 					    context.fillText(nbPersonne.value,x.value,parseInt(y.value)+parseInt(r.value/2));
 					    x.value = "";
 						y.value = "";
-						nomZone.value ="";
+						nomZone.placeholder ="Name";nomZone.value ="";
 						nbPersonne.value="0";
 						zonePointSelected = false;
 					}else{
-						alert("Le nom de zone est déja utilisé");
+						alert("The zone name is already used");
 					}
 				}else{
-					alert("Veuillez sélectionner des coordonnées pour ajouter une nouvelle zone");
+					alert("Please select coordinates to add a new area");
 				}
 			}else{
-				alert("Veuillez entrer un nom pour créer une nouvelle zone");
+				alert("Please enter a name to create a new zone");
 			}
 
 		}else{
-			alert("Veuillez charger une image");
+			alert("Please load an image");
 		}
 	}
 	
@@ -258,7 +259,7 @@ function clearConsole(){
 							nbPersonnez2 = parseInt(zone[i].nbPersonne);
 						}
 					}
-					drawArrete(nomCapteur,Z1,Z2,"#8aecff");
+					drawArrete(nomCapteur,Z1,Z2,"#0000FF");
 					// Algo de mise à jour du nombre de personne peut-être modifié
 					
 					if(!(nbPersonnez1==0 && nbPersonnez2==0)){
@@ -291,7 +292,7 @@ function clearConsole(){
 					var Z2 = listeArrete[i].voisinZ2;
 				}
 			}
-			drawArrete(nomCapteur,Z1,Z2,"#0000FF");
+			drawArrete(nomCapteur,Z1,Z2,"#8aecff");
 		}
 	}
 	
@@ -437,16 +438,16 @@ function clearConsole(){
 			    // On dessine le lien entre les 2 zone par une courbe bezier qui coupe le capteur
 			    // Coordonnées de la zone 1
 			    
-			    drawArrete(c,z1,z2,"#0000FF");
+			    drawArrete(c,z1,z2,"#8aecff");
 			    
 				//
 				// Fin DRAW ARRETE
 				//
 			}else{
-				alert("Erreur : Vous devez séléctionner 2 zones différentes ! ");
+				alert("Error: You must select 2 different areas !");
 			}
 		}catch(exception){
-			alert("Il manque des éléments ... ");
+			alert("There is a lack of elements to create liaison ... ");
 		}
 	}
 	
@@ -499,12 +500,11 @@ function clearConsole(){
 	
 	var imgWidth;
 	var imgHeight;
-
-
 	
 	
 	function chargerImage(){
 		var img = new Image();
+		URLimageChargee = urlImage.value;
 		img.src = urlImage.value;
 
 		imgWidth = img.width;
@@ -513,10 +513,6 @@ function clearConsole(){
 		imgHeight = img.height;
 		myCanvas.height = img.height;
 		context.drawImage(img,0,0, img.width, img.height);
-
-		
-		
-		
 		
 		imageChargee = true;
 	}
@@ -536,7 +532,7 @@ function clearConsole(){
 		}else{
 			if(!firstPointSelected){
 				if(e.keyCode === 13){
-			    	alert("Vous avez selectionné le premier point, veuillez selectionner le second en appuyant sur la touche 'Entrer'");
+			    	alert("You have selected the first point, please select the second point by pressing the Enter");
 			    	if(x1.value.length>0){
 			    		firstPointSelected = true;
 			    	}
@@ -544,7 +540,7 @@ function clearConsole(){
 			}else{
 				if(!secondPointSelected){
 					if(e.keyCode === 13){
-				    	alert("Les points sont enregistrer appuyer sur 'Ajouter' pour confirmer ou 'Annuler' pour annuler la sélection");
+				    	alert("Points are saved press 'Add' to confirm or 'Cancel' to cancel the selection");
 				    	if(x2.value.length>0){
 				    		secondPointSelected = true;
 				    	}
@@ -633,4 +629,18 @@ function clearConsole(){
         context.lineTo(x2,y2);
         context.lineWidth = 7;
         context.stroke(); 
+        
+        // Dessiner son nom
+        context.beginPath();
+        context.fillStyle = "#FFFFFF";
+        context.fillRect((parseInt(x1)+parseInt(x2))/2+20,(parseInt(y1)+parseInt(y2))/2-40, 35 + idCapteur.length*8, 25);
+        context.strokeStyle = "#444444";
+        context.lineWidth = 2;
+        context.strokeRect((parseInt(x1)+parseInt(x2))/2+20,(parseInt(y1)+parseInt(y2))/2-40, 35 + idCapteur.length*8, 25);
+        context.fillStyle = "blue";
+        context.textAlign="start"; 
+        context.font = "15px Arial";
+        context.fillText("ID : "+idCapteur,(parseInt(x1)+parseInt(x2))/2+25,(parseInt(y1)+parseInt(y2))/2-22); 
+        
+        
     }
