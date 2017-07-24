@@ -9,7 +9,7 @@ function autoScroll(){
 	textarea.scrollTop = textarea.scrollHeight;
 }
 
-/*function connexion(){
+function connexion(){
 	document.getElementById("console").value += "---> Connection request\n\n";
 	autoScroll();
 	try{
@@ -18,7 +18,7 @@ function autoScroll(){
 	}catch(exception){
 		
 	}
-	try{*/
+	try{
 		url = "ws://"+adresse.value.toString()+":"+port.value.toString()+"/hephaistos_project/hephaistoswebserver";
 		
 		webSocket = new WebSocket(url);
@@ -65,10 +65,10 @@ function autoScroll(){
 			// On met a jour le nombre de personne présent dans chaque Zone
 			updateZoneVoisineCapteur(json.idCapteur,json.acquisition);
 		}
-	/*}catch(exception){
+	}catch(exception){
 		document.getElementById("console").value += "[Unable to connect with Server]\n\n";
 	}
-}*/
+}
 	
 function deconnexion(){
 	if(isConnect){
@@ -224,6 +224,15 @@ function clearConsole(){
 		}
 	}
 	
+	document.querySelector("#help").onclick = function() {
+		if (window.getComputedStyle(document.querySelector('#helpDetail')).display=='none'){
+			document.querySelector("#helpDetail").style.display="block";
+			document.querySelector("#myCanvas").style.display="none";
+		} else {
+			document.querySelector("#helpDetail").style.display="none";
+			document.querySelector("#myCanvas").style.display="block";
+		}
+	}
 	
 	function updateZoneVoisineCapteur(nomCapteur,acquisition){
 		if(parseInt(acquisition)>0){
@@ -242,13 +251,16 @@ function clearConsole(){
 						}
 					}
 					
-					// On récupère le nombre de personne dans la zone 1 avant l'activation du capteur
+					// On récupère le nombre de personne dans la zone 2 avant l'activation du capteur
 					var nbPersonnez2;
 					for(i=0;i<zone.length;i++){
 						if(zone[i].nomZone==Z2){
 							nbPersonnez2 = parseInt(zone[i].nbPersonne);
 						}
 					}
+					
+					// Algo de mise à jour du nombre de personne peut-être modifié
+					
 					if(!(nbPersonnez1==0 && nbPersonnez2==0)){
 						if(nbPersonnez1==0){
 							updateZone(Z1,nbPersonnez1+1);
@@ -274,7 +286,6 @@ function clearConsole(){
 		}
 	}
 	
-	// FONCTIONNEL 
 	function updateZone(nomZone,nbPersonne){
 		for(i=0;i<zone.length;i++){
 			if(zone[i].nomZone==nomZone){
@@ -284,7 +295,7 @@ function clearConsole(){
 			}
 		}
 	}
-	// FONCTIONNEL 
+
 	function drawZone(nomZone,x,y,r,nbPersonne){
 		// On dessine le cercle
 		context.beginPath();
@@ -505,11 +516,6 @@ function clearConsole(){
 		document.querySelector("#myCanvas").style.display="block";
 		chargerImage();
 		document.querySelector("#panelBoutton").style.display="block";
-		if (window.getComputedStyle(document.querySelector('#sectionLoadImg')).display=='none'){
-			//document.querySelector("#sectionLoadImg").style.display="block";
-		} else {
-			//document.querySelector("#sectionLoadImg").style.display="none";
-		}
 	}
 	
 	
@@ -584,7 +590,8 @@ function clearConsole(){
       canvas.addEventListener('mousemove', function(evt) {
         var mousePos = getMousePos(canvas, evt);
         ny=getWindowHeight();
-        nx=Math.min(1000,Math.max(getWindowWidth(),720));
+        //nx=Math.min(1000,Math.max(getWindowWidth(),720));
+        nx=1000;
         x.value = parseInt(mousePos.x/((nx-0)/imgWidth));
         y.value = parseInt(mousePos.y/((nx-0)/imgWidth));
         zonePointSelected = true;

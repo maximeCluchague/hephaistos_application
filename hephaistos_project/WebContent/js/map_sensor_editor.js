@@ -251,13 +251,16 @@ function clearConsole(){
 						}
 					}
 					
-					// On récupère le nombre de personne dans la zone 1 avant l'activation du capteur
+					// On récupère le nombre de personne dans la zone 2 avant l'activation du capteur
 					var nbPersonnez2;
 					for(i=0;i<zone.length;i++){
 						if(zone[i].nomZone==Z2){
 							nbPersonnez2 = parseInt(zone[i].nbPersonne);
 						}
 					}
+					drawArrete(nomCapteur,Z1,Z2,"#8aecff");
+					// Algo de mise à jour du nombre de personne peut-être modifié
+					
 					if(!(nbPersonnez1==0 && nbPersonnez2==0)){
 						if(nbPersonnez1==0){
 							updateZone(Z1,nbPersonnez1+1);
@@ -281,9 +284,17 @@ function clearConsole(){
 				}
 			}
 		}
+		else{
+			for(i=0;i<listeArrete.length;i++){
+				if(listeArrete[i].capteur==nomCapteur){
+					var Z1 = listeArrete[i].voisinZ1;
+					var Z2 = listeArrete[i].voisinZ2;
+				}
+			}
+			drawArrete(nomCapteur,Z1,Z2,"#0000FF");
+		}
 	}
 	
-	// FONCTIONNEL 
 	function updateZone(nomZone,nbPersonne){
 		for(i=0;i<zone.length;i++){
 			if(zone[i].nomZone==nomZone){
@@ -293,7 +304,7 @@ function clearConsole(){
 			}
 		}
 	}
-	// FONCTIONNEL 
+
 	function drawZone(nomZone,x,y,r,nbPersonne){
 		// On dessine le cercle
 		context.beginPath();
@@ -318,7 +329,7 @@ function clearConsole(){
 	
 	var listeArrete=[];
 	
-	function drawArrete(c,z1,z2){
+	function drawArrete(c,z1,z2,color){
 		var x1;
 	    var y1;
 	    // Coordonnées de la zone 2
@@ -360,33 +371,33 @@ function clearConsole(){
 	    
 	    var SigneSinTeta = (x2-x1)*(by3-ay3)-(y2-y1)*(bx3-ax3);
 	    
-	    if(SigneSinTeta>0){
+	    if(SigneSinTeta<0){
 		    context.beginPath();            
 		    context.lineWidth="2";
-		    context.strokeStyle="#0000FF"; 
+		    context.strokeStyle=color; 
 		    context.moveTo(x1,y1);
-		    context.quadraticCurveTo(x3-d1*y3+d1*ay3,y3-d1*x3+d1*x3,x3,y3);
+		    context.quadraticCurveTo(x3+d1*by3-d1*y3,y3-d1*bx3+d1*x3,x3,y3);
 		    context.stroke();
 		    
 		    context.beginPath();            
 		    context.lineWidth="2";
-		    context.strokeStyle="#0000FF"; 
+		    context.strokeStyle=color; 
 		    context.moveTo(x3,y3);
-		    context.quadraticCurveTo(x3+d2*y3-d2*ay3,y3+d2*ax3-d2*x3,x2,y2);
+		    context.quadraticCurveTo(x3+d2*y3-d2*by3,y3+d2*bx3-d2*x3,x2,y2);
 		    context.stroke();
 	    }else{
 	    	context.beginPath();            
 		    context.lineWidth="2";
-		    context.strokeStyle="#0000FF"; 
+		    context.strokeStyle=color; 
 		    context.moveTo(x3,y3);
-		    context.quadraticCurveTo(x3-d2*y3+d2*ay3,y3-d2*ax3+d2*x3,x2,y2);
+		    context.quadraticCurveTo(x3+d2*by3-d2*y3,y3-d2*bx3+d2*x3,x2,y2);
 		    context.stroke();
 		    
 		    context.beginPath();            
 		    context.lineWidth="2";
-		    context.strokeStyle="#0000FF"; 
+		    context.strokeStyle=color; 
 		    context.moveTo(x1,y1);
-		    context.quadraticCurveTo(x3+d1*y3-d1*ay3,y3+d1*ax3-d1*x3,x3,y3);
+		    context.quadraticCurveTo(x3+d1*y3-d1*by3,y3+d1*bx3-d1*x3,x3,y3);
 		    context.stroke();
 	    }
 	    
@@ -426,7 +437,7 @@ function clearConsole(){
 			    // On dessine le lien entre les 2 zone par une courbe bezier qui coupe le capteur
 			    // Coordonnées de la zone 1
 			    
-			    drawArrete(c,z1,z2);
+			    drawArrete(c,z1,z2,"#0000FF");
 			    
 				//
 				// Fin DRAW ARRETE
@@ -514,11 +525,6 @@ function clearConsole(){
 		document.querySelector("#myCanvas").style.display="block";
 		chargerImage();
 		document.querySelector("#panelBoutton").style.display="block";
-		if (window.getComputedStyle(document.querySelector('#sectionLoadImg')).display=='none'){
-			//document.querySelector("#sectionLoadImg").style.display="block";
-		} else {
-			//document.querySelector("#sectionLoadImg").style.display="none";
-		}
 	}
 	
 	
