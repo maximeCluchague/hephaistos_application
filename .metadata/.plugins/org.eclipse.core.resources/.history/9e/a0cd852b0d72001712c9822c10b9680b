@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+.scrollable {
+    padding: 0% 10%;
+    position: relative;
+    border: 1px solid gray;
+    overflow: hidden;
+    height: 400px;
+}
+
+.scrollable.showScroll::after {
+    position: absolute;
+    content: '';
+    top: 5%;
+    right: 7px;
+    height: 90%;
+    width: 3px;
+    background: rgba(224, 224, 255, .3);
+}
+
+.scrollable .content-wrapper {
+    width: 100%;
+    height: 100%;
+    padding:0px 0px;
+    overflow-y: scroll;
+}
+.scroller {
+    z-index: 5;
+    cursor: pointer;
+    position: absolute;
+    width: 10px;
+    border-radius: 5px;
+    background: rgb(111, 111, 190);
+    top: 0px;
+    right: 3px;
+    -webkit-transition: top .08s;
+    -moz-transition: top .08s;
+    -ms-transition: top .08s;
+    -o-transition: top .08s;
+    transition: top .08s;
+}
+.content {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+</style>
+
+<script type="text/javascript" src="js/scrollPanel.js"></script>
+<body>
+   
+    	
+        <div class="content-wrapper">
+        <input type="button" value="coucou"></input>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt accusamus maxime voluptatem quasi. Recusandae optio nobis ratione iste consectetur consequatur cupiditate saepe laborum natus neque a provident eum explicabo delectus qui accusantium nostrum reiciendis soluta hic ut at sed laboriosam possimus repudiandae deserunt velit rerum. Aliquam ratione itaque corrupti aperiam quisquam unde aspernatur odio id repellendus corporis eaque expedita in ab minus possimus! Quo tempore consequatur repellat consectetur nemo molestiae perferendis ipsum esse nesciunt blanditiis nobis dicta? Laudantium quaerat inventore deleniti exercitationem explicabo quos pariatur sunt earum labore sed eius blanditiis architecto consequuntur ad consectetur unde sapiente nisi. Sunt eos.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt accusamus maxime voluptatem quasi. Recusandae optio nobis ratione iste consectetur consequatur cupiditate saepe laborum natus neque a provident eum explicabo delectus qui accusantium nostrum reiciendis soluta hic ut at sed laboriosam possimus repudiandae deserunt velit rerum. Aliquam ratione itaque corrupti aperiam quisquam unde aspernatur odio id repellendus corporis eaque expedita in ab minus possimus! Quo tempore consequatur repellat consectetur nemo molestiae perferendis ipsum esse nesciunt blanditiis nobis dicta? Laudantium quaerat inventore deleniti exercitationem explicabo quos pariatur sunt earum labore sed eius blanditiis architecto consequuntur ad consectetur unde sapiente nisi. Sunt eos.</p>
+            </div>
+        </div>
+    
+</body>
+</html>

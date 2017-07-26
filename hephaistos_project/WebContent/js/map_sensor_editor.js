@@ -152,6 +152,7 @@ function clearConsole(){
 			y2.value=""; 
 			removeOption();
 	}
+
 	
 	var zoneExiste = function(nomZone){
 		for(i=0;i<zone.length;i++){
@@ -174,7 +175,6 @@ function clearConsole(){
 			if(addSensor){
 				if(!firstPointSelected){
 					firstPointSelected = true;
-					alert("Select the second point")
 				}else{
 					secondPointSelected = true;
 					ajouter();
@@ -205,7 +205,7 @@ function clearConsole(){
 		if(imageChargee){
 			if(nbOption>0){
 				addSensor=true;
-				alert("Please select the first point on the image")
+				alert("Please select two point on the image");
 			}else{
 				alert("No sensor available ... ");
 			}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Hephaistos Application</title>
+		<meta name="description" content="Creative Button Styles  - Modern and subtle styles &amp; effects for buttons" />
+		<meta name="keywords" content="button styles, css3, modern, flat button, subtle, effects, hover, web design" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" href="css/logoMachineUtilise.css" />
+		<link rel="stylesheet" href="css/interface.css" />
+		
+
+	</head>
+	<body>
+	
+		<nav>
+		
+			<label for="menu-mobile" class="menu-mobile">Menu</label>
+			<input type="checkbox" id="menu-mobile" role="button">
+			<ul>
+			    <li class="menu"><a href="http://localhost:8080/hephaistos_project/home.html">Home</a>
+			   	</li>
+			   	<li class="menu"><a href="http://localhost:8080/hephaistos_project/server_interface.html">Server Interface</a>
+			   	</li>
+			   	<li class="menu"><a>Viewers</a>
+			      	<ul class="submenu">
+			      		<li><a href="http://localhost:8080/hephaistos_project/map_sensor_editor.html">Map Sensor Editor</a>
+				       	<li><a href="http://localhost:8080/hephaistos_project/real_time_chart.html">Real Time Chart</a>
+			       	</ul>
+			   	</li>
+			   	<li class="menu"><a href="http://localhost:8080/hephaistos_project/help.html">Documentation</a>
+			   	</li>
+			</ul>
+			
+		</nav>
+		
+		<div style="position:fixed;bottom: 0px;width:100%;background-color:#FFFFFF;z-index:1;box-shadow: -1px 2px 50px 1px rgba(0, 0, 0, 0.5)">
+			<center>
+			<class="text" style="color:#777777"> posX </class>
+			<input class="textField" id="x" size="2" style="background-color:white;color:#777777; border: 1px solid #BBBBBB;">
+			<class="text" style="color:#777777"> posY </class>
+			<input class="textField" id="y" size="2" style="background-color:white;color:#777777;border: 1px solid #BBBBBB;">
+			</center>
+		</div>
+		
+		<div class="container">
+			</br></br></br>
+			
+			
+			<header class="header" style="display:none;">
+				<h1>Hephaistos Application<span>Server Interface</span></h1>	
+				
+			
+			</header>
+			
+			<section class="color-6 background" style="position:fixed;top: 55px;left:0px;width:230px;min-width:230px;max-width:230px;height: 100%;padding: 30px 8px;z-index:10;box-shadow: -1px 10px 50px 1px rgba(69, 147, 227, 0.5)">
+				<span class="police">Address Server</span> </br> 
+				<input id="adresse" type="text" class="champsSaisie" size="20" style="width:80%;min-width:180px;" onclick="javascript:this.value = '';" /></br>
+				<span class="police">Port</span> </br> 
+				<input id="port" type="text" class="champsSaisie" size="20" style="width:80%;min-width:180px;" onclick="javascript:this.value = '';"/></br>
+				<center>
+
+				<button class="btn btn-4 btn-4a connexion" style="padding:20px 35px; margin:10px 0px;" onclick="connexion()">Connection</button> 
+				<button class="btn btn-4 btn-4d deconnexion" style="padding:20px 23px; margin:10px 0px;" onclick="deconnexion()">Deconnection</button>
+				</center>
+			 	
+				<span class="police">Console Client-Server</span> </br> 
+				
+				<textarea id="console" class="console" readonly="readonly" rows="10" cols="130"></textarea></br>
+				<button class="btn icon-remove clear" style="padding:20px 55px; margin:10px 0px;" onclick="clearConsole()"><span>Clear</span></button>
+
+			</section>
+			
+			<header class="header">
+				<h1>Map Sensor Editor</h1>
+
+				<button id="help" class="btn btn-6 btn-6i littleButton help" style="font-size:20px; padding:6px 20px; margin:10px 0px; ">Help</button>
+				<center><div id="helpDetail" style="width:calc(100% - 460px);display:none;padding:20px 50px; border-radius:  40px;box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7),
+            -1px 2px 20px rgba(255, 255, 255, 0.6) inset;  ">
+				<h2>I. Connecting to the server</h2>	
+				<p align="left">Start by connecting to the server with the connection button located on the panel on your left
+				</p>
+				
+				<h2>II. Load a new map</h2>
+				<p align="left">To create a new map load an image using the button
+				Load image by entering the path of the associated image (jpeg, jpeg2000, jpg, png ...)
+				</p>
+				
+				<h2>III. Add sensors on your map</h2>
+				<p align="left">After logging in to the server and the sensors connected to it you can see in the section "Add Sensor" all the sensors connected to the server in the drop-down list "Sensor Selected". You can hang one of these sensors on your map by selecting two points that will define the coordinates of your sensor on your map. To do this, place the cursor of your mouse on the loaded card then press the key ENTER of your keyboard. Then you can add the sensor using the button "Add" in the same section or cancel Selected contact with the "Cancel" button.
+				</p>
+				
+				<h2>IV. Add Area on your map</h2>
+				<p align="left">
+				You can add areas on your map that will later allow you to display the number of people present on it in real time. This automatic management is done by associating a sensor assembly on a area (a sensor separates 2 neighboring areas). When a sensor activates an algorithm will alter) the number of persons present in the zones separated by this sensor. To add an area first enter a name in the "Name" field in the "Add area" section. You can also set the number of people in the "Number of people" field to the radius of the disc that will be displayed on the map via the "Ray" field. Once these parameters are set to your convenience place your cursor at the desired coordinates on the cards and press the CTRL key on your keyboard.
+				</p>
+				
+				<h2>V. Create link between Areas and Sensors</h2>
+				<p align="left">Once your sensors and zones have been added to the maps, you only have to connect the sensors with the neighboring zones. To do this, go to the "Create link" section on the right panel and select the two adjacent zones "Area_A" and "Area_B" as well as the separator sensor in the "IdSensor" drop-down list. You will notice that the sensors in the "IdSensor" drop-down list are the ones that have been added to your map.				
+				</p>
+		
+				</div></center>
+			<center>
+					<canvas id="myCanvas" style="display:none; border:1px solid #FFFFFF"></canvas>
+				</center>
+			<center><form>
+			
+			
+			
+			
+			
+			<script type="text/javascript" src="js/scrollPanel.js"></script>  
+			
+			
+			<section id="panelBoutton" class="panel" style="width:230px;z-index:10;box-shadow: -10px 10px 50px 1px rgba(69, 147, 227, 0.4)"">
+			<div id="main" class="scrollable" style="width:100%;padding: 0px 0px;margin:0px 0px">
+		        <div class="content-wrapper">
+		        <input type="button" value="coucou"></input>
+		            <div class="content">
+		                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt accusamus maxime voluptatem quasi. Recusandae optio nobis ratione iste consectetur consequatur cupiditate saepe laborum natus neque a provident eum explicabo delectus qui accusantium nostrum reiciendis soluta hic ut at sed laboriosam possimus repudiandae deserunt velit rerum. Aliquam ratione itaque corrupti aperiam quisquam unde aspernatur odio id repellendus corporis eaque expedita in ab minus possimus! Quo tempore consequatur repellat consectetur nemo molestiae perferendis ipsum esse nesciunt blanditiis nobis dicta? Laudantium quaerat inventore deleniti exercitationem explicabo quos pariatur sunt earum labore sed eius blanditiis architecto consequuntur ad consectetur unde sapiente nisi. Sunt eos.</p>
+		                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt accusamus maxime voluptatem quasi. Recusandae optio nobis ratione iste consectetur consequatur cupiditate saepe laborum natus neque a provident eum explicabo delectus qui accusantium nostrum reiciendis soluta hic ut at sed laboriosam possimus repudiandae deserunt velit rerum. Aliquam ratione itaque corrupti aperiam quisquam unde aspernatur odio id repellendus corporis eaque expedita in ab minus possimus! Quo tempore consequatur repellat consectetur nemo molestiae perferendis ipsum esse nesciunt blanditiis nobis dicta? Laudantium quaerat inventore deleniti exercitationem explicabo quos pariatur sunt earum labore sed eius blanditiis architecto consequuntur ad consectetur unde sapiente nisi. Sunt eos.</p>
+		            </div>
+		        </div>
+		    </div>
+			<fieldset type="ChampsAjout">
+				<legend>New map</legend>
+				<input id="urlImage" value="planBatiment.jpg" type="text" class="champsSaisie" style="width:80%;" onclick="javascript:this.value = '';" />
+				<input id="load" type="button" class="btn btn-6 btn-6i littleButton" value="Load Image" style="margin:5px 5px;"/>
+				
+			</fieldset>
+			<fieldset type="ChampsAjout">
+       			<legend>Add sensor</legend> <!-- Titre du fieldset -->
+
+				<class="text"> Sensor Selected </class> <select id="capteurs"></select>
+				</br>
+				<input id="x1" class="textField" size="2" style="display:none;">
+				<input id="y1" class="textField" size="2" style="display:none;">
+				<input id="x2" class="textField" size="2" style="display:none;">
+				<input id="y2" class="textField" size="2" style="display:none;">
+				</br>
+				<input type="button" id="addSensor" class="btn btn-6 btn-6i littleButton" value="Add" style="margin:5px 5px"/>
+				<input type="button" class="btn btn-6 btn-6i littleButton" value="Cancel" style="margin:5px 5px" onclick="annuler()"/>
+			</fieldset>
+			<fieldset type="ChampsAjout">
+       			<legend>Add area</legend> 
+				<input id="nomZone" class="saisie" size="10" placeholder="Name" onclick="javascript:this.placeholder = '';">
+			    </br>
+			    <class="text"> Ray = </class><input id="r" class="saisie" size="1" value="50">
+				</br>
+				<class="text"> Number of people = </class><input id="nbPersonne" class="saisie" size="1" value="0"></b>
+				</br>
+				<input id="addArea" type="button" class="btn btn-6 btn-6i littleButton" value="Add" style="margin:5px 5px""/>				
+				
+			</fieldset>
+			<fieldset>
+       			<legend type="ChampsAjout">Create link</legend> <!-- Titre du fieldset -->
+				<class="text"> AreaA</class> <select id="zone1"></select>
+				</br>
+				<class="text"> IdSensor</class> <select id="capteursAjoutés"></select>
+				</br>
+				<class="text"> AreaB</class> <select id="zone2"></select>
+				</br>
+				<input type="button" class="btn btn-6 btn-6i littleButton" value="Bind" style="margin:5px 5px" onclick="lier()"/>
+			</fieldset>
+			<fieldset>
+       			<legend type="ChampsAjout">Remove Sensor</legend> <!-- Titre du fieldset -->
+       			<class="text"> Sensor </class> <select id="capteurToRemove"></select>
+       			<input id="removeSensor" type="button" class="btn btn-6 btn-6i littleButton" value="Remove" style="margin:5px 5px"/>
+       		</fieldset>
+       		<fieldset>
+       			<legend type="ChampsAjout">Remove Area</legend> <!-- Titre du fieldset -->
+       			<class="text"> Area </class> <select id="areaToRemove"></select>
+       			<input id="removeArea" type="button" class="btn btn-6 btn-6i littleButton" value="Remove" style="margin:5px 5px"/>
+       		</fieldset>
+		</section>
+	</form></center>
+		</div><!-- /container -->
+
+
+<script type="text/javascript" src="js/map_sensor_editor.js"></script>
+	
+	</body>
+</html>

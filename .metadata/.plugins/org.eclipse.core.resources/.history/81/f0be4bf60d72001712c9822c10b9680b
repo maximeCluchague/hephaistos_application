@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<link rel="stylesheet" href="css/interface.css" />
+
+<script type="text/javascript" src="js/scrollPanel.js"></script>
+<body>
+   
+    	
+        <div class="content-wrapper">
+        <input type="button" value="coucou"></input>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt accusamus maxime voluptatem quasi. Recusandae optio nobis ratione iste consectetur consequatur cupiditate saepe laborum natus neque a provident eum explicabo delectus qui accusantium nostrum reiciendis soluta hic ut at sed laboriosam possimus repudiandae deserunt velit rerum. Aliquam ratione itaque corrupti aperiam quisquam unde aspernatur odio id repellendus corporis eaque expedita in ab minus possimus! Quo tempore consequatur repellat consectetur nemo molestiae perferendis ipsum esse nesciunt blanditiis nobis dicta? Laudantium quaerat inventore deleniti exercitationem explicabo quos pariatur sunt earum labore sed eius blanditiis architecto consequuntur ad consectetur unde sapiente nisi. Sunt eos.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt accusamus maxime voluptatem quasi. Recusandae optio nobis ratione iste consectetur consequatur cupiditate saepe laborum natus neque a provident eum explicabo delectus qui accusantium nostrum reiciendis soluta hic ut at sed laboriosam possimus repudiandae deserunt velit rerum. Aliquam ratione itaque corrupti aperiam quisquam unde aspernatur odio id repellendus corporis eaque expedita in ab minus possimus! Quo tempore consequatur repellat consectetur nemo molestiae perferendis ipsum esse nesciunt blanditiis nobis dicta? Laudantium quaerat inventore deleniti exercitationem explicabo quos pariatur sunt earum labore sed eius blanditiis architecto consequuntur ad consectetur unde sapiente nisi. Sunt eos.</p>
+            </div>
+        </div>
+    
+</body>
+</html>
