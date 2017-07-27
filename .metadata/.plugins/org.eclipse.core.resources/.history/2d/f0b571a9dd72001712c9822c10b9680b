@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<input type="text" id="file_input">
+<input type="button" id="but">
+ <canvas id="myCanvas" width="1000" height="1000"></canvas>
+ <script>
+ document.getElementById('but').onclick = function() {
+    var canvas = document.getElementById("myCanvas");
+    var context = canvas.getContext("2d");
+    var imageObj = new Image();
+
+    imageObj.onload = function() {
+    	document.getElementById("myCanvas").width = 100;
+      context.drawImage(imageObj, 0,0,imageObj.width, imageObj.height);
+    };
+    imageObj.src = file_input.value;
+  };
+
+</script>
+</body>
+</html>
