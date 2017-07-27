@@ -49,7 +49,7 @@ function connexion(){
 				deccrocherCapteur(json.idCapteur);
 			}else{
 				accrocherCapteur(json.idCapteur);
-				for(i=0;i<capteurOnImage.length;i++){
+				for(var i=0;i<capteurOnImage.length;i++){
 					if(json.idCapteur==capteurOnImage[i].idCapteur){
 						var x1 = capteurOnImage[i].x1;
 						var y1 = capteurOnImage[i].y1;
@@ -155,7 +155,7 @@ function clearConsole(){
 
 	
 	var zoneExiste = function(nomZone){
-		for(i=0;i<zone.length;i++){
+		for(var i=0;i<zone.length;i++){
 			if(zone[i].nomZone==nomZone){
 				return true;
 			}
@@ -229,7 +229,7 @@ function clearConsole(){
 		imageChargee = true;
 		
 		// a) On redessine les capteurs
-		for(i=0;i<capteurOnImage.length;i++){
+		for(var i=0;i<capteurOnImage.length;i++){
 			var idCapteur=capteurOnImage[i].idCapteur;
 			var x1=parseInt(capteurOnImage[i].x1);
 			var y1=parseInt(capteurOnImage[i].y1);
@@ -268,7 +268,7 @@ function clearConsole(){
 		}
 
 		// c) On dessine les zones
-		for(i=0;i<zone.length;i++){
+		for(var i=0;i<zone.length;i++){
 			drawZone(zone[i].nomZone,zone[i].x,zone[i].y,zone[i].r,zone[i].nbPersonne);
 		}
 	}
@@ -280,12 +280,12 @@ function clearConsole(){
 		// On retire le capteur de la liste des capteurs présent sur l'image
 		var currentSelect = x.options[x.selectedIndex].text;
 		
-		for(i=0;i<listeArrete.length;i++){
+		for(var i=0;i<listeArrete.length;i++){
 			if(listeArrete[i].capteur==currentSelect){
 				listeArrete.splice(i,1);
 			}
 		}
-		for(i=0;i<capteurOnImage.length;i++){
+		for(var i=0;i<capteurOnImage.length;i++){
 			if(capteurOnImage[i].idCapteur==currentSelect){
 				capteurOnImage.splice(i,1);
 			}
@@ -427,7 +427,7 @@ function clearConsole(){
 	
 	function updateZoneVoisineCapteur(nomCapteur,acquisition){
 		if(parseInt(acquisition)>0){
-			for(i=0;i<listeArrete.length;i++){
+			for(var i=0;i<listeArrete.length;i++){
 				if(listeArrete[i].capteur==nomCapteur){
 					var Z1 = listeArrete[i].voisinZ1;
 					var Z2 = listeArrete[i].voisinZ2;
@@ -436,7 +436,7 @@ function clearConsole(){
 						
 					// On récupère le nombre de personne dans la zone 1 avant l'activation du capteur
 					var nbPersonnez1;
-					for(i=0;i<zone.length;i++){
+					for(var i=0;i<zone.length;i++){
 						if(zone[i].nomZone==Z1){
 							nbPersonnez1 = parseInt(zone[i].nbPersonne);
 						}
@@ -444,7 +444,7 @@ function clearConsole(){
 					
 					// On récupère le nombre de personne dans la zone 2 avant l'activation du capteur
 					var nbPersonnez2;
-					for(i=0;i<zone.length;i++){
+					for(var i=0;i<zone.length;i++){
 						if(zone[i].nomZone==Z2){
 							nbPersonnez2 = parseInt(zone[i].nbPersonne);
 						}
@@ -476,7 +476,7 @@ function clearConsole(){
 			}
 		}
 		else{
-			for(i=0;i<listeArrete.length;i++){
+			for(var i=0;i<listeArrete.length;i++){
 				if(listeArrete[i].capteur==nomCapteur){
 					var Z1 = listeArrete[i].voisinZ1;
 					var Z2 = listeArrete[i].voisinZ2;
@@ -487,7 +487,7 @@ function clearConsole(){
 	}
 	
 	function updateZone(nomZone,nbPersonne){
-		for(i=0;i<zone.length;i++){
+		for(var i=0;i<zone.length;i++){
 			if(zone[i].nomZone==nomZone){
 				// On met a jour la zone dans la liste
 				zone[i]={nomZone:zone[i].nomZone,x:zone[i].x,y:zone[i].y,r:zone[i].r,nbPersonne:nbPersonne};
@@ -531,7 +531,7 @@ function clearConsole(){
 	    var x3;
 	    var y3;
 
-	    for(i=0;i<zone.length;i++){
+	    for(var i=0;i<zone.length;i++){
 	    	if(zone[i].nomZone==z1){
 	    		x1=parseInt(zone[i].x);
 	    		y1=parseInt(zone[i].y);
@@ -547,7 +547,7 @@ function clearConsole(){
 	    var bx3;
 	    var by3;
 	    
-	    for(i=0;i<capteurOnImage.length;i++){
+	    for(var i=0;i<capteurOnImage.length;i++){
 	    	if(capteurOnImage[i].idCapteur==c){
 	    		ax3=parseInt(capteurOnImage[i].x1);
 	    		ay3=parseInt(capteurOnImage[i].y1);
@@ -596,13 +596,13 @@ function clearConsole(){
 	    }
 	    
 	    // On dessine la zone par dessus l'arrete
-	    for(i=0;i<zone.length;i++){
+	    for(var i=0;i<zone.length;i++){
 			if(zone[i].nomZone==z1){
 				updateZone(z1,parseInt(zone[i].nbPersonne));
 			}
 		}
 
-	    for(i=0;i<zone.length;i++){
+	    for(var i=0;i<zone.length;i++){
 			if(zone[i].nomZone==z2){
 				updateZone(z2,parseInt(zone[i].nbPersonne));
 			}
@@ -657,7 +657,7 @@ function clearConsole(){
 	}
 	
 	var deccrocherCapteur = function(capteur){
-		for(i=0;i<capteurDispo.length;i++){
+		for(var i=0;i<capteurDispo.length;i++){
 			if(capteur==capteurDispo[i]){
 				capteurDispo.splice(i,1);
 				nbCapteurDispo=nbCapteurDispo-1;
@@ -667,7 +667,7 @@ function clearConsole(){
 	
 	var accrocherCapteur = function(capteur){
 		var estAccrocher =false;
-		for(i=0;i<capteurDispo.length;i++){
+		for(var i=0;i<capteurDispo.length;i++){
 			if(capteur==capteurDispo[i]){
 				estAccrocher =true;
 			}
