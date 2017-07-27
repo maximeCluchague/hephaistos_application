@@ -215,10 +215,10 @@ function clearConsole(){
 				wantDrawSensor = true;
 				//alert("Please select two point on the image");
 			}else{
-				alert("No sensor available ... ");
+				alert("No sensor available ... Please check your connection to the server in the left panel and if sensors are connected to the server");
 			}
 		}else{
-			alert("Please load an image");
+			alert("Please load an image by entering the absolute path in the section 'New map'");
 		}
 	}
 	function refreshMap(){
@@ -271,6 +271,28 @@ function clearConsole(){
 		for(var i=0;i<zone.length;i++){
 			drawZone(zone[i].nomZone,zone[i].x,zone[i].y,zone[i].r,zone[i].nbPersonne);
 		}
+	}
+	
+	document.getElementById('cancelArea').onclick = function(){
+		addZone = false;
+		wantDrawArea=false;
+	}
+	
+	document.getElementById('resetPeopleNumber').onclick = function(){
+		for(var i=0;i<zone.length;i++){
+			zone[i].nbPersonne = "0";
+		}
+		refreshMap();
+	}
+	
+	document.getElementById('updatePeople').onclick = function(){
+		var area = document.getElementById('areaToRefresh');
+		var currentSelect = area.options[area.selectedIndex].text;
+		for(var i=0;i<zone.length;i++){
+			if(zone[i].nomZone==currentSelect)
+			zone[i].nbPersonne = nbPeople.value;
+		}
+		refreshMap();
 	}
 	
 	document.getElementById('removeSensor').onclick = function(){
@@ -368,6 +390,16 @@ function clearConsole(){
 				j++;
 			}
 		}
+		
+		var area = document.getElementById('areaToRefresh');
+		var j=0;
+		while (j<area.length){
+			if (area.options[j].innerHTML == currentSelect ){
+				area.remove(j);
+			}else{
+				j++;
+			}
+		}
 		listArea.remove(listArea.selectedIndex);
 
 		refreshMap();
@@ -378,6 +410,10 @@ function clearConsole(){
 		var listArea = document.getElementById("areaToRemove");
 		var newOption = new Option (nomZone.value, "value");
 		listArea.options.add (newOption);
+		
+		var listAreaRefresh = document.getElementById("areaToRefresh");
+		var newOption = new Option (nomZone.value, "value");
+		listAreaRefresh.options.add (newOption);
 		
 		// On stocke la nouvelle zone dans une liste
 		zone.push({nomZone:nomZone.value,x:x.value,y:y.value,r:r.value,nbPersonne:nbPersonne.value});
@@ -646,9 +682,11 @@ function clearConsole(){
 	}
 	
 	var annuler=function(){
+		addSensor = false;
 		firstPointSelected = false;
 		secondPointSelected = false;
 		wantDrawArrete = false;
+		wantDrawSensor = false;
 		refreshMap();
 		x1.value = "";
 		y1.value = "";
@@ -777,13 +815,7 @@ function clearConsole(){
 
       canvas.addEventListener('mousemove', function(evt) {
         var mousePos = getMousePos(canvas, evt);
-        ny=getWindowHeight();
-        
-        /*nx=1000;
-        //nx=Math.min(1000,Math.max(getWindowWidth(),720));
-        x.value = parseInt(mousePos.x/((nx-0)/imgWidth));
-        y.value = parseInt(mousePos.y/((nx-0)/imgWidth));*/
-        
+
         nx=document.getElementById('myCanvas').offsetWidth;
         
         x.value = parseInt(mousePos.x*imgWidth/nx);

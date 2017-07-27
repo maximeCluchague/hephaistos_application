@@ -16,6 +16,11 @@
 		
 
 	</head>
+	<style>
+	#clear:hover{
+		background-color:rgba(255,80,80,0.5);
+	}
+	</style>
 	<body>
 	
 		<nav>
@@ -75,7 +80,7 @@
 						<span class="police">Console</span> </br> 
 						
 						<textarea id="console" class="console" style="width:205px;padding:5px 5px; margin:0px 0px;" readonly="readonly" rows="10" cols="130"></textarea></br>
-						<button class="btn icon-remove clear" style="padding:20px 55px; margin:10px 0px;" onclick="clearConsole()"><span>Clear</span></button>
+						<button id="clear" class="btn icon-remove clear" style="padding:20px 55px; margin:10px 0px;" onclick="clearConsole()"><span>Clear</span></button>
 						</br></br></br>
 					</div>
 				</div>
@@ -89,30 +94,42 @@
 				<center><div id="helpDetail" style="width:calc(100% - 460px);display:none;padding:20px 50px; border-radius:  40px;box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7),
             -1px 2px 20px rgba(255, 255, 255, 0.6) inset;  ">
 				<h2>I. Connecting to the server</h2>	
-				<p align="left">Start by connecting to the server with the connection button located on the panel on your left
+				<p align="left">
+				Start by connecting to the server with the connection button located on the panel on your left.
 				</p>
 				
 				<h2>II. Load a new map</h2>
 				<p align="left">To create a new map load an image using the button
-				Load image by entering the path of the associated image (jpeg, jpeg2000, jpg, png ...)
+				Load image by entering the absolute path of the associated image (jpeg, jpeg2000, jpg, png ...).
 				</p>
 				
 				<h2>III. Add sensors on your map</h2>
-				<p align="left">After logging in to the server and the sensors connected to it you can see in the section "Add Sensor" all the sensors connected to the server in the drop-down list "Sensor Selected". You can hang one of these sensors on your map by selecting two points that will define the coordinates of your sensor on your map. To do this, place the cursor of your mouse on the loaded card then press the key ENTER of your keyboard. Then you can add the sensor using the button "Add" in the same section or cancel Selected contact with the "Cancel" button.
+				<p align="left">
+				After logging in to the server and the sensors connected to it, you can see in the section 'Add Sensor' all the sensors connected to the server in the drop-down list "Sensor Selected". To add a sensor to your map select a sensor from the 'Sensor selected' drop-down list and press the 'Add' button in the same panel. Finally to define the coordinates of the sensor select 2 points on the map using the left click of your mouse. You can cancel the addition at any time by using the 'Cancel' button.You can then see the change of state of these sensors in real time by a red / green color change depending on the acquisition value of the sensor transmitted to the server.
 				</p>
 				
 				<h2>IV. Add Area on your map</h2>
 				<p align="left">
-				You can add areas on your map that will later allow you to display the number of people present on it in real time. This automatic management is done by associating a sensor assembly on a area (a sensor separates 2 neighboring areas). When a sensor activates an algorithm will alter) the number of persons present in the zones separated by this sensor. To add an area first enter a name in the "Name" field in the "Add area" section. You can also set the number of people in the "Number of people" field to the radius of the disc that will be displayed on the map via the "Ray" field. Once these parameters are set to your convenience place your cursor at the desired coordinates on the cards and press the CTRL key on your keyboard.
+				You can add areas on your map that will later allow you to display the number of people present on it in real time. This automatic management is done by associating a sensor assembly on a area (a sensor separates 2 neighboring areas). When a sensor activates an algorithm will actualize the number of people present in the areas separated by these sensors. To add an area first enter a name in the 'Name' field in the 'Add area' section. You can also set the number of people in the 'Number of people' field. The radius of the disc that will be displayed on the map can be changed with the 'Ray' field. Once these parameters are set to your convenience click on the button 'Add' then select a point on yout map. To cancel this opperation you have just to click on the 'Cancel' button in this same section.
 				</p>
 				
 				<h2>V. Create link between Areas and Sensors</h2>
-				<p align="left">Once your sensors and zones have been added to the maps, you only have to connect the sensors with the neighboring zones. To do this, go to the "Create link" section on the right panel and select the two adjacent zones "Area_A" and "Area_B" as well as the separator sensor in the "IdSensor" drop-down list. You will notice that the sensors in the "IdSensor" drop-down list are the ones that have been added to your map.				
+				<p align="left">
+				Once your sensors and zones have been added to the maps, you only have to connect the sensors with the neighboring zones. To do this, go to the 'Create link' section on the right panel and select the two adjacent zones 'Area_A' and 'Area_B' as well as the separator sensor in the 'IdSensor' drop-down list. You will notice that the sensors in the 'IdSensor' drop-down list are the ones that have been added to your map.				
 				</p>
+				
+				<h2>VI. Remove Area or Sensor</h2>
+				<p align="left">
+				You can also remove sensor and area added on your map. To be directed in the sections 'Remove sensor' and 'Remove area'. Note that deleting a zone will also supress all links established with it and the deletion of a sensor will lead to the suppression of the link that passes through it if it exists.
+				</p>
+				
+				<h2>VII. Change the area people number</h2>
+				<p align="left">
+				You can change the number of people in an area by selecting an area present on the map via the 'Area' drop-down list in the 'Set area peopple number' section and then pressing the 'Update' button. In addition, you can reset the number of people from all the zones on the map to 0 in the 'Reset all people number' section by pressing the reset button.				</p>
 		
 				</div></center>
 			<center>
-					<canvas id="myCanvas" style="display:none; border:1px solid #FFFFFF"></canvas>
+					<canvas id="myCanvas" style="width:calc(100% - 460px);display:none; border:1px solid #FFFFFF"></canvas>
 				</center>
 			<center><form>
 			
@@ -123,7 +140,7 @@
 			<script type="text/javascript" src="js/scrollPanel.js"></script>  
 			
 			
-			<section id="panelBoutton" class="panel" style="width:230px;z-index:10;padding:0px 0px;box-shadow: -10px 10px 50px 1px rgba(0, 0, 0, 0.4)"">
+			<section id="panelBoutton" class="panel" style="width:230px;z-index:10;padding:0px 0px;box-shadow: -10px 10px 50px 1px rgba(0, 0, 0, 0.4);">
 			<div id="main" class="scrollable" style="width:100%;height:100%;padding: 10px 0px;margin:0px 0px;border:none;">
 		        <div class="content-wrapper" style="margin:0px 5px">
 				    <fieldset type="ChampsAjout">
@@ -134,7 +151,7 @@
 						
 					</fieldset>
 					<fieldset type="ChampsAjout">
-		       			<legend>Add sensor</legend> <!-- Titre du fieldset -->
+		       			<legend>Add sensor</legend>
 		
 						<class="text"> Sensor Selected </class> <select id="capteurs"></select>
 						</br>
@@ -154,28 +171,39 @@
 						</br>
 						<class="text"> Number of people = </class><input id="nbPersonne" class="saisie" size="1" value="0"></b>
 						</br>
-						<input id="addArea" type="button" class="btn btn-6 btn-6i littleButton" value="Add" style="margin:5px 5px""/>				
+						<input id="addArea" type="button" class="btn btn-6 btn-6i littleButton" value="Add" style="margin:5px 5px""/>
+						<input id="cancelArea" type="button" class="btn btn-6 btn-6i littleButton" value="Cancel" style="margin:5px 5px""/>				
 						
 					</fieldset>
 					<fieldset>
-		       			<legend type="ChampsAjout">Create link</legend> <!-- Titre du fieldset -->
-						<class="text"> AreaA</class> <select id="zone1"></select>
+		       			<legend type="ChampsAjout">Create link</legend>
+						<class="text"> Area 1</class> <select id="zone1"></select>
 						</br>
-						<class="text"> IdSensor</class> <select id="capteursAjoutés"></select>
+						<class="text"> Sensor</class> <select id="capteursAjoutés"></select>
 						</br>
-						<class="text"> AreaB</class> <select id="zone2"></select>
+						<class="text"> Area 2</class> <select id="zone2"></select>
 						</br>
 						<input type="button" class="btn btn-6 btn-6i littleButton" value="Bind" style="margin:5px 5px" onclick="lier()"/>
 					</fieldset>
 					<fieldset>
-		       			<legend type="ChampsAjout">Remove Sensor</legend> <!-- Titre du fieldset -->
+		       			<legend type="ChampsAjout">Remove Sensor</legend>
 		       			<class="text"> Sensor </class> <select id="capteurToRemove"></select>
 		       			<input id="removeSensor" type="button" class="btn btn-6 btn-6i littleButton" value="Remove" style="margin:5px 5px"/>
 		       		</fieldset>
 		       		<fieldset>
-		       			<legend type="ChampsAjout">Remove Area</legend> <!-- Titre du fieldset -->
+		       			<legend type="ChampsAjout">Remove Area</legend>
 		       			<class="text"> Area </class> <select id="areaToRemove"></select>
 		       			<input id="removeArea" type="button" class="btn btn-6 btn-6i littleButton" value="Remove" style="margin:5px 5px"/>
+		       		</fieldset>
+		       		<fieldset>
+		       			<legend type="ChampsAjout">Set area people number</legend>
+		       			<class="text"> Area </class> <select id="areaToRefresh"></select></br>
+		       			<class="text"> Number of people = </class><input id="nbPeople" class="saisie" size="1" value="0"></b>
+		       			<input id="updatePeople" type="button" class="btn btn-6 btn-6i littleButton" value="Update" style="margin:5px 5px;"/>
+		       		</fieldset>
+		       		<fieldset>
+		       			<legend type="ChampsAjout">Reset all area people number</legend>
+		       			<input id="resetPeopleNumber" type="button" class="btn btn-6 btn-6i littleButton" value="Reset" style="margin:5px 5px"/>
 		       		</fieldset>
 		       		</br></br>
 		        </div>
