@@ -167,6 +167,8 @@ function clearConsole(){
 	
 	document.getElementById('myCanvas').onclick = function(){
 		// procédure ajout de zone 
+		wantDrawArea = false;
+		wantDrawSensor = false
 		if(addZone){
 			ajouterZone();
 			addZone=false;
@@ -174,11 +176,15 @@ function clearConsole(){
 		else{
 			if(addSensor){
 				if(!firstPointSelected){
+					precX=x.value;
+					precY=y.value;
+					wantDrawArrete = true;
 					firstPointSelected = true;
 				}else{
 					secondPointSelected = true;
 					ajouter();
 					addSensor = false;
+					wantDrawArrete = false;
 				}
 			}
 		}
@@ -189,7 +195,8 @@ function clearConsole(){
 			if(nomZone.value.length>0){
 				if(!zoneExiste(nomZone.value)){
 					addZone = true;
-					alert("Please select a point on the image");
+					wantDrawArea = true;
+					//alert("Please select a point on the image");
 				}else{
 					alert("The zone name is already used");
 				}
@@ -205,7 +212,8 @@ function clearConsole(){
 		if(imageChargee){
 			if(nbOption>0){
 				addSensor=true;
-				alert("Please select two point on the image");
+				wantDrawSensor = true;
+				//alert("Please select two point on the image");
 			}else{
 				alert("No sensor available ... ");
 			}
@@ -249,10 +257,16 @@ function clearConsole(){
 			
 		}
 		// b) On dessine les liaison ainsi que les zones voisines
-		for(i=0;i<listeArrete.length;i++){
-			drawArrete(listeArrete[i].capteur,listeArrete[i].voisinZ1,listeArrete[i].voisinZ2,"#8aecff");
+		var val=0;
+		while(val<listeArrete.length){
+			var capteur =listeArrete[val].capteur;
+			var Z1=listeArrete[val].voisinZ1;
+			var Z2=listeArrete[val].voisinZ2;
+			var couleur="#8aecff";
+			drawArrete(capteur,Z1,Z2,couleur);
+			val++;
 		}
-		
+
 		// c) On dessine les zones
 		for(i=0;i<zone.length;i++){
 			drawZone(zone[i].nomZone,zone[i].x,zone[i].y,zone[i].r,zone[i].nbPersonne);
@@ -507,6 +521,7 @@ function clearConsole(){
 	var listeArrete=[];
 	
 	function drawArrete(c,z1,z2,color){
+		// Coordonnées de la zone 1
 		var x1;
 	    var y1;
 	    // Coordonnées de la zone 2
@@ -515,7 +530,7 @@ function clearConsole(){
 	    // Coordonnées du capteur 
 	    var x3;
 	    var y3;
-	    
+
 	    for(i=0;i<zone.length;i++){
 	    	if(zone[i].nomZone==z1){
 	    		x1=parseInt(zone[i].x);
@@ -526,6 +541,7 @@ function clearConsole(){
 	    		y2=parseInt(zone[i].y);
 	    	}
 	    }
+
 	    var ax3;
 	    var ay3;
 	    var bx3;
@@ -547,7 +563,7 @@ function clearConsole(){
 	    var d2 = 0.7*Math.sqrt((x3-x2)*(x3-x2)+(y3-y2)*(y3-y2))/Math.sqrt((bx3-ax3)*(bx3-ax3)+(by3-ay3)*(by3-ay3));;
 	    
 	    var SigneSinTeta = (x2-x1)*(by3-ay3)-(y2-y1)*(bx3-ax3);
-	    
+
 	    if(SigneSinTeta<0){
 		    context.beginPath();            
 		    context.lineWidth="2";
@@ -562,6 +578,7 @@ function clearConsole(){
 		    context.moveTo(x3,y3);
 		    context.quadraticCurveTo(x3+d2*y3-d2*by3,y3+d2*bx3-d2*x3,x2,y2);
 		    context.stroke();
+
 	    }else{
 	    	context.beginPath();            
 		    context.lineWidth="2";
@@ -584,6 +601,7 @@ function clearConsole(){
 				updateZone(z1,parseInt(zone[i].nbPersonne));
 			}
 		}
+
 	    for(i=0;i<zone.length;i++){
 			if(zone[i].nomZone==z2){
 				updateZone(z2,parseInt(zone[i].nbPersonne));
@@ -630,6 +648,8 @@ function clearConsole(){
 	var annuler=function(){
 		firstPointSelected = false;
 		secondPointSelected = false;
+		wantDrawArrete = false;
+		refreshMap();
 		x1.value = "";
 		y1.value = "";
 		x2.value = "";
@@ -689,9 +709,16 @@ function clearConsole(){
 		imgHeight = img.height;
 		myCanvas.height = img.height;
 		image=img;
-		context.drawImage(img,0,0, img.width, img.height);
+		drawImage(img);
 		imageChargee = true;
 		
+	}
+	
+	var PATHimg = document.getElementById("urlImage");
+	PATHimg.addEventListener('change', chargerImage, false);
+	
+	function drawImage(img){
+		context.drawImage(img,0,0, img.width, img.height);
 	}
 	
 	document.querySelector("#load").onclick = function() {
@@ -732,6 +759,12 @@ function clearConsole(){
 	 return windowWidth;
 	}
 	
+	var precX=0;
+	var precY=0;
+	var wantDrawArrete = false;
+	var wantDrawArea = false;
+	var wantDrawSensor = false;
+	
       function getMousePos(canvas, evt) {
         var rect = canvas.getBoundingClientRect();
         return {
@@ -755,6 +788,33 @@ function clearConsole(){
         
         x.value = parseInt(mousePos.x*imgWidth/nx);
         y.value = parseInt(mousePos.y*imgWidth/nx);
+        
+        if(wantDrawArrete){
+	        refreshMap();
+	        context.strokeStyle='#FF0000';
+	        context.lineCap = 'round';
+	        context.lineWidth = 3;
+	        context.beginPath();
+	        context.moveTo(precX,precY);
+	        context.lineTo(x.value,y.value);
+	        context.stroke();
+        }
+        if(wantDrawSensor){
+	        refreshMap();
+	        context.beginPath();
+			context.fillStyle="#FF0000"
+			context.arc(x.value,y.value, 3, 0, 2 * Math.PI);
+			context.fill();
+        }
+        if(wantDrawArea){
+	        refreshMap();
+	        context.strokeStyle="#3D5D87";
+	        context.beginPath();
+	        context.lineWidth="2";
+	        context.arc(x.value, y.value, r.value, 0, 2 * Math.PI);
+	        context.stroke();
+        }
+
         zonePointSelected = true;
         if(!firstPointSelected){
 	        x1.value = parseInt(mousePos.x*imgWidth/nx);
@@ -766,7 +826,7 @@ function clearConsole(){
             }
         }
       }, false);
-	
+      
 	function updateLine(x1,y1,x2,y2,idCapteur,acquisition){
         
         // Changement de couleur
