@@ -19,6 +19,7 @@ Ainsi mon projet avait pour but de développer une architecture Client/Serveur q
 <h2>A. Client-Serveur</h2>
 
 Le serveur utilisé dans ce projet est un serveur Java Glassfish 4.0, Open source sur java EE 7. Il y a différents client, dans des langages différent en fonction de leur rôle : 
+
 	- Un client javaScript pour l'application Web qui permet la visualisation en temps réel des données.
 	- Un client Java qui est simulateur de capteurs 
 	- Un client Java qui récupère les données et les stocke écrit sur un fichier en local
