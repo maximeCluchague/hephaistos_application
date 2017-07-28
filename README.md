@@ -4,21 +4,21 @@
 
 <h2> A. Présentation du projet hephaistos </h2>
 
-	Le projet de l'équipe Hephaistos de l'INRIA de Sophia-Antipolis à pour but d'étudier les déplacements de personnes agées de façon anonymes et non-intrusives au sein d'une infrastructure de soin (Institut Claude Pompidou). Les données relatives à ces flux de déplacements sont récupérés par des capteurs IR (Infrarouge) installés au sein de cette infrastructure. Ceux-ci permettront de mieux comprendre le comportement de ces personnes dans une telle infrastructure pour adapter l'environement aux observations, d'établir des modèles statistique...etc.
+Le projet de l'équipe Hephaistos de l'INRIA de Sophia-Antipolis à pour but d'étudier les déplacements de personnes agées de façon anonymes et non-intrusives au sein d'une infrastructure de soin (Institut Claude Pompidou). Les données relatives à ces flux de déplacements sont récupérés par des capteurs IR (Infrarouge) installés au sein de cette infrastructure. Ceux-ci permettront de mieux comprendre le comportement de ces personnes dans une telle infrastructure pour adapter l'environement aux observations, d'établir des modèles statistique...etc.
 
 
 
 <h2>B. Présentation de mon projet </h2>
 
-	Actuellement le traitement de ces données se fait par des programmes C++ embarqués sur les cartes Phidgets connectés aux capteurs. Ces programmes analysent, interpretent et enregistrent ces données capteurs sur des fichiers log. Cependant cette architecture pose un certains nombre de problèmes comme la limitation en terme de puissance de calcul, et de mémoire pour le stockage de donnée. 
+Actuellement le traitement de ces données se fait par des programmes C++ embarqués sur les cartes Phidgets connectés aux capteurs. Ces programmes analysent, interpretent et enregistrent ces données capteurs sur des fichiers log. Cependant cette architecture pose un certains nombre de problèmes comme la limitation en terme de puissance de calcul, et de mémoire pour le stockage de donnée. 
 
-	Ainsi mon projet avait pour but de développer une architecture Client/Serveur qui permet de pallier à ces différents problèmes tout en permettant d'avoir une visualisation en temps réel sur une application Web/ Android du nombre de personne dans l'Institut Pompidou. En effet une telle architecture permettrait de déployer la puissance de calcul afin d'optimiser le traitement de ces données sur un ou plusieurs clients connectés à ce serveur. Ou encore d'avoir un client en écoute sur le serveur qui récupère ces données en les enregistrant sur des fichier log, des fichier structuré (xml,json..etc) ou des base de données (MySQL). Ainsi les programme embraqués sur les cartes Phidget de l'Institut Claude Pompidou n'aurai plus qu'une seul tâche à effectué : l'envoi des données vers le serveur. Cependant cette architecture n'est pas idéale car elle à besoin d'une connexion internet permanante pour transmettre les données vers le serveur et cela peut poser des problèmes en terme de sécurité sur la transmission de données qui peuvent être interceptée. 
+Ainsi mon projet avait pour but de développer une architecture Client/Serveur qui permet de pallier à ces différents problèmes tout en permettant d'avoir une visualisation en temps réel sur une application Web/ Android du nombre de personne dans l'Institut Pompidou. En effet une telle architecture permettrait de déployer la puissance de calcul afin d'optimiser le traitement de ces données sur un ou plusieurs clients connectés à ce serveur. Ou encore d'avoir un client en écoute sur le serveur qui récupère ces données en les enregistrant sur des fichier log, des fichier structuré (xml,json..etc) ou des base de données (MySQL). Ainsi les programme embraqués sur les cartes Phidget de l'Institut Claude Pompidou n'aurai plus qu'une seul tâche à effectué : l'envoi des données vers le serveur. Cependant cette architecture n'est pas idéale car elle à besoin d'une connexion internet permanante pour transmettre les données vers le serveur et cela peut poser des problèmes en terme de sécurité sur la transmission de données qui peuvent être interceptée. 
 
 <h1>II. Technologies utilisées </h1>
 
 <h2>A. Client-Serveur</h2>
 
-	Le serveur utilisé dans ce projet est un serveur Java Glassfish 4.0, Open source sur java EE 7. Il y a différents client, dans des langages différent en fonction de leur rôle : 
+Le serveur utilisé dans ce projet est un serveur Java Glassfish 4.0, Open source sur java EE 7. Il y a différents client, dans des langages différent en fonction de leur rôle : 
 	- Un client javaScript pour l'application Web qui permet la visualisation en temps réel des données.
 	- Un client Java qui est simulateur de capteurs 
 	- Un client Java qui récupère les données et les stocke écrit sur un fichier en local
@@ -26,7 +26,7 @@
 
 <h2>B. Protocol de communication</h2>
 
-	Le serveur échange des données à l'aide de WebSocket, qui utilisent un canal de communication full-duplex sur un socket TCP. Cette communication bilatéralle, contrairement au protocol HTTP, permet la notification au client d'un changement d'état du serveur ainsi que l'envoi de données (Push) du serveur vers le client (sans que ce dernier ait à effectuer une requête). De plus les WebSocket sont compatible avec presque tout les langages (C,C++,C#, Python, Java, JavaScript) et s'appuient sur des méthodes suivant une norme commune : 
+Le serveur échange des données à l'aide de WebSocket, qui utilisent un canal de communication full-duplex sur un socket TCP. Cette communication bilatéralle, contrairement au protocol HTTP, permet la notification au client d'un changement d'état du serveur ainsi que l'envoi de données (Push) du serveur vers le client (sans que ce dernier ait à effectuer une requête). De plus les WebSocket sont compatible avec presque tout les langages (C,C++,C#, Python, Java, JavaScript) et s'appuient sur des méthodes suivant une norme commune : 
 
 	-OnOpen : Détecte une connexion
 	-OnClose : Détecte une déconnexion
