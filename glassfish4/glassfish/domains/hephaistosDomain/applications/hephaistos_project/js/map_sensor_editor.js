@@ -740,23 +740,25 @@ function clearConsole(){
 		var img=new Image();
 		URLimageChargee = urlImage.value;
 		img.src = urlImage.value;
-
 		imgWidth = img.width;
 		myCanvas.width = img.width;
 		
 		imgHeight = img.height;
 		myCanvas.height = img.height;
 		image=img;
-		drawImage(img);
+		img.onload=function(){
+			myCanvas.width = img.width;
+			myCanvas.height = img.height;
+			imgWidth = img.width;
+			imgHeight = img.height;
+			context.drawImage(img,0,0, img.width, img.height);
+		}
 		imageChargee = true;
-		
 	}
-	
-	var PATHimg = document.getElementById("urlImage");
-	PATHimg.addEventListener('change', chargerImage, false);
-	
-	function drawImage(img){
-		context.drawImage(img,0,0, img.width, img.height);
+	function sleep(miliseconds) {
+	   var currentTime = new Date().getTime();
+	   while (currentTime + miliseconds >= new Date().getTime()) {
+	   }
 	}
 	
 	document.querySelector("#load").onclick = function() {

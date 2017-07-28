@@ -11,7 +11,7 @@ public class testClientJava {
 	public static class SimulationCapteur {
 		  Timer t;
 		  ClientJava clientJava;
-		  static int messagePrec[] = {-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1};
+		  static int messagePrec[] = {-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,};
 		  
 		  public SimulationCapteur(ClientJava client) {
 			 this.clientJava = client;

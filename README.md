@@ -1,30 +1,64 @@
 # hephaistos_application
 
-<h1>I. Description/Contenu du projet</h1>
+<h1>I. Présentation du projet</h1>
 
-Le projet à pour but de visualiser des données capteur en temps réel sur une application Web / application android. 
+<h2> A. Présentation du projet hephaistos </h2>
 
-le dossier hephaistos_application du git est composé de : 
+	Le projet de l'équipe Hephaistos de l'INRIA de Sophia-Antipolis à pour but d'étudier les déplacements de personnes agées de façon anonymes et non-intrusives au sein d'une infrastructure de soin (Institut Claude Pompidou). Les données relatives à ces flux de déplacements sont récupérés par des capteurs IR (Infrarouge) installés au sein de cette infrastructure. Ceux-ci permettront de mieux comprendre le comportement de ces personnes dans une telle infrastructure pour adapter l'environement aux observations, d'établir des modèles statistique...etc.
 
-- Deux projects différents : Dynamic WebProject 'hephaitos_project' (Serveur Java) et Java Project 'CTRL_sensor' (@ClientEndpoint)
 
-- Un serveur glassfish : 'glassfish4'
 
-- un dossier comportant les fichiers nécéssaires au lancement de l'application : Exec_App
+<h2>B. Présentation de mon projet </h2>
+
+	Actuellement le traitement de ces données se fait par des programmes C++ embarqués sur les cartes Phidgets connectés aux capteurs. Ces programmes analysent, interpretent et enregistrent ces données capteurs sur des fichiers log. Cependant cette architecture pose un certains nombre de problèmes comme la limitation en terme de puissance de calcul, et de mémoire pour le stockage de donnée. 
+
+	Ainsi mon projet avait pour but de développer une architecture Client/Serveur qui permet de pallier à ces différents problèmes tout en permettant d'avoir une visualisation en temps réel sur une application Web/ Android du nombre de personne dans l'Institut Pompidou. En effet une telle architecture permettrait de déployer la puissance de calcul afin d'optimiser le traitement de ces données sur un ou plusieurs clients connectés à ce serveur. Ou encore d'avoir un client en écoute sur le serveur qui récupère ces données en les enregistrant sur des fichier log, des fichier structuré (xml,json..etc) ou des base de données (MySQL). Ainsi les programme embraqués sur les cartes Phidget de l'Institut Claude Pompidou n'aurai plus qu'une seul tâche à effectué : l'envoi des données vers le serveur. Cependant cette architecture n'est pas idéale car elle à besoin d'une connexion internet permanante pour transmettre les données vers le serveur et cela peut poser des problèmes en terme de sécurité sur la transmission de données qui peuvent être interceptée. 
+
+<h1>II. Technologies utilisées </h1>
+
+<h2>A. Client-Serveur</h2>
+
+	Le serveur utilisé dans ce projet est un serveur Java Glassfish 4.0, Open source sur java EE 7. Il y a différents client, dans des langages différent en fonction de leur rôle : 
+	- Un client javaScript pour l'application Web qui permet la visualisation en temps réel des données.
+	- Un client Java qui est simulateur de capteurs 
+	- Un client Java qui récupère les données et les stocke écrit sur un fichier en local
+	- Un client Java/C qui transmet les données des capteurs connectés au Phidget vers le Serveur.
+
+<h2>B. Protocol de communication</h2>
+
+	Le serveur échange des données à l'aide de WebSocket, qui utilisent un canal de communication full-duplex sur un socket TCP. Cette communication bilatéralle, contrairement au protocol HTTP, permet la notification au client d'un changement d'état du serveur ainsi que l'envoi de données (Push) du serveur vers le client (sans que ce dernier ait à effectuer une requête). De plus les WebSocket sont compatible avec presque tout les langages (C,C++,C#, Python, Java, JavaScript) et s'appuient sur des méthodes suivant une norme commune : 
+
+	-OnOpen : Détecte une connexion
+	-OnClose : Détecte une déconnexion
+	-OnMessage : Détecte un message entrant
+	-OnError : Détecte les erreurs
+
+<h2>C. Structure des message</h2>
+
+Les messages envoyés par le serveur dans le cadre de cette application utilisent le format structuré JSON, les données sont organisé de la manière suivante : 
+{"idCapteur","acquisition","date","commande"}
+
+- idCapteur : le champs idCapteur contient l'identifiant du capteur sous forme de chaine de caractère (ex : capteur_IR)
+- acquisition : le champs acquisition contient les données d'acquisitions du capteur que ce soit une valeur de type INT ou FLOAT simple ou un JSON si jamais il est nécessaire de transmettre plusieurs données (ex : vitesse, accélération, distance ... )
+- date : la date de l'acquisition sur forme de chaine de caractère
+- commande : une commande (qui est associé ou pas à un capteur) qui peut être envoyer puis exécuter par le serveur (ex : suprimmerCapteur, consulterCapteur, afficherCapteur ... etc)
+
+<h1>III. Récupérer le projet</h1>
+
+Le projet est disponible sur Github à l'adresse 'https://github.com/maximeCluchague/hephaistos_application.git'. 
+
+Pour le Récupérer vous pouvez télécharger le zip sur cette adresse puis en allant sur : Clone or download > Download ZIP. Puis dézipper le fichier !
+
+De plus, il vous est possible de cloner le projet en local sur votre machine. Cela va vous permettre de le mettre à jour en cas de changement sur Github ou alors de le modifier avec de simples commandes. Pour cloner le projet en local sur votre machine déplacez-vous dans le futur répertoire parent de votre projet en ouvrant un terminal puis en exécutant la commande jusqu'à arriver dans le dossier souhaité:
 	
-- la librairie jdk nécéssaire aux dynamic Web App de java EE 
+	$ : cd <nom_du_dossier>
 
-- la documentation associée au projet
-
-<h1>II. Récupérer le projet</h1>
-
-Récupérer le contenu du projet via le terminal à l'aide de la commande
+Enfin, pour cloner le projet ce dossier parent exécuter la commande suivante dans ce même terminal :
 	
 	$ : git clone https://github.com/maximeCluchague/hephaistos_application.git
 
-(ou télécharger le zip associé à l'adresse : https://github.com/maximeCluchague/hephaistos_application.git)
 
-<h1>III. Lancement automatique du Serveur</h1>
+<h1>IV. Lancement automatique du Serveur</h1>
 
 Un domaine est créer par défaut il s'agit de hephaistosDomain dont le port administrateur est 5000. 
 Celui-ci se situe dans le dossier glassfish4/glassfish/domains, et il contient un .WAR du projet.
@@ -39,7 +73,7 @@ Celui-ci se situe dans le dossier glassfish4/glassfish/domains, et il contient u
 
 PS : un makefile est disponible pour compiler les fichier StartServer.c et StopServer.c
 
-<h1>IV. Lancement manuel du Serveur</h1>
+<h1>V. Lancement manuel du Serveur</h1>
 
 (Tutoriel détaillé sur : https://dzone.com/articles/how-deploy-war-file-usin)
 
@@ -114,23 +148,6 @@ Il ne reste plus qu'à vérifier si la liaison WebSocket est fonctionnelle ! Pou
 
 Alors la communication avec votre serveur est fonctionnelle ! 
 
-
-<h1>V. Communication du Serveur</h1>
-
-Le serveur échange des données à l'aide de WebSocket qui permettent une communication bilatéralle contrairement au protocol HTTP. Que ce soit en java ou en java script les clients/serveur utilisent les même méthodes pour communiquer entre eux :
-
-	-OnOpen : Détecte une connexion
-	-OnClose : Détecte une déconnexion
-	-OnMessage : Détecte un message entrant
-	-OnError : Détecte les erreurs
-
-Les messages envoyés par le serveur dans le cadre de cette application utilisent le format JSON, les données sont structurées de la manière suivante : 
-{"idCapteur","acquisition","date","commande"}
-
-- idCapteur : le champs idCapteur contient l'identifiant du capteur sous forme de chaine de caractère (ex : capteur_IR)
-- acquisition : le champs acquisition contient les données d'acquisitions du capteur que ce soit une valeur entière (sous forme de String) ou un JSON si jamais il est nécessaire de transmettre plusieurs données (ex : vitesse, accélération, distance ... )
-- date : la date de l'acquisition
-- commande : une commande (qui est associé ou pas à un capteur) qui peut être envoyer puis exécuter par le serveur (ex : suprimmerCapteur, consulterCapteur, afficherCapteur ... etc)
 
 <h1>VI. Modification du code source du Serveur/Clients</h1>
 
