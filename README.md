@@ -20,7 +20,7 @@ Ainsi mon projet avait pour but de développer une architecture Client/Serveur q
 
 Le serveur utilisé dans ce projet est un serveur Java Glassfish 4.0, Open source sur java EE 7. Il y a différents client, dans des langages différent en fonction de leur rôle : 
 
-- Un client javaScript pour l'application Web qui permet la visualisation en temps réel des données.
+- Un client javaScript pour l'application Web qui permet une visualisation en temps réel des données.
 - Un client Java qui est simulateur de capteurs 
 - Un client Java qui récupère les données et les stocke écrit sur un fichier en local
 - Un client Java/C qui transmet les données des capteurs connectés au Phidget vers le Serveur.
@@ -61,29 +61,30 @@ Enfin, pour cloner le projet ce dossier parent exécuter la commande suivante da
 
 <h1>IV. Lancement automatique du Serveur</h1>
 
-Un domaine est créer par défaut il s'agit de hephaistosDomain dont le port administrateur est 5000. 
-Celui-ci se situe dans le dossier glassfish4/glassfish/domains, et il contient un .WAR du projet.
+Un domaine est créer par défaut il s'agit de hephaistosDomain dont le port administrateur est 5000 et l'adresse est 'localhost'. Celui-ci se situe dans le dossier glassfish4/glassfish/domains, et il contient un .WAR du projet.
 
-1. Lancer le Serveur :
+Commencer par compiler les fichier C à l'aide du makefile disponible qui vont permettre de lancer le serveur. Pour ce faire ouvrir un terminal, déplacez vous dans le dossier 'hephaistos_application' du projet (à l'aide de la commande cd) et executer la commande suivante :
+		
+		$ : make
+
+1. Pour Démarrer le Serveur :
 
 		$ : ./StartServer
 
-2. Stopper le Serveur :
+2. pour Stopper le Serveur :
 
 		$ : ./StopServer
-
-PS : un makefile est disponible pour compiler les fichier StartServer.c et StopServer.c
 
 <h1>V. Lancement manuel du Serveur</h1>
 
 (Tutoriel détaillé sur : https://dzone.com/articles/how-deploy-war-file-usin)
 
 <h2>A. Lancement de "asadmin tool"</h2>
-Ouvrir un terminal dans le dossier hephaistos_application cloné/téléchargé et executer les commandes suivantes : 
+Ouvrir un terminal dans le dossier 'hephaistos_application' du projet et executer les commandes suivantes : 
 
 	$ : ./glassfish4/glassfish/bin/asadmin
 
-le "asadmin tool" va alors être lancé dans le terminal.
+le "asadmin tool" va alors être lancé dans le terminal. vous pouvez quitter "asadmin tool" à tout moment en tapant "exit".
 
 <h2>B. Création du domaine </h2>
 
