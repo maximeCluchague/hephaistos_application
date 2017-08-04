@@ -17,7 +17,7 @@ Le but de mon projet est de développer un ou plusieurs prototypes d’applicati
 
 <h2>2.1. L’architecture développée</h2>
 
-<h3>2.1.1 Présentation de l'architecture</h3>
+<h3>2.1.1. Présentation de l'architecture</h3>
 
 Le projet s’appuie sur une architecture de type client-serveur. Cela désigne un mode de communication à travers un réseau (wifi local, local, internet, localhost ...etc) entre plusieurs programmes. Un programme, appelé programme client, envoie une requête à un autre programme appelé serveur qui répond à ces requêtes. Cela permet à différent programmes de communiquer entre eux à distance. Cependant, contrairement à une architecture client-serveur classique, celle développée dans le cadre de ce projet utilise un mode de communication par WebSocket ce qui permet des échanges bilatéraux entre clients et serveur  (voir partie 3.3.3. pour plus de précisions sur le protocole de communication). Ici, l’architecture de ce projet est composée d’un serveur central et de quatre Clients indépendants :
 
@@ -35,7 +35,7 @@ A noter que cette machine doit être reliée aux cartes Phidgets présentes au s
 
 - Un Client qui joue le rôle de Simulateur de capteurs afin de pouvoir travailler en amont sur le développement de l’application et le développement des algorithmes d’analyse des flux générés par les capteurs activés... Ce Client est un programme Java qui transmet aléatoirement les données de 12 capteurs fictifs pendant un temps donné.
 
-<h3> 2.1.2Récupération du projet</h3>
+<h3> 2.1.2. Récupération du projet</h3>
 
 Le projet est disponible sur la plateforme GitHub d’hébergement et de gestion de projets à l’adresse : 'https://github.com/maximeCluchague/hephaistos_application.git'. Pour le récupérer, télécharger le zip à cette même adresse, puis sélectionner : ‘Clone or download’ > ‘Download ZIP’. Enfin dézipper l’archive sur votre machine. Il est possible de cloner le projet en local sur n’importe quelle machine. Cela permet à l’utilisateur de disposer de la dernière version du projet en cas de mise à jour de celui-ci sur Github, et ce, à l’aide de commandes simples. De plus, si l’utilisateur est un contributeur du projet, celui-ci pourra effectuer des modifications et les enregistrer sur GitHub. Pour cloner le projet en local sur votre machine déplacez-vous à travers un terminal dans le futur répertoire racine de votre projet (à l'aide de la commande cd) puis exécuter la commande :
 
@@ -43,7 +43,7 @@ Le projet est disponible sur la plateforme GitHub d’hébergement et de gestion
 
 Remarque : La documentation du projet est disponible dans le fichier README.md  dans le dossier du projet « hephaistos_application » et est directement visible à l’adresse du Git du projet.
 
-<h3>Démarrage du serveur</h3>
+<h3>2.1.3. Démarrage du serveur</h3>
 
 a) Lancement automatique du serveur
 
@@ -67,6 +67,113 @@ Commencer par ouvrir un terminal dans le dossier « hephaistos_application » 
 	$ : ./glassfish4/glassfish/bin/asadmin
 
 le "asadmin tool" va alors être lancé dans le terminal. vous pouvez quitter "asadmin tool" à tout moment en tapant "exit".
+
+	$ : create-domain --adminport <admin_port> --profile developer --user admin <nom_domaine>
+
+<admin_port> est le port d'accès de l'administrateur du serveur (ex : 4848) ce port permettra à l’administrateur de modifier les paramètres du serveur 
+<nom_domaine> est le nom de domaine que vous allez définir pour votre futur serveur (ex : domainTest) 
+
+- Démarrage et arrêt du domaine 
+Utiliser la ligne de commande suivante pour démarrer le domaine <nom_domaine> créé précédemment :
+
+	$ : start-domain <nom_domaine>
+
+Pour arrêter un domaine il vous suffit d’exécuter la commande :
+
+	$ : stop-domain <nom_domaine>
+
+- Déploiement du serveur
+
+Une fois le domaine créé et lancé il faut déployer le serveur. Le serveur est un fichier .war 	(un exécutable java pour les serveurs). Le .war du projet est disponible dans le dossier du 	projet. Avant de déployer le .war s’assurer qu’un domaine est démarré. Enfin pour déployer 	le serveur, exécuter la commande :
+
+	$ : deploy --port <admin_port> --host <adresse> <PATHwar>
+
+<admin_port> est le port d'accès à l'administrateur du serveur (ex : 4848) ce port permettra de modifier les paramètres du serveur. Il s’agit du même port administrateur que celui utilisé pour le domaine.
+<adresse> est l'adresse IP de la machine (ex: localhost, 138.96.192.120 ... ).
+<PATHwar> est le chemin absolu du fichier .war
+
+ATTENTION : Il est impossible de déployer le serveur si celui-ci est déjà déployé sur un 	autre domaine. En cas d'erreur il faut arrêter le serveur à l'aide de la commande suivante :
+
+	$ : undeploy --port 4848 --host localhost <nom_du_war>
+
+<nom_du_war> est le nom du war déployé (sans le .war).
+
+<h3>2.1.4. Lancement du client gestionnaire des capteurs</h3>
+
+Avant toute chose :
+- Vérifier que la librairie Phidget en C est bien installée sur la machine cliente qui servira à transmettre les données capteurs vers le serveur.
+- Connecter le Phidget possédant les capteurs sur cette machine par port USB.
+
+Commencer tout d’abord par générer l’ensemble des exécutables sur votre machine, pour ce faire ouvrir un terminal dans le dossier du projet « hephaistos_application » et éxecuter la commande :
+
+	$ : make
+
+Enfin dans ce même terminal, lancer le script qui va lancer deux terminaux externes correspondant respectivement au programme C qui récupère les événements du Phidget et au client Java qui transmet les données vers le serveur. Pour ce faire, exécuter la commande :
+
+	$ : ./execSensorClient <adresse> <port>
+
+<adresse> est l’adresse IP de la machine hébergeant le serveur (ou bien si un service d’hébergement en ligne est utilisé,  le nom de domaine donné par celui-ci).
+<port> est le port de communication utilisé par le serveur (par défaut 8080). 
+
+<h3>2.1.5. Modification et maintenance du projet</h3>
+
+Interface administrateur et modification des paramètres du serveur
+	Pour accéder à l'interface administrateur, il vous suffit d'ouvrir un navigateur web et d'entrer l'url : http:///<admin_port> (ex: Le serveur tourne en localhost et le port de l'administrateur est 4848 il suffit d'entrer l'adresse : http://localhost/4848). Une fois l’interface chargée il est possible, par exemple, de modifier le port 8080 de communication du serveur, qui est défini par défaut :
+
+	Configurations > Server-config > Network Config > http-listener-1
+
+Modification du code source du projet
+
+Pour modifier le Serveur, ouvrir le projet web dynamique 'hephaistos_project' dans Eclipse java EE. Le code source du serveur se situe dans la classe « HephaistosWebServer.java » du package « java Ressource/src/com.za.websocket/ ». Les classes « SensorMessage.java », « SensorMessageDecoder.java » et « SensorMessageEncoder.java » sont les classes qui permettent d'encoder et de décoder les messages reçus et émis par le serveur. Pour modifier l’application Web, ouvrir le projet « hephaistos_project » dans Eclipse java EE et se diriger dans le dossier « WebContent ». Celui-ci contient l’ensemble des pages html de l’application. De plus, les fichiers JavaScript associés se situent dans le dossier « WebContent/js » et les fichier CSS dans le dossier « WebContent/css » pour la mise en forme de l’application. Une fois toutes les modifications effectuées sur le projet il faut générer le nouveaux .war du serveur pourra alors être déployé sur un domaine existant. Pour ce faire, ouvrir le projet « hephaistos_project » dans eclipse puis aller dans : 
+	
+	fichier > export > web > WAR file. 
+
+Enregistrer le .war dans le dossier souhaité. 
+Pour déployer le .war généré de façon manuelle suivre la méthode décrite dans la partie 3.1.3,  b). Pour le déployer de  façon  automatique, copier ce nouveau .war du projet généré dans le dossier « hephaistos_application/glassfish4/glassfish/domains/hephaistosDomain/autodeploy »
+Enfin, suivre la méthode décrite dans la partie 3.1.3,  a) pour déployer le serveur automatiquement.
+
+<h2>2.2. Technologies utilisées</h2>
+
+<h3>2.2.1. Environnement de développement et matériel utilisé</h3>
+
+Le projet a été développé sur une machine utilisant la distribution Fedora du système d’exploitation Linux. Des capteurs de proximité binaires, une carte Phidget, une Fit-Pc ainsi qu’un Rasberry Pi ont été utilisés pour effectuer des tests et vérifier le bon fonctionnement de l’application. Le produit a été développé sous l’IDE Eclipse java EE 7, qui est utilisée notamment pour des application de type « Dynamic Web Application » (application web dynamique). Firefox a été le navigateur Web qui a permis de tester et valider l’application web. 
+
+<h3>2.2.3. Langages de programmation</h3>
+
+Java
+* Le serveur a été développé en java. Il s’agit d’un serveur Glassfish 4.0 qui permet notamment l’utilisation de WebSocket(s) pour les communications. Le langage orienté objet a permis de structurer et d’organiser l’implémentation du serveur, notamment à travers les encodeurs et décodeurs de messages. 
+* Le simulateur de capteur a également été développé en Java.
+* Le client local qui écoute les messages entrants pour stocker les messages émis par le serveur sur une base de données a été écrit en java.
+ C 
+* Le programme qui récupère les données brutes des capteurs connectés au Phidget et les transmet au Client java par socket. 
+
+ Html-CSS-JavaScript 
+* Html a été utilisé pour créer les éléments présents sur la page web : images, texte, boutons...
+* CSS a été utilisé pour le design, le positionnement des éléments, les animations et l’esthétique de l’application Web.
+* JavaScript a été utilisé pour gérer la partie applicative et fonctionnelle de l’application Web 
+
+ Shell 
+* Pour la gestion du projet avec Git  (commit, pull, push, status...)
+* Pour compiler des programmes C et exécuter les scripts
+* Pour lancer le serveur manuellement dans le terminal
+* Pour construire le Makefile du projet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 * <admin_port> est le port d'accès de l'administrateur du serveur (ex : 4848) ce port permettra à l’administrateur de modifier les paramètres du serveur 
 
