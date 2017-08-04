@@ -19,6 +19,11 @@ Le but de mon projet est de développer un ou plusieurs prototypes d’applicati
 
 <h3>2.1.1. Présentation de l'architecture</h3>
 
+<div align="center">
+        <img width="45%" src="https://github.com/maximeCluchague/hephaistos_application/tree/master/Documentation/shemas.png" alt="About screen" title="About screen"</img>
+        <img height="0" width="8px">
+        <img width="45%" src="https://github.com/maximeCluchague/hephaistos_application/tree/master/Documentation/shemas.png" alt="List screen" title="List screen"></img>
+</div>
 ![image](https://github.com/maximeCluchague/hephaistos_application/tree/master/Documentation/shemas.png "Architecture client-serveur")
 
 Le projet s’appuie sur une architecture de type client-serveur. Cela désigne un mode de communication à travers un réseau (wifi local, local, internet, localhost ...etc) entre plusieurs programmes. Un programme, appelé programme client, envoie une requête à un autre programme appelé serveur qui répond à ces requêtes. Cela permet à différent programmes de communiquer entre eux à distance. Cependant, contrairement à une architecture client-serveur classique, celle développée dans le cadre de ce projet utilise un mode de communication par WebSocket ce qui permet des échanges bilatéraux entre clients et serveur  (voir partie 3.3.3. pour plus de précisions sur le protocole de communication). Ici, l’architecture de ce projet est composée d’un serveur central et de quatre Clients indépendants :
