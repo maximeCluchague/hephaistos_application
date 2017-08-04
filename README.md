@@ -19,6 +19,8 @@ Le but de mon projet est de développer un ou plusieurs prototypes d’applicati
 
 <h3>2.1.1. Présentation de l'architecture</h3>
 
+![Alt text](https://github.com/maximeCluchague/hephaistos_application/tree/master/Documentation/shemas.png "Architecture client-serveur")
+
 Le projet s’appuie sur une architecture de type client-serveur. Cela désigne un mode de communication à travers un réseau (wifi local, local, internet, localhost ...etc) entre plusieurs programmes. Un programme, appelé programme client, envoie une requête à un autre programme appelé serveur qui répond à ces requêtes. Cela permet à différent programmes de communiquer entre eux à distance. Cependant, contrairement à une architecture client-serveur classique, celle développée dans le cadre de ce projet utilise un mode de communication par WebSocket ce qui permet des échanges bilatéraux entre clients et serveur  (voir partie 3.3.3. pour plus de précisions sur le protocole de communication). Ici, l’architecture de ce projet est composée d’un serveur central et de quatre Clients indépendants :
 
 - Un serveur GlassFish 4.0 développé en Java qui va permettre de communiquer avec l’ensemble des clients, ou servir d’intermédiaire à plusieurs d’entre-eux afin qu’ils échangent des informations et/ou des données. Lorsque le serveur reçoit des données capteurs il les transfère à tous les Clients qui sont connectés avec celui-ci, y compris au client émetteur. Ce serveur peut-être hébergé sur n’importe quel machine disposant d’une connexion internet et dont le Pare-feu du routeur associé à cette connexion autorise le port de communication du serveur (par défaut 8080 pour les WebSockets). Le serveur ainsi développé pourrait également être déployé sur un service d’hébergement en ligne.
@@ -41,7 +43,7 @@ Le projet est disponible sur la plateforme GitHub d’hébergement et de gestion
 
 	$ : git clone https://github.com/maximeCluchague/hephaistos_application.git
 
-Remarque : La documentation du projet est disponible dans le fichier README.md  dans le dossier du projet « hephaistos_application » et est directement visible à l’adresse du Git du projet.
+**Remarque :** La documentation du projet est disponible dans le fichier README.md  dans le dossier du projet « hephaistos_application » et est directement visible à l’adresse du Git du projet.
 
 <h3>2.1.3. Démarrage du serveur</h3>
 
@@ -119,12 +121,13 @@ Enfin dans ce même terminal, lancer le script qui va lancer deux terminaux exte
 
 <h3>2.1.5. Modification et maintenance du projet</h3>
 
-Interface administrateur et modification des paramètres du serveur
+<h4>Interface administrateur et modification des paramètres du serveur</h4>
+
 	Pour accéder à l'interface administrateur, il vous suffit d'ouvrir un navigateur web et d'entrer l'url : http:///<admin_port> (ex: Le serveur tourne en localhost et le port de l'administrateur est 4848 il suffit d'entrer l'adresse : http://localhost/4848). Une fois l’interface chargée il est possible, par exemple, de modifier le port 8080 de communication du serveur, qui est défini par défaut :
 
 	Configurations > Server-config > Network Config > http-listener-1
 
-Modification du code source du projet
+<h4>Modification du code source du projet</h4>
 
 Pour modifier le Serveur, ouvrir le projet web dynamique 'hephaistos_project' dans Eclipse java EE. Le code source du serveur se situe dans la classe « HephaistosWebServer.java » du package « java Ressource/src/com.za.websocket/ ». Les classes « SensorMessage.java », « SensorMessageDecoder.java » et « SensorMessageEncoder.java » sont les classes qui permettent d'encoder et de décoder les messages reçus et émis par le serveur. Pour modifier l’application Web, ouvrir le projet « hephaistos_project » dans Eclipse java EE et se diriger dans le dossier « WebContent ». Celui-ci contient l’ensemble des pages html de l’application. De plus, les fichiers JavaScript associés se situent dans le dossier « WebContent/js » et les fichier CSS dans le dossier « WebContent/css » pour la mise en forme de l’application. Une fois toutes les modifications effectuées sur le projet il faut générer le nouveaux .war du serveur pourra alors être déployé sur un domaine existant. Pour ce faire, ouvrir le projet « hephaistos_project » dans eclipse puis aller dans : 
 	
@@ -142,33 +145,33 @@ Le projet a été développé sur une machine utilisant la distribution Fedora d
 
 <h3>2.2.2. Langages de programmation</h3>
 
-Java
-* Le serveur a été développé en java. Il s’agit d’un serveur Glassfish 4.0 qui permet notamment l’utilisation de WebSocket(s) pour les communications. Le langage orienté objet a permis de structurer et d’organiser l’implémentation du serveur, notamment à travers les encodeurs et décodeurs de messages. 
-* Le simulateur de capteur a également été développé en Java.
-* Le client local qui écoute les messages entrants pour stocker les messages émis par le serveur sur une base de données a été écrit en java.
- C 
-* Le programme qui récupère les données brutes des capteurs connectés au Phidget et les transmet au Client java par socket. 
+- Java
+	* Le serveur a été développé en java. Il s’agit d’un serveur Glassfish 4.0 qui permet notamment l’utilisation de WebSocket(s) pour les communications. Le langage orienté objet a permis de structurer et d’organiser l’implémentation du serveur, notamment à travers les encodeurs et décodeurs de messages. 
+	* Le simulateur de capteur a également été développé en Java.
+	* Le client local qui écoute les messages entrants pour stocker les messages émis par le serveur sur une base de données a été écrit en java.
+- C 
+	* Le programme qui récupère les données brutes des capteurs connectés au Phidget et les transmet au Client java par socket. 
 
- Html-CSS-JavaScript 
-* Html a été utilisé pour créer les éléments présents sur la page web : images, texte, boutons...
-* CSS a été utilisé pour le design, le positionnement des éléments, les animations et l’esthétique de l’application Web.
-* JavaScript a été utilisé pour gérer la partie applicative et fonctionnelle de l’application Web 
+-  Html-CSS-JavaScript 
+	* Html a été utilisé pour créer les éléments présents sur la page web : images, texte, boutons...
+	* CSS a été utilisé pour le design, le positionnement des éléments, les animations et l’esthétique de l’application Web.
+	* JavaScript a été utilisé pour gérer la partie applicative et fonctionnelle de l’application Web 
 
- Shell 
-* Pour la gestion du projet avec Git  (commit, pull, push, status...)
-* Pour compiler des programmes C et exécuter les scripts
-* Pour lancer le serveur manuellement dans le terminal
-* Pour construire le Makefile du projet
+- Shell 
+	* Pour la gestion du projet avec Git  (commit, pull, push, status...)
+	* Pour compiler des programmes C et exécuter les scripts
+	* Pour lancer le serveur manuellement dans le terminal
+	* Pour construire le Makefile du projet
 
 
 <h3>2.2.3. Protocol de communication</h3>
 
 Le serveur échange des données à l'aide de WebSocket, qui utilisent un canal de communication full-duplex sur un socket TCP. Cette communication bilatéralle, contrairement au protocol HTTP, permet la notification au client d'un changement d'état du serveur ainsi que l'envoi de données (Push) du serveur vers le client (sans que ce dernier ait à effectuer une requête). De plus les WebSocket sont compatible avec presque tout les langages (C,C++,C#, Python, Java, JavaScript) et s'appuient sur des méthodes suivant une norme commune : 
 
-	-OnOpen : Détecte une connexion
-	-OnClose : Détecte une déconnexion
-	-OnMessage : Détecte un message entrant
-	-OnError : Détecte les erreurs
+- OnOpen : Détecte une connexion
+- OnClose : Détecte une déconnexion
+- OnMessage : Détecte un message entrant
+- OnError : Détecte les erreurs
 
 <h3>2.2.4. Structure des message</h3>
 
@@ -190,7 +193,7 @@ la visualisation en temps réel de données capteurs induit une contrainte majeu
 
 <h4>Prérequis</h4>
 
-Avant toute chose le serveur doit être lancé. Il peut-être hébergé sur n’importe quel machine disposant d’une connexion internet et dont le Pare-feu du routeur associé à cette connexion autorise le port de communication du serveur (par défaut 8080 pour les WebSockets). Le serveur pourrait également être déployé sur un service d’hébergement en ligne. Pour le lancement du serveur se référer à la section 3.1.3.
+Avant toute chose le serveur doit être lancé. Il peut-être hébergé sur n’importe quel machine disposant d’une connexion internet et dont le Pare-feu du routeur associé à cette connexion autorise le port de communication du serveur (par défaut 8080 pour les WebSockets). Le serveur pourrait également être déployé sur un service d’hébergement en ligne. Pour le lancement du serveur se référer à la section 
 
 Pour faire fonctionner l’application correctement il faut recevoir des données capteurs. Ainsi, l’utilisateur doit au préalable installer les capteurs au sein de l’infrastructure désirée et les connectés au serveur. Ceux-ci doivent être connectés à des cartes Phidget elles-même connectées à une machine disposant d’une connexion Wifi (Rasberry Pi, Fit-Pc ou Ordinateur). Cette machine doit exécuter le programme Client (boucle infinie) afin de communiquer les données acquises par les capteurs avec le serveur en transmettant les messages sur une liaison WebSocket. Chaque capteur se voit attribuer un identifiant en fonction du port de connexion sur sa carte Phidget associée. L’utilisateur de l’application doit avoir connaissance de l’installation du réseau de capteurs afin de déterminer les emplacements de ceux-ci au sein de l’infrastructure. De plus, afin de pouvoir identifier les capteurs sur l’application, il doit avoir connaissance des numéros de port sur les Phidgets sur lequels sont connectés les capteurs. A noter que l’identifiant de chaque capteur est unique. 
 
@@ -266,7 +269,7 @@ A tout moment l’utilisateur peut éditer dynamiquement le graphe sans interrom
 
 <h4> 8) Consulter l’aide</h4> 
 
-	l’utilisateur à la possibilité de consulter une aide en cas d’incompréhension des méthodes d’édition de l’environnement de travail ou bien la logique des étapes à suivre ainsi que l’utilité et le but de l’application. Pour ce faire il peut cliquer sur le bouton ‘Help’ situé en haut de l’environnement de travail. Lorsque l’aide apparaît, l’environnement de travail disparaît pour laisser place à l’aide. Un second clic sur ‘Help’ permet à l’utilisateur de quitter l’aide.
+l’utilisateur à la possibilité de consulter une aide en cas d’incompréhension des méthodes d’édition de l’environnement de travail ou bien la logique des étapes à suivre ainsi que l’utilité et le but de l’application. Pour ce faire il peut cliquer sur le bouton ‘Help’ situé en haut de l’environnement de travail. Lorsque l’aide apparaît, l’environnement de travail disparaît pour laisser place à l’aide. Un second clic sur ‘Help’ permet à l’utilisateur de quitter l’aide.
 
 
 
