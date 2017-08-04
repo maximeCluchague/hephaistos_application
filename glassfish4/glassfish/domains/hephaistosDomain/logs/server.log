@@ -5911,3 +5911,75 @@
 [2017-08-02T19:17:09.409+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=Thread-4] [timeMillis: 1501694229409] [levelValue: 800] [[
   <Capteurs connectés> : [Sensor_1, Sensor_2, Sensor_3, Sensor_4, Sensor_5, Sensor_6, Sensor_7, Sensor_8, Sensor_9, Sensor_10, Sensor_11, Sensor_12]]]
 
+[2017-08-04T11:12:08.808+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=Thread-4] [timeMillis: 1501837928808] [levelValue: 800] [[
+  <CONNEXION>]]
+
+[2017-08-04T11:29:52.255+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=Thread-4] [timeMillis: 1501838992255] [levelValue: 800] [[
+  <CONNEXION>]]
+
+[2017-08-04T11:30:02.268+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=Thread-4] [timeMillis: 1501839002268] [levelValue: 800] [[
+  <CONNEXION>]]
+
+[2017-08-04T11:47:45.041+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=Thread-4] [timeMillis: 1501840065041] [levelValue: 800] [[
+  <CONNEXION>]]
+
+[2017-08-04T11:50:32.501+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=25 _ThreadName=Thread-4] [timeMillis: 1501840232501] [levelValue: 800] [[
+  <CONNEXION>]]
+
+[2017-08-04T11:52:04.224+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=26 _ThreadName=Thread-4] [timeMillis: 1501840324224] [levelValue: 800] [[
+  <CONNEXION>]]
+
+[2017-08-04T11:54:31.232+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=24 _ThreadName=Thread-4] [timeMillis: 1501840471232] [levelValue: 800] [[
+  <CONNEXION>]]
+
+[2017-08-04T11:54:56.727+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=Thread-4] [timeMillis: 1501840496727] [levelValue: 800] [[
+  <CONNEXION>]]
+
+[2017-08-04T11:58:42.092+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=Thread-4] [timeMillis: 1501840722092] [levelValue: 800] [[
+  <CONNEXION>]]
+
+[2017-08-04T12:23:19.420+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=Thread-4] [timeMillis: 1501842199420] [levelValue: 800] [[
+  <CONNEXION>]]
+
+[2017-08-04T12:24:00.883+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=Thread-4] [timeMillis: 1501842240883] [levelValue: 800] [[
+  <CONNEXION>]]
+
+[2017-08-04T12:33:08.388+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=25 _ThreadName=Thread-4] [timeMillis: 1501842788388] [levelValue: 800] [[
+  <CONNEXION>]]
+
+[2017-08-04T12:34:26.582+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=Thread-4] [timeMillis: 1501842866582] [levelValue: 800] [[
+  <CONNEXION>]]
+
+[2017-08-04T14:03:31.843+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=25 _ThreadName=Thread-4] [timeMillis: 1501848211843] [levelValue: 800] [[
+  <CONNEXION>]]
+
+[2017-08-04T14:11:45.701+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=26 _ThreadName=Thread-4] [timeMillis: 1501848705701] [levelValue: 800] [[
+  <CONNEXION>]]
+
+[2017-08-04T14:12:22.289+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=25 _ThreadName=Thread-4] [timeMillis: 1501848742289] [levelValue: 800] [[
+  <CONNEXION>]]
+
+[2017-08-04T14:12:54.196+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=26 _ThreadName=Thread-4] [timeMillis: 1501848774196] [levelValue: 800] [[
+  <CONNEXION>]]
+
+[2017-08-04T14:13:26.187+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=24 _ThreadName=Thread-4] [timeMillis: 1501848806187] [levelValue: 800] [[
+  <CONNEXION>]]
+
+[2017-08-04T14:13:46.343+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=27 _ThreadName=Thread-4] [timeMillis: 1501848826343] [levelValue: 800] [[
+  <CONNEXION>]]
+
+[2017-08-04T14:13:55.782+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=28 _ThreadName=Thread-4] [timeMillis: 1501848835782] [levelValue: 800] [[
+  <CONNEXION>]]
+
+[2017-08-04T14:14:08.444+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=25 _ThreadName=Thread-4] [timeMillis: 1501848848444] [levelValue: 800] [[
+  <CONNEXION>]]
+
+[2017-08-04T14:14:19.279+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=26 _ThreadName=Thread-4] [timeMillis: 1501848859279] [levelValue: 800] [[
+  <CONNEXION>]]
+
+[2017-08-04T14:14:51.248+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=25 _ThreadName=Thread-4] [timeMillis: 1501848891248] [levelValue: 800] [[
+  <CONNEXION>]]
+
+[2017-08-04T14:15:34.070+0200] [glassfish 4.0] [INFO] [] [] [tid: _ThreadID=26 _ThreadName=Thread-4] [timeMillis: 1501848934070] [levelValue: 800] [[
+  <CONNEXION>]]
+
