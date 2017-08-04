@@ -1,29 +1,86 @@
 # hephaistos_application
 
-<h1>I. Présentation du projet</h1>
+<h1>1. Présentation du projet</h1>
 
-<h2> A. Présentation du projet hephaistos </h2>
+<h2>1.1. Présentation du contexte </h2>
 
-Le projet de l'équipe Hephaistos de l'INRIA de Sophia-Antipolis à pour but d'étudier les déplacements de personnes agées de façon anonymes et non-intrusives au sein d'une infrastructure de soin (Institut Claude Pompidou). Les données relatives à ces flux de déplacements sont récupérés par des capteurs IR (Infrarouge) installés au sein de cette infrastructure. Ceux-ci permettront de mieux comprendre le comportement de ces personnes dans une telle infrastructure pour adapter l'environement aux observations, d'établir des modèles statistique...etc.
+L'équipe Hephaistos de l'INRIA de Sophia-Antipolis travaille actuellement sur un projet qui a pour but d'étudier le déplacement de personnes âgées vus comme des individus non indentifiables  au sein de l’infrastructure de soin, l’Institut Claude Pompidou. Ce projet est développé en collaboration avec les équipes de médecines de cet institut. Il doit permettre aux équipes médicales sur place de mieux comprendre le comportement de ces personnes dans une telle infrastructure en établissant des modèles statistiques afin d’adapter l’environnement aux observations. Pour établir de tels modèles, l’équipe récupère les données relatives à ces flux de déplacements via des capteurs Infrarouges de proximité installés au sein de cette infrastructure. 
 
+<h2>1.2. Description et analyse du problème</h2>
+Actuellement le traitement de ces données se fait par des programmes C embarqués sur les cartes Phidgets connectées aux capteurs. Ces programmes analysent, interprètent et enregistrent ces données capteurs sur des fichiers log journaliers. Cependant cette architecture pose un certain nombre de problèmes comme la limitation en terme de puissance de calcul et la limitation de mémoire pour le stockage des données. De plus l’équipe ne dispose d’aucune interface permettant de visualiser l’état de ces dispositifs en temps réel. Mon projet a pour but de développer une architecture qui permettrait, d’une part, de pallier à ces différents problèmes et d’autre part d’implémenter un ou plusieurs prototypes d’interfaces (si la durée du stage le permet) permettant la visualisation en temps réel de l’état de ces différents dispositifs robotiques. Parmi les prototypes demandés : une visualisation en temps réel du nombre de personnes présentes dans chacune des pièces au sein de l'Institut Claude Pompidou.
 
+<h2>1.3. Cahier des charges </h2>
 
-<h2>B. Présentation de mon projet </h2>
+Le but de mon projet est de développer un ou plusieurs prototypes d’application interfaçant différents capteurs et actionneurs existants. Ces applications doivent être accessibles depuis un écran tactile de 65’’ muni d’un cœur Android dont dispose l’équipe Hephaistos et, si possible, depuis n’importe quel machine (Linux, Mac OS, Windows, Android, IOS, Windows Phone...). Un de ces prototypes d’interface demandé est une visualisation en temps réel de dispositifs robotiques d’assistance aux personnes fragiles. Ce prototype doit de plus afficher le nombre de personnes présentes au sein d’un institut de soin (dans le cadre du projet Hephaistos il s’agit de l’Institut Claude Pompidou) où un réseau de capteurs de proximité est déployé sur place. Dans un premier temps il est donc nécessaire de développer une architecture qui permettra par la suite de développer ces différents prototypes d'interfaces. Celle-ci doit permettre la transmission des données de ces différents dispositifs robotiques vers ces applications. Ces échanges de messages doivent s’effectuer à distance et en temps réel. D’où la nécessité d’utiliser une architecture de type Client-Serveur permettant la transmission de données à distance sur le réseau internet. Par ailleurs, il m’est demandé d’utiliser la technologie WebSocket pour que les échanges s’effectuent en temps réel et de façon bilatérale entre les clients (les dispositifs robotiques ou l’utilisateur de l’application) et le serveur. Cette architecture doit donc être compatible avec n’importe quel type de dispositif robotique et n’importe quel prototype d’application de visualisation de ces dispositifs pour que, par la suite, de nouveaux prototypes d’interface puissent être développés. 
 
-Actuellement le traitement de ces données se fait par des programmes C++ embarqués sur les cartes Phidgets connectés aux capteurs. Ces programmes analysent, interpretent et enregistrent ces données capteurs sur des fichiers log. Cependant cette architecture pose un certains nombre de problèmes comme la limitation en terme de puissance de calcul, et de mémoire pour le stockage de donnée. 
+<h1>2. Réalisation et implémentation du produit </h1>
 
-Ainsi mon projet avait pour but de développer une architecture Client/Serveur qui permet de pallier à ces différents problèmes tout en permettant d'avoir une visualisation en temps réel sur une application Web/ Android du nombre de personne dans l'Institut Pompidou. En effet une telle architecture permettrait de déployer la puissance de calcul afin d'optimiser le traitement de ces données sur un ou plusieurs clients connectés à ce serveur. Ou encore d'avoir un client en écoute sur le serveur qui récupère ces données en les enregistrant sur des fichier log, des fichier structuré (xml,json..etc) ou des base de données (MySQL). Ainsi les programme embraqués sur les cartes Phidget de l'Institut Claude Pompidou n'aurai plus qu'une seul tâche à effectué : l'envoi des données vers le serveur. Cependant cette architecture n'est pas idéale car elle à besoin d'une connexion internet permanante pour transmettre les données vers le serveur et cela peut poser des problèmes en terme de sécurité sur la transmission de données qui peuvent être interceptée. 
+<h2>2.1. L’architecture développée</h2>
 
-<h1>II. Technologies utilisées </h1>
+<h3>2.1.1 Présentation de l'architecture</h3>
 
-<h2>A. Client-Serveur</h2>
+Le projet s’appuie sur une architecture de type client-serveur. Cela désigne un mode de communication à travers un réseau (wifi local, local, internet, localhost ...etc) entre plusieurs programmes. Un programme, appelé programme client, envoie une requête à un autre programme appelé serveur qui répond à ces requêtes. Cela permet à différent programmes de communiquer entre eux à distance. Cependant, contrairement à une architecture client-serveur classique, celle développée dans le cadre de ce projet utilise un mode de communication par WebSocket ce qui permet des échanges bilatéraux entre clients et serveur  (voir partie 3.3.3. pour plus de précisions sur le protocole de communication). Ici, l’architecture de ce projet est composée d’un serveur central et de quatre Clients indépendants :
 
-Le serveur utilisé dans ce projet est un serveur Java Glassfish 4.0, Open source sur java EE 7. Il y a différents client, dans des langages différent en fonction de leur rôle : 
+- Un serveur GlassFish 4.0 développé en Java qui va permettre de communiquer avec l’ensemble des clients, ou servir d’intermédiaire à plusieurs d’entre-eux afin qu’ils échangent des informations et/ou des données. Lorsque le serveur reçoit des données capteurs il les transfère à tous les Clients qui sont connectés avec celui-ci, y compris au client émetteur. Ce serveur peut-être hébergé sur n’importe quel machine disposant d’une connexion internet et dont le Pare-feu du routeur associé à cette connexion autorise le port de communication du serveur (par défaut 8080 pour les WebSockets). Le serveur ainsi développé pourrait également être déployé sur un service d’hébergement en ligne.
 
-- Un client javaScript pour l'application Web qui permet une visualisation en temps réel des données.
-- Un client Java qui est simulateur de capteurs 
-- Un client Java qui récupère les données et les stocke écrit sur un fichier en local
-- Un client Java/C qui transmet les données des capteurs connectés au Phidget vers le Serveur.
+- Une machine cliente disposant d’une connexion internet (Rasberry Pi, Fit Pc ou ordinateur) et d’une carte Phidget (branchée sur un port USB) sur laquelle sont connectés les capteurs. Cette machine héberge deux programmes qui communiquent par Socket : 
+* Un premier programme, écrit en C tourne en boucle infinie. Il va permettre d’effectuer un premier traitement sur les données acquises, gérer les événements capteurs, interagir avec eux, etc. Ce programme utilise la librairie Phidget pour être sensible aux changements d’état des capteurs, et construit le JSON du message qui va être transmis à un second programme par liaison Socket. 
+* Ce second programme est un Client écrit en Java et tourne en boucle infinie. Il possède une liaison WebSocket ouverte en permanence avec le serveur. Il a pour rôle de transmettre les données capteurs au Serveur GlassFish à chaque fois qu’il reçoit un message JSON en provenance du programme C (premier programme).
+
+A noter que cette machine doit être reliée aux cartes Phidgets présentes au sein de l’Infrastructure désirée (en l’occurrence l’ICP dans le cadre de ce projet). Elle doit donc être physiquement située aux abords immédiats de l’institut.
+
+- L’application Web, un Client qui est à l’écoute du serveur lorsque l’utilisateur décide d’ouvrir le lien WebSocket. Cette application permet à l’utilisateur de visualiser, analyser et interpréter en temps réel les données capteurs (La description détaillée et complète des fonctionnalité de l’application est donnée  dans la partie 3.3.). Ce client peut-être lancé depuis n’importe quelle machine à partir de l’adresse internet de l’application, dès lors que le serveur est déployé. Ainsi, plusieurs utilisateurs venant de différentes machines peuvent lancer ce client simultanément, et un utilisateur peut lancer plusieurs fois ce même client sur une même machine. 
+
+- Un programme client en boucle infinie qui interagit avec une base de donnée. Ce programme est à l’écoute permanente du serveur grâce à une liaison WebSocket avec celui-ci. Il récupère les données émises depuis le serveur, et les ajoute à une base de données (fichier log, csv, MySQL, json, xml... etc). A noter que ce client peut-être lancé de n’importe qu’elle machine (distante ou pas) du serveur. 
+
+- Un Client qui joue le rôle de Simulateur de capteurs afin de pouvoir travailler en amont sur le développement de l’application et le développement des algorithmes d’analyse des flux générés par les capteurs activés... Ce Client est un programme Java qui transmet aléatoirement les données de 12 capteurs fictifs pendant un temps donné.
+
+<h3> 2.1.2Récupération du projet</h3>
+
+Le projet est disponible sur la plateforme GitHub d’hébergement et de gestion de projets à l’adresse : 'https://github.com/maximeCluchague/hephaistos_application.git'. Pour le récupérer, télécharger le zip à cette même adresse, puis sélectionner : ‘Clone or download’ > ‘Download ZIP’. Enfin dézipper l’archive sur votre machine. Il est possible de cloner le projet en local sur n’importe quelle machine. Cela permet à l’utilisateur de disposer de la dernière version du projet en cas de mise à jour de celui-ci sur Github, et ce, à l’aide de commandes simples. De plus, si l’utilisateur est un contributeur du projet, celui-ci pourra effectuer des modifications et les enregistrer sur GitHub. Pour cloner le projet en local sur votre machine déplacez-vous à travers un terminal dans le futur répertoire racine de votre projet (à l'aide de la commande cd) puis exécuter la commande :
+
+	$ : git clone https://github.com/maximeCluchague/hephaistos_application.git
+
+Remarque : La documentation du projet est disponible dans le fichier README.md  dans le dossier du projet « hephaistos_application » et est directement visible à l’adresse du Git du projet.
+
+<h3>Démarrage du serveur</h3>
+
+a) Lancement automatique du serveur
+
+Afin de simplifier au maximum le déploiement de l’architecture à travers le lancement du serveur, une procédure automatique de lancement du serveur a été développée. Elle utilise notamment la fonctionnalité « autodeploy » du serveur GlassFish. Cette procédure automatique utilise le domaine « hephaistosDomain »créé par défaut, dont le port administrateur est 5000 et l'adresse est « localhost ». Celui-ci se situe dans le dossier ‘glassfish4/glassfish/domains’. Un .war du projet est situé dans ‘glassfish4/glassfish/domains/hephaistosDomain/autodeploy’ . Tout d’abord, il faut commencer par compiler les fichiers C qui vont permettre la création du domaine, son démarrage et le déploiement de ce fichier .war. Un makefile est disponible pour effectuer ces taches de compilation. Pour l’exécuter, ouvrir un terminal, se déplacer dans le dossier du projet « hephaistos_application »  (à l'aide de la commande cd) puis exécuter la commande suivante :
+	
+	$ : make
+
+Enfin, pour démarrer le Serveur, exécuter dans ce même terminal
+
+	$ : ./StartServer
+
+Et, pour arrêter le Serveur :
+
+	$ : ./StopServer
+
+b) Lancement manuel du serveur
+
+- Création du domaine 
+Commencer par ouvrir un terminal dans le dossier « hephaistos_application » du projet et exécuter les commandes suivantes : 
+
+	$ : ./glassfish4/glassfish/bin/asadmin
+
+le "asadmin tool" va alors être lancé dans le terminal. vous pouvez quitter "asadmin tool" à tout moment en tapant "exit".
+
+* <admin_port> est le port d'accès de l'administrateur du serveur (ex : 4848) ce port permettra à l’administrateur de modifier les paramètres du serveur 
+
+* <nom_domaine> est le nom de domaine que vous allez définir pour votre futur serveur (ex : domainTest) 
+
+- Démarrage et arrêt du domaine 
+
+Utiliser la ligne de commande suivante pour démarrer le domaine <nom_domaine> créé 	précédemment :
+
+	$ : start-domain <nom_domaine>
+
+Pour arrêter un domaine il vous suffit d’exécuter la commande :
+
+	$ : stop-domain <nom_domaine>
 
 <h2>B. Protocol de communication</h2>
 
