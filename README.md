@@ -57,9 +57,19 @@ Enfin, pour démarrer le Serveur, exécuter dans ce même terminal
 
 	$ : ./StartServer
 
+L'application Web est maintenant disponible à l'adresse :
+
+	> http://localhost:8080/hephaistos_project/home.html
+
+Lancer le simulateur de capteurs pour tester toutes les fonctionnalités, pour ce faire, ouvrir un terminal dans le dossier du projet "hephaistos_application" et exécuter :
+
+	$ : java -jar SimulateurCapteurs.jar
+
+
 Et, pour arrêter le Serveur :
 
 	$ : ./StopServer
+
 
 <h4>b) Lancement manuel du serveur</h4>
 
