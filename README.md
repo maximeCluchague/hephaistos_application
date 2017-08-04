@@ -59,7 +59,7 @@ Enfin, pour démarrer le Serveur, exécuter dans ce même terminal
 
 L'application Web est maintenant disponible à l'adresse http://localhost:8080/hephaistos_project/home.html
 
-Lancer le simulateur de capteurs pour tester toutes les fonctionnalités, pour ce faire, ouvrir un terminal dans le dossier du projet "hephaistos_application" et exécuter :
+Pour tester toutes les fonctionnalités de celle-ci, lancer le simulateur de capteurs, pour ce faire, ouvrir un terminal dans le dossier du projet "hephaistos_application" et exécuter :
 
 	$ : java -jar SimulateurCapteurs.jar
 
@@ -131,7 +131,7 @@ Enfin dans ce même terminal, lancer le script qui va lancer deux terminaux exte
 
 <h4>Interface administrateur et modification des paramètres du serveur</h4>
 
-	Pour accéder à l'interface administrateur, il vous suffit d'ouvrir un navigateur web et d'entrer l'url : http:///<admin_port> (ex: Le serveur tourne en localhost et le port de l'administrateur est 4848 il suffit d'entrer l'adresse : http://localhost/4848). Une fois l’interface chargée il est possible, par exemple, de modifier le port 8080 de communication du serveur, qui est défini par défaut :
+Pour accéder à l'interface administrateur, il vous suffit d'ouvrir un navigateur web et d'entrer l'url : http:///<admin_port> (ex: Le serveur tourne en localhost et le port de l'administrateur est 4848 il suffit d'entrer l'adresse : http://localhost/4848). Une fois l’interface chargée il est possible, par exemple, de modifier le port 8080 de communication du serveur, qui est défini par défaut :
 
 	Configurations > Server-config > Network Config > http-listener-1
 
@@ -230,7 +230,7 @@ La section Server Interface est une vue qui permet de visualiser en temps réel 
 
 Comme vu précédemment l’utilisateur à la possibilité de transmettre un message vers le serveur en y entrant l’identifiant du capteur sous forme de chaîne de caractère, ainsi que l’acquisition sous forme de float, int ou encore de message structuré  JSON en cas d’acquisition multiple (exemple d’un accéléromètre qui transmet l’accélération selon les 3 vecteurs spatiaux). Il a de plus la possibilité d’envoyer des instructions vers le serveur dans le champ Command for the server afin de décrocher un capteur du serveur (commande deccrocheCapteur) ou encore d’afficher les capteurs (commande afficherCapteurs) connectés au serveur.
 
-<h3>Les visualisations en temps réel</h3>
+<h3>2.3.5. Les visualisations en temps réel</h3>
 
 Il est possible de visualiser en temps réel les données des capteurs qui sont connectés au serveur. Pour ce faire, l’utilisateur peut se rendre dans une des deux sous-sections de la section Viewers, à savoir Real Time Chart ou Map Sensor Editor. Real time chart permet de visualiser en temps réel des capteurs boolean, ou qui possèdent une acquisition unique (entière ou décimale). L’affichage est sous forme de diagramme en bâtons utilisant la librairie Canvas.js de JavaScript. Celui-ci se met à jour lorsqu’un capteur notifie le serveur d’un changement d’état. Cette vue permet à  l’utilisateur de s’assurer du bon fonctionnement de l’application web ainsi que de la bonne transmission des données capteurs vers le serveur.
 
@@ -279,8 +279,24 @@ A tout moment l’utilisateur peut éditer dynamiquement le graphe sans interrom
 
 l’utilisateur à la possibilité de consulter une aide en cas d’incompréhension des méthodes d’édition de l’environnement de travail ou bien la logique des étapes à suivre ainsi que l’utilité et le but de l’application. Pour ce faire il peut cliquer sur le bouton ‘Help’ situé en haut de l’environnement de travail. Lorsque l’aide apparaît, l’environnement de travail disparaît pour laisser place à l’aide. Un second clic sur ‘Help’ permet à l’utilisateur de quitter l’aide.
 
+<h3>2.3.6. Documentation de l’application</h3>
+
+	Un README.md du projet résume la totalité de l'architecture et un rapport de stage en format pdf est disponible dans hephaistos_application/Documentation. La documentation de l’application web est disponible dans la vue Documentation de l’application. Celle-ci décrit l’ensemble de l’architecture de son installation à son fonctionnement.
+
+<h2>3. Bilan du stage</h2>
+
+<h3>3.1. Résultats obtenus</h3>
+
+	Suite à des restrictions sur les ports de communication (Pare-Feu) au sein du réseau de l’Inria, le serveur déployé sur une des machine de l’Inria n’est pas accessible depuis l’extérieur de l’Inria. Cependant l’architecture fut testé sur le réseau local et est parfaitement fonctionnel en localhost. De plus, elle a été testé sur un réseau wifi et machine personnel avec un Pare-Feu autorisant les communications sur le port 8080 : tout est fonctionnel. Ainsi, pour étendre l’application sur le réseau web il faudrait que le service informatique de l’Inria autorise les communications entrantes et sortantes de ce port 8080. Cela permettrait un transfert de messages par liaisons WebSocket entre une machine distante de l’Inria (ex : la machine de l’ICP qui transmet les données capteurs) et le serveur qui sera hébergé par une des machines de l’équipe Hephaistos. De plus, le prototype d’application de visualisation en temps réel est parfaitement fonctionnel, aucun beug apparent n’a été signalé. De plus après plusieurs tests et prise en main par différents membres de l’équipe Hephaistos il a été rapporter que sa prise en main est très intuitive et bien documenté. Il ne reste donc plus qu’à attendre le développement complet de l’algorithme de mise à jour du nombre de personnes présentes dans chacune des pièces à chaque acquisition capteur envoyé au serveur, par les membres de l’équipe Hephaistos. Cet algorithme pourra alors être intégré à l’application Web et remplacer l’ heuristique utilisé jusque-là dans le cadre de ce projet.
 
 
+<h3>3.2. Difficultés rencontrées et solutions apportées</h3>
+
+	Une des difficultés principales fut la restriction dûe aux normes de sécurité sur le réseau de l’Inria qui posa des notamment des problèmes sur les tests de vérification du bon fonctionnement de l’architecture Client/Serveur développée. Ainsi pour pallier à ce problème, le serveur GlassFish implémenté au centre de l’architecture fut hébergé sur Un Rasberry Pi puis un Fit Pc connecté à un Phidget lui-même lié à des capteurs. Ceci me permit de tester le bon fonctionnement de l’application dans sa globalité : de l’acquisition des données capteurs à la visualisation sur l’application Web. La seconde difficulté majeure fut le temps de transfert des données capteurs connectés au Rasberry Pi vers le serveur qui était de 12 secondes environ. En effet à chaque notification des capteurs vers le Phidget, le programme C qui gérait ces événements exécutait un jar exécutable à travers une commande système. Celui-ci transmettait les données par liaison WebSocket vers le serveur. Pour résoudre ce problème le programme C notifie un Client java en boucle infinie par Socket du changement d’état d’un des capteurs. Ainsi, le lancement du jar ne se faisait qu’au lancement de la boucle infinie, ce qui remmena à moins d’une 1/10 seconde le temps de transfert vers le serveur.
+
+<h3>3.3. Amélioration envisageable du produit</h3>
+
+	La vue de l’application de visualisation en temps réel du nombre de personnes « Sensor Map Editor » pourrait-être amélioré avec notamment une fonctionnalité d’enregistrement de l’environnement de travail : enregistrer la carte, les capteurs et les zones ajoutés ainsi que les liaisons entre ceux-ci. Pour ce faire, il suffirait d’enregistrer dans un fichier le chemin de l’image associée à la carte et enregistrer les listes des capteurs, zones et liaisons sous forme de chaîne de caractère. Enfin on pourrait ajouter une fonctionnalité qui permettrait de charger d’anciennes cartes existantes avec ses capteurs et zones associés.
 
 
 
